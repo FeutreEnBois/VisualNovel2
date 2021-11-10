@@ -12,6 +12,9 @@ public class Character
     //The root is the container for all images related to the character in the scene. the root object.
     [HideInInspector] public RectTransform root;
 
+    public bool enabled { get { return root.gameObject.activeInHierarchy; } set { root.gameObject.SetActive(value); } }
+
+    DialogueSystem dialogue = DialogueSystem.instance;
     public bool isMultiLayerCharacter { get { return renderers.renderer == null; } }
     public Character (string _name)
     {
@@ -31,6 +34,14 @@ public class Character
         }
     }
 
+    public void Say(string speech, bool add = false)
+    {
+        if (!enabled)
+        {
+            enabled = true;
+        }
+        dialogue.Say(speech, add, Charactername);
+    }
     [System.Serializable]
     public class Renderers
     {

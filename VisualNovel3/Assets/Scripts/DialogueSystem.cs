@@ -26,20 +26,11 @@ public class DialogueSystem : MonoBehaviour
 	public void Say(string speech, bool additive = false, string speaker = "")
 	{
 		StopSpeaking();
-		speechText.text = targetSpeech;
+		if (additive)
+        {
+			speechText.text = targetSpeech;
+        }
 		speaking = StartCoroutine(Speaking(speech, additive, speaker));
-	}
-
-	/// <summary>
-	/// Say something to be added to what is already on the speech box.
-	/// </summary>
-	public void SayAdd(string speech, string speaker = "")
-	{
-		StopSpeaking();
-
-		speechText.text = targetSpeech;
-
-		speaking = StartCoroutine(Speaking(speech, true, speaker));
 	}
 
 	public void StopSpeaking()
