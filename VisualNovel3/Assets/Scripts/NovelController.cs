@@ -87,6 +87,87 @@ public class NovelController : MonoBehaviour
 
     void HandleEventsFromLine(string events)
     {
-        print("Handle event [" + events + "]");
+        string[] actions = events.Split(' ');
+
+        foreach(string action in actions)
+        {
+            //HandleAction(action);
+        }
     }
+
+    /*
+    void HandleAction(string action)
+    {
+        print("Handle action [" + action + "]");
+        string[] data = action.Split('(', ')');
+
+        if(data[0] == "setBackground")
+        {
+            Command_SetLayerImage(data[1], BCFC.instance.background);
+            return;
+        }
+        if (data[0] == "setCinematic")
+        {
+            Command_SetLayerImage(data[1], BCFC.instance.cinematic);
+            return;
+        }
+        if (data[0] == "setForeground")
+        {
+            Command_SetLayerImage(data[1], BCFC.instance.foreground);
+            return;
+        }
+        if(data[0] == "playSound")
+        {
+            Command_PlaySound(data[1]);
+        }
+        if (data[0] == "playMusic")
+        {
+            Command_PlayMusic(data[1]);
+        }
+    }
+
+    void Command_SetLayerImage(string data, BCFC.LAYER layer)
+    {
+        string textName = data.Contains(",") ? data.Split(',')[0] : data;
+        Texture2D text = textName == "null" ? null : Resources.Load("Images/UI/Backdrops/" + textName) as Texture2D;
+        float spd = 2f;
+        bool smooth = false;
+
+        if (data.Contains(","))
+        {
+            string[] parameters = data.Split(',');
+            foreach(string p in parameters)
+            {
+                float fval = 0;
+                bool bval = false;
+                if(float.TryParse(p, out fval)){
+                    spd = fval; continue;
+                }
+                if(bool.TryParse(p, out bval))
+                {
+                    smooth = bval; continue;
+                }
+            }
+        }
+        layer.TransitionToTexture(text, spd, smooth);
+    }
+
+    void Command_PlaySound(string data)
+    {
+        AudioClip clip = Resources.Load("Audio/SFX/" + data) as AudioClip;
+        if (clip != null)
+            AudioManager.instance.PlaySFX(clip);
+        else
+            Debug.LogError("Clip does not exist : " + data);
+    }
+
+    void Command_PlayMusic()
+    {
+        AudioClip clip = Resources.Load("Audio/Music/" + data) as AudioClip;
+        if (clip != null)
+            AudioManager.instance.PlaySong(clip);
+        else
+            Debug.LogError("Clip does not exist : " + data);
+    }
+    */
 }
