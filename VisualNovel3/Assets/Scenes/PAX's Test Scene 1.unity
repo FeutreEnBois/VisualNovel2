@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -292,6 +292,7 @@ GameObject:
   - component: {fileID: 344796504}
   - component: {fileID: 344796502}
   - component: {fileID: 344796505}
+  - component: {fileID: 344796503}
   m_Layer: 0
   m_Name: Tester
   m_TagString: Untagged
@@ -317,6 +318,29 @@ MonoBehaviour:
   - Well, I'm not sure how to tell you this...
   - It's not easy as it sound...
   - Ah, who am'i kidding, let's just forget about it !
+--- !u!114 &344796503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344796501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6187408afa09d824d8fbd665c2e85055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 0
+  pitch: 0
+  clips:
+  - {fileID: 8300000, guid: 9bf7e0142bff4e7438410c0fedec4f5f, type: 3}
+  - {fileID: 8300000, guid: e1ca5e30021e4094994275bcc2d2966f, type: 3}
+  - {fileID: 8300000, guid: a991f41128dfb274a8d677d9b2532125, type: 3}
+  - {fileID: 8300000, guid: f431f7a9c34c3c741a175d0d6885a8a5, type: 3}
+  - {fileID: 8300000, guid: 568f996875d3f3d478128f439a6ca401, type: 3}
+  music:
+  - {fileID: 8300000, guid: c3d52d315f193f0489bcaa78bdc2c6bd, type: 3}
+  - {fileID: 8300000, guid: a727fbf7a86d59745b511a7b949ab923, type: 3}
 --- !u!4 &344796504
 Transform:
   m_ObjectHideFlags: 0
@@ -346,6 +370,10 @@ MonoBehaviour:
   Raelin:
     Charactername: 
     root: {fileID: 0}
+    renderers:
+      renderer: {fileID: 0}
+      bodyRenderer: {fileID: 0}
+      expressionRenderer: {fileID: 0}
 --- !u!1 &368933602
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,7 +770,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 384.35614, y: 225.63922, z: -809.9834}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 691190047}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -760,6 +789,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterPanel: {fileID: 103030083}
   characters: []
+--- !u!1 &691190046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 691190047}
+  - component: {fileID: 691190048}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &691190047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691190046}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 578384230}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &691190048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691190046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 523d021a4946e2b4f8c696027b015070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  songTransitionSpeed: 2
+  songSmoothTransitions: 1
 --- !u!1 &721456917
 GameObject:
   m_ObjectHideFlags: 0
