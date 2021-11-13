@@ -311,12 +311,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b6c8d4e4e9960f45ae43d916edc27fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  s:
-  - Hi...:Avira
-  - It's lovely weather today...
-  - Well, I'm not sure how to tell you this...
-  - It's not easy as it sound...
-  - Ah, who am'i kidding, let's just forget about it !
 --- !u!4 &344796504
 Transform:
   m_ObjectHideFlags: 0
@@ -350,6 +344,19 @@ MonoBehaviour:
       renderer: {fileID: 0}
       bodyRenderer: {fileID: 0}
       expressionRenderer: {fileID: 0}
+      allBodyRenderers: []
+      allExpressionRenderers: []
+  moveTarget: {x: 0, y: 0}
+  moveSpeed: 3
+  smooth: 0
+  bodyIndex: 2
+  expressionIndex: 8
+  speed: 2
+  smoothTransition: 1
+  speech:
+  - yo
+  - tkt
+  - blublublu
 --- !u!1 &368933602
 GameObject:
   m_ObjectHideFlags: 0

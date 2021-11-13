@@ -11,6 +11,11 @@ public class DialogueSystem : MonoBehaviour
 
 	void Awake()
 	{
+		if(instance != null)
+        {
+			Debug.LogError("!!! trying to create multiple instance of DialogueSystem !!!");
+			return;
+        }
 		instance = this;
 	}
 
@@ -21,8 +26,11 @@ public class DialogueSystem : MonoBehaviour
 	}
 
 	/// <summary>
-	/// Say something and show it on the speech box.
+	/// Say something to be added to what is already on the speech box.
 	/// </summary>
+	/// <param name="speech"></param>
+	/// <param name="additive"></param>
+	/// <param name="speaker"></param>
 	public void Say(string speech, bool additive = false, string speaker = "")
 	{
 		StopSpeaking();
@@ -83,6 +91,15 @@ public class DialogueSystem : MonoBehaviour
 
 		return retVal;
 	}
+
+	/// <summary>
+	/// Close the entire speech panel. stop all dialogue.
+	/// </summary>
+	public void Close()
+    {
+		StopSpeaking();
+		speechPanel.SetActive(false);
+    }
 
 	[System.Serializable]
 	public class ELEMENTS

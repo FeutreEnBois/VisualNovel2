@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Testing : MonoBehaviour
 {
-    DialogueSystem dialogue; 
+    /*DialogueSystem dialogue; 
     // Start is called before the first frame update
     void Start()
     {
@@ -44,4 +44,5 @@ public class Testing : MonoBehaviour
 
         dialogue.Say(speech, true, speaker);
     }
+    */
 }
