@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Globalization;
 
 public class NovelController : MonoBehaviour
 {
@@ -91,17 +92,15 @@ public class NovelController : MonoBehaviour
 
         foreach(string action in actions)
         {
-            //HandleAction(action);
+            HandleAction(action);
         }
     }
-
-    /*
     void HandleAction(string action)
     {
         print("Handle action [" + action + "]");
         string[] data = action.Split('(', ')');
 
-        if(data[0] == "setBackground")
+        /*if(data[0] == "setBackground")
         {
             Command_SetLayerImage(data[1], BCFC.instance.background);
             return;
@@ -115,18 +114,28 @@ public class NovelController : MonoBehaviour
         {
             Command_SetLayerImage(data[1], BCFC.instance.foreground);
             return;
-        }
+        }*/
         if(data[0] == "playSound")
         {
             Command_PlaySound(data[1]);
         }
-        if (data[0] == "playMusic")
+
+        if (data[0] == "moveTo")
+        {
+            Command_MoveCharacter(data[1]);
+        }
+        if (data[0] == "setExpression")
+        {
+            Command_ChangeExpression(data[1]);
+        }
+        /*if (data[0] == "playMusic")
         {
             Command_PlayMusic(data[1]);
         }
+        */
     }
 
-    void Command_SetLayerImage(string data, BCFC.LAYER layer)
+    /*void Command_SetLayerImage(string data, BCFC.LAYER layer)
     {
         string textName = data.Contains(",") ? data.Split(',')[0] : data;
         Texture2D text = textName == "null" ? null : Resources.Load("Images/UI/Backdrops/" + textName) as Texture2D;
@@ -150,7 +159,7 @@ public class NovelController : MonoBehaviour
             }
         }
         layer.TransitionToTexture(text, spd, smooth);
-    }
+    }*/
 
     void Command_PlaySound(string data)
     {
@@ -161,7 +170,7 @@ public class NovelController : MonoBehaviour
             Debug.LogError("Clip does not exist : " + data);
     }
 
-    void Command_PlayMusic()
+    /*void Command_PlayMusic()
     {
         AudioClip clip = Resources.Load("Audio/Music/" + data) as AudioClip;
         if (clip != null)
@@ -170,4 +179,38 @@ public class NovelController : MonoBehaviour
             Debug.LogError("Clip does not exist : " + data);
     }
     */
+
+    void Command_MoveCharacter(string data)
+    {
+        string[] parameters = data.Split(',');
+        string character = parameters[0];
+        float locationX = float.Parse(parameters[1], CultureInfo.InvariantCulture);
+        float locationY = float.Parse(parameters[2], CultureInfo.InvariantCulture);
+        float speed = parameters.Length <= 4 ? float.Parse(parameters[3]) : 1f;
+        bool smooth = parameters.Length == 5 ? bool.Parse(parameters[4]) : false;
+
+        Character c = CharacterManager.instance.GetCharacter(character);
+        c.MoveTo(new Vector2(locationX, locationY), speed, smooth);
+
+    }
+
+    void Command_ChangeExpression(string data)
+    {
+        string[] parameters = data.Split(',');
+        string character = parameters[0];
+        string region = parameters[1];
+        string expression = parameters[2];
+        float speed = parameters.Length <= 4 ? float.Parse(parameters[3]) : 1f;
+        bool smooth = parameters.Length == 4 ? bool.Parse(parameters[4]) : false;
+        Character c = CharacterManager.instance.GetCharacter(character);
+        Sprite sprite = c.GetSprite(expression);
+        if(region.ToLower() == "body")
+        {
+            c.TransitionBody(sprite, speed, smooth);
+        }
+        if (region.ToLower() == "face")
+        {
+            c.TransitionExpression(sprite, speed, smooth);
+        }
+    }
 }

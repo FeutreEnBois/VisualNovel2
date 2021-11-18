@@ -292,6 +292,7 @@ GameObject:
   - component: {fileID: 344796504}
   - component: {fileID: 344796502}
   - component: {fileID: 344796505}
+  - component: {fileID: 344796503}
   m_Layer: 0
   m_Name: Tester
   m_TagString: Untagged
@@ -311,6 +312,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b6c8d4e4e9960f45ae43d916edc27fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &344796503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344796501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6187408afa09d824d8fbd665c2e85055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 0
+  pitch: 0
+  clips: []
+  music: []
 --- !u!4 &344796504
 Transform:
   m_ObjectHideFlags: 0
@@ -352,7 +369,7 @@ MonoBehaviour:
   bodyIndex: 2
   expressionIndex: 8
   speed: 2
-  smoothTransition: 1
+  smoothTransition: 0
   speech:
   - yo
   - tkt
@@ -719,6 +736,7 @@ GameObject:
   - component: {fileID: 578384229}
   - component: {fileID: 578384231}
   - component: {fileID: 578384232}
+  - component: {fileID: 578384233}
   m_Layer: 0
   m_Name: Core
   m_TagString: Untagged
@@ -784,6 +802,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5766d94d0a35eb4fb01fc98b7874239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &578384233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578384228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 523d021a4946e2b4f8c696027b015070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  songTransitionSpeed: 2
+  songSmoothTransitions: 1
 --- !u!1 &721456917
 GameObject:
   m_ObjectHideFlags: 0

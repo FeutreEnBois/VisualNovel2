@@ -145,8 +145,28 @@ public class Character
     // Transitioning Images.
     public Sprite GetSprite(int index = 0)
     {
+        // In case we want to load an individual sprite :
+        // Do : Sprite sprites = Resources.Load<Sprite>("Images/Characters/" + characterName + "_" + emotion);
+        // return sprites;
         Sprite[] sprites = Resources.LoadAll<Sprite>("Images/Characters/" + Charactername);
         return sprites[index];
+    }
+
+    public Sprite GetSprite(string spriteName = "")
+    {
+        // In case we want to load an individual sprite :
+        // Do : Sprite sprites = Resources.Load<Sprite>("Images/Characters/" + characterName + "_" + emotion);
+        // return sprites;
+        Sprite[] sprites = Resources.LoadAll<Sprite>("Images/Characters/" + Charactername);
+        
+        for(int i = 0; i < sprites.Length; i++)
+        {
+            if(sprites[i].name == spriteName)
+            {
+                return sprites[i];
+            }
+        }
+        return sprites.Length > 0 ? sprites[0] : null;
     }
 
     public void SetBody(int index)
@@ -157,6 +177,10 @@ public class Character
     {
         renderers.bodyRenderer.sprite = sprite;
     }
+    public void SetBody(string spriteName)
+    {
+        renderers.bodyRenderer.sprite = GetSprite(spriteName);
+    }
 
     public void SetExpression(int index)
     {
@@ -166,7 +190,10 @@ public class Character
     {
         renderers.expressionRenderer.sprite = sprite;
     }
-
+    public void SetExpression(string spriteName)
+    {
+        renderers.expressionRenderer.sprite = GetSprite(spriteName);
+    }
     //Transition Body
     bool isTransitioningBody { get { return transitioningBody != null; } }
     Coroutine transitioningBody = null;

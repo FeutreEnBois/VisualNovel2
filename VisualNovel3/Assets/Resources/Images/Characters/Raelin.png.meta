@@ -4,70 +4,70 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 4945437208809926602
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_0
+    second: casualF
   - first:
       213: 804702572747838577
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_1
+    second: specialF
   - first:
       213: -608477457440057391
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_2
+    second: casualA
   - first:
       213: 8493238466760559169
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_3
+    second: specialA
   - first:
       213: -7166449183496246901
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_4
+    second: seriousFace
   - first:
       213: -5762127200797985675
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_5
+    second: seriousFaceA
   - first:
       213: -7709005579427082529
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_6
+    second: blushF
   - first:
       213: -7852274850374459886
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_7
+    second: blushA
   - first:
       213: 6919418078747933614
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_8
+    second: happyF
   - first:
       213: 5316320294190556051
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_9
+    second: happyA
   - first:
       213: -3246500652596084924
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_10
+    second: bashfullF
   - first:
       213: -6330000105258512536
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_11
+    second: bashfullA
   - first:
       213: -4184557335458620157
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_12
+    second: laughtF
   - first:
       213: 7823006434509783008
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_13
+    second: laughtA
   - first:
       213: 3418632681914798613
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_14
+    second: puzzledF
   - first:
       213: -6897545519733073516
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_15
+    second: puzzledA
   - first:
       213: -7199222794102139009
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_16
+    second: shockedF
   - first:
       213: 3363633090121785500
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_17
+    second: shockedA
   - first:
       213: -7060294983855132243
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_18
+    second: surprisedF
   - first:
       213: -5575986727612406783
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_19
+    second: surprisedA
   - first:
       213: -4695246034005386753
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_20
+    second: blush2F
   - first:
       213: -156649955218105828
-    second: PC Computer - Sakura Fantasy Chapter 1 - Raelin_21
+    second: blush2A
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -169,7 +169,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_0
+      name: casualF
       rect:
         serializedVersion: 2
         x: 4
@@ -190,7 +190,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_1
+      name: specialF
       rect:
         serializedVersion: 2
         x: 487
@@ -211,7 +211,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_2
+      name: casualA
       rect:
         serializedVersion: 2
         x: 4
@@ -232,7 +232,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_3
+      name: specialA
       rect:
         serializedVersion: 2
         x: 487
@@ -253,7 +253,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_4
+      name: seriousFace
       rect:
         serializedVersion: 2
         x: 4
@@ -274,10 +274,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_5
+      name: seriousFaceA
       rect:
         serializedVersion: 2
-        x: 487
+        x: 485
         y: 6509
         width: 477
         height: 718
@@ -295,11 +295,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_6
+      name: blushF
       rect:
         serializedVersion: 2
-        x: 4
-        y: 5785
+        x: 0
+        y: 5787
         width: 477
         height: 718
       alignment: 9
@@ -316,7 +316,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_7
+      name: blushA
       rect:
         serializedVersion: 2
         x: 487
@@ -337,7 +337,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_8
+      name: happyF
       rect:
         serializedVersion: 2
         x: 4
@@ -358,11 +358,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_9
+      name: happyA
       rect:
         serializedVersion: 2
         x: 487
-        y: 5061
+        y: 5063
         width: 477
         height: 718
       alignment: 9
@@ -379,7 +379,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_10
+      name: bashfullF
       rect:
         serializedVersion: 2
         x: 4
@@ -400,7 +400,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_11
+      name: bashfullA
       rect:
         serializedVersion: 2
         x: 487
@@ -421,7 +421,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_12
+      name: laughtF
       rect:
         serializedVersion: 2
         x: 4
@@ -442,7 +442,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_13
+      name: laughtA
       rect:
         serializedVersion: 2
         x: 487
@@ -463,7 +463,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_14
+      name: puzzledF
       rect:
         serializedVersion: 2
         x: 4
@@ -484,7 +484,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_15
+      name: puzzledA
       rect:
         serializedVersion: 2
         x: 487
@@ -505,7 +505,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_16
+      name: shockedF
       rect:
         serializedVersion: 2
         x: 4
@@ -526,7 +526,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_17
+      name: shockedA
       rect:
         serializedVersion: 2
         x: 487
@@ -547,7 +547,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_18
+      name: surprisedF
       rect:
         serializedVersion: 2
         x: 4
@@ -568,7 +568,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_19
+      name: surprisedA
       rect:
         serializedVersion: 2
         x: 487
@@ -589,7 +589,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_20
+      name: blush2F
       rect:
         serializedVersion: 2
         x: 4
@@ -610,7 +610,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - Sakura Fantasy Chapter 1 - Raelin_21
+      name: blush2A
       rect:
         serializedVersion: 2
         x: 487
