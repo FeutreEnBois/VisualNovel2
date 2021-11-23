@@ -130,15 +130,15 @@ public class NovelController : MonoBehaviour
         }
         if (data[0] == "flip")
         {
-            Command_ChangeExpression(data[1]);
+            Command_Flip(data[1]);
         }
         if (data[0] == "flipLeft")
         {
-            Command_ChangeExpression(data[1]);
+            Command_FlipLeft(data[1]);
         }
         if (data[0] == "flipRight")
         {
-            Command_ChangeExpression(data[1]);
+            Command_FlipRight(data[1]);
         }
         if (data[0] == "exit")
         {
@@ -148,11 +148,11 @@ public class NovelController : MonoBehaviour
         {
             Command_Enter(data[1]);
         }
-        /*if (data[0] == "playMusic")
+        if (data[0] == "playMusic")
         {
             Command_PlayMusic(data[1]);
         }
-        */
+        
     }
 
     /*void Command_SetLayerImage(string data, BCFC.LAYER layer)
@@ -186,6 +186,15 @@ public class NovelController : MonoBehaviour
         AudioClip clip = Resources.Load("Audio/SFX/" + data) as AudioClip;
         if (clip != null)
             AudioManager.instance.PlaySFX(clip);
+        else
+            Debug.LogError("Clip does not exist : " + data);
+    }
+
+    void Command_PlayMusic(string data)
+    {
+        AudioClip clip = Resources.Load("Audio/Music/" + data) as AudioClip;
+        if (clip != null)
+            AudioManager.instance.PlaySong(clip);
         else
             Debug.LogError("Clip does not exist : " + data);
     }

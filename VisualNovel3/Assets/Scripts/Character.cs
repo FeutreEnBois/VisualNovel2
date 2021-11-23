@@ -300,11 +300,12 @@ public class Character
 
     public void FadeOut(float speed = 3, bool smooth = false)
     {
-        Sprite alphaSprite = Resources.Load<Sprite>("Images/AlphaOnly");
+        Sprite alphaSprite = GetSprite("AlphaSprite");
 
         LastBodySprite = renderers.bodyRenderer.sprite;
         LastBodySprite = renderers.expressionRenderer.sprite;
 
+        Debug.Log("Alpha : " + alphaSprite);
         TransitionBody(alphaSprite, speed, smooth);
         TransitionExpression(alphaSprite, speed, smooth);
     }

@@ -326,8 +326,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   volume: 0
   pitch: 0
-  clips: []
-  music: []
+  clips:
+  - {fileID: 8300000, guid: 9bf7e0142bff4e7438410c0fedec4f5f, type: 3}
+  - {fileID: 8300000, guid: e1ca5e30021e4094994275bcc2d2966f, type: 3}
+  - {fileID: 8300000, guid: a991f41128dfb274a8d677d9b2532125, type: 3}
+  - {fileID: 8300000, guid: f431f7a9c34c3c741a175d0d6885a8a5, type: 3}
+  - {fileID: 8300000, guid: 568f996875d3f3d478128f439a6ca401, type: 3}
+  music:
+  - {fileID: 8300000, guid: c3d52d315f193f0489bcaa78bdc2c6bd, type: 3}
+  - {fileID: 8300000, guid: a727fbf7a86d59745b511a7b949ab923, type: 3}
 --- !u!4 &344796504
 Transform:
   m_ObjectHideFlags: 0

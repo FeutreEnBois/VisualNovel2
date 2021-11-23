@@ -140,6 +140,9 @@ TextureImporter:
   - first:
       213: -7268719536179071125
     second: charmingF
+  - first:
+      213: -9014011584101849373
+    second: AlphaSprite
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -740,6 +743,27 @@ TextureImporter:
       bones: []
       spriteID: b67ba1ad712502b90800000000000000
       internalID: -7268719536179071125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlphaSprite
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 5
+        width: 152
+        height: 716
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e66a58f83cc7e280800000000000000
+      internalID: -9014011584101849373
       vertices: []
       indices: 
       edges: []

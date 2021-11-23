@@ -1,3 +1,5 @@
+playMusic(NightOnTheDocks-Sax)
+enter(Raelin)
 Raelin "Hi, my name is Raelin"
 "Wait- " setExpression(Raelin,face,surprisedR,3,false) setExpression(Raelin,body,specialR,3,false) moveTo(Raelin,0,1,1,false)
 +"You're the guy who killed the bandits back there?!"
@@ -5,8 +7,10 @@ narrator "Her face lit up in astonishement."
 "Her eyes, traversing his body up and down, simply couldn't believe what she was hearing !"
 
 Raelin "you're a Monster !!" 
-"U know ..." moveTo(Raelin,0.5,0,1,false) setExpression(Raelin,body,specialF,3,false) setExpression(Raelin,face,puzzledF,3,false)
+"U know ..." moveTo(Raelin,0.5,0,1,false) setExpression(Raelin,body,specialF,3,false) setExpression(Raelin,face,puzzledF,3,false) flip(Raelin)
 +"I like it like that ...." setExpression(Raelin,body,specialR,5,false) setExpression(Raelin,face,blushR,5,false)
-"(hummmmm)"
+"(hummmmm)" flip(Raelin)
 "PLZ CHOKE ME BIG DADY SENPAI" 
 setPosition(Raelin,0.7,1)
+exit(Raelin)
+narrator "..."
