@@ -66,6 +66,7 @@ public class DialogueSystem : MonoBehaviour
 			targetSpeech = speechText.text + targetSpeech;
 
 		speakerNameText.text = DetermineSpeaker(speaker);//temporary
+		speakerNamePanel.SetActive(speakerNameText.text != "");
 
 		isWaitingForUserInput = false;
 
@@ -108,10 +109,12 @@ public class DialogueSystem : MonoBehaviour
 		/// The main panel containing all dialogue related elements on the UI
 		/// </summary>
 		public GameObject speechPanel;
+		public GameObject speakerNamePanel;
 		public Text speakerNameText;
 		public Text speechText;
 	}
 	public GameObject speechPanel { get { return elements.speechPanel; } }
 	public Text speakerNameText { get { return elements.speakerNameText; } }
 	public Text speechText { get { return elements.speechText; } }
+	public GameObject speakerNamePanel { get { return elements.speakerNamePanel; } }
 }

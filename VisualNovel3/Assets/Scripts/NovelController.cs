@@ -128,6 +128,26 @@ public class NovelController : MonoBehaviour
         {
             Command_ChangeExpression(data[1]);
         }
+        if (data[0] == "flip")
+        {
+            Command_ChangeExpression(data[1]);
+        }
+        if (data[0] == "flipLeft")
+        {
+            Command_ChangeExpression(data[1]);
+        }
+        if (data[0] == "flipRight")
+        {
+            Command_ChangeExpression(data[1]);
+        }
+        if (data[0] == "exit")
+        {
+            Command_Exit(data[1]);
+        }
+        if (data[0] == "enter")
+        {
+            Command_Enter(data[1]);
+        }
         /*if (data[0] == "playMusic")
         {
             Command_PlayMusic(data[1]);
@@ -211,6 +231,83 @@ public class NovelController : MonoBehaviour
         if (region.ToLower() == "face")
         {
             c.TransitionExpression(sprite, speed, smooth);
+        }
+    }
+
+    void Command_Flip(string data)
+    {
+        Character c = CharacterManager.instance.GetCharacter(data);
+        c.Flip();
+    }
+    void Command_FlipLeft(string data)
+    {
+        Character c = CharacterManager.instance.GetCharacter(data);
+        c.FlipLeft();
+    }
+    void Command_FlipRight(string data)
+    {
+        Character c = CharacterManager.instance.GetCharacter(data);
+        c.FlipRight();
+    }
+    void Command_Exit(string data)
+    {
+        string[] parameters = data.Split(',');
+        string[] characters = parameters[0].Split(';');
+        float speed = 3;
+        bool smooth = false;
+        for(int i = 1; i < parameters.Length; i++)
+        {
+            float fVal = 0; bool bVal = false;
+            if(float.TryParse(parameters[i], out fVal))
+            {
+                speed = fVal; continue;
+            }
+            if(bool.TryParse(parameters[i], out bVal))
+            {
+                smooth = bVal;continue;
+            }
+        }
+        foreach(string s in characters)
+        {
+            Character c = CharacterManager.instance.GetCharacter(s);
+            c.FadeOut(speed, smooth);
+        }
+    }
+
+    void Command_Enter(string data)
+    {
+        string[] parameters = data.Split(',');
+        string[] characters = parameters[0].Split(';');
+        float speed = 3;
+        bool smooth = false;
+        for (int i = 1; i < parameters.Length; i++)
+        {
+            float fVal = 0; bool bVal = false;
+            if (float.TryParse(parameters[i], out fVal))
+            {
+                speed = fVal; continue;
+            }
+            if (bool.TryParse(parameters[i], out bVal))
+            {
+                smooth = bVal; continue;
+            }
+        }
+        foreach (string s in characters)
+        {
+            Character c = CharacterManager.instance.GetCharacter(s,true,false);
+            if (!c.enabled)
+            {
+                c.renderers.bodyRenderer.color = new Color(1, 1, 1, 0);
+                c.renderers.expressionRenderer.color = new Color(1, 1, 1, 0);
+                c.enabled = true;
+
+                c.TransitionBody(c.renderers.bodyRenderer.sprite, speed, smooth);
+                c.TransitionExpression(c.renderers.expressionRenderer.sprite, speed, smooth);
+            }
+            else
+            {
+                c.FadeIn(speed, smooth);
+            }
         }
     }
 }
