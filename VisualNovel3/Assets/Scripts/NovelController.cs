@@ -75,7 +75,7 @@ public class NovelController : MonoBehaviour
 
         //now speak
         // a narrator should be retrived as a character.
-        if (speaker != "narrator")
+        if (speaker != "narrator" && speaker != "[. . .]")
         {
             Character character = CharacterManager.instance.GetCharacter(speaker);
             character.Say(dialogue, additive);

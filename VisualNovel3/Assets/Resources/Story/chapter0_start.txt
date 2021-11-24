@@ -1,16 +1,22 @@
 playMusic(NightOnTheDocks-Sax)
-enter(Raelin)
-Raelin "Hi, my name is Raelin"
-"Wait- " setExpression(Raelin,face,surprisedR,3,false) setExpression(Raelin,body,specialR,3,false) moveTo(Raelin,0,1,1,false)
-+"You're the guy who killed the bandits back there?!"
-narrator "Her face lit up in astonishement."
-"Her eyes, traversing his body up and down, simply couldn't believe what she was hearing !"
-
-Raelin "you're a Monster !!" 
-"U know ..." moveTo(Raelin,0.5,0,1,false) setExpression(Raelin,body,specialF,3,false) setExpression(Raelin,face,puzzledF,3,false) flip(Raelin)
-+"I like it like that ...." setExpression(Raelin,body,specialR,5,false) setExpression(Raelin,face,blushR,5,false)
-"(hummmmm)" flip(Raelin)
-"PLZ CHOKE ME BIG DADY SENPAI" 
-setPosition(Raelin,0.7,1)
-exit(Raelin)
-narrator "..."
+narrator "17 novembre 1921,"
++"QUARTIER PARIS, "
++"34 rue _RUE_, "
+"(Rire, boisson, musique)"
+[. . .] "att j’en est une autre !,"
+"un t’soir de paque j’suis en couverture dans les quartier de Louis-LAFFAIRE"
+"tranquille dans ma voiture je peste contre le patron qui ma foutu dehors un jour de fête"
+"et là tu d’vinera jamais la suite …"
+"j’ai 3 gars qui tape a ma fenêtres l’air un peu con et qui m’disent "
+"« C’est ici qu’on dépose les œufs ? »"
+" « Ces couillons transportait 3 killos d’opium sur eux,"
+"t’imagine pas leurs têtes quand j’leur est montré mon badge BERET,"
+"fantastique, j’crois bien qu’juste pour ça j’regrette pas d’avoir bossé s’soir là "
+Raelin "Ya qu’à toi c’ça arrive j’genre de truc BAT~ ,"
+"moi en temps qu’inspecteur privé j’reçois qu’des appels pour des affaire bien morbide"
+"la dernier fois c’était pour …. "
+narrator "30 Mai 1921"
++"QUARTIER PARIS, "
++"34 rue _RUE_,"
+"BAM BAM "
+"BAM BAM BAM"
