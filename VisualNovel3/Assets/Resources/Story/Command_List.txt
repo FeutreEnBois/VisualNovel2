@@ -7,3 +7,7 @@ exit(CharacterName)											//	ex:	exit(Erik)				marche pas encore
 enter(CharacterName)										//	ex:	enter(baguerra)			marche pas encore
 playMusic(musicName)										//
 playSound(soundName)										//
+
+Raelin "zudfgaUIGF" -> Le perso apparait sur l'ecran
+narrator "kfhkzehfzehf" -> pas de nom -> utile pour les personnage d'on on a pas les sprites
+
