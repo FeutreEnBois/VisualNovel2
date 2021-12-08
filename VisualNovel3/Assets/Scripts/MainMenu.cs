@@ -6,6 +6,7 @@ using UnityEngine.Audio;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField]
     public AudioMixer audioMixer;
 
     public void PlayGame()
@@ -22,5 +23,18 @@ public class MainMenu : MonoBehaviour
     public void SetVolume(float volume)
     {
         audioMixer.SetFloat("volume", volume);
+    }
+
+    public void SetQuality (int qualityIndex)
+    {
+        QualitySettings.SetQualityLevel(qualityIndex);
+        /*int temp = QualitySettings.GetQualityLevel();
+        string[] test = QualitySettings.names;
+        Debug.Log(test[temp]);*/
+    }
+
+    public void SetFullScreen(bool isFullScreen)
+    {
+        Screen.fullScreen = isFullScreen;
     }
 }
