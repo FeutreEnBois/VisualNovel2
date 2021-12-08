@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class ClickableObject : MonoBehaviour
 {
-    public string say = "Berret \"Heyyyyyyyyyy\"";
+    public string dialogueText;
 
     public string Name;
 
     public bool preuve = false;
+
+    public int progress = 0;
 }

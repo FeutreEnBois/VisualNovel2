@@ -430,9 +430,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb73b3e3d761405419ef1b9308b31c9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  say: Berret "Heyyyyyyyyyy"
+  dialogueText: clickable_Object_Dialogues
   Name: 
   preuve: 0
+  progress: 2
 --- !u!114 &360470022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,10 +481,10 @@ MonoBehaviour:
       - m_Target: {fileID: 578384234}
         m_TargetAssemblyTypeName: GameplayManager, Assembly-CSharp
         m_MethodName: ClickOnClickableObject
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 360470021}
+          m_ObjectArgumentAssemblyTypeName: ClickableObject, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -946,7 +947,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14beb081311f61e4c888531c214b5134, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Clickable: []
+  clickable: []
+  clickableFind: []
 --- !u!1 &721456917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1491,9 +1493,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb73b3e3d761405419ef1b9308b31c9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  say: Berret "Heyyyyyyyyyy"
+  dialogueText: clickable_Object_Dialogues
   Name: gun
   preuve: 1
+  progress: 0
 --- !u!114 &1237646645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1541,10 +1544,10 @@ MonoBehaviour:
       - m_Target: {fileID: 578384234}
         m_TargetAssemblyTypeName: GameplayManager, Assembly-CSharp
         m_MethodName: ClickOnClickableObject
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1237646644}
+          m_ObjectArgumentAssemblyTypeName: ClickableObject, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1714,9 +1717,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb73b3e3d761405419ef1b9308b31c9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  say: Berret "Heyyyyyyyyyy"
+  dialogueText: clickable_Object_Dialogues
   Name: blood
   preuve: 1
+  progress: 1
 --- !u!114 &1626919494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1764,10 +1768,10 @@ MonoBehaviour:
       - m_Target: {fileID: 578384234}
         m_TargetAssemblyTypeName: GameplayManager, Assembly-CSharp
         m_MethodName: ClickOnClickableObject
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1626919493}
+          m_ObjectArgumentAssemblyTypeName: ClickableObject, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

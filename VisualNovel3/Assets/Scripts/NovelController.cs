@@ -10,7 +10,17 @@ public class NovelController : MonoBehaviour
     List<string> data = new List<string>();
     // The progress in the current data list.
     int progress = 0;
+    public static NovelController instance;
 
+    void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogError("!!! trying to create multiple instance of NovelController !!!");
+            return;
+        }
+        instance = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -28,9 +38,10 @@ public class NovelController : MonoBehaviour
         }
     }
 
-    void LoadChapterFile(string filename)
+    public void LoadChapterFile(string filename, int progress = 0)
     {
         data = FileManager.LoadFile(FileManager.savPath + "Resources/Story/" + filename);
+        progress = 0;
         Debug.Log(data[0]);
     }
 
