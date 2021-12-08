@@ -1,6 +1,7 @@
-narrator "haaaaaaaaaaaaa"
-wait()
-Raelin "JEAAAAAAAANNN"
-wait()
-narrator "HEYYYYYy"
-wait()
+Danseuse "haaaaaaaaaaaaa"
+Berret "KILL THEMMMM"
++"	ALLLLLLLLLLLl"
+Proprio "Bon Dieu un Gunnnnn"
+narrator "BAMM BAMMM"
++" BAAAAAAMMM"
+stop()

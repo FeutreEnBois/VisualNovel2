@@ -1,9 +1,8 @@
-playMusic(NightOnTheDocks-Sax)
-narrator "17 novembre 1921,"
+narrator "17 novembre 1921," playMusic(NightOnTheDocks-Sax)
 +"QUARTIER PARIS, "
 +"34 rue _RUE_, "
 "(Rire, boisson, musique)"
-[. . .] "att j’en est une autre !,"
+Inspecteur "att j’en est une autre !," moveTo(Inspecteur,1,0.5,3,true)
 "un t’soir de paque j’suis en couverture dans les quartier de Louis-LAFFAIRE"
 "tranquille dans ma voiture je peste contre le patron qui ma foutu dehors un jour de fête"
 "et là tu d’vinera jamais la suite …"
@@ -12,7 +11,7 @@ narrator "17 novembre 1921,"
 " « Ces couillons transportait 3 killos d’opium sur eux,"
 "t’imagine pas leurs têtes quand j’leur est montré mon badge BERET,"
 "fantastique, j’crois bien qu’juste pour ça j’regrette pas d’avoir bossé s’soir là "
-Raelin "Ya qu’à toi c’ça arrive j’genre de truc BAT~ ,"
+Berret "Ya qu’à toi c’ça arrive j’genre de truc BAT~ ," moveTo(Berret,0,0.5,3,true)
 "moi en temps qu’inspecteur privé j’reçois qu’des appels pour des affaire bien morbide"
 "la dernier fois c’était pour …. "
 narrator "30 Mai 1921"
@@ -21,4 +20,4 @@ narrator "30 Mai 1921"
 "BAM BAM "
 "BAM BAM BAM"
 goToPreuve()
-wait()
+stop()

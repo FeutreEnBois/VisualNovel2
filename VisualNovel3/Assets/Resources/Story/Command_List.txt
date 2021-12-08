@@ -1,4 +1,4 @@
-moveTo(locationX,locationY,speed,smooth)					//	ex:	moveTo(0.5,0.5,3,true)
+moveTo(character,locationX,locationY,speed,smooth)					//	ex:	moveTo(0.5,0.5,3,true)
 setExpression()
 flip(CharacterName)											//	ex:	flip(Raelin)
 flipLeft(CharacterName)										//	ex:	flipLeft(Beret)

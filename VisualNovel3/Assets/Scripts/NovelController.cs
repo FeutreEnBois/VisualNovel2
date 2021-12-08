@@ -230,7 +230,6 @@ public class NovelController : MonoBehaviour
             Debug.LogError("Clip does not exist : " + data);
     }
     */
-
     void Command_MoveCharacter(string data)
     {
         string[] parameters = data.Split(',');
