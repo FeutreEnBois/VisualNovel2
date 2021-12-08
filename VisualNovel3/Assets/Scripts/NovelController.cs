@@ -10,7 +10,17 @@ public class NovelController : MonoBehaviour
     List<string> data = new List<string>();
     // The progress in the current data list.
     int progress = 0;
+    public static NovelController instance;
 
+    void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogError("!!! trying to create multiple instance of NovelController !!!");
+            return;
+        }
+        instance = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -21,17 +31,19 @@ public class NovelController : MonoBehaviour
     void Update()
     {
         //testing
-        if(Input.GetKeyDown(KeyCode.RightArrow))
+        if(Input.GetKeyDown(KeyCode.RightArrow) && progress < data.Count)
         {
             HandleLine(data[progress]);
             progress++;
         }
     }
 
-    void LoadChapterFile(string filename)
+    public void LoadChapterFile(string filename, int progress = 0)
     {
         data = FileManager.LoadFile(FileManager.savPath + "Resources/Story/" + filename);
-        Debug.Log(data[0]);
+        this.progress = progress;
+        Debug.Log(this.progress);
+        Debug.Log(progress);
     }
 
     void HandleLine(string line)
@@ -152,7 +164,12 @@ public class NovelController : MonoBehaviour
         {
             Command_PlayMusic(data[1]);
         }
-        
+
+        if (data[0] == "goToPreuve")
+        {
+            Command_GoToPreuveScene(data[1]);
+        }
+
     }
 
     /*void Command_SetLayerImage(string data, BCFC.LAYER layer)
@@ -258,6 +275,11 @@ public class NovelController : MonoBehaviour
         Character c = CharacterManager.instance.GetCharacter(data);
         c.FlipRight();
     }
+    void Command_GoToPreuveScene(string data)
+    {
+        GameplayManager.instance.InitPointAndClickScene();
+    }
+
     void Command_Exit(string data)
     {
         string[] parameters = data.Split(',');
