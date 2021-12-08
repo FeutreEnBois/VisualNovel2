@@ -20,3 +20,4 @@ narrator "30 Mai 1921"
 +"34 rue _RUE_,"
 "BAM BAM "
 "BAM BAM BAM"
+goToPreuve()
