@@ -28,9 +28,9 @@ public class MainMenu : MonoBehaviour
     public void SetQuality (int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);
-        /*int temp = QualitySettings.GetQualityLevel();
+        int temp = QualitySettings.GetQualityLevel();
         string[] test = QualitySettings.names;
-        Debug.Log(test[temp]);*/
+        Debug.Log(test[temp]);
     }
 
     public void SetFullScreen(bool isFullScreen)
