@@ -21,3 +21,4 @@ narrator "30 Mai 1921"
 "BAM BAM "
 "BAM BAM BAM"
 goToPreuve()
+wait()

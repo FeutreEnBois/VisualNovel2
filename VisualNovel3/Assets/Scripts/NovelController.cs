@@ -44,6 +44,11 @@ public class NovelController : MonoBehaviour
         this.progress = progress;
         Debug.Log(this.progress);
         Debug.Log(progress);
+        if (this.progress < data.Count)
+        {
+            HandleLine(data[this.progress]);
+            this.progress++;
+        }
     }
 
     void HandleLine(string line)

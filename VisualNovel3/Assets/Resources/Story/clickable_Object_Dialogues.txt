@@ -1,3 +1,6 @@
 narrator "haaaaaaaaaaaaa"
+wait()
 Raelin "JEAAAAAAAANNN"
+wait()
 narrator "HEYYYYYy"
+wait()
