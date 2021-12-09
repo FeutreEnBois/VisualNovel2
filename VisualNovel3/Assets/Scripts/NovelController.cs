@@ -10,6 +10,7 @@ public class NovelController : MonoBehaviour
     List<string> data = new List<string>();
     // The progress in the current data list.
     int progress = 0;
+    bool canProgress = true;
     public static NovelController instance;
 
     void Awake()
@@ -31,7 +32,7 @@ public class NovelController : MonoBehaviour
     void Update()
     {
         //testing
-        if(Input.GetKeyDown(KeyCode.RightArrow) && progress < data.Count)
+        if(canProgress && Input.GetKeyDown(KeyCode.RightArrow) && progress < data.Count)
         {
             HandleLine(data[progress]);
             progress++;
@@ -40,6 +41,10 @@ public class NovelController : MonoBehaviour
 
     public void LoadChapterFile(string filename, int progress = 0)
     {
+        if (!canProgress)
+        {
+            canProgress = true;
+        }
         data = FileManager.LoadFile(FileManager.savPath + "Resources/Story/" + filename);
         this.progress = progress;
         Debug.Log(this.progress);
@@ -175,6 +180,11 @@ public class NovelController : MonoBehaviour
             Command_GoToPreuveScene(data[1]);
         }
 
+        if (data[0] == "stop")
+        {
+            Command_Stop(data[1]);
+        }
+
     }
 
     /*void Command_SetLayerImage(string data, BCFC.LAYER layer)
@@ -282,6 +292,12 @@ public class NovelController : MonoBehaviour
     void Command_GoToPreuveScene(string data)
     {
         GameplayManager.instance.InitPointAndClickScene();
+    }
+
+    void Command_Stop(string data)
+    {
+        DialogueSystem.instance.Close();
+        canProgress = false;
     }
 
     void Command_Exit(string data)
