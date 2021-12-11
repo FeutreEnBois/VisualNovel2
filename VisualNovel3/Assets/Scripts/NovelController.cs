@@ -12,7 +12,7 @@ public class NovelController : MonoBehaviour
     int progress = 0;
     bool canProgress = true;
     public static NovelController instance;
-
+    public bool isHandlingChapterFile { get { return canProgress && progress < data.Count; } }
     void Awake()
     {
         if (instance != null)

@@ -34,7 +34,10 @@ Inspecteur "On a deux victimes, un homme et une femme."
 Berret "Bien. Je vais voir ce que je peux trouver."
 narrator "L'Inspecteur sort de la salle"
 "passage en mode point and click recherche" goToPreuve()
-"changement de fond : on revient coté bar"
+stop()
+
+// Berret reviens dans la salle principale
+narrator "changement de fond : on revient coté bar"
 Inspecteur "Mr Berret on a  attrapé 3 suspect potentiel,"
 Berret "Zuuper"
 Inspecteur "un certain Mr jack Merlo ayant essayé de partir une fois le filet de sécurité installé autour du batiment"
