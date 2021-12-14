@@ -1616,6 +1616,7 @@ GameObject:
   m_Component:
   - component: {fileID: 864895601}
   - component: {fileID: 864895600}
+  - component: {fileID: 864895602}
   m_Layer: 0
   m_Name: Tester
   m_TagString: Untagged
@@ -1649,6 +1650,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &864895602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864895599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 233f3edbcc8037b46ba402ce3e61633c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 934464025}
+  say: heyyyy <i>Completelyyyy</i> MABOULE
 --- !u!1 &934464023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1660,6 +1675,7 @@ GameObject:
   - component: {fileID: 934464024}
   - component: {fileID: 934464026}
   - component: {fileID: 934464025}
+  - component: {fileID: 934464027}
   m_Layer: 5
   m_Name: DialogueText
   m_TagString: Untagged
@@ -1728,6 +1744,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 934464023}
   m_CullTransparentMesh: 1
+--- !u!114 &934464027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934464023}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5be1b697a18a114795bb3fda1316fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  continualUpdate: 1
+  fontSizeAtDefaultResolution: 32
 --- !u!1 &1036178173
 GameObject:
   m_ObjectHideFlags: 0
@@ -1985,7 +2015,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.2704433, y: 0.6404043}
   m_AnchorMax: {x: 0.3887474, y: 0.89759576}
-  m_AnchoredPosition: {x: -1, y: 3.7700195}
+  m_AnchoredPosition: {x: -0.9999695, y: 3.7700195}
   m_SizeDelta: {x: 1.5498962, y: -1.2983017}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1237646644

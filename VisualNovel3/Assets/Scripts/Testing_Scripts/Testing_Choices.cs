@@ -13,8 +13,7 @@ public class Testing_Choices : MonoBehaviour
 
     private IEnumerator DynamicStoryExample()
     {
-        NovelController.instance.LoadChapterFile("Chapter_0"); yield return new WaitForEndOfFrame();
-
+        NovelController.instance.LoadChapterFile("Chapter0_start"); yield return new WaitForEndOfFrame();
         while (NovelController.instance.isHandlingChapterFile)
         {
             yield return new WaitForEndOfFrame();

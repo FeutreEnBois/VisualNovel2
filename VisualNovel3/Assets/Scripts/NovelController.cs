@@ -47,8 +47,6 @@ public class NovelController : MonoBehaviour
         }
         data = FileManager.LoadFile(FileManager.savPath + "Resources/Story/" + filename);
         this.progress = progress;
-        Debug.Log(this.progress);
-        Debug.Log(progress);
         if (this.progress < data.Count)
         {
             HandleLine(data[this.progress]);
@@ -119,7 +117,6 @@ public class NovelController : MonoBehaviour
     }
     void HandleAction(string action)
     {
-        print("Handle action [" + action + "]");
         string[] data = action.Split('(', ')');
 
         /*if(data[0] == "setBackground")
