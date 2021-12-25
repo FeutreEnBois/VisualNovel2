@@ -2,6 +2,7 @@ narrator "17 novembre 1921," playMusic(NightOnTheDocks-Sax)
 +"QUARTIER PARIS, "
 +"34 rue _RUE_, "
 "(Rire, boisson, musique)"
+setBackground(Towns)
 Inspecteur "att j’en est une autre !," moveTo(Inspecteur,1,0.5,3,true)
 "un t’soir de paque j’suis en couverture dans les quartier de Louis-LAFFAIRE"
 "tranquille dans ma voiture je peste contre le patron qui ma foutu dehors un jour de fête"

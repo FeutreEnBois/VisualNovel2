@@ -119,21 +119,11 @@ public class NovelController : MonoBehaviour
     {
         string[] data = action.Split('(', ')');
 
-        /*if(data[0] == "setBackground")
+        if(data[0] == "setBackground")
         {
             Command_SetLayerImage(data[1], BCFC.instance.background);
             return;
         }
-        if (data[0] == "setCinematic")
-        {
-            Command_SetLayerImage(data[1], BCFC.instance.cinematic);
-            return;
-        }
-        if (data[0] == "setForeground")
-        {
-            Command_SetLayerImage(data[1], BCFC.instance.foreground);
-            return;
-        }*/
         if(data[0] == "playSound")
         {
             Command_PlaySound(data[1]);
@@ -184,8 +174,13 @@ public class NovelController : MonoBehaviour
 
     }
 
-    /*void Command_SetLayerImage(string data, BCFC.LAYER layer)
+    void Command_SetLayerImage(string data, BCFC.LAYER layer)
     {
+        /*
+         Definition of backdrop
+            : a painted cloth that is hung across the back of a stage
+            : the scene or scenery that is in the background
+        */
         string textName = data.Contains(",") ? data.Split(',')[0] : data;
         Texture2D text = textName == "null" ? null : Resources.Load("Images/UI/Backdrops/" + textName) as Texture2D;
         float spd = 2f;
@@ -208,7 +203,7 @@ public class NovelController : MonoBehaviour
             }
         }
         layer.TransitionToTexture(text, spd, smooth);
-    }*/
+    }
 
     void Command_PlaySound(string data)
     {

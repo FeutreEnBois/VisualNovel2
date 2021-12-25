@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TagManager : MonoBehaviour
 {
-    public static string[] SplitByTag(string targetText)
+    public static string[] SplitByTags(string targetText)
     {
         return targetText.Split(new char[2] { '<', '>' });
     }
