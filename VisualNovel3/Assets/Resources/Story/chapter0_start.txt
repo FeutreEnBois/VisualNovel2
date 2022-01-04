@@ -1,9 +1,9 @@
-narrator "17 novembre 1921," playMusic(NightOnTheDocks-Sax)
-+"QUARTIER PARIS, "
+narrator "<color=blue>att j’en est une autre !</color>,17 novembre 1921," playMusic(NightOnTheDocks-Sax)
++"<color=red>QUARTIER PARIS</color>, "
 +"34 rue _RUE_, "
 "(Rire, boisson, musique)"
 setBackground(Towns)
-Inspecteur "att j’en est une autre !," moveTo(Inspecteur,1,0.5,3,true)
+Inspecteur "<color=blue>att j’en est une autre !</color>," moveTo(Inspecteur,1,0.5,3,true)
 "un t’soir de paque j’suis en couverture dans les quartier de Louis-LAFFAIRE"
 "tranquille dans ma voiture je peste contre le patron qui ma foutu dehors un jour de fête"
 "et là tu d’vinera jamais la suite …"
@@ -14,8 +14,8 @@ Inspecteur "att j’en est une autre !," moveTo(Inspecteur,1,0.5,3,true)
 "fantastique, j’crois bien qu’juste pour ça j’regrette pas d’avoir bossé s’soir là "
 Berret "Ya qu’à toi c’ça arrive j’genre de truc BAT~ ," moveTo(Berret,0,0.5,3,true)
 "moi en temps qu’inspecteur privé j’reçois qu’des appels pour des affaire bien morbide"
-"la dernier fois c’était pour …. "
-narrator "30 Mai 1921"
+"la dernier fois c’était pour …. " transBackground(null,blur)
+narrator "30 Mai 1921" 
 +"QUARTIER PARIS, "
 +"34 rue _RUE_,"
 "BAM BAM "

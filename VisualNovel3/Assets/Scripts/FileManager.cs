@@ -166,7 +166,7 @@ public class FileManager : MonoBehaviour
 
 		if (File.Exists(filePath))
 		{
-			List<string> lines = ArrayToList(File.ReadAllLines(filePath, System.Text.Encoding.GetEncoding(1252)), removeBlankLines);
+			List<string> lines = ArrayToList(File.ReadAllLines(filePath), removeBlankLines); //, System.Text.Encoding.GetEncoding(1252)
 			return lines;
 		}
 		else

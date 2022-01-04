@@ -124,7 +124,12 @@ public class NovelController : MonoBehaviour
             Command_SetLayerImage(data[1], BCFC.instance.background);
             return;
         }
-        if(data[0] == "playSound")
+        if (data[0] == "transBackground")
+        {
+            Command_TransitionLayerImage(data[1], BCFC.instance.background);
+            return;
+        }
+        if (data[0] == "playSound")
         {
             Command_PlaySound(data[1]);
         }
@@ -203,6 +208,22 @@ public class NovelController : MonoBehaviour
             }
         }
         layer.TransitionToTexture(text, spd, smooth);
+    }
+
+    void Command_TransitionLayerImage(string data, BCFC.LAYER layer)
+    {
+        if (data.Contains(","))
+        {
+            string[] parameters = data.Split(',');
+            Texture2D texture = parameters[0] == "null" ? null : Resources.Load("Images/UI/Backdrops/" + parameters[0]) as Texture2D;
+            Texture2D transition = parameters[1] == "null" ? null : Resources.Load("Images/TransitionEffects/" + parameters[1]) as Texture2D;
+            TransitionManager.TransitionLayer(BCFC.instance.background, texture, transition);
+        }
+        else
+        {
+            Texture2D text = data == "null" ? null : Resources.Load("Images/UI/Backdrops/" + data) as Texture2D;
+            TransitionManager.TransitionLayer(BCFC.instance.background, null, text);
+        }
     }
 
     void Command_PlaySound(string data)

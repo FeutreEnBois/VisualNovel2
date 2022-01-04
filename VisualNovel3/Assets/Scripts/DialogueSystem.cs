@@ -25,10 +25,10 @@ public class DialogueSystem : MonoBehaviour
 	/// <param name="speech"></param>
 	/// <param name="additive"></param>
 	/// <param name="speaker"></param>
-	public void Say(string speech, bool additive = false, string speaker = "")
+	public void Say(string speech, bool additive = false, string speaker = "") // 
 	{
 		StopSpeaking();
-		speaking = StartCoroutine(Speaking(speech, additive, speaker));
+		speaking = StartCoroutine(Speaking(speech, additive, speaker)); // 
 	}
 
 	public void SayAdd(string speech, string speaker = "")
@@ -67,6 +67,7 @@ public class DialogueSystem : MonoBehaviour
 		textArchitect = new TextArchitect(speech, additiveSpeech);
 
 		speakerNameText.text = DetermineSpeaker(speaker);//temporary
+		
 		speakerNamePanel.SetActive(speakerNameText.text != "");
 
 		isWaitingForUserInput = false;

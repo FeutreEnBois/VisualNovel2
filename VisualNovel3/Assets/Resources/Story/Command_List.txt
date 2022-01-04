@@ -5,9 +5,20 @@ flipLeft(CharacterName)										//	ex:	flipLeft(Beret)
 flipRight(CharacterName)									//	ex:	flipRight(Jean)
 exit(CharacterName)											//	ex:	exit(Erik)				marche pas encore
 enter(CharacterName)										//	ex:	enter(baguerra)			marche pas encore
-playMusic(musicName)										//
+playMusic(musicName)										//	
 playSound(soundName)										//
 goToPreuve()												//	ex: goToPreuve()
+setBackground(backgroundName,speed?smooth?)					//	ex: setBackground(townsVille)	|| setBAckground(forest,5,true)
+transBackground(backgroundName,TransitionName)				//	ex: transBackground(towns,blur) || transBackground(null,spiral)
+stop()														// ex: stop()	stop la lecture du txt en cours, close le speechPanel
+
+
+How to use TextArchitecte :
+-	<b>text</b> -> bold
+-	<i>text</i>	-> italic
+-	<color=red>text</color>	-> colored text
+etc...
+ex : Berret "Bonjour je cherche le <color=blue>Commissaire</color>, où peut-on le trouver ?"
 
 
 Raelin "zudfgaUIGF" -> Le perso apparait sur l'ecran

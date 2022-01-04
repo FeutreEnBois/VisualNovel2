@@ -60,7 +60,8 @@ public class Character
         {
             enabled = true;
         }
-        dialogue.Say(speech, add, Charactername);
+        dialogue.Say(speech, add, Charactername); // 
+        
     }
 
     Vector2 targetPosition;
