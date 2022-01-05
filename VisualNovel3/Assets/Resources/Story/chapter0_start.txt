@@ -2,8 +2,15 @@ narrator "17 novembre 1921, " playMusic(NightOnTheDocks-Sax)
 +"QUARTIER PARIS, "
 +"34 rue _RUE_, "
 "(Rire, boisson, musique)"
+choice ""
+{
+	"Pas mal ton histoire <color=green>Bapt'</color>"
+        Inspecteur "Ha Ha Ha merci  bien!!" moveTo(Inspecteur,1,0.5,3,true)
+	"<i>Damned</i> t'en a de la chance <color=green>Bapt'</color>"
+        Inspecteur "La <b>chance</b> ça ce force !" moveTo(Inspecteur,1,0.5,3,true)
+}
 setBackground(Towns)
-Inspecteur "att j’en est une autre !," moveTo(Inspecteur,1,0.5,3,true)
+Inspecteur "att j’en est une autre !," 
 "un t’soir de paque j’suis en couverture dans les quartier de <color=green>Louis-LAFFAIRE</color>"
 "tranquille dans ma voiture je peste contre le patron qui ma foutu dehors un jour de fête"
 "et là tu d’vinera jamais la suite …" flip(Inspecteur)
@@ -46,13 +53,4 @@ Inspecteur "un certain Mr jack Merlo ayant essayé de partir une fois le filet d
 "et Mr Oliver François qui essayait de forcé le passage aussi."
 Berret ""
 stop()
-
-
-choice 
-{
-	yes
-		jdzahiazhf
-	no 
-		gfofgo
-}
 

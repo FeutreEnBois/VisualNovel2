@@ -37,7 +37,7 @@ public class NovelController : MonoBehaviour
             string line = data[progress];
             if (line.StartsWith("choice"))
             {
-                //StartCoroutine(HandlingChoiceLine(line));
+                StartCoroutine(HandlingChoiceLine(line));
             }
             else
             {
@@ -47,53 +47,54 @@ public class NovelController : MonoBehaviour
         }
     }
 
-    //IEnumerator HandlingChoiceLine(string line)
-    //{
-    //    canProgress = false;
-    //    Debug.Log("progress false");
-    //    string title = line.Split('"')[1];
-    //    List<string> choices = new List<string>();
-    //    List<string> actions = new List<string>();
+    IEnumerator HandlingChoiceLine(string line)
+    {
+        canProgress = false;
+        Debug.Log("progress false");
+        string title = line.Split('"')[1];
+        List<string> choices = new List<string>();
+        List<string> actions = new List<string>();
 
-    //    while (true)
-    //    {
-    //        progress++;
-    //        line = data[progress];
-    //        if(line == "{")
-    //            continue;
-    //        line = line.Replace("    ", ""); // remove the tabs that have becomes quad spaces
+        while (true)
+        {
+            progress++;
+            line = data[progress];
+            if (line == "{")
+                continue;
+            line = line.Replace("    ", ""); // remove the tabs that have becomes quad spaces
 
-    //        if(line != "}")
-    //        {
-    //            choices.Add(line.Split('"')[1]);
-    //            actions.Add(data[progress + 1].Replace("    ", ""));
-    //        }
-    //        else
-    //        {
-    //            break;
-    //        }
-    //    }
+            if (line != "}")
+            {
+                choices.Add(line.Split('"')[1]);
+                actions.Add(data[progress + 1].Replace("    ", ""));
+                progress++;
+            }
+            else
+            {
+                break;
+            }
+        }
 
-    //    //displaying choices
-    //    if(choices.Count > 0)
-    //    {
-    //        ChoiceScreen.instance.Show(title, choices.ToArray()); yield return new WaitForEndOfFrame();
-    //        while (ChoiceScreen.instance.isWaitingForChoiceToBeMade)
-    //            yield return new WaitForEndOfFrame();
-    //        //choice is made. execute the paired action.
-    //        string action = actions[ChoiceScreen.LastChoiceMade.index];
-    //        HandleLine(action); // need to be an IEnumerator
+        //displaying choices
+        if (choices.Count > 0)
+        {
+            ChoiceScreen.instance.Show(title, choices.ToArray()); yield return new WaitForEndOfFrame();
+            while (ChoiceScreen.instance.isWaitingForChoiceToBeMade)
+                yield return new WaitForEndOfFrame();
+            //choice is made. execute the paired action.
+            string action = actions[ChoiceScreen.LastChoiceMade.index];
+            HandleLine(action); // need to be an IEnumerator
 
-    //        while (isHandlingChapterFile)
-    //            yield return new WaitForEndOfFrame();
-    //    }
-    //    else
-    //    {
-    //        Debug.LogError("!!! Invalid choice operation. No choices were found. !!!");
-    //    }
-
-    //    progress++;
-    //}
+            while (isHandlingChapterFile)
+                yield return new WaitForEndOfFrame();
+        }
+        else
+        {
+            Debug.LogError("!!! Invalid choice operation. No choices were found. !!!");
+        }
+        canProgress = true;
+        progress++;
+    }
     public void LoadChapterFile(string filename, int progress = 0)
     {
         if (!canProgress)
