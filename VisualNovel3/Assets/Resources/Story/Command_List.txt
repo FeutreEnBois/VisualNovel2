@@ -18,7 +18,7 @@ How to use TextArchitecte :
 -	<i>text</i>	-> italic
 -	<color=red>text</color>	-> colored text
 etc...
-ex : Berret "Bonjour je cherche le <color=blue>Commissaire</color>, où peut-on le trouver ?"
+ex : Berret "Bonjour je cherche le <color=blue>Commissaire</color>, oÃ¹ peut-on le trouver ?"
 
 
 Raelin "zudfgaUIGF" -> Le perso apparait sur l'ecran

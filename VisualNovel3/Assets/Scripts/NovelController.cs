@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Globalization;
+using System;
 
 public class NovelController : MonoBehaviour
 {
@@ -151,7 +152,7 @@ public class NovelController : MonoBehaviour
 
         //now speak
         // a narrator should be retrived as a character.
-        if (speaker != "narrator" && speaker != "[. . .]")
+        if (speaker != "narrator" && speaker != "[. . .]" && CharacterManager.instance.GetCharacter(speaker, false) != null)
         {
             Character character = CharacterManager.instance.GetCharacter(speaker);
             character.Say(dialogue, additive);
@@ -175,6 +176,54 @@ public class NovelController : MonoBehaviour
     {
         string[] data = action.Split('(', ')');
 
+        switch (data[0])
+        {
+            case "setBackground":
+                Command_SetLayerImage(data[1], BCFC.instance.background);
+                break;
+            case "transBackground":
+                Command_TransitionLayerImage(data[1], BCFC.instance.background);
+                break;
+            case "playSound":
+                Command_PlaySound(data[1]);
+                break;
+            case "moveTo":
+                Command_MoveCharacter(data[1]);
+                break;
+            case "setExpression":
+                Command_ChangeExpression(data[1]);
+                break;
+            case "flip":
+                Command_Flip(data[1]);
+                break;
+            case "flipLeft":
+                Command_FlipLeft(data[1]);
+                break;
+            case "flipRight":
+                Command_FlipRight(data[1]);
+                break;
+            case "exit":
+                Command_Exit(data[1]);
+                break;
+            case "enter":
+                Command_Enter(data[1]);
+                break;
+            case "playMusic":
+                Command_PlayMusic(data[1]);
+                break;
+            case "goToPreuve":
+                Command_GoToPreuveScene(data[1]);
+                break;
+            case "stop":
+                Command_Stop(data[1]);
+                break;
+            case "load":
+                Command_Load(data[1]);
+                break;
+            case "continue":
+                Command_Continue();
+                break;
+        }
         if(data[0] == "setBackground")
         {
             Command_SetLayerImage(data[1], BCFC.instance.background);
@@ -190,51 +239,36 @@ public class NovelController : MonoBehaviour
             Command_PlaySound(data[1]);
         }
 
-        if (data[0] == "moveTo")
-        {
-            Command_MoveCharacter(data[1]);
-        }
-        if (data[0] == "setExpression")
-        {
-            Command_ChangeExpression(data[1]);
-        }
-        if (data[0] == "flip")
-        {
-            Command_Flip(data[1]);
-        }
-        if (data[0] == "flipLeft")
-        {
-            Command_FlipLeft(data[1]);
-        }
-        if (data[0] == "flipRight")
-        {
-            Command_FlipRight(data[1]);
-        }
-        if (data[0] == "exit")
-        {
-            Command_Exit(data[1]);
-        }
-        if (data[0] == "enter")
-        {
-            Command_Enter(data[1]);
-        }
-        if (data[0] == "playMusic")
-        {
-            Command_PlayMusic(data[1]);
-        }
-
-        if (data[0] == "goToPreuve")
-        {
-            Command_GoToPreuveScene(data[1]);
-        }
-
-        if (data[0] == "stop")
-        {
-            Command_Stop(data[1]);
-        }
-
     }
 
+    private void Command_Load(string data)
+    {
+        if (data.Contains(","))
+        {
+            int chapProgress = 0;
+            string[] parameters = data.Split(',');
+            foreach (string p in parameters)
+            {
+                int ival = 0;
+                if (int.TryParse(p, out ival))
+                {
+                    chapProgress = ival; continue;
+                }
+            }
+            LoadChapterFile(parameters[0], chapProgress);
+        }
+        else
+        {
+            LoadChapterFile(data);
+
+        }
+    }
+    private void Command_Continue()
+    {
+
+        HandleLine(data[this.progress+1]);
+        this.progress++;
+    }
     void Command_SetLayerImage(string data, BCFC.LAYER layer)
     {
         /*

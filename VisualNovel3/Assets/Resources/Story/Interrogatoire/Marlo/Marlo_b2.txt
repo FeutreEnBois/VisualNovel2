@@ -1,0 +1,22 @@
+Berret "(je ne devrais pas parler de sa femme)"
+"La victime, vous la connaissiez ?"
+Marlo "On ne me la pas montrer, je ne connais meme pas son nom."
+Berret "C'est vrai que je ne vous l'ai pas dit. C'est un homme dans quarantaine, "
++"il s'appelait Gilles Martinelli"
+Marlo "Ah mince."
+Berret "Hmm, vous l'avez dit, quoi qu'il est fait, rien ne peut mérité d'etre abattu de la sorte."
+"Mais vous savez ..."
++"Les accident ça arrive."
++"La situation a peut-être dérapé"
+Marlo "Je ... !"
+narrator "Berret le coupe"
+Berret "Peut-être étiez vous en colère pour quelquonc raison."
+Marlo "Arrêter de m'accuser sans preuve !"
+"Je n'est rien a voir avec toute cette histoire !!"
+narrator "Berret fronce les sourcils"
+Berret "Vous savez que le coupable peut finir ces jours en prison ou meme subir la peine de mort ?"
+"Le seul moyen de  c'en en sortir serait d'avouer pendant l'interrogatoire."
+"C’est pour sa que je vous pose toutes ces questions"
+
+load(Interrogatoire/Marlo/Interrogatoire_Marlo)
+stop()
