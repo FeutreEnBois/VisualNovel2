@@ -1,0 +1,10 @@
+Danseuse "Je connaissais bien VICTIME FEMME. Toutes les danseuses ne l'appréciaient pas forcément mais toutes la respectaient."
+"Elle n’avait pas une vie compliquée: elle vivait à côté avec son mari mais passait le plus clair de son temps ici."
+"Elle discutait beaucoup avec les clients, un peu tout le monde la connaissait."
+"Enfin... C'était ... une amie..."
+Berret "Je suis désolé."
+Danseuse "“Non, vous ne l’êtes pas, vous êtes juste là pour faire votre travail et pour avoir votre paie."
+Berret "..."
+Danseuse "Excusez moi, ce n’est pas de vôtre faute."
+load(Interrogatoire/Danseuse/Interrogatoire_Danseuse)
+stop()

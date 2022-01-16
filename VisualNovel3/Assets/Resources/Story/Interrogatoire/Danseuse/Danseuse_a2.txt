@@ -1,0 +1,10 @@
+Berret "Que pouvez-vous me dire sur les victimes ?"
+Danseuse "laquelle ?"
+choice "Choix victime homme ou victime femme"
+{
+    "victime Homme ?"
+        load(Interrogatoire/Danseuse/Danseuse_a2a1)
+    "victime Femme ?"
+        load(Interrogatoire/Danseuse/Danseuse_a2a1)
+}
+stop()
