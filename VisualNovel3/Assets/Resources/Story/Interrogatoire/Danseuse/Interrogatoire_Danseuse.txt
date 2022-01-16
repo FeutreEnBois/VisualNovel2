@@ -1,0 +1,12 @@
+Berret "Bonjour Madame"
+Danseuse "Bonjour"
+choice "Question time"
+{
+    "Vous travaillez ici depuis longtemps ?"
+        load(Interrogatoire/Danseuse/Danseuse_a1)
+    "Que pouvez vous me dire sur les victimes"
+        load(Interrogatoire/Danseuse/Danseuse_a2)
+    "Que pouvez vous me dire sur les suspects"
+        load(Interrogatoire/Danseuse/Danseuse_a3)
+}
+stop()
