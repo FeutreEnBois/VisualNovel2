@@ -1,0 +1,22 @@
+Police  “Le suspect s’appelle Emile Laplanche, d'après son passeport il a 34 ans. D’apres le barman il est au bar depuis 14h et c’est abscenté au moment des coup de feu pour rvenir quelque minute plus tard non chalament pour finir son ver. Je vous previent la bouteille le rend tendu.”
+Berret “Tendu ? c’est a dire”
+Police “Aller voir vous même"
+Berret s’approche du client hurlant maintenu par 2 policier
+Emile “Lacher moi bande d’incapable incompetent *HIC*”
+Berret “whoa, on se calme l’amis, pourquoi tu hurle comme ça ?”
+Emile “tes aveugle ? j’ai rien a faire avec tout ça et maintenant on me retient comme un criminel ?”
+Berret “Ba comme je le vois tu pourrais être un criminel. Tu est clairement suspect”
+Emile “Suspect ? mooooi ? je suis pas *HIC* suspect !”
+Berret “ *** Je répond quoi à sa. *** ”
+choice "Choix question pour Emile Laplanche"
+{
+    "Qui êtes vous ?"
+        load(Interrogatoire/Laplanche/Laplanche_a1)
+    "Quel est votre alibi ?"
+        load(Interrogatoire/Laplanche/Laplanche_a2)
+    "Quelle est votre relation avec la victime"
+        load(Interrogatoire/Laplanche/Laplanche_a3)
+    "Retourner en arriere"
+        stop()
+}
+stop()
