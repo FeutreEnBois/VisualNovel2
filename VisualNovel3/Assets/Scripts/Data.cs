@@ -6,7 +6,7 @@ public class Data : MonoBehaviour
 {
     public static Data instance;
 
-    private Awake()
+    private void Awake()
     {
         instance = this;
     }

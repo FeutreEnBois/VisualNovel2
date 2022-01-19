@@ -42,6 +42,7 @@ public class NovelController : MonoBehaviour
             string line = data[progress];
             if (line.StartsWith("choice"))
             {
+
                 autoPlay.SetActive(true);
                 //StartCoroutine(HandlingChoiceLine(line));
                 StartCoroutine(HandlingChoiceLine(line));
