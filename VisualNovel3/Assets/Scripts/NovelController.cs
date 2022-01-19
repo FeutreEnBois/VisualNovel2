@@ -15,6 +15,7 @@ public class NovelController : MonoBehaviour
     public static NovelController instance;
     public bool isHandlingChapterFile { get { return canProgress && progress < data.Count; } }
     //public GameObject autoPlay;
+    public bool skip = false;
 
 
     void Awake()
@@ -35,17 +36,14 @@ public class NovelController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if(autoPlay.activeSelf)
-        //testing
-        /*if (canProgress &&  progress < data.Count && autoPlay.activeSelf == false)
+        if (canProgress &&  progress < data.Count && skip == true)
         {
             string line = data[progress];
             if (line.StartsWith("choice"))
             {
-
-                autoPlay.SetActive(true);
                 //StartCoroutine(HandlingChoiceLine(line));
                 StartCoroutine(HandlingChoiceLine(line));
+                Toggle();
 
             }
             else
@@ -53,8 +51,10 @@ public class NovelController : MonoBehaviour
                 HandleLine(line);
                 progress++;
             }
+            
+  
                 //System.Threading.Thread.Sleep(1000);
-        }*/
+        }
 
         if (canProgress && Input.GetKeyDown(KeyCode.RightArrow) && progress < data.Count /*&& autoPlay.activeSelf == true*/)
         {
@@ -449,6 +449,11 @@ public class NovelController : MonoBehaviour
             Character c = CharacterManager.instance.GetCharacter(s);
             c.FadeOut(speed, smooth);
         }
+    }
+
+    public void Toggle()
+    {
+        skip = !skip;
     }
 
     void Command_Enter(string data)
