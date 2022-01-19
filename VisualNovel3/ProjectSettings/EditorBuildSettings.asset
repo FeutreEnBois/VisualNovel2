@@ -17,7 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/menu.unity
     guid: 850a90268b99cf04b909b8b5f2d42f99
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ChangeDecor.unity
     guid: 848874ac0fd75cf44817e925911fab0b
+  - enabled: 1
+    path: Assets/Scenes/EREN.unity
+    guid: c66ebb7c89b0f7a4ca7384344ed9bbeb
   m_configObjects: {}
