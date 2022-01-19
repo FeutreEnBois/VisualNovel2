@@ -40,6 +40,7 @@ public class GameplayManager : MonoBehaviour
         // Clickable object setActive()
         foreach(ClickableObject obj in clickable)
         {
+            
             obj.gameObject.SetActive(true);
         }
     }
