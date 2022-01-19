@@ -1881,6 +1881,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canProgress: 1
+  autoPlay: 0
+  skip: 0
 --- !u!114 &578384234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1996,9 +1998,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 457811915}
-        m_TargetAssemblyTypeName: button, Assembly-CSharp
-        m_MethodName: pauseControl
+      - m_Target: {fileID: 581281629}
+        m_TargetAssemblyTypeName: changeBackground, Assembly-CSharp
+        m_MethodName: backGroundChanger
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2008,9 +2010,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 581281629}
-        m_TargetAssemblyTypeName: changeBackground, Assembly-CSharp
-        m_MethodName: backGroundChanger
+      - m_Target: {fileID: 578384232}
+        m_TargetAssemblyTypeName: NovelController, Assembly-CSharp
+        m_MethodName: ToggleTriggerAutoPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3137,7 +3139,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1178633859}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 578384232}
+        m_TargetAssemblyTypeName: NovelController, Assembly-CSharp
+        m_MethodName: Toggle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1178633859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4065,9 +4079,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 457811915}
-        m_TargetAssemblyTypeName: button, Assembly-CSharp
-        m_MethodName: pauseControl
+      - m_Target: {fileID: 1901429333}
+        m_TargetAssemblyTypeName: changeBackground, Assembly-CSharp
+        m_MethodName: backGroundChanger
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4077,9 +4091,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1901429333}
-        m_TargetAssemblyTypeName: changeBackground, Assembly-CSharp
-        m_MethodName: backGroundChanger
+      - m_Target: {fileID: 578384232}
+        m_TargetAssemblyTypeName: NovelController, Assembly-CSharp
+        m_MethodName: ToggleTriggerAutoPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
