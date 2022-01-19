@@ -44,22 +44,29 @@ public class Inventory : MonoBehaviour
     private void OnTriggerEnter(Collider other){
         if(other.tag == "Item"){
             GameObject itemPickedUp = other.gameObject;
-            Item item = itemPickedUp.GetComponent<Item>();
+            GameObject item = itemPickedUp.GetComponent<GameObject>();
 
             AddItem(item);
         }
     }
 
-    public void AddItem(Item cool){
+    public void AddItem(GameObject cool){
+        Item item = cool.GetComponent<Item>();
+        Debug.Log("Add item");
         for(int i = 0; i < allSlots; i++){
             if(slot[i].GetComponent<Slot>().empty){
-                cool.GetComponent<Item>().pickedUp = true;
+                item.GetComponent<Item>().pickedUp = true;
+                
+                slot[i].GetComponent<Slot>().icon = item.icon;
+                slot[i].GetComponent<Slot>().type = item.type;
+                slot[i].GetComponent<Slot>().ID =item.ID;
+                slot[i].GetComponent<Slot>().description = item.description;
+                slot[i].GetComponent<Slot>().UpdateSlot();
 
-            
-                slot[i].GetComponent<Slot>().icon = cool.GetComponent<Item>().icon;
-                slot[i].GetComponent<Slot>().type = cool.GetComponent<Item>().type;
-                slot[i].GetComponent<Slot>().ID =cool.GetComponent<Item>().ID;
-                slot[i].GetComponent<Slot>().description = cool.GetComponent<Item>().description;
+                
+
+
+
             }
         }
 

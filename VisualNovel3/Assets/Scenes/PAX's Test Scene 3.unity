@@ -286,10 +286,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 704f56805f9058142a473b7f062a3b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 0
+  ID: 4
   type: 
   description: 
-  empty: 0
+  empty: 1
   icon: {fileID: 0}
 --- !u!1 &274057198
 GameObject:
@@ -379,10 +379,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 704f56805f9058142a473b7f062a3b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 0
+  ID: 2
   type: 
   description: 
-  empty: 0
+  empty: 1
   icon: {fileID: 0}
 --- !u!1 &290956822
 GameObject:
@@ -1079,7 +1079,7 @@ MonoBehaviour:
   ID: 0
   type: 
   description: 
-  empty: 0
+  empty: 1
   icon: {fileID: 0}
 --- !u!1 &463678774
 GameObject:
@@ -1902,10 +1902,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 704f56805f9058142a473b7f062a3b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 0
+  ID: 5
   type: 
   description: 
-  empty: 0
+  empty: 1
   icon: {fileID: 0}
 --- !u!1 &735323406
 GameObject:
@@ -2610,10 +2610,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 704f56805f9058142a473b7f062a3b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 0
+  ID: 1
   type: 
   description: 
-  empty: 0
+  empty: 1
   icon: {fileID: 0}
 --- !u!1 &1077645782
 GameObject:
@@ -2917,8 +2917,8 @@ MonoBehaviour:
         m_MethodName: AddItem
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1237646648}
-          m_ObjectArgumentAssemblyTypeName: Item, Assembly-CSharp
+          m_ObjectArgument: {fileID: 1237646642}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3159,10 +3159,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 704f56805f9058142a473b7f062a3b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 0
+  ID: 3
   type: 
   description: 
-  empty: 0
+  empty: 1
   icon: {fileID: 0}
 --- !u!1 &1626919491
 GameObject:
