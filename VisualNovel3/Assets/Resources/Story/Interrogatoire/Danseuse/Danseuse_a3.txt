@@ -1,0 +1,10 @@
+Berret "Pouvez vous me parlez des suspects ?"
+Danseuse "Euh oui, peut-etre"
+choice "Choix du suspect"
+{
+    "Suspect 1"
+        load(Interrogatoire/Danseuse/Danseuse_a3_a1)
+    "Suspect 2"
+        load(Interrogatoire/Danseuse/Danseuse_a3_a2)
+}
+stop()

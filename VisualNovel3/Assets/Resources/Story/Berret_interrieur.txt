@@ -1,0 +1,28 @@
+Berret "Il me faut plus de preuve"
+narrator "L'inspecteur rentre dans la salle, visiblement a la recherche de quelqu'un."
+Inspecteur "Oh Berret vous êtes là ! Je vous cherchais."
+"Vous pourriez demander des infos au barman et au danseuse pendant qu'on finit de fouillez la salle et les témoins?"
+Berret "ça peut ce faire..."
+choice "allez voir la danseuse ou le barman ?"
+{
+    "Allez voir les danseuse"
+        load(Interrogatoire/Danseuse/Interrogatoire_Danseuse)
+    "Allez voir le Barman ?"
+        load(Interrogatoire/Barman/Interrogatoire_Barman)
+}
+stop()
+
+//Après avoir vue le barman ou la danseuse
+choice "allez voir la danseuse ou le barman ?"
+{
+	"Allez voir les danseuse"
+        Load()
+	"Allez voir le Barman ?"
+	    Load()
+}
+stop()
+
+//Après avoir vue le barman ET la danseuse
+Berret "mmmmh"
+Berret "Je commence a y voir plus claire maintenant."
+

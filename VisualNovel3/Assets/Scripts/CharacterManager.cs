@@ -48,6 +48,9 @@ public class CharacterManager : MonoBehaviour
         if (characterDictionary.TryGetValue(characterName, out index))
         {
             return characters[index];
+        }else if (createCharacterIdDoesNotExist == false)
+        {
+            return null;
         }
         else
         {

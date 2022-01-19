@@ -18,9 +18,18 @@ How to use TextArchitecte :
 -	<i>text</i>	-> italic
 -	<color=red>text</color>	-> colored text
 etc...
-ex : Berret "Bonjour je cherche le <color=blue>Commissaire</color>, o� peut-on le trouver ?"
+ex : Berret "Bonjour je cherche le <color=blue>Commissaire</color>, où peut-on le trouver ?"
 
 
-Raelin "zudfgaUIGF" -> Le perso apparait sur l'ecran
+choice "titre du choice visible uniquement par dev" 
+{
+    "titre question 1"
+        déroulement d'une ligne normale
+    "ex : qui est tu ?"
+        Berret "Berret" setBackground(cabarret) load(cabarret_scene)
+}
+
+Raelin "zudfgaUIGF" nom_cmd()
+nom_cmd() cmd() -> Le perso apparait sur l'ecran
 narrator "kfhkzehfzehf" -> pas de nom -> utile pour les personnage d'on on a pas les sprites
 

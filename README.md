@@ -1,7 +1,6 @@
-# VisualNovel2
-NUDOETUEc <br>
-jsp c qui ce gars mais c vraiment le meilleur https://github.com/ErikDRen
+# UNDERCOVER:BERRET
+
+![image](https://cdn.discordapp.com/attachments/897857262532562977/931626198302351410/unknown.png)
 
 
-FAUX! (Norman)
-<img width="232" alt="faux" src="https://user-images.githubusercontent.com/73235291/140890301-0ab58ce4-ba02-4080-a677-d2c0d515dae0.jpg">
+![image](https://cdn.discordapp.com/attachments/394498036895842308/931940045781348442/unknown.png)

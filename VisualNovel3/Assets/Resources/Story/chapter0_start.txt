@@ -2,8 +2,15 @@ narrator "17 novembre 1921, " playMusic(NightOnTheDocks-Sax)
 +"QUARTIER PARIS, "
 +"34 rue _RUE_, "
 "(Rire, boisson, musique)"
+choice ""
+{
+	"Pas mal ton histoire <color=green>Bapt'</color>"
+        Inspecteur "Ha Ha Ha merci  bien!!" moveTo(Inspecteur,1,0.5,3,true)
+	"<i>Damned</i> t'en a de la chance <color=green>Bapt'</color>"
+        Inspecteur "La <b>chance</b> ça ce force !" moveTo(Inspecteur,1,0.5,3,true)
+}
 setBackground(Towns)
-Inspecteur "att j’en est une autre !," moveTo(Inspecteur,1,0.5,3,true)
+Inspecteur "att j’en est une autre !," 
 "un t’soir de paque j’suis en couverture dans les quartier de <color=green>Louis-LAFFAIRE</color>"
 "tranquille dans ma voiture je peste contre le patron qui ma foutu dehors un jour de fête"
 "et là tu d’vinera jamais la suite …" flip(Inspecteur)
@@ -41,18 +48,21 @@ stop()
 narrator "changement de fond : on revient coté bar"
 Inspecteur "Mr Berret on a  attrapé 3 suspect potentiel,"
 Berret "Zuuper"
-Inspecteur "un certain Mr jack Merlo ayant essayé de partir une fois le filet de sécurité installé autour du batiment"
+Inspecteur "un certain Mr jacques Merlo ayant essayé de partir une fois le filet de sécurité installé autour du batiment"
 "Mr Ives Dupont trouvé dans les WC près des loges après les coups de feu,"
 "et Mr Oliver François qui essayait de forcé le passage aussi."
-Berret ""
-stop()
-
-
-choice 
+Berret ". . ."
+"J'aurait besoin de discuter avec eux, c'est possible ?"
+flic "Je vous laisse faire, c'est votre boulot après tout."
+choice ""
 {
-	yes
-		jdzahiazhf
-	no 
-		gfofgo
+	"Intéroger <b>Mr Jacques Merlo</b>"
+        load(Interrogatoire/Marlo/Interrogatoire_Marlo)
+	""
+	    load(Interrogatoire_Marcel)
+	""
+	    load(Interrogatoire_Ives)
 }
+
+stop()
 

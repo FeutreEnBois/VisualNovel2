@@ -1,0 +1,14 @@
+flic "il essayait de sortir en douce du filet de sécurité on la choper avant"
+Berret "Bonsoir Monsieur, je suis le détective Berret, détective privé. Je suis ici pour savoir si vous êtes innoncent"
+"Pour cela je vais avoir besoin de votre aide."
+Marlo "Je vous jure, c'est un terrible malentendu..."
+choice "Choix question pour Jacques Marlo"
+{
+    "Qui êtes vous ?"
+        load(Interrogatoire/Marlo/Marlo_a1)
+    "Quel est votre alibi ?"
+        load(Interrogatoire/Marlo/Marlo_a2)
+    "Parlez des clefs"
+        load(Interrogatoire/Marlo/Marlo_b1)
+}
+stop()

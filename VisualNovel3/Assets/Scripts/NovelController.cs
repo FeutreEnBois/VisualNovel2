@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Globalization;
+using System;
 
 public class NovelController : MonoBehaviour
 {
@@ -10,9 +11,12 @@ public class NovelController : MonoBehaviour
     List<string> data = new List<string>();
     // The progress in the current data list.
     int progress = 0;
-    bool canProgress = true;
+    public bool canProgress = true;
     public static NovelController instance;
     public bool isHandlingChapterFile { get { return canProgress && progress < data.Count; } }
+    //public GameObject autoPlay;
+
+
     void Awake()
     {
         if (instance != null)
@@ -31,13 +35,32 @@ public class NovelController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if(autoPlay.activeSelf)
         //testing
-        if(canProgress && Input.GetKeyDown(KeyCode.RightArrow) && progress < data.Count)
+        /*if (canProgress &&  progress < data.Count && autoPlay.activeSelf == false)
         {
             string line = data[progress];
             if (line.StartsWith("choice"))
             {
+                autoPlay.SetActive(true);
                 //StartCoroutine(HandlingChoiceLine(line));
+                StartCoroutine(HandlingChoiceLine(line));
+
+            }
+            else
+            {
+                HandleLine(line);
+                progress++;
+            }
+                //System.Threading.Thread.Sleep(1000);
+        }*/
+
+        if (canProgress && Input.GetKeyDown(KeyCode.RightArrow) && progress < data.Count /*&& autoPlay.activeSelf == true*/)
+        {
+            string line = data[progress];
+            if (line.StartsWith("choice"))
+            {
+                StartCoroutine(HandlingChoiceLine(line));
             }
             else
             {
@@ -47,53 +70,54 @@ public class NovelController : MonoBehaviour
         }
     }
 
-    //IEnumerator HandlingChoiceLine(string line)
-    //{
-    //    canProgress = false;
-    //    Debug.Log("progress false");
-    //    string title = line.Split('"')[1];
-    //    List<string> choices = new List<string>();
-    //    List<string> actions = new List<string>();
+    IEnumerator HandlingChoiceLine(string line)
+    {
+        canProgress = false;
+        Debug.Log("progress false");
+        string title = line.Split('"')[1];
+        List<string> choices = new List<string>();
+        List<string> actions = new List<string>();
 
-    //    while (true)
-    //    {
-    //        progress++;
-    //        line = data[progress];
-    //        if(line == "{")
-    //            continue;
-    //        line = line.Replace("    ", ""); // remove the tabs that have becomes quad spaces
+        while (true)
+        {
+            progress++;
+            line = data[progress];
+            if (line == "{")
+                continue;
+            line = line.Replace("    ", ""); // remove the tabs that have becomes quad spaces
 
-    //        if(line != "}")
-    //        {
-    //            choices.Add(line.Split('"')[1]);
-    //            actions.Add(data[progress + 1].Replace("    ", ""));
-    //        }
-    //        else
-    //        {
-    //            break;
-    //        }
-    //    }
+            if (line != "}")
+            {
+                choices.Add(line.Split('"')[1]);
+                actions.Add(data[progress + 1].Replace("    ", ""));
+                progress++;
+            }
+            else
+            {
+                break;
+            }
+        }
 
-    //    //displaying choices
-    //    if(choices.Count > 0)
-    //    {
-    //        ChoiceScreen.instance.Show(title, choices.ToArray()); yield return new WaitForEndOfFrame();
-    //        while (ChoiceScreen.instance.isWaitingForChoiceToBeMade)
-    //            yield return new WaitForEndOfFrame();
-    //        //choice is made. execute the paired action.
-    //        string action = actions[ChoiceScreen.LastChoiceMade.index];
-    //        HandleLine(action); // need to be an IEnumerator
+        //displaying choices
+        if (choices.Count > 0)
+        {
+            ChoiceScreen.instance.Show(title, choices.ToArray()); yield return new WaitForEndOfFrame();
+            while (ChoiceScreen.instance.isWaitingForChoiceToBeMade)
+                yield return new WaitForEndOfFrame();
+            //choice is made. execute the paired action.
+            string action = actions[ChoiceScreen.LastChoiceMade.index];
+            HandleLine(action); // need to be an IEnumerator
 
-    //        while (isHandlingChapterFile)
-    //            yield return new WaitForEndOfFrame();
-    //    }
-    //    else
-    //    {
-    //        Debug.LogError("!!! Invalid choice operation. No choices were found. !!!");
-    //    }
-
-    //    progress++;
-    //}
+            while (isHandlingChapterFile)
+                yield return new WaitForEndOfFrame();
+        }
+        else
+        {
+            Debug.LogError("!!! Invalid choice operation. No choices were found. !!!");
+        }
+        canProgress = true;
+        progress++;
+    }
     public void LoadChapterFile(string filename, int progress = 0)
     {
         if (!canProgress)
@@ -150,7 +174,7 @@ public class NovelController : MonoBehaviour
 
         //now speak
         // a narrator should be retrived as a character.
-        if (speaker != "narrator" && speaker != "[. . .]")
+        if (speaker != "narrator" && speaker != "[. . .]" && CharacterManager.instance.GetCharacter(speaker, false) != null)
         {
             Character character = CharacterManager.instance.GetCharacter(speaker);
             character.Say(dialogue, additive);
@@ -174,6 +198,54 @@ public class NovelController : MonoBehaviour
     {
         string[] data = action.Split('(', ')');
 
+        switch (data[0])
+        {
+            case "setBackground":
+                Command_SetLayerImage(data[1], BCFC.instance.background);
+                break;
+            case "transBackground":
+                Command_TransitionLayerImage(data[1], BCFC.instance.background);
+                break;
+            case "playSound":
+                Command_PlaySound(data[1]);
+                break;
+            case "moveTo":
+                Command_MoveCharacter(data[1]);
+                break;
+            case "setExpression":
+                Command_ChangeExpression(data[1]);
+                break;
+            case "flip":
+                Command_Flip(data[1]);
+                break;
+            case "flipLeft":
+                Command_FlipLeft(data[1]);
+                break;
+            case "flipRight":
+                Command_FlipRight(data[1]);
+                break;
+            case "exit":
+                Command_Exit(data[1]);
+                break;
+            case "enter":
+                Command_Enter(data[1]);
+                break;
+            case "playMusic":
+                Command_PlayMusic(data[1]);
+                break;
+            case "goToPreuve":
+                Command_GoToPreuveScene(data[1]);
+                break;
+            case "stop":
+                Command_Stop(data[1]);
+                break;
+            case "load":
+                Command_Load(data[1]);
+                break;
+            case "continue":
+                Command_Continue();
+                break;
+        }
         if(data[0] == "setBackground")
         {
             Command_SetLayerImage(data[1], BCFC.instance.background);
@@ -189,51 +261,36 @@ public class NovelController : MonoBehaviour
             Command_PlaySound(data[1]);
         }
 
-        if (data[0] == "moveTo")
-        {
-            Command_MoveCharacter(data[1]);
-        }
-        if (data[0] == "setExpression")
-        {
-            Command_ChangeExpression(data[1]);
-        }
-        if (data[0] == "flip")
-        {
-            Command_Flip(data[1]);
-        }
-        if (data[0] == "flipLeft")
-        {
-            Command_FlipLeft(data[1]);
-        }
-        if (data[0] == "flipRight")
-        {
-            Command_FlipRight(data[1]);
-        }
-        if (data[0] == "exit")
-        {
-            Command_Exit(data[1]);
-        }
-        if (data[0] == "enter")
-        {
-            Command_Enter(data[1]);
-        }
-        if (data[0] == "playMusic")
-        {
-            Command_PlayMusic(data[1]);
-        }
-
-        if (data[0] == "goToPreuve")
-        {
-            Command_GoToPreuveScene(data[1]);
-        }
-
-        if (data[0] == "stop")
-        {
-            Command_Stop(data[1]);
-        }
-
     }
 
+    private void Command_Load(string data)
+    {
+        if (data.Contains(","))
+        {
+            int chapProgress = 0;
+            string[] parameters = data.Split(',');
+            foreach (string p in parameters)
+            {
+                int ival = 0;
+                if (int.TryParse(p, out ival))
+                {
+                    chapProgress = ival; continue;
+                }
+            }
+            LoadChapterFile(parameters[0], chapProgress);
+        }
+        else
+        {
+            LoadChapterFile(data);
+
+        }
+    }
+    private void Command_Continue()
+    {
+
+        HandleLine(data[this.progress+1]);
+        this.progress++;
+    }
     void Command_SetLayerImage(string data, BCFC.LAYER layer)
     {
         /*
