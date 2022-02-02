@@ -89,7 +89,6 @@ public class NovelController : MonoBehaviour
     IEnumerator HandlingChoiceLine(string line)
     {
         canProgress = false;
-        Debug.Log("progress false");
         string title = line.Split('"')[1];
         List<string> choices = new List<string>();
         List<string> actions = new List<string>();
@@ -188,7 +187,7 @@ public class NovelController : MonoBehaviour
             {
                 dialogueDetails = dialogueDetails.Remove(dialogueDetails.Length - 1);
             }
-
+            
             speaker = dialogueDetails;
             cachedLastSpeaker = speaker;
         }
@@ -285,7 +284,6 @@ public class NovelController : MonoBehaviour
         if(param[0] == "Inventory")
         {
             bool b = Inventory.instance.Contains(int.Parse(param[1]));
-            Debug.Log(b);
             return b;
         }
         return false;
