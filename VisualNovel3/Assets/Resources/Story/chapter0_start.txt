@@ -4,7 +4,7 @@ narrator "17 novembre 1921, " playMusic(NightOnTheDocks-Sax)
 "(Rire, boisson, musique)"
 choice ""
 {
-	"Pas mal ton histoire <color=green>Bapt'</color>"
+	"Pas mal ton histoire <color=green>Bapt'</color>"condition(Inventory,1)
         Inspecteur "Ha Ha Ha merci  bien!!" moveTo(Inspecteur,1,0.5,3,true)
 	"<i>Damned</i> t'en a de la chance <color=green>Bapt'</color>"
         Inspecteur "La <b>chance</b> ça ce force !" moveTo(Inspecteur,1,0.5,3,true)

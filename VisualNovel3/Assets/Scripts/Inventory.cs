@@ -7,11 +7,23 @@ public class Inventory : MonoBehaviour
     public GameObject inventory;
     private bool inventoryEnabled;
 
-    private int allSlots;
+    public int allSlots;
     private int enabledSlots;
     private GameObject[] slot;
     
     public GameObject slotHolder;
+
+    public static Inventory instance;
+
+    void Awake()
+    {
+        if(instance != null)
+        {
+            Debug.Log("Tring to create multiple instance of Inventory");
+            return;
+        }
+        instance = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +62,18 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    public bool Contains(int itemID)
+    {
+        for (int i = 0; i < allSlots; i++)
+        {
+            Debug.Log(slot[i].GetComponent<Slot>().ID);
+            if(slot[i].GetComponent<Slot>().ID == itemID)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
     public void AddItem(GameObject cool){
         Item item = cool.GetComponent<Item>();
         Debug.Log("Add item");

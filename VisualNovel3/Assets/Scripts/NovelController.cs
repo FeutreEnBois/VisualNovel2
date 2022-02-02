@@ -93,6 +93,7 @@ public class NovelController : MonoBehaviour
         string title = line.Split('"')[1];
         List<string> choices = new List<string>();
         List<string> actions = new List<string>();
+        List<string> conditions = new List<string>();
 
         while (true)
         {
@@ -104,8 +105,12 @@ public class NovelController : MonoBehaviour
 
             if (line != "}")
             {
-                choices.Add(line.Split('"')[1]);
-                actions.Add(data[progress + 1].Replace("    ", ""));
+                string[] choiceConditions = line.Split('"');
+                if(HandleAction(choiceConditions[2]) == true)
+                {
+                    choices.Add(line.Split('"')[1]);
+                    actions.Add(data[progress + 1].Replace("    ", "")); 
+                }
                 progress++;
             }
             else
@@ -210,8 +215,12 @@ public class NovelController : MonoBehaviour
             HandleAction(action);
         }
     }
-    void HandleAction(string action)
+    bool HandleAction(string action)
     {
+        if(action == "")
+        {
+            return true;
+        }
         string[] data = action.Split('(', ')');
 
         switch (data[0])
@@ -261,22 +270,25 @@ public class NovelController : MonoBehaviour
             case "continue":
                 Command_Continue();
                 break;
+            case "condition":
+                bool b = GetCondition(data[1]);
+                Debug.Log(b);
+                return b;
         }
-        if(data[0] == "setBackground")
-        {
-            Command_SetLayerImage(data[1], BCFC.instance.background);
-            return;
-        }
-        if (data[0] == "transBackground")
-        {
-            Command_TransitionLayerImage(data[1], BCFC.instance.background);
-            return;
-        }
-        if (data[0] == "playSound")
-        {
-            Command_PlaySound(data[1]);
-        }
+        return true;
+    }
 
+    private bool GetCondition(string data)
+    {
+        
+        string[] param = data.Split(',');
+        if(param[0] == "Inventory")
+        {
+            bool b = Inventory.instance.Contains(int.Parse(param[1]));
+            Debug.Log(b);
+            return b;
+        }
+        return false;
     }
 
     private void Command_Load(string data)
