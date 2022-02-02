@@ -1,9 +1,0 @@
-Berret “vous pouvez vous presenter ?”
-Emile “Chui Emile Letronc.”
-Berret “Rien d’autre ?”
-Emile “Non.”
-Berret "Très bien, et votre job c’est ?”
-Emile “Je conduis des trains.”
-Berret “Je vois.”
-load(Interrogatoire/Letronc/Interrogatoire_ Letronc)
-stop()

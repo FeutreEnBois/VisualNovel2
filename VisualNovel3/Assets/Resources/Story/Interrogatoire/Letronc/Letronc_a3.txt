@@ -1,5 +1,5 @@
-Berret “ Vous …”
-Emile “Non”
+Berret "Vous ..."
+Emile "Non"
 Berret soupire.
-load(Interrogatoire/Letronc/Interrogatoire_ Letronc)
+load(Interrogatoire/Letronc/Interrogatoire_Letronc)
 stop()

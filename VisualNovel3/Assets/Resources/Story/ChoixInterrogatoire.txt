@@ -1,10 +1,11 @@
+Berret "mmmmmh"
 choice ""
 {
-	"Interrogé <b>Mr Jacques Merlo</b>"
+    "Interrogé <b>Mr Jacques Merlo</b>"
         load(Interrogatoire/Marlo/Interrogatoire_Marlo)
-	"Interrogé <b>Mr Ives Dupont</b>"
+    "Interrogé <b>Mr Ives Dupont</b>"
         load(Interrogatoire/Dupont/Interrogatoire_Dupont)
-	"Interrogé <b>Mr Laplanche</b>"
-        load(Interrogatoire/Laplanche/Interrogatoire_Laplanche)
+    "Interrogé <b>Mr Laplanche</b>"
+        load(Interrogatoire/Letronc/Interrogatoire_Letronc)
 }
 stop()
