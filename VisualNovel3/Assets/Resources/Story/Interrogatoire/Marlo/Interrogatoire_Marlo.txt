@@ -7,6 +7,8 @@ choice "Choix question pour Jacques Marlo"
     "Qui êtes vous ?"
         load(Interrogatoire/Marlo/1er/Marlo_a1)
     "Quel est votre alibi ?"
-        load(Interrogatoire/Marlo/2eme/Marlo_a2)
+        load(Interrogatoire/Marlo/1er/Marlo_a2)
+    "Retourner en arriere"
+        load(choixInterrogatoire)
 }
 stop()

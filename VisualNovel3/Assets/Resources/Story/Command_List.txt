@@ -11,7 +11,7 @@ goToPreuve()												//	ex: goToPreuve()
 setBackground(backgroundName,speed?smooth?)					//	ex: setBackground(townsVille)	|| setBAckground(forest,5,true)
 transBackground(backgroundName,TransitionName)				//	ex: transBackground(towns,blur) || transBackground(null,spiral)
 stop()														// ex: stop()	stop la lecture du txt en cours, close le speechPanel
-
+addItem(id,image,)
 
 How to use TextArchitecte :
 -	<b>text</b> -> bold

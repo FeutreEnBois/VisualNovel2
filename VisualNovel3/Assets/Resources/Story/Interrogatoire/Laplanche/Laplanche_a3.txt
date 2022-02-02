@@ -1,5 +1,5 @@
-Berret “ Vous …”
-Emile “Non”
-Berret soupire.
+Berret "Vous ..."
+Emile "Non"
+narrator "Berret soupire."
 load(Interrogatoire/Laplanche/Interrogatoire_Laplanche)
 stop()
