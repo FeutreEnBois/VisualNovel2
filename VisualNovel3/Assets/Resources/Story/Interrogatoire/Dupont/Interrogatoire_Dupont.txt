@@ -1,0 +1,17 @@
+police “On l’a attrapé dans les toilettes qui se trouve près des loges, ça pourrait être notre coupable comme une malheureuse coïncidence."
+Ives est hors champs
+Berret “Alors, une envie pressante après le meurtre?”
+Ives “Qu… Quoiii ? Ce n’est pas moiii ! Vous pensez que c’est moi hein ? vous faite erreur je vous dit (tremble)”
+berret “C’est bon, ne vous en faites pas, je suis pas contre vous. J’ai juste besoin de savoir quelque chose. ”
+Ives “C’est pas moi je vous dit, (znif) y’a erreur ! (zniiiif) J’était au mauvais endroit au mauvais moment c’est tout !!!!!!!”
+choice "Choix question pour Ives Dupont"
+{
+    "Qui êtes vous ?"
+        load(Interrogatoire/Dupont/Dupont_a1)
+    "Quel est votre alibi ?"
+        load(Interrogatoire/Dupont/Dupont_a2)
+    "Relation avec la victime"
+        load(Interrogatoire/Dupont/Dupont_a3)
+}
+load(Interrogatoire/Dupont/Interrogatoire_Dupont)
+stop()
