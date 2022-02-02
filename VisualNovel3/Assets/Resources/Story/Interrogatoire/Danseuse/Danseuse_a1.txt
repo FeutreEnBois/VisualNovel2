@@ -1,5 +1,5 @@
 Berret "Vous travaillez ici depuis longtemps?"
 Danseuse "Cela fait quelques années. Pourquoi cette question, ne devriez-vous pas chercher des indices plutôt?"
-Berret "C’est moi qui pose les questions ici. Asseillez vous madame je vous pris."
+Berret "C’est moi qui pose les questions ici. Asseyez-vous madame je vous pris."
 load(Interrogatoire/Danseuse/Interrogatoire_Danseuse)
 stop()
