@@ -54,7 +54,7 @@ public class Inventory : MonoBehaviour
         Item item = cool.GetComponent<Item>();
         Debug.Log("Add item");
         for(int i = 0; i < allSlots; i++){
-            if(slot[i].GetComponent<Slot>().empty){
+            if(slot[i].GetComponent<Slot>().empty & !item.GetComponent<Item>().pickedUp){
                 item.GetComponent<Item>().pickedUp = true;
                 
                 slot[i].GetComponent<Slot>().icon = item.icon;

@@ -4,20 +4,22 @@ using UnityEngine;
 
 public class Journal : MonoBehaviour
 {
-    public GameObject inventory;
-    private bool inventoryEnabled;
+    public GameObject journal;
+    private bool journalEnabled;
+    
 
     private int allHeads;
     private int enabledHeads;
     private GameObject[] head;
 
     public GameObject headHolder;
+    public int persopage = 0;
     // Start is called before the first frame update
     void Start()
     {
         allHeads = 5;
         head = new GameObject[allHeads];
-
+        
         for (int i = 0; i < allHeads; i++)
         {
             head[i] = headHolder.transform.GetChild(i).gameObject;
@@ -29,18 +31,23 @@ public class Journal : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.J))
-            inventoryEnabled = !inventoryEnabled;
+            journalEnabled = !journalEnabled;
 
-        if (inventoryEnabled == true)
+        if (journalEnabled == true)
         {
-            inventory.SetActive(true);
+            
+            journal.SetActive(true);
+            
 
         }
         else
         {
-            inventory.SetActive(false);
+            journal.SetActive(false);
         }
+        
+        
 
-    
-}
+    }
+   
+
 }
