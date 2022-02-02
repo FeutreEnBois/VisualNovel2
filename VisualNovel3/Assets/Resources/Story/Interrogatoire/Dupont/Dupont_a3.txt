@@ -1,0 +1,15 @@
+Berret "L’homme qui est mort, vous le connaissiez n’est-ce pas?"
+Ives "Mr Martinelli ? Non non, je l’avais déjà vu ici mais je ne le connaissais pas plus."
+Berret "Vous mentez ! Vous êtes serveur, vous devez bien connaître votre clientèle ! Dites moi la vérité maintenant."
+Ives "Mais je… Je ne peux pas parler avec tout le monde, c’est  surtout le barman qui parle avec la clientèle, je ne fais qu’apporter les verres."
+Berret "Et Mme Marlot ? Vous n’y êtes pour rien non plus c’est ça ?"
+Ives "Pourquoi vous m’accusez sans cesse Monsieur ?"
+Berret "Parce que tu fais partie des suspects et si tu veux tout savoir je pense que tu es bien plus que suspect. Alors je vais vous le demander une dernière fois : connaissiez-vous Mme Marlot ?"
+Ives "Oui bien sûr, elle travaillait ici. Je connais plutôt bien les danseuses, on discute beaucoup."
+Berret "Ah bon? Mme Marlot ne vous avait rien dit de particuliers ces derniers jours? Vous n’avez rien vu d’étrange ?" 
+Ives "Pas vraiment, elle a toujours été contente de travailler ici et elle n’a jamais causé de problème. Quand on parlait, c’était surtout pour dire quelques banalités : elle me parlait de son travail, de son mari, de ce qu’elle ferait à la fin de la journée. A vrai dire, c’était celle qui me parlait le moins et me disait probablement le plus de mensonge."
+Berret "Mmh… Et pourquoi ça?"
+Ives "Bah, peut-être qu’elle avait des choses à cacher…"
+Berret, en prend notes dans son calepin.
+load(Interrogatoire/Dupont/Interrogatoire_Dupont)
+stop()

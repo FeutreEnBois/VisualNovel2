@@ -1,0 +1,22 @@
+Police  “Le suspect s’appelle Emile Letronc, d'après son passeport il a 34 ans. D’après le barman il est au bar depuis 14h et c’est absenté au moment des coup de feu pour revenir quelques minutes plus tard non chalamant  pour finir son verre. Je vous préviens la bouteille l'a rendu tendu.”
+Berret “Tendu ? c’est a dire”
+Police “Aller voir vous même"
+Berret s’approche du client hurlant maintenu par 2 policier
+Emile “Lâcher moi bande d’incapable incompetent *HIC*”
+Berret “Whoa, on se calme l’ami, pourquoi tu hurles comme ça ?”
+Emile “Tes aveugle ? j’ai rien à faire avec tout ça et maintenant on me retient comme un criminel ?”
+Berret “Bah comme je le vois tu pourrais être un criminel. Tu es clairement suspect”
+Emile “Suspect ? Mooooi ? je suis pas *HIC* suspect ! Vous dites n'importe ! C'est vous le tueur !”
+Berret “ *** Je répond quoi à sa. *** ”
+choice "Choix question pour Emile Letronc"
+{
+    "Qui êtes vous ?"
+        load(Interrogatoire/Letronc/Letronc_a1)
+    "Quel est votre alibi ?"
+        load(Interrogatoire/Letronc/Letronc_a2)
+    "Quelle est votre relation avec la victime"
+        load(Interrogatoire/Letronc/Letronc_a3)
+    "Retourner en arrière"
+        stop()
+}
+stop()

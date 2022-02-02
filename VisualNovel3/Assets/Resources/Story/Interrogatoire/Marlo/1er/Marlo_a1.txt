@@ -1,0 +1,11 @@
+Berret "D'abord, dîtes moi qui êtes-vous?"
+Marlo "Je suis Jacques Marlo. Je travaille dans le cinéma."
+Berret "Dans le cinéma ? Vraiment ?"
+Marlo "Et oui Monsieur, je suis acteur dans le cinéma muet."
++"vous m'avez peut-être reconnu dans 'Les Trois Mousquetaires'."
++"Je suis un ami d'Henri Diamant-Berger vous savez."
+Berret "Si vous le dîtes ..."
++"Ceci étant dit, vous venez souvent ?"
+Marlo "Pas plus que ça non ..."
+load(Interrogatoire/Marlo/Interrogatoire_Marlo)
+stop()

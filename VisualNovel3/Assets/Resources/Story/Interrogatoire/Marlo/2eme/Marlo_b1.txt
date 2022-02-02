@@ -1,0 +1,16 @@
+Berret "Vous savez ce que c'est ?"
+Marlo "Des clefs ?"
+Berret "Oui."
++" Les votre !"
+Marlo "Où les avez-vous prises ! Rendez-les moi !!"
+Berret "Du calme mon ami."
++" J'ai appris que ces clefs permettaient d'ouvrir la porte des loges"
+Marlo "Vous M'accusez ?!!"
++"Je ne sais même pas où sont les loges !"
+Berret "Dîtes moi pourquoi vous les avez sur vous."
+Marlo "Je ..."
++" Je voulais les apporter à ma femme. Ce matin elle est partie précipitamment et les a oubliées."
+"Je l'ai remarqué et je suis venu les lui apporter."
+Berret "Mmmmh, Je vois. . ."
+load(Interrogatoire/Marlo/Interrogatoire_Marlo)
+stop()

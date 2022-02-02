@@ -1,5 +1,0 @@
-Berret “ Vous …”
-Emile “Non”
-Berret soupire.
-load(Interrogatoire/Laplanche/Interrogatoire_Laplanche)
-stop()
