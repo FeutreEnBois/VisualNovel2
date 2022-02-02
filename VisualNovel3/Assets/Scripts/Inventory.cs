@@ -66,7 +66,6 @@ public class Inventory : MonoBehaviour
     {
         for (int i = 0; i < allSlots; i++)
         {
-            Debug.Log(slot[i].GetComponent<Slot>().ID);
             if(slot[i].GetComponent<Slot>().ID == itemID)
             {
                 return true;

@@ -1,0 +1,4 @@
+Berret "Commençons par les présentations: je suis le détective Berret et je suis là pour élucider l’enquête. Si vous me dites la vérité je pourrais vous sortir de là. Mais si vous me mentez je vous jure que je vous jetterai au trou même si vous êtes innocent !”
+Ives “Oh non non, non non non non non , ne vous inquiétez pas, je vais vous dire toute la vérité ! Je suis Ives Dupont, je suis un simple serveur aux Folies Bergère”
+load(Interrogatoire/Dupont/Interrogatoire_Dupont)
+stop()
