@@ -1,5 +1,5 @@
 Berret "Pouvez vous me parlez des suspects ?"
-Danseuse "Euh oui, peut-etre"
+Danseuse "Euh oui, peut-être"
 choice "Choix du suspect"
 {
     "Suspect 1"

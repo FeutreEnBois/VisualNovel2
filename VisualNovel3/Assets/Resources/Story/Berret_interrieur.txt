@@ -1,11 +1,11 @@
-Berret "Il me faut plus de preuve"
-narrator "L'inspecteur rentre dans la salle, visiblement a la recherche de quelqu'un."
-Inspecteur "Oh Berret vous êtes là ! Je vous cherchais."
-"Vous pourriez demander des infos au barman et au danseuse pendant qu'on finit de fouillez la salle et les témoins?"
-Berret "ça peut ce faire..."
-choice "allez voir la danseuse ou le barman ?"
+Berret "Il me faut plus de preuve."
+narrator "L'inspecteur rentre dans la salle, visiblement à la recherche de quelqu'un."
+Commissaire "Oh Berret vous êtes là ! Je vous cherchais."
+"Vous pourriez demander des infos au barman et à cette danseuse pendant qu'on finit de fouiller la salle et d'interroger les témoins ?"
+Berret "Ça peut se faire..."
+choice "Allez voir la danseuse ou le barman ?"
 {
-    "Allez voir les danseuse"
+    "Allez voir la danseuse ?"
         load(Interrogatoire/Danseuse/Interrogatoire_Danseuse)
     "Allez voir le Barman ?"
         load(Interrogatoire/Barman/Interrogatoire_Barman)
@@ -13,9 +13,9 @@ choice "allez voir la danseuse ou le barman ?"
 stop()
 
 //Après avoir vue le barman ou la danseuse
-choice "allez voir la danseuse ou le barman ?"
+choice "Allez voir la danseuse ou le barman ?"
 {
-	"Allez voir les danseuse"
+	"Allez voir la danseuse ?"
         Load()
 	"Allez voir le Barman ?"
 	    Load()
@@ -23,6 +23,6 @@ choice "allez voir la danseuse ou le barman ?"
 stop()
 
 //Après avoir vue le barman ET la danseuse
-Berret "mmmmh"
-Berret "Je commence a y voir plus claire maintenant."
-
+Berret "Mmmmh"
+Berret "Je commence à y voir plus claire maintenant."
+stop()

@@ -2,16 +2,16 @@ click sur les deux mort :
 Berret "Un double homicides... un homme et une femme, visiblement une rencontre entre amoureux"
 stop()
 click sur la carte d’habitué :
-Berret "Hmm,Une carte ?"
-"Voilà quelque chose qui pourrait nous interesser, les danseuses ne sont pas autorisées a picolé durant leurs services, et ce jeune homme n’a pas l’air d’un poivro... "
-"peut-être tomber d’une poche durant l’action? Le coupable serait un habitué du coin ..."
+Berret "Hmm, une carte ?"
+"Voilà quelque chose qui pourrait nous intéresser, les danseuses ne sont pas autorisées a boire durant leurs services, et ce jeune homme n’a pas l’air d’un poivro... "
+"C'est speut-être tomber d’une poche durant l’action? Le coupable serait un habitué du coin ..."
 stop()
 (insert d’autre interaction qui ne donne pas de preuve)
 Clique sur une horloge cassée:
-Berret "Qu'elle belle analogie, l'horloge c'est prise une balle et ne fonctionne plus. Elle c'est arrêtée en même temps que nos deux amis."
+Berret "Qu'elle belle analogie, l'horloge c'est prise une balle et ne fonctionne plus. Elle s'est arrêtée en même temps que nos deux amis."
 stop()
 Clique sur sac:
-Berret (dans sa tete)"Les affaires des victimes n’ont pas été volez. S’il elle sont encore là, c’est que le coupable voulait bien s’attaquer au victime."
+Berret "Les affaires des victimes n’ont pas été volez. Si elles sont encore là, c’est que le coupable voulait bien s’attaquer au victime."
 stop()
 Clique sur une montre après avoir cliqué sur le sac ou l’inverse :
-"J’devrais p’tetre me servir pendant que personne ne regarde, "ce qui appartient au mort, m’appartiens si je les trouves !"
+"J’devrais p’tetre me servir pendant que personne ne regarde, "ce qui appartient au mort, m’appartiens si je les trouve !"
