@@ -1,6 +1,6 @@
 narrator "17 novembre 1921, " playMusic(NightOnTheDocks-Sax)
 +"QUARTIER PARIS, "
-+"34 rue _RUE_, "
++"117 rue de Montreuil, "
 "(Rire, boisson, musique)"
 choice ""
 {

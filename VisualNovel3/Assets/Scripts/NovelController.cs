@@ -14,7 +14,7 @@ public class NovelController : MonoBehaviour
     public bool canProgress = true;
     public static NovelController instance;
     public bool isHandlingChapterFile { get { return canProgress && progress < data.Count; } }
-    //public GameObject autoPlay;
+    public bool autoPlay = false;
     public bool skip = false;
 
 
@@ -43,21 +43,23 @@ public class NovelController : MonoBehaviour
             {
                 //StartCoroutine(HandlingChoiceLine(line));
                 StartCoroutine(HandlingChoiceLine(line));
-                Toggle();
+                ToggleTriggerSkip();
 
             }
             else
             {
                 HandleLine(line);
                 progress++;
+             
             }
             
   
                 //System.Threading.Thread.Sleep(1000);
         }
 
-        if (canProgress && Input.GetKeyDown(KeyCode.RightArrow) && progress < data.Count /*&& autoPlay.activeSelf == true*/)
+        if (canProgress && (Input.GetKeyDown(KeyCode.RightArrow) || passTurn) && progress < data.Count /*&& autoPlay.activeSelf == true*/)
         {
+            passTurn = false;
             string line = data[progress];
             if (line.StartsWith("choice"))
             {
@@ -65,10 +67,23 @@ public class NovelController : MonoBehaviour
             }
             else
             {
+                if(autoPlay)
+                {
+                    StartCoroutine(WaitForAutoTurn());
+                }
                 HandleLine(line);
                 progress++;
             }
         }
+    }
+
+    private bool passTurn = false;
+
+    public IEnumerator WaitForAutoTurn()
+    {
+        yield return new WaitForSeconds(2);
+        passTurn = true;
+
     }
 
     IEnumerator HandlingChoiceLine(string line)
@@ -451,7 +466,7 @@ public class NovelController : MonoBehaviour
         }
     }
 
-    public void Toggle()
+    public void ToggleTriggerSkip()
     {
         skip = !skip;
     }
@@ -491,5 +506,10 @@ public class NovelController : MonoBehaviour
                 c.FadeIn(speed, smooth);
             }
         }
+    }
+
+    public void ToggleTriggerAutoPlay()
+    {
+        autoPlay = !autoPlay;
     }
 }
