@@ -13,6 +13,6 @@ Marlo "J'ai eu la frousse. . ."
 +" C'est pas tous les jours qu'on est mêlée à une fusillade"
 Berret "Ça fait ressortir les mauvais souvenir de la guerre c'est ça ?"
 Marlo "Justement, je n'en ai jamais entendu ! J'étais un simple garde dans un aérodrome. Je devais surveiller la zone et m'assurer de son bon fonctionnement."
-load(Interrogatoire/Marlo/Interrogatoire_Marlo)
+load(Interrogatoire/Marlo/ChoiceInterrogatoire_Marlo1)
 stop()
 

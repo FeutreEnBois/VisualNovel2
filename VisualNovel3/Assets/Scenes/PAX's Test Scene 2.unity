@@ -891,10 +891,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb73b3e3d761405419ef1b9308b31c9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueText: chapter0_start
+  dialogueText: Chapter0_02
   Name: 
   preuve: 0
-  progress: 47
+  progress: 0
 --- !u!114 &463678779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2558,7 +2558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4736678205987253023, guid: c3736a27b8f30b64288501a931608709, type: 3}
       propertyPath: m_Name
-      value: Preuve
+      value: Preuve_corps
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3736a27b8f30b64288501a931608709, type: 3}
@@ -2687,7 +2687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb73b3e3d761405419ef1b9308b31c9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueText: Berret_interrieur
+  dialogueText: Chapter0_03
   Name: 
   preuve: 0
   progress: 0

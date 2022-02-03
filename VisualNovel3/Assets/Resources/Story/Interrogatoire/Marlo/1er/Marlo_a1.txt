@@ -7,5 +7,5 @@ Marlo "Et oui Monsieur, je suis acteur dans le cinéma muet."
 Berret "Si vous le dîtes ..."
 +"Ceci étant dit, vous venez souvent ?"
 Marlo "Pas plus que ça non ..."
-load(Interrogatoire/Marlo/Interrogatoire_Marlo)
+load(Interrogatoire/Marlo/ChoiceInterrogatoire_Marlo1)
 stop()

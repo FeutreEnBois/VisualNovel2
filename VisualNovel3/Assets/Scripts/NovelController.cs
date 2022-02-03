@@ -30,7 +30,7 @@ public class NovelController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        LoadChapterFile("chapter0_start");
+        LoadChapterFile("Chapter0_01");
     }
 
     // Update is called once per frame
@@ -156,15 +156,29 @@ public class NovelController : MonoBehaviour
     void HandleLine(string line)
     {
         string[] dialogueAndActions = line.Split('"');
-
         if(dialogueAndActions.Length == 3)
         {
-            HandleDialogue(dialogueAndActions[0], dialogueAndActions[1]);
-            HandleEventsFromLine(dialogueAndActions[2]);
+            string[] actions = dialogueAndActions[2].Split(' ');
+            for (int i = 0; i < actions.Length; i++)
+            {
+                if (!actions[i].Contains("condition") || GetCondition(actions[i]))
+                {
+                    HandleDialogue(dialogueAndActions[0], dialogueAndActions[1]);
+                    HandleEventsFromLine(dialogueAndActions[2]);
+                }
+            }
         }
         else
         {
-            HandleEventsFromLine(dialogueAndActions[0]);
+            string[] actions = dialogueAndActions[0].Split(' ');
+            for (int i = 0; i < actions.Length; i++)
+            {
+                if (!actions[i].Contains("condition") || GetCondition(actions[i]))
+                {
+                    HandleEventsFromLine(dialogueAndActions[0]);
+                }
+            }
+            
         }
     }
 
@@ -207,13 +221,18 @@ public class NovelController : MonoBehaviour
 
     void HandleEventsFromLine(string events)
     {
+        bool condition = true;
         string[] actions = events.Split(' ');
-
         foreach(string action in actions)
         {
-            HandleAction(action);
+            condition = HandleAction(action);
+            if(condition == false)
+            {
+                return;
+            }
         }
     }
+
     bool HandleAction(string action)
     {
         if(action == "")

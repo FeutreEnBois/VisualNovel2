@@ -45,25 +45,3 @@ narrator "L'<color=green>Inspecteur</color> sort de la salle"
 "passage en mode point and click recherche" goToPreuve()
 stop()
 
-// Berret reviend dans la salle principale
-narrator "changement de fond : on revient coté bar"
-Flic "M. Berret, on a  attrapé 3 suspects potentiels,"
-Berret "Super."
-Flic "Un certain M. Jacques Merlo ayant essayé de partir une fois que nos équipes de sécurité étaient installés autour du bâtiment."
-"M. Ives Dupont, trouvé dans les sanitaires près des loges après les coups de feu,"
-"et M. Oliver François qui essayait de forcé le passage aussi."
-Berret ". . ."
-"J'aurais besoin de discuter avec eux, c'est possible ?"
-Flic "Je vous laisse faire, c'est votre boulot après tout."
-choice ""
-{
-	"Interrogé <b>Mr Jacques Merlo</b>"
-        load(Interrogatoire/Marlo/Interrogatoire_Marlo)
-	"Interrogé <b>Mr Ives Dupont</b>"
-        load(Interrogatoire/Dupont/Interrogatoire_Dupont)
-	"Interrogé <b>Mr Letronc</b>"
-        load(Interrogatoire/Letronc/Interrogatoire_Letronc)
-}
-
-stop()
-
