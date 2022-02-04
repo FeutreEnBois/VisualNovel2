@@ -1,0 +1,5 @@
+Barman "Et bien, je ne retiens pas forcément toutes les personnes qui vont-et-viennent dans mon cabaret mais..."
+"je peux vous confirmer que j’ai déjà vu Jacques Marlo et Ives Dupont."
+"D’ailleurs, Ives Dupont aimait beaucoup parler avec les danseuses, il leur offrait parfois des cadeaux."
+load()
+
