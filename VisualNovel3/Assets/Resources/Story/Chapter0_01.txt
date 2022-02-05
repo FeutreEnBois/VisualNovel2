@@ -1,5 +1,5 @@
 narrator "17 novembre 1921, " playMusic(NightOnTheDocks-Sax)
-+"11ème Arrondissements, "
++"11ème Arrondissements, " addPreuve(Barman,preuve_1)
 +"117 rue de Montreuil, " condition(Preuve,Barman,preuve_1)
 "(Rire, boisson, musique)" 
 choice ""

@@ -34,7 +34,7 @@ public class Inventory : MonoBehaviour
         {
             slot[i] = slotHolder.transform.GetChild(i).gameObject;
         }
-        AddPreuve("Barman", "preuve_1");
+        
     }
 
     // Update is called once per frame

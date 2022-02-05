@@ -290,8 +290,17 @@ public class NovelController : MonoBehaviour
                 bool b = GetCondition(data[1]);
                 Debug.Log(b);
                 return b;
+            case "addPreuve":
+                Command_AddPreuve(data[1]);
+                break;
         }
         return true;
+    }
+
+    private void Command_AddPreuve(string data)
+    {
+        string[] param = data.Split(',');
+        Inventory.instance.AddPreuve(param[0], param[1]);
     }
 
     private bool GetCondition(string data)
