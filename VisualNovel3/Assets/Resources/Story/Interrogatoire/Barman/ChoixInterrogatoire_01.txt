@@ -1,0 +1,12 @@
+Berret "Je vois ..."
+flip(Berret)
+choice "Choisie une question"
+{
+    "Vous avez vu les suspects ? Vous les avez déjà vu auparavant ?"
+        load(Interrogatoire/Barman/Barman_b1)
+    "Et SUSPECT 3 ?"
+        load(Interrogatoire/Barman/Barman_b2)
+}
+stop()
+
+

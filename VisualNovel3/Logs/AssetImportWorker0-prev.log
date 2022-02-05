@@ -1,109 +1,439 @@
 Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.13f1 (71691879b7f5) revision 7432472'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1466; Version 2009; 64bit' Language: 'fr' Physical Memory: 16307 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-/Applications/Unity/Unity.app/Contents/MacOS/Unity
+C:\Program Files\Unity\Hub\Editor\2020.3.13f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-/Users/gregoire/Documents/GitHub/VisualNovel2/VisualNovel3
+C:/Users/deros/Desktop/Game/Unity/Game/VisualNovel2/VisualNovel3
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63886
-Successfully changed project path to: /Users/gregoire/Documents/GitHub/VisualNovel2/VisualNovel3
-/Users/gregoire/Documents/GitHub/VisualNovel2/VisualNovel3
+55862
+Successfully changed project path to: C:/Users/deros/Desktop/Game/Unity/Game/VisualNovel2/VisualNovel3
+C:/Users/deros/Desktop/Game/Unity/Game/VisualNovel2/VisualNovel3
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 32.39 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 28.02 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.13f1 (71691879b7f5)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/gregoire/Documents/GitHub/VisualNovel2/VisualNovel3/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/deros/Desktop/Game/Unity/Game/VisualNovel2/VisualNovel3/Assets
 GfxDevice: creating device client; threaded=0
-2022-02-02 11:48:47.003 Unity[53518:7125617] Color LCD preferred device: Intel(R) UHD Graphics 630 (low power)
-2022-02-02 11:48:47.003 Unity[53518:7125617] Metal devices available: 2
-2022-02-02 11:48:47.003 Unity[53518:7125617] 0: AMD Radeon Pro 5300M (high power)
-2022-02-02 11:48:47.003 Unity[53518:7125617] 1: Intel(R) UHD Graphics 630 (low power)
-2022-02-02 11:48:47.004 Unity[53518:7125617] Using device AMD Radeon Pro 5300M (high power)
-Initializing Metal device caps: AMD Radeon Pro 5300M
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 (ID=0x2484)
+    Vendor:   
+    VRAM:     8043 MB
+    Driver:   27.21.14.6089
 Initialize mono
-Mono path[0] = '/Applications/Unity/Unity.app/Contents/Managed'
-Mono path[1] = '/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = '/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56518
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56416
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000449 seconds.
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 27.44 ms, found 2 plugins.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001422 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 29.54 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.550 seconds
+- Completed reload, in  0.892 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001487 seconds.
+Registered in 0.002938 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.963 seconds
+- Completed reload, in  0.788 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launching external process: /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1503 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 139.8 MB.
-System memory in use after: 139.9 MB.
+Unloading 1508 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.1 MB.
+System memory in use after: 72.1 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1940.
-Total: 1.922075 ms (FindLiveObjects: 0.171201 ms CreateObjectMapping: 0.046157 ms MarkObjects: 1.637845 ms  DeleteObjects: 0.065912 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1948.
+Total: 2.271100 ms (FindLiveObjects: 0.180600 ms CreateObjectMapping: 0.036400 ms MarkObjects: 1.964600 ms  DeleteObjects: 0.088200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Resources/Story/Interrogatoire/Danseuse/Danseuse_a2a1.txt
-  artifactKey: Guid(bdca56d97ba71574cbb343e497ca57c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Danseuse/Danseuse_a2a1.txt using Guid(bdca56d97ba71574cbb343e497ca57c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c71d1c5d70b9acf99fa1b0fdd1849769') in 1.334289 seconds 
-  Import took 1.336401 seconds .
+  path: Assets/Resources/Story/Interrogatoire/Barman
+  artifactKey: Guid(6f15d4bbd0506e54e8915a3e8721a2c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman using Guid(6f15d4bbd0506e54e8915a3e8721a2c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e072c1506fc5288b1ed1ec1917800801') in 0.008382 seconds 
+  Import took 0.010982 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Danseuse/Danseuse_a1.txt
-  artifactKey: Guid(302121c2e9ac3e948864f80013ba492a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Danseuse/Danseuse_a1.txt using Guid(302121c2e9ac3e948864f80013ba492a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e67fecbefb29cd382902ea2ba6903ca') in 0.001783 seconds 
-  Import took 0.004469 seconds .
+  Time since last request: 4.682059 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/New Folder
+  artifactKey: Guid(9ac0e7b05e140584caa7292efc1ff873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/New Folder using Guid(9ac0e7b05e140584caa7292efc1ff873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8cc8777fd531e620318eee31718676d') in 0.006753 seconds 
+  Import took 0.009161 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 96.396961 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Danseuse/Danseuse_a2a2.txt
-  artifactKey: Guid(157e5f7e15ac7504db05dea0497bd71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Danseuse/Danseuse_a2a2.txt using Guid(157e5f7e15ac7504db05dea0497bd71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef56d9afb17f534b76112d85e57bf9a4') in 0.002977 seconds 
-  Import took 0.005742 seconds .
+  Time since last request: 18.665395 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogation_Barman.txt
+  artifactKey: Guid(45de2ad2c2518e749a5d9772d6d11f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogation_Barman.txt using Guid(45de2ad2c2518e749a5d9772d6d11f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3569b31677871a9513103121fbda3bd9') in 0.033747 seconds 
+  Import took 0.036644 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 44.674215 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Danseuse/Danseuse_a2a2.txt
-  artifactKey: Guid(157e5f7e15ac7504db05dea0497bd71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Danseuse/Danseuse_a2a2.txt using Guid(157e5f7e15ac7504db05dea0497bd71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0271385297caa0d8875ecc5073a9611b') in 0.002038 seconds 
-  Import took 0.004583 seconds .
+  Time since last request: 9.666754 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman.txt
+  artifactKey: Guid(45de2ad2c2518e749a5d9772d6d11f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman.txt using Guid(45de2ad2c2518e749a5d9772d6d11f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a0409dc9c1c4990f2abaebbf6673c25') in 0.006149 seconds 
+  Import took 0.008877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 64.139068 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman 1.txt
+  artifactKey: Guid(94346efddf65bc643b4620861ba856d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman 1.txt using Guid(94346efddf65bc643b4620861ba856d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '149625131e7e2889c2aa83178192b614') in 0.006091 seconds 
+  Import took 0.008995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.029577 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman 2.txt
+  artifactKey: Guid(35b6765deed0b25459a7e0e40156eeb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman 2.txt using Guid(35b6765deed0b25459a7e0e40156eeb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a5f9ceea76666f008857becfb8a2362') in 0.006421 seconds 
+  Import took 0.009499 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.666777 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman 3.txt
+  artifactKey: Guid(1e292512d8920d148b3c2e8ef72bf99f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman 3.txt using Guid(1e292512d8920d148b3c2e8ef72bf99f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87135b7996a4ef56125012771f6400f7') in 0.005803 seconds 
+  Import took 0.008462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001051 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman 3.txt
+  artifactKey: Guid(1e292512d8920d148b3c2e8ef72bf99f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman 3.txt using Guid(1e292512d8920d148b3c2e8ef72bf99f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87135b7996a4ef56125012771f6400f7') in 0.002304 seconds 
+  Import took 0.004339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.013546 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman 4.txt
+  artifactKey: Guid(d3dfc6687aa5e3647bb11043304a14a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman 4.txt using Guid(d3dfc6687aa5e3647bb11043304a14a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ace998919b9dd569233ebabd445c60d5') in 0.006054 seconds 
+  Import took 0.008791 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.602911 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Barman_a1a1.txt
+  artifactKey: Guid(35b6765deed0b25459a7e0e40156eeb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Barman_a1a1.txt using Guid(35b6765deed0b25459a7e0e40156eeb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38bc86f446a71f4b0e66dc262ccaa5d5') in 0.006004 seconds 
+  Import took 0.008647 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.619853 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Barmana1a2.txt
+  artifactKey: Guid(1e292512d8920d148b3c2e8ef72bf99f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Barmana1a2.txt using Guid(1e292512d8920d148b3c2e8ef72bf99f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f1a1399d28e18238491275edb342c91') in 0.005930 seconds 
+  Import took 0.008588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.977913 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Barman_a2.txt
+  artifactKey: Guid(94346efddf65bc643b4620861ba856d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Barman_a2.txt using Guid(94346efddf65bc643b4620861ba856d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c18d1682d91a3cc69d70a9ee845e165') in 0.005668 seconds 
+  Import took 0.008261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.033911 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Barman_a1a2.txt
+  artifactKey: Guid(1e292512d8920d148b3c2e8ef72bf99f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Barman_a1a2.txt using Guid(1e292512d8920d148b3c2e8ef72bf99f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '765e1c6a21603608195aaad4d5aa7dab') in 0.005800 seconds 
+  Import took 0.008392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.401203 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Barman_a3.txt
+  artifactKey: Guid(d3dfc6687aa5e3647bb11043304a14a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Barman_a3.txt using Guid(d3dfc6687aa5e3647bb11043304a14a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b44582d25dbb26259955aeebf047dad3') in 0.006173 seconds 
+  Import took 0.008740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 281.430033 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman.txt
+  artifactKey: Guid(45de2ad2c2518e749a5d9772d6d11f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman.txt using Guid(45de2ad2c2518e749a5d9772d6d11f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a9063e95b208ebb860865c89c62c621') in 0.002781 seconds 
+  Import took 0.005767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005065 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman.txt
+  artifactKey: Guid(45de2ad2c2518e749a5d9772d6d11f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman.txt using Guid(45de2ad2c2518e749a5d9772d6d11f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a9063e95b208ebb860865c89c62c621') in 0.002213 seconds 
+  Import took 0.004121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.245314 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman 1.txt
+  artifactKey: Guid(c68feac3a3d8317439d8f95971397f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman 1.txt using Guid(c68feac3a3d8317439d8f95971397f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2942e413cf831978a7369355275490e5') in 0.005710 seconds 
+  Import took 0.008343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 95.343108 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Barman_b1.txt
+  artifactKey: Guid(c68feac3a3d8317439d8f95971397f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Barman_b1.txt using Guid(c68feac3a3d8317439d8f95971397f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd419d0ea5f270f1f65d7a7bbbadc9ce0') in 0.005884 seconds 
+  Import took 0.008454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 140.222656 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Barman_b1.txt
+  artifactKey: Guid(c68feac3a3d8317439d8f95971397f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Barman_b1.txt using Guid(c68feac3a3d8317439d8f95971397f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4230bce04b05b6e9a38f31d54a9b9a21') in 0.002665 seconds 
+  Import took 0.005756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002695 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Barman_b1.txt
+  artifactKey: Guid(c68feac3a3d8317439d8f95971397f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Barman_b1.txt using Guid(c68feac3a3d8317439d8f95971397f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4230bce04b05b6e9a38f31d54a9b9a21') in 0.002573 seconds 
+  Import took 0.005453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.745690 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Barman_b1 1.txt
+  artifactKey: Guid(f4665051e26c2364d9c0945f26e16475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Barman_b1 1.txt using Guid(f4665051e26c2364d9c0945f26e16475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5cb13f0c9d4d1b03286aaab44e8e761') in 0.005773 seconds 
+  Import took 0.008430 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Barman_b1 1.txt
+  artifactKey: Guid(f4665051e26c2364d9c0945f26e16475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Barman_b1 1.txt using Guid(f4665051e26c2364d9c0945f26e16475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5cb13f0c9d4d1b03286aaab44e8e761') in 0.002078 seconds 
+  Import took 0.004554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.514849 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Barman_b2.txt
+  artifactKey: Guid(f4665051e26c2364d9c0945f26e16475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Barman_b2.txt using Guid(f4665051e26c2364d9c0945f26e16475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0fe299357500a7d3c03ce83e4875dcf') in 0.006081 seconds 
+  Import took 0.008630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.465114 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Barman_b2.txt
+  artifactKey: Guid(f4665051e26c2364d9c0945f26e16475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Barman_b2.txt using Guid(f4665051e26c2364d9c0945f26e16475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25ce185378fb896b7ac19dd47fa1c146') in 0.002855 seconds 
+  Import took 0.005890 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Barman_b2.txt
+  artifactKey: Guid(f4665051e26c2364d9c0945f26e16475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Barman_b2.txt using Guid(f4665051e26c2364d9c0945f26e16475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25ce185378fb896b7ac19dd47fa1c146') in 0.002583 seconds 
+  Import took 0.005076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 73.138920 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman.txt
+  artifactKey: Guid(45de2ad2c2518e749a5d9772d6d11f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman.txt using Guid(45de2ad2c2518e749a5d9772d6d11f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4da38aa2a5d6c3f857ff14b632080ab3') in 0.002616 seconds 
+  Import took 0.005304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman.txt
+  artifactKey: Guid(45de2ad2c2518e749a5d9772d6d11f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman.txt using Guid(45de2ad2c2518e749a5d9772d6d11f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4da38aa2a5d6c3f857ff14b632080ab3') in 0.002243 seconds 
+  Import took 0.004492 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.309188 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman.txt
+  artifactKey: Guid(45de2ad2c2518e749a5d9772d6d11f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman.txt using Guid(45de2ad2c2518e749a5d9772d6d11f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0866b8a3ac8b971652345335611116e9') in 0.002379 seconds 
+  Import took 0.005154 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.394337 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Barman_b2 1.txt
+  artifactKey: Guid(03c6420508c694d4ab9317ee3112cab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Barman_b2 1.txt using Guid(03c6420508c694d4ab9317ee3112cab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9c338e389edfb7dc12d4746b612f72b') in 0.005872 seconds 
+  Import took 0.008549 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.913952 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Barman_c1.txt
+  artifactKey: Guid(03c6420508c694d4ab9317ee3112cab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Barman_c1.txt using Guid(03c6420508c694d4ab9317ee3112cab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40a741e7c0536b0aeb44e6ad3e03586a') in 0.006075 seconds 
+  Import took 0.008767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.337973 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman 1.txt
+  artifactKey: Guid(cc32bfd3ffb575c46a8d480988f4b8ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman 1.txt using Guid(cc32bfd3ffb575c46a8d480988f4b8ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e62c7e3c175fd986eeefb78371e3e8e3') in 0.002441 seconds 
+  Import took 0.004883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000444 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman 1.txt
+  artifactKey: Guid(cc32bfd3ffb575c46a8d480988f4b8ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman 1.txt using Guid(cc32bfd3ffb575c46a8d480988f4b8ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e62c7e3c175fd986eeefb78371e3e8e3') in 0.002216 seconds 
+  Import took 0.004505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.369232 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman_02.txt
+  artifactKey: Guid(cc32bfd3ffb575c46a8d480988f4b8ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman_02.txt using Guid(cc32bfd3ffb575c46a8d480988f4b8ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '579ac2d995acaeb1aca2950bc20bbeea') in 0.005658 seconds 
+  Import took 0.008300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.893275 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman_01.txt
+  artifactKey: Guid(45de2ad2c2518e749a5d9772d6d11f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman_01.txt using Guid(45de2ad2c2518e749a5d9772d6d11f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77251d5012ba227440986a51514cedea') in 0.006067 seconds 
+  Import took 0.008670 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 88.402558 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman_02.txt
+  artifactKey: Guid(cc32bfd3ffb575c46a8d480988f4b8ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman_02.txt using Guid(cc32bfd3ffb575c46a8d480988f4b8ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dd86cc6d63b96d67eba6c21beec5728') in 0.002718 seconds 
+  Import took 0.005549 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003112 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman_02.txt
+  artifactKey: Guid(cc32bfd3ffb575c46a8d480988f4b8ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman_02.txt using Guid(cc32bfd3ffb575c46a8d480988f4b8ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dd86cc6d63b96d67eba6c21beec5728') in 0.002568 seconds 
+  Import took 0.005138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.042283 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman_02 1.txt
+  artifactKey: Guid(373c43f5d475f6a48b0c962d81dbd5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman_02 1.txt using Guid(373c43f5d475f6a48b0c962d81dbd5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '448935a02c630da8e58056862b385fdd') in 0.005977 seconds 
+  Import took 0.008476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.457314 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman_03.txt
+  artifactKey: Guid(373c43f5d475f6a48b0c962d81dbd5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman_03.txt using Guid(373c43f5d475f6a48b0c962d81dbd5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e042066acf741130012a9e570c42227a') in 0.005612 seconds 
+  Import took 0.008267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 211.079897 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman_03.txt
+  artifactKey: Guid(373c43f5d475f6a48b0c962d81dbd5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman_03.txt using Guid(373c43f5d475f6a48b0c962d81dbd5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '454272589c23571ede837102d29d4c77') in 0.002625 seconds 
+  Import took 0.005189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003855 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman_03.txt
+  artifactKey: Guid(373c43f5d475f6a48b0c962d81dbd5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Interrogatoire_Barman_03.txt using Guid(373c43f5d475f6a48b0c962d81dbd5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '454272589c23571ede837102d29d4c77') in 0.002260 seconds 
+  Import took 0.004581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.636797 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/V.txt
+  artifactKey: Guid(03c6420508c694d4ab9317ee3112cab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/V.txt using Guid(03c6420508c694d4ab9317ee3112cab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d83d0052a1e5506a22c5e735c17792a') in 0.005932 seconds 
+  Import took 0.008704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.461663 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Victime_Femmr.txt
+  artifactKey: Guid(03c6420508c694d4ab9317ee3112cab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Victime_Femmr.txt using Guid(03c6420508c694d4ab9317ee3112cab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b27955d0acdff10230a9f71dcdb149b6') in 0.005664 seconds 
+  Import took 0.008339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.860714 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Victime_Femme.txt
+  artifactKey: Guid(03c6420508c694d4ab9317ee3112cab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Victime_Femme.txt using Guid(03c6420508c694d4ab9317ee3112cab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d034bed45633bd3f75b045aa9546ab2') in 0.005652 seconds 
+  Import took 0.008444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.160093 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Victime_Femme 1.txt
+  artifactKey: Guid(d1ae22ee6d1b43c47b636e34648ab714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Victime_Femme 1.txt using Guid(d1ae22ee6d1b43c47b636e34648ab714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a99a19219b35ec67c276a006257af0b4') in 0.006226 seconds 
+  Import took 0.008856 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.854313 seconds.
+  path: Assets/Resources/Story/Interrogatoire/Barman/Victime_Homme.txt
+  artifactKey: Guid(d1ae22ee6d1b43c47b636e34648ab714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Story/Interrogatoire/Barman/Victime_Homme.txt using Guid(d1ae22ee6d1b43c47b636e34648ab714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4fdd1e5dc141ce7c607550d6594da3a') in 0.005596 seconds 
+  Import took 0.008293 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

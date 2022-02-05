@@ -8,22 +8,7 @@ choice "Allez voir la danseuse ou le barman ?"
     "Allez voir la danseuse ?"
         load(Interrogatoire/Danseuse/Interrogatoire_Danseuse)
     "Allez voir le Barman ?"
-        load(Interrogatoire/Barman/Interrogatoire_Barman)
+        load(Interrogatoire/Barman/Interrogatoire_Barman_01)
 }
-stop()
-
-//Après avoir vue le barman ou la danseuse
-choice "Allez voir la danseuse ou le barman ?"
-{
-	"Allez voir la danseuse ?"
-        Load(Interrogatoire/Danseuse/Interrogatoire_Danseuse)
-	"Allez voir le Barman ?"
-	    Load()
-}
-stop()
-
-//Après avoir vue le barman ET la danseuse
-Berret "Mmmmh"
-Berret "Je commence à y voir plus claire maintenant."
 stop()
 

@@ -17,8 +17,7 @@ choice "Choisie une question"
     "Vous avez vu les suspects ? Vous les avez déjà vu auparavant ?"
         load(Interrogatoire/Barman/Barman_b1)
     "Et SUSPECT 3 ?"
-        Barman "Le dernier, je suis moins sûr… Peut-être que SUSPECT 3 n'est jamais venu ici, peut-être pas, je ne sais pas vraiment."
-        Berret "Bien, je vais voir ce que je peux faire de ces informations."
+        load(Interrogatoire/Barman/Barman_b2)
 }
 load(Interrogatoire/Barman/Interrogatoire_Barman_02)
 stop()

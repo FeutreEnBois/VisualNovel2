@@ -159,21 +159,18 @@ public class NovelController : MonoBehaviour
         if(dialogueAndActions.Length == 3)
         {
             string[] actions = dialogueAndActions[2].Split(' ');
-            for (int i = 0; i < actions.Length; i++)
-            {
-                if (!actions[i].Contains("condition") || GetCondition(actions[i]))
+                if (!dialogueAndActions[2].Contains("condition") || HandleAction(actions[1]))
                 {
                     HandleDialogue(dialogueAndActions[0], dialogueAndActions[1]);
                     HandleEventsFromLine(dialogueAndActions[2]);
                 }
-            }
         }
         else
         {
             string[] actions = dialogueAndActions[0].Split(' ');
             for (int i = 0; i < actions.Length; i++)
             {
-                if (!actions[i].Contains("condition") || GetCondition(actions[i]))
+                if (!dialogueAndActions[2].Contains("condition") || GetCondition(actions[i]))
                 {
                     HandleEventsFromLine(dialogueAndActions[0]);
                 }
@@ -225,6 +222,7 @@ public class NovelController : MonoBehaviour
         string[] actions = events.Split(' ');
         foreach(string action in actions)
         {
+            //Debug.Log(action);
             condition = HandleAction(action);
             if(condition == false)
             {
@@ -303,6 +301,10 @@ public class NovelController : MonoBehaviour
         if(param[0] == "Inventory")
         {
             bool b = Inventory.instance.Contains(int.Parse(param[1]));
+            return b;
+        }else if(param[0] == "Preuve")
+        {
+            bool b = Inventory.instance.PreuvesContains(param[1], param[2]);
             return b;
         }
         return false;

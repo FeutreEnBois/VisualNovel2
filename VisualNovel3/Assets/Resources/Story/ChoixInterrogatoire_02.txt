@@ -4,6 +4,6 @@ choice "Allez voir la danseuse ou le barman ?"
     "Allez voir la danseuse ?"
         Load(Interrogatoire/Danseuse/Interrogatoire_Danseuse)
     "Allez voir le Barman ?"
-        Load()
+        Load(Interrogatoire/Barman/Interrogatoire_Barman_01)
 }
 stop()

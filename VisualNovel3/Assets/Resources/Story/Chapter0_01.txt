@@ -1,10 +1,10 @@
 narrator "17 novembre 1921, " playMusic(NightOnTheDocks-Sax)
 +"11ème Arrondissements, "
-+"117 rue de Montreuil, "
-"(Rire, boisson, musique)"
++"117 rue de Montreuil, " condition(Preuve,Barman,preuve_1)
+"(Rire, boisson, musique)" 
 choice ""
 {
-	"Pas mal ton histoire Bapt'"condition(Inventory,1)
+	"Pas mal ton histoire Bapt'"condition(Preuve,Barman,preuve_1)
 	Inspecteur "Ha Ha Ha merci bien !!" moveTo(Inspecteur,1,0.5,3,true)
 	"Wouah t'en a de la chance Bapt'"
 	Inspecteur "La chance ça se force !" moveTo(Inspecteur,1,0.5,3,true)
