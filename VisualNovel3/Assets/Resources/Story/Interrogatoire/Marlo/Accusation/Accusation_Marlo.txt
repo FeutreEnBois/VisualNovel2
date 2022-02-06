@@ -16,5 +16,5 @@ Marlo "Ce n'est pas moi ! Je ne veux pas aller en prison."
 Berret "C’est pas la prison qui t’attends, plutôt la peine de mort"
 Marlo "Nooooooooooooooooonnnnn !!!!!!"
 Berret "Si ..."
-load(Interrogatoire/Marlo/Interrogatoire_Marlo)
+load(Chapter0_04)
 stop()

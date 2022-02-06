@@ -168,14 +168,10 @@ public class NovelController : MonoBehaviour
         else
         {
             string[] actions = dialogueAndActions[0].Split(' ');
-            for (int i = 0; i < actions.Length; i++)
-            {
-                if (!dialogueAndActions[2].Contains("condition") || GetCondition(actions[i]))
+                if (!dialogueAndActions[0].Contains("condition") || HandleAction(actions[1]))
                 {
                     HandleEventsFromLine(dialogueAndActions[0]);
                 }
-            }
-            
         }
     }
 

@@ -1,0 +1,6 @@
+transBackground(towns,blur)
+Berret "Ligne non lu"
+Flic "Bien joué inspecteur, vous nous avez bien aider sur ce coup"
+"J'espère pouvoir retravailler avec vous !"
+stop()
+

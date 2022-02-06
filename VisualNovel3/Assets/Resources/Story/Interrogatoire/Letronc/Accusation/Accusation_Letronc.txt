@@ -1,0 +1,5 @@
+narrator "Bouuuuuh, c'était pas luii, c'est pas Letronc !!"
+Berret "Qquoi ??"
+narrator "T'es nulllllll :ppp"
+load(Chapter0_04)
+stop()
