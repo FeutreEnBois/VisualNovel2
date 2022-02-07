@@ -1,4 +1,4 @@
-Berret "Je vois ..."
+Berret "Mmmmh"
 flip(Berret)
 choice "Choisie une question"
 {

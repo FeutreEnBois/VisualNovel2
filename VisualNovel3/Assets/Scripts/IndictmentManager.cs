@@ -14,6 +14,10 @@ public class IndictmentManager : MonoBehaviour
         
     }
 
+    public void ToggleKillerChoosingPanel()
+    {
+        AccusationPanel.SetActive(!AccusationPanel.activeInHierarchy);
+    }
     public void ChooseASuspect(TextMeshProUGUI suspect)
     {
         accuser = suspect.text;

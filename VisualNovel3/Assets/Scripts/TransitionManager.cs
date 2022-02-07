@@ -22,22 +22,6 @@ public class TransitionManager : MonoBehaviour
         instance = this;
         overlayImage.material = new Material(transitionMaterialPrefab);
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("bluuee");
-            ShowScene(!sceneVisible);
-        }
-        
-    }
 
     static bool sceneVisible = true;
     public static void ShowScene(bool show, float speed = 1, bool smooth = false, Texture2D transitionEffect = null)

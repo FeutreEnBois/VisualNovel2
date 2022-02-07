@@ -1,0 +1,12 @@
+Barman "Oh vous revoilà Mr Berret"
+Berret "Re-bonjour l'ami"
+Barman "Vous avez de nouvelle question ?"
+choice "questionner le barman ?"
+{
+    "Oui"
+        load(Interrogatoire/Barman/ChoixInterrogatoire_01)
+    "Non, je ne fais que passer"
+        Barman "Je vois."
+}
+stop()
+
