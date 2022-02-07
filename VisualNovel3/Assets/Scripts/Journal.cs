@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,6 @@ using UnityEngine;
 public class Journal : MonoBehaviour
 {
     public GameObject journal;
-    private bool journalEnabled;
     
 
     private int allHeads;
@@ -30,24 +30,16 @@ public class Journal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J))
-            journalEnabled = !journalEnabled;
-
-        if (journalEnabled == true)
+        if (Input.GetKeyUp(KeyCode.J))
         {
-            
-            journal.SetActive(true);
-            
-
+            ToggleJournal();
         }
-        else
-        {
-            journal.SetActive(false);
-        }
-        
         
 
     }
-   
 
+    public void ToggleJournal()
+    {
+        journal.SetActive(!journal.activeInHierarchy);
+    }
 }
