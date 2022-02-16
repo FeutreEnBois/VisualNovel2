@@ -5,14 +5,14 @@ Berret "Ecoutez l'ami je suis la pour vous aidez"
 Marlo "J-J'était là pour voir ma femme"
 Berret "Votre femme, elle travaille ici ?"
 Marlo "Oui, elle est danseuse."
-Berret "mmmmh, bien"
+Berret "Mmmmh, bien."
 "Vous avez eu le temps de la voir avant l'incident ?"
 Marlo "Non, je venais d'arriver"
 Berret "La question maintenant c'est pourquoi avez vous essayé de fuir ?"
-Marlo "J'ai flippé. . ."
+Marlo "J'ai eu la frousse. . ."
 +" C'est pas tous les jours qu'on est mêlée à une fusillade"
-Berret "Sa fait resortir les mauvais souvenir de la guerre c'est ça ?"
-Marlo "Justement . . ."
-load(Interrogatoire/Marlo/Interrogatoire_Marlo)
+Berret "Ça fait ressortir les mauvais souvenir de la guerre c'est ça ?"
+Marlo "Justement, je n'en ai jamais entendu ! J'étais un simple garde dans un aérodrome. Je devais surveiller la zone et m'assurer de son bon fonctionnement."
+load(Interrogatoire/Marlo/ChoiceInterrogatoire_Marlo1)
 stop()
 

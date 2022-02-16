@@ -1,72 +1,71 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.13f1 (71691879b7f5) revision 7432472'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.1466; Version 2009; 64bit' Language: 'fr' Physical Memory: 7997 MB
+OS: 'Windows 10 Pro; OS build 19042.1466; Version 2009; 64bit' Language: 'fr' Physical Memory: 16307 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.13f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/antho/Documents/GitHub/VisualNovel2/VisualNovel3
+C:/Users/deros/Desktop/Game/Unity/Game/VisualNovel2/VisualNovel3
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54072
-Successfully changed project path to: C:/Users/antho/Documents/GitHub/VisualNovel2/VisualNovel3
-C:/Users/antho/Documents/GitHub/VisualNovel2/VisualNovel3
+52901
+Successfully changed project path to: C:/Users/deros/Desktop/Game/Unity/Game/VisualNovel2/VisualNovel3
+C:/Users/deros/Desktop/Game/Unity/Game/VisualNovel2/VisualNovel3
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 46.41 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 28.05 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.13f1 (71691879b7f5)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/antho/Documents/GitHub/VisualNovel2/VisualNovel3/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/deros/Desktop/Game/Unity/Game/VisualNovel2/VisualNovel3/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) UHD Graphics (ID=0x8a56)
+    Renderer: NVIDIA GeForce RTX 3070 (ID=0x2484)
     Vendor:   
-    VRAM:     3998 MB
-    Driver:   30.0.100.9805
+    VRAM:     8043 MB
+    Driver:   27.21.14.6089
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56292
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56976
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002899 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001468 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 74.63 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 27.55 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unable to find bridge dll in registry for Microsoft Visual Studio Tools for Unity for C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe
 Mono: successfully reloaded assembly
-- Completed reload, in  1.940 seconds
+- Completed reload, in  0.846 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.012420 seconds.
+Registered in 0.002655 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.473 seconds
+- Completed reload, in  0.852 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1504 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 71.6 MB.
-System memory in use after: 71.7 MB.
+Unloading 1508 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.1 MB.
+System memory in use after: 72.1 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1941.
-Total: 2.423200 ms (FindLiveObjects: 0.149300 ms CreateObjectMapping: 0.049800 ms MarkObjects: 2.132400 ms  DeleteObjects: 0.089900 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1948.
+Total: 2.139800 ms (FindLiveObjects: 0.210500 ms CreateObjectMapping: 0.040600 ms MarkObjects: 1.805400 ms  DeleteObjects: 0.081700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -80,328 +79,116 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Resources/Story/Interrogatoire/Marlo/Interrogatoire_Marlo.txt
-  artifactKey: Guid(856cbd4a0a2318d4b92e8b2e54c68250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Marlo/Interrogatoire_Marlo.txt using Guid(856cbd4a0a2318d4b92e8b2e54c68250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccc65686806042501494a6b4cb1a2267') in 0.056767 seconds 
-  Import took 0.060699 seconds .
+  path: Assets/Scripts/NovelController.cs
+  artifactKey: Guid(b5766d94d0a35eb4fb01fc98b7874239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NovelController.cs using Guid(b5766d94d0a35eb4fb01fc98b7874239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bfdda7ebcabff8df386144ed868603f') in 0.036287 seconds 
+  Import took 0.039000 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 21.165253 seconds.
-  path: Assets/Resources/Story/chapter0_start.txt
-  artifactKey: Guid(a4705a1210f52814781a1a7672acd102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/chapter0_start.txt using Guid(a4705a1210f52814781a1a7672acd102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '558b97cfcfdec1eb3896b0270e0b3a73') in 0.015764 seconds 
-  Import took 0.019895 seconds .
+  Time since last request: 0.000337 seconds.
+  path: Assets/Scripts/Persopage.cs
+  artifactKey: Guid(d3f66272d0683604db0225df50aeb9ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Persopage.cs using Guid(d3f66272d0683604db0225df50aeb9ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20ccddc8247b767db4dc0b2584a275d6') in 0.005723 seconds 
+  Import took 0.008104 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.031128 seconds.
-  path: Assets/Resources/Story/chapter0_start.txt
-  artifactKey: Guid(a4705a1210f52814781a1a7672acd102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/chapter0_start.txt using Guid(a4705a1210f52814781a1a7672acd102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '558b97cfcfdec1eb3896b0270e0b3a73') in 0.007371 seconds 
-  Import took 0.011751 seconds .
+  Time since last request: 311.985236 seconds.
+  path: Assets/Scripts/NovelController.cs
+  artifactKey: Guid(b5766d94d0a35eb4fb01fc98b7874239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NovelController.cs using Guid(b5766d94d0a35eb4fb01fc98b7874239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd77f50bf44b1f490f46dc05a72db513b') in 0.003741 seconds 
+  Import took 0.006521 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 80.174533 seconds.
-  path: Assets/Resources/Story/Interrogatoire
-  artifactKey: Guid(b0283b0da2da66049bcd86f55cd88db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire using Guid(b0283b0da2da66049bcd86f55cd88db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6987eb56f0a5fa0bed2cba2083fef24c') in 0.016509 seconds 
-  Import took 0.020907 seconds .
+  Time since last request: 200.496007 seconds.
+  path: Assets/Scripts/NovelController.cs
+  artifactKey: Guid(b5766d94d0a35eb4fb01fc98b7874239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NovelController.cs using Guid(b5766d94d0a35eb4fb01fc98b7874239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4003826048ca83ab634cfefa343212de') in 0.001929 seconds 
+  Import took 0.004540 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 28.097785 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Marlo/Marlo_a1.txt
-  artifactKey: Guid(9bc1dd6134ef353448325dc4d668336f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Marlo/Marlo_a1.txt using Guid(9bc1dd6134ef353448325dc4d668336f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbae7dfe5fc35128cc8352f9cb2f7bad') in 0.006711 seconds 
-  Import took 0.011695 seconds .
+  Time since last request: 35.819726 seconds.
+  path: Assets/Scripts/NovelController.cs
+  artifactKey: Guid(b5766d94d0a35eb4fb01fc98b7874239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NovelController.cs using Guid(b5766d94d0a35eb4fb01fc98b7874239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48bab86b21ac3ea929266907b7364248') in 0.003446 seconds 
+  Import took 0.006050 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000948 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Marlo/Marlo_a1.txt
-  artifactKey: Guid(9bc1dd6134ef353448325dc4d668336f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Marlo/Marlo_a1.txt using Guid(9bc1dd6134ef353448325dc4d668336f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbae7dfe5fc35128cc8352f9cb2f7bad') in 0.006733 seconds 
-  Import took 0.010627 seconds .
+  Time since last request: 45.902085 seconds.
+  path: Assets/Scripts/NovelController.cs
+  artifactKey: Guid(b5766d94d0a35eb4fb01fc98b7874239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NovelController.cs using Guid(b5766d94d0a35eb4fb01fc98b7874239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c4097d2840c36a15cb8ada21fce9e95') in 0.003523 seconds 
+  Import took 0.006732 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.671803 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Marlo/Interrogatoire_Marlo.txt
-  artifactKey: Guid(4e59ac329b8b62e45b58633b86cefad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Marlo/Interrogatoire_Marlo.txt using Guid(4e59ac329b8b62e45b58633b86cefad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8839b461ceef580cfc327e0bc4b4841') in 0.007924 seconds 
-  Import took 0.012894 seconds .
+  Time since last request: 15.407300 seconds.
+  path: Assets/Scripts/NovelController.cs
+  artifactKey: Guid(b5766d94d0a35eb4fb01fc98b7874239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NovelController.cs using Guid(b5766d94d0a35eb4fb01fc98b7874239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78700cbff2e611bd69f5d00e5a76adf4') in 0.003379 seconds 
+  Import took 0.006669 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000789 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Marlo/Interrogatoire_Marlo.txt
-  artifactKey: Guid(4e59ac329b8b62e45b58633b86cefad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Marlo/Interrogatoire_Marlo.txt using Guid(4e59ac329b8b62e45b58633b86cefad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8839b461ceef580cfc327e0bc4b4841') in 0.006036 seconds 
-  Import took 0.010665 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002645 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.759 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1488 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.5 MB.
+System memory in use after: 70.6 MB.
 
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1951.
+Total: 2.207700 ms (FindLiveObjects: 0.215000 ms CreateObjectMapping: 0.039600 ms MarkObjects: 1.925300 ms  DeleteObjects: 0.026600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 1.494989 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Marlo/1er
-  artifactKey: Guid(7722ab4a916700147922e1727c946925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Marlo/1er using Guid(7722ab4a916700147922e1727c946925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd849f594eb38d483116800599253f298') in 0.016301 seconds 
-  Import took 0.020343 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002570 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.775 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1488 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.6 MB.
+System memory in use after: 70.7 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 6.243285 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Marlo/3eme
-  artifactKey: Guid(104bbca6dd6ab684baac0dd31fbbb57f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Marlo/3eme using Guid(104bbca6dd6ab684baac0dd31fbbb57f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb2aac27c44d371d5402e8b54a07b7cb') in 0.018003 seconds 
-  Import took 0.021883 seconds .
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1954.
+Total: 4.999400 ms (FindLiveObjects: 0.297000 ms CreateObjectMapping: 0.045000 ms MarkObjects: 4.608200 ms  DeleteObjects: 0.046500 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 6.763168 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Marlo/Marlo_b1.txt
-  artifactKey: Guid(f44a21970d49c55498c4cc642ce233fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Marlo/Marlo_b1.txt using Guid(f44a21970d49c55498c4cc642ce233fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '684ffa79cc623a14e95dffa5d78f57ab') in 0.006259 seconds 
-  Import took 0.011630 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000927 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Marlo/Marlo_b1.txt
-  artifactKey: Guid(f44a21970d49c55498c4cc642ce233fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Marlo/Marlo_b1.txt using Guid(f44a21970d49c55498c4cc642ce233fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '684ffa79cc623a14e95dffa5d78f57ab') in 0.005709 seconds 
-  Import took 0.010023 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.247165 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Marlo/Marlo_ACCUSATION.txt
-  artifactKey: Guid(7760763517c407d469a41c8899dd94cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Marlo/Marlo_ACCUSATION.txt using Guid(7760763517c407d469a41c8899dd94cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd9469167eafa06ba430a8a96de0c024') in 0.015766 seconds 
-  Import took 0.019439 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.627318 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Marlo/Marlo_a3.txt
-  artifactKey: Guid(b29bcbe9970d5c2428c23724d0eed890) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Marlo/Marlo_a3.txt using Guid(b29bcbe9970d5c2428c23724d0eed890) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5fa55c3ecfd1f58e811ebcabf9e604d') in 0.016245 seconds 
-  Import took 0.022575 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.477915 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Marlo/Marlo_a2.txt
-  artifactKey: Guid(fea79c88e1a1fb84492af4615cc76a18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Marlo/Marlo_a2.txt using Guid(fea79c88e1a1fb84492af4615cc76a18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64e01935057805081630aaebc276b0f2') in 0.012613 seconds 
-  Import took 0.017373 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.685107 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Marlo/Marlo_b2.txt
-  artifactKey: Guid(dda84a36083874a499a7745a66d50d5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Marlo/Marlo_b2.txt using Guid(dda84a36083874a499a7745a66d50d5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f8afc0b8f23a114024a14e09cd1b77e') in 0.016057 seconds 
-  Import took 0.020405 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.392402 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Marlo/Marlo_b3.txt
-  artifactKey: Guid(3fe9ebef9504161428c3a6959c053987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Marlo/Marlo_b3.txt using Guid(3fe9ebef9504161428c3a6959c053987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d3f21828fb2496f4ae459037698db7e') in 0.014301 seconds 
-  Import took 0.017966 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 115.320613 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Dupont/Interrogatoir_Dupont 1.txt
-  artifactKey: Guid(e56bd1b50b32b3946a7036e8ef5f3461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Dupont/Interrogatoir_Dupont 1.txt using Guid(e56bd1b50b32b3946a7036e8ef5f3461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd80298d20acc73894130db7483790a92') in 0.018697 seconds 
-  Import took 0.024043 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.521379 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a2.txt
-  artifactKey: Guid(8396a93bbcd8fc347bc1865b7a0f959d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a2.txt using Guid(8396a93bbcd8fc347bc1865b7a0f959d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33bacd1b4800d8155e9f57022c8177b1') in 0.005054 seconds 
-  Import took 0.008797 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.598859 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a1 1.txt
-  artifactKey: Guid(1174eabfed6374640b84a2cfd74a538f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a1 1.txt using Guid(1174eabfed6374640b84a2cfd74a538f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c27c3f39a6482d5a411c64d43fe782a0') in 0.010049 seconds 
-  Import took 0.017229 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000730 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a1 1.txt
-  artifactKey: Guid(1174eabfed6374640b84a2cfd74a538f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a1 1.txt using Guid(1174eabfed6374640b84a2cfd74a538f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c27c3f39a6482d5a411c64d43fe782a0') in 0.007052 seconds 
-  Import took 0.011727 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 96.377462 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Marlo/2eme
-  artifactKey: Guid(758d7d5908a0ff540be6eda6969f1a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Marlo/2eme using Guid(758d7d5908a0ff540be6eda6969f1a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e22e08e0a0a5f38844b8759ab1d9ca4') in 0.011572 seconds 
-  Import took 0.015972 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 146.813763 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a1 1.txt
-  artifactKey: Guid(1174eabfed6374640b84a2cfd74a538f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a1 1.txt using Guid(1174eabfed6374640b84a2cfd74a538f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a4519771a045ae912d9a8dc8b095f60') in 0.007461 seconds 
-  Import took 0.013865 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 55.974824 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a2.txt
-  artifactKey: Guid(8396a93bbcd8fc347bc1865b7a0f959d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a2.txt using Guid(8396a93bbcd8fc347bc1865b7a0f959d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c3f0bd528ba0814d41c87a1d9ceda30') in 0.017748 seconds 
-  Import took 0.151286 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.301521 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Dupont/Interrogatoire_Dupont.txt
-  artifactKey: Guid(1174eabfed6374640b84a2cfd74a538f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Dupont/Interrogatoire_Dupont.txt using Guid(1174eabfed6374640b84a2cfd74a538f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef58f5c8bb633ee3ddeb9f4e43f41f57') in 0.012095 seconds 
-  Import took 0.017872 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.365150 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a2 1.txt
-  artifactKey: Guid(7edc6be131e5c1747b5b6cfcbfe3c21f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a2 1.txt using Guid(7edc6be131e5c1747b5b6cfcbfe3c21f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b00ab9058c01a7299e37fb2d494f5d34') in 0.014913 seconds 
-  Import took 0.019333 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.696183 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a3.txt
-  artifactKey: Guid(e56bd1b50b32b3946a7036e8ef5f3461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a3.txt using Guid(e56bd1b50b32b3946a7036e8ef5f3461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80e8afa952daecf74785abd9282e712c') in 0.005784 seconds 
-  Import took 0.010540 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.800813 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a1.txt
-  artifactKey: Guid(7edc6be131e5c1747b5b6cfcbfe3c21f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a1.txt using Guid(7edc6be131e5c1747b5b6cfcbfe3c21f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ac310d8ec46f26698cb1aba600920aa') in 0.012137 seconds 
-  Import took 0.018743 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 71.454081 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a2.txt
-  artifactKey: Guid(8396a93bbcd8fc347bc1865b7a0f959d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a2.txt using Guid(8396a93bbcd8fc347bc1865b7a0f959d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'def1060aa8de8419486a5aa7c1a2188e') in 0.006508 seconds 
-  Import took 0.010983 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.058199 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a3.txt
-  artifactKey: Guid(e56bd1b50b32b3946a7036e8ef5f3461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a3.txt using Guid(e56bd1b50b32b3946a7036e8ef5f3461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '177e88176c171eab951d377f09a2b3ae') in 0.005444 seconds 
-  Import took 0.010322 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.713792 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a3.txt
-  artifactKey: Guid(e56bd1b50b32b3946a7036e8ef5f3461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a3.txt using Guid(e56bd1b50b32b3946a7036e8ef5f3461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ec915b640eee04062251ccc03bf2d57') in 0.007399 seconds 
-  Import took 0.013453 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2425.676135 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a1.txt
-  artifactKey: Guid(7edc6be131e5c1747b5b6cfcbfe3c21f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a1.txt using Guid(7edc6be131e5c1747b5b6cfcbfe3c21f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1500e4289eeaee52c91890789aea201') in 0.012203 seconds 
-  Import took 0.030642 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.710884 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a2.txt
-  artifactKey: Guid(8396a93bbcd8fc347bc1865b7a0f959d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a2.txt using Guid(8396a93bbcd8fc347bc1865b7a0f959d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c484ecda80831aa56dbc675f9d2a73d') in 0.005659 seconds 
-  Import took 0.010832 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001275 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a2.txt
-  artifactKey: Guid(8396a93bbcd8fc347bc1865b7a0f959d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a2.txt using Guid(8396a93bbcd8fc347bc1865b7a0f959d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c484ecda80831aa56dbc675f9d2a73d') in 0.006656 seconds 
-  Import took 0.011135 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 132.093359 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a3.txt
-  artifactKey: Guid(e56bd1b50b32b3946a7036e8ef5f3461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Dupont/Dupont_a3.txt using Guid(e56bd1b50b32b3946a7036e8ef5f3461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41f550d6f6c415afce7c436a2c4bd82c') in 0.009106 seconds 
-  Import took 0.014697 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.326984 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Laplanche/Laplanche_a1 1.txt
-  artifactKey: Guid(463ce4ac822102a4984733810bd0d817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Laplanche/Laplanche_a1 1.txt using Guid(463ce4ac822102a4984733810bd0d817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a127ec8ed378cd7cbada60c83d99afa7') in 0.011736 seconds 
-  Import took 0.016321 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000669 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Laplanche/Laplanche_a1 1.txt
-  artifactKey: Guid(463ce4ac822102a4984733810bd0d817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Laplanche/Laplanche_a1 1.txt using Guid(463ce4ac822102a4984733810bd0d817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a127ec8ed378cd7cbada60c83d99afa7') in 0.007141 seconds 
-  Import took 0.010679 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.422526 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Laplanche/Laplanche_a2 1.txt
-  artifactKey: Guid(8fff7e840f53d7845bf32a5286c99f53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Laplanche/Laplanche_a2 1.txt using Guid(8fff7e840f53d7845bf32a5286c99f53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '554c21b5003ea9d6d39aae92202e32f3') in 0.012117 seconds 
-  Import took 0.018944 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.212009 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Laplanche/Laplanche_a3.txt
-  artifactKey: Guid(6d5ced902dd76054fab01bb5395c48e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Laplanche/Laplanche_a3.txt using Guid(6d5ced902dd76054fab01bb5395c48e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd2b403646e1eca0857d5da5c2a225cf') in 0.013341 seconds 
-  Import took 0.020328 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.924039 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Laplanche/Interrogatoir_laplanche 1.txt
-  artifactKey: Guid(9a49574f877767e4dae369ab04b2f69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Laplanche/Interrogatoir_laplanche 1.txt using Guid(9a49574f877767e4dae369ab04b2f69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92f973f2f00c20ef805efc5011b72afc') in 0.015925 seconds 
-  Import took 0.020494 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 43.397968 seconds.
-  path: Assets/Resources/Story/Interrogatoire/Marlo/Interrogatoire_Marlo.txt
-  artifactKey: Guid(4e59ac329b8b62e45b58633b86cefad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Story/Interrogatoire/Marlo/Interrogatoire_Marlo.txt using Guid(4e59ac329b8b62e45b58633b86cefad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3434a056cd3bd66723be4af67c80c442') in 0.008407 seconds 
-  Import took 0.014349 seconds .
-
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

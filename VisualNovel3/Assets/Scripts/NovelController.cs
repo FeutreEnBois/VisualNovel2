@@ -30,7 +30,7 @@ public class NovelController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        LoadChapterFile("chapter0_start");
+        LoadChapterFile("Chapter0_01");
     }
 
     // Update is called once per frame
@@ -156,15 +156,22 @@ public class NovelController : MonoBehaviour
     void HandleLine(string line)
     {
         string[] dialogueAndActions = line.Split('"');
-
         if(dialogueAndActions.Length == 3)
         {
-            HandleDialogue(dialogueAndActions[0], dialogueAndActions[1]);
-            HandleEventsFromLine(dialogueAndActions[2]);
+            string[] actions = dialogueAndActions[2].Split(' ');
+                if (!dialogueAndActions[2].Contains("condition") || HandleAction(actions[1]))
+                {
+                    HandleDialogue(dialogueAndActions[0], dialogueAndActions[1]);
+                    HandleEventsFromLine(dialogueAndActions[2]);
+                }
         }
         else
         {
-            HandleEventsFromLine(dialogueAndActions[0]);
+            string[] actions = dialogueAndActions[0].Split(' ');
+                if (!dialogueAndActions[0].Contains("condition") || HandleAction(actions[1]))
+                {
+                    HandleEventsFromLine(dialogueAndActions[0]);
+                }
         }
     }
 
@@ -207,13 +214,19 @@ public class NovelController : MonoBehaviour
 
     void HandleEventsFromLine(string events)
     {
+        bool condition = true;
         string[] actions = events.Split(' ');
-
         foreach(string action in actions)
         {
-            HandleAction(action);
+            //Debug.Log(action);
+            condition = HandleAction(action);
+            if(condition == false)
+            {
+                return;
+            }
         }
     }
+
     bool HandleAction(string action)
     {
         if(action == "")
@@ -273,8 +286,17 @@ public class NovelController : MonoBehaviour
                 bool b = GetCondition(data[1]);
                 Debug.Log(b);
                 return b;
+            case "addPreuve":
+                Command_AddPreuve(data[1]);
+                break;
         }
         return true;
+    }
+
+    private void Command_AddPreuve(string data)
+    {
+        string[] param = data.Split(',');
+        Inventory.instance.AddPreuve(param[0], param[1]);
     }
 
     private bool GetCondition(string data)
@@ -284,6 +306,10 @@ public class NovelController : MonoBehaviour
         if(param[0] == "Inventory")
         {
             bool b = Inventory.instance.Contains(int.Parse(param[1]));
+            return b;
+        }else if(param[0] == "Preuve")
+        {
+            bool b = Inventory.instance.PreuvesContains(param[1], param[2]);
             return b;
         }
         return false;

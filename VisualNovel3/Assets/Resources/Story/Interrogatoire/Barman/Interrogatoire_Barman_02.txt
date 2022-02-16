@@ -1,0 +1,12 @@
+Berret "Les victimes, vous les connaissiez ?"
+Barman "Oui, ils s’appelaient VICTIME HOMME et VICTIME FEMME."
+choice "Le joueur choisit s’il veut des info sur VICTIME HOMME ou FEMME."
+{
+    "Parlez-moi de VICTIME HOMME"
+        load(Interrogatoire/Barman/Victime_Homme)
+    "Cette femme, vous pouvez m’en dire quelque chose ?"
+        load(Interrogatoire/Barman/Victime_Femme)
+}
+stop()
+
+

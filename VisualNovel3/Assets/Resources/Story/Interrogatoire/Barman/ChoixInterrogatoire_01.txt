@@ -1,0 +1,14 @@
+Berret "Mmmmh"
+flip(Berret)
+choice "Choisie une question"
+{
+    "Vous avez vu les suspects ? Vous les avez déjà vu auparavant ?"
+        load(Interrogatoire/Barman/Barman_b1)
+    "Et SUSPECT 3 ?"
+        load(Interrogatoire/Barman/Barman_b2)
+    "PASSER"condition(Preuve,Barman,preuve_1)
+        load(Interrogatoire/Barman/Interrogatoire_Barman_03)
+}
+stop()
+
+

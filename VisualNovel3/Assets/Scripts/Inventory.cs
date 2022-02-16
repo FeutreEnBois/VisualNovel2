@@ -10,7 +10,7 @@ public class Inventory : MonoBehaviour
     public int allSlots;
     private int enabledSlots;
     private GameObject[] slot;
-    
+    public Dictionary<string,List<string>> preuves = new Dictionary<string, List<string>>();
     public GameObject slotHolder;
 
     public static Inventory instance;
@@ -41,16 +41,14 @@ public class Inventory : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.I))
-            inventoryEnabled = !inventoryEnabled;
+            ToggleInventory();
         
-        if(inventoryEnabled == true) 
-            {
-                inventory.SetActive(true);
+    }
 
-            } else {
-                inventory.SetActive(false);
-            }
-        
+    public void ToggleInventory()
+    {
+        inventoryEnabled = !inventoryEnabled;
+        inventory.SetActive(inventoryEnabled);
     }
 
     private void OnTriggerEnter(Collider other){
@@ -73,27 +71,56 @@ public class Inventory : MonoBehaviour
         }
         return false;
     }
-    public void AddItem(GameObject cool){
+
+    public void AddItem(GameObject cool)
+    {
         Item item = cool.GetComponent<Item>();
         Debug.Log("Add item");
-        for(int i = 0; i < allSlots; i++){
-            if(slot[i].GetComponent<Slot>().empty){
+        for (int i = 0; i < allSlots; i++)
+        {
+            if (slot[i].GetComponent<Slot>().empty & !item.GetComponent<Item>().pickedUp)
+            {
                 item.GetComponent<Item>().pickedUp = true;
-                
+
                 slot[i].GetComponent<Slot>().icon = item.icon;
                 slot[i].GetComponent<Slot>().type = item.type;
-                slot[i].GetComponent<Slot>().ID =item.ID;
+                slot[i].GetComponent<Slot>().ID = item.ID;
                 slot[i].GetComponent<Slot>().description = item.description;
                 slot[i].GetComponent<Slot>().UpdateSlot();
                 slot[i].GetComponent<Slot>().empty = false;
                 break;
-
-                
-
-
-
             }
         }
 
     }
+
+    public bool PreuvesContains(string Informateur, string preuve)
+    {
+        if (preuves[Informateur].Contains(preuve))
+        {
+            return true;
+        }
+        return false;
+    }
+
+    public void AddPreuve(string Informateur, string preuve) // ex : Barman -> clef
+    {
+
+        if (!preuves.ContainsKey(Informateur))
+        {
+            //Debug.Log("Instantiating Preuve from " + Informateur);
+            preuves[Informateur] = new List<string>();
+        }
+        if (preuves[Informateur].Contains(preuve))
+        {
+            //Debug.LogWarning("Preuve alrealdy added : " + preuve);
+            return;
+        }
+        else
+        {
+            Debug.Log("preuve '" + preuve + "' added to Informateur '" + Informateur + "' with success");
+            preuves[Informateur].Add(preuve);
+        }
+    }
+
 }

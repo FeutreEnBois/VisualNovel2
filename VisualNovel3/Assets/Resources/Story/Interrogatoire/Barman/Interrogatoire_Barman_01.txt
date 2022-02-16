@@ -1,0 +1,25 @@
+Barman "Rebonjour Détective, comment allez-vous après ce drame ? Vous avez besoin d’un verre de vin pour digérer ce qui vient de se passer ? Ici, l’alcool est toléré, prenez en autant que votre portes-billets vous le permet."
+choice "Le joueur choisit s’il veut une boisson ou non, si oui, une liste apparaît à l’écran."
+{
+    "Un petit rouge ?"
+        Berret "Oui, je vais vous prendre un simple verre de rouge"
+    "Un verre de lait ?"
+        Berret "Oui, je vais me laisser séduire par un verre de lait."
+    "Une bière ?"
+        Berret "Oui, je vais vous prendre par une bière."
+    "Pas le temps !!!"
+        Berret "Non, je ne suis pas là pour ça. J’aurais besoin de ton aide. T’as bien dû voir quelque chose qui pourrait m’être utile..."
+}
+Berret "Ceci étant fait, j’aurais besoin de votre aide. Vous avez bien dû voir quelque chose qui pourrait m’être utile..."
+Barman "Bien sûr, je répondrai à toutes vos questions mon ami !"
+choice "Choisie une question"
+{
+    "Vous avez vu les suspects ? Vous les avez déjà vu auparavant ?"
+        load(Interrogatoire/Barman/Barman_b1)
+    "Et SUSPECT 3 ?"
+        load(Interrogatoire/Barman/Barman_b2)
+}
+load(Interrogatoire/Barman/Interrogatoire_Barman_02)
+stop()
+
+
