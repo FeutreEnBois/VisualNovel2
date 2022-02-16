@@ -2663,6 +2663,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 578384232}
+    - target: {fileID: 2699271170468161323, guid: 778a24e632462f046bc7fc8801c5cccd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleTriggerSkip
+      objectReference: {fileID: 0}
     - target: {fileID: 2699271170937442555, guid: 778a24e632462f046bc7fc8801c5cccd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
