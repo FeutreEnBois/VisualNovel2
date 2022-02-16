@@ -42,6 +42,6 @@ Inspecteur "On a deux victimes, un homme et une femme."
 +" Pour l’instant on a pas plus d’information mais je crois que le... "
 Berret "Bien. Je vais voir ce que je peux trouver."
 narrator "L'<color=green>Inspecteur</color> sort de la salle"
-"passage en mode point and click recherche" goToPreuve()
+"passage en mode point and click recherche" transBackground(SceneCrime,blur) goToPreuve()
 stop()
 
