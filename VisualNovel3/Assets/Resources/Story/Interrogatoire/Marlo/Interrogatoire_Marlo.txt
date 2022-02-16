@@ -1,5 +1,16 @@
 Police "Il essayait de sortir en douce du périmètre de sécurité on l'a attrapé avant."
 Berret "Bonsoir Monsieur, je suis le détective Berret, détective privé. Je suis ici pour savoir si vous êtes innocent."
 "Pour cela je vais avoir besoin de votre aide."
-load(Interrogatoire/Marlo/ChoiceInterrogatoire_Marlo1)
+Marlo "Je vous jure, c'est un terrible malentendu..."
+choice "Choix question pour Jacques Marlo"
+{
+    "Qui êtes vous ?"
+        load(Interrogatoire/Marlo/1er/Marlo_a1)
+    "Quel est votre alibi ?"
+        load(Interrogatoire/Marlo/2eme/Marlo_a2)
+    "Les clefs ?" condition(Inventory,3)
+        load(Interrogatoire/Marlo/2eme/Marlo_b1)
+    "Quelle relation avez vous avec la victime ?" condition(Inventory,4)
+        load(Interrogatoire/Marlo/2eme/Marlo_b1)
+}
 stop()

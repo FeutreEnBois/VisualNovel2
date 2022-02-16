@@ -12,9 +12,9 @@ Marlo "S'il-vous-plait, je viens juste de perdre ma femme et maintenant vous m'a
 "Laisser moi rentrer chez moi !"
 "Je veux juste rester seul aujourd'hui !"
 Berret "Vous jouiez mieux dans les trois mousquetaire, ici, c'est juste pathétique"
-Marlo "Ce n'est pas moi ! Je ne veux pas aller en prison."
-Berret "C’est pas la prison qui t’attends, plutôt la peine de mort"
-Marlo "Nooooooooooooooooonnnnn !!!!!!"
+Marlo "Ce n'est pas moi ! Je ne veux pas aller en prison"
+Berret "C’est pas la prison qui t’attend je pense, plutot la peine de mort"
+Marlo "Nooooooooooooooooonnnnn !"
 Berret "Si ..."
 load(Chapter0_04)
 stop()
