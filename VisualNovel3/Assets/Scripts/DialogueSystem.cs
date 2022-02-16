@@ -38,6 +38,24 @@ public class DialogueSystem : MonoBehaviour
         speaking = StartCoroutine(Speaking(speech, true, speaker));
     }
 
+    public void Open(string speakerName = "", string speech = "")
+    {
+        if (speakerName == "" && speech == "")
+        {
+            Close();
+            return;
+        }
+
+        speechPanel.SetActive(true);
+
+        speakerNameText.text = speakerName;
+
+        speakerNamePanel.SetActive(speakerName != "");
+
+        speechText.text = speech;
+    }
+
+
     public void StopSpeaking()
     {
         if (isSpeaking)

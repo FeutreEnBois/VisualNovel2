@@ -15,7 +15,7 @@ public class Character
     // The space between the anchors of this character. Defines how much space a character takes up on the canvas.
     public Vector2 anchorPadding { get { return root.anchorMax - root.anchorMin; } }
     public bool isMultiLayerCharacter { get { return renderers.renderer == null; } }
-    public bool enabled { get { return root.gameObject.activeInHierarchy; } set { root.gameObject.SetActive(value); } }
+    public bool enabled { get { return root.gameObject.activeInHierarchy; } set { root.gameObject.SetActive(value); visibleInScene = value; } }
 
     DialogueSystem dialogue = DialogueSystem.instance;
 
@@ -24,11 +24,11 @@ public class Character
     /// </summary>
     /// <param name="_name"></param>
     /// <param name="enableOnStart"></param>
-    public Character (string _name, bool enableOnStart = true)
+    public Character(string _name, bool enableOnStart = true)
     {
         CharacterManager cm = CharacterManager.instance;
         //locate the character prefab.
-        GameObject prefab = Resources.Load("Characters/Character["+_name+"]") as GameObject;
+        GameObject prefab = Resources.Load("Characters/Character[" + _name + "]") as GameObject;
         //spawn an instance of the prefab directly on the character panel.
         GameObject ob = GameObject.Instantiate(prefab, cm.characterPanel);
 
@@ -47,6 +47,7 @@ public class Character
 
         dialogue = DialogueSystem.instance;
         enabled = enableOnStart;
+        visibleInScene = enabled;
     }
 
     /// <summary>
@@ -61,7 +62,12 @@ public class Character
             enabled = true;
         }
         dialogue.Say(speech, add, Charactername); // 
-        
+
+    }
+
+    public Vector2 _targetPosition
+    {
+        get { return targetPosition; }
     }
 
     Vector2 targetPosition;
@@ -159,10 +165,10 @@ public class Character
         // Do : Sprite sprites = Resources.Load<Sprite>("Images/Characters/" + characterName + "_" + emotion);
         // return sprites;
         Sprite[] sprites = Resources.LoadAll<Sprite>("Images/Characters/" + Charactername);
-        
-        for(int i = 0; i < sprites.Length; i++)
+
+        for (int i = 0; i < sprites.Length; i++)
         {
-            if(sprites[i].name == spriteName)
+            if (sprites[i].name == spriteName)
             {
                 return sprites[i];
             }
@@ -180,7 +186,14 @@ public class Character
     }
     public void SetBody(string spriteName)
     {
-        renderers.bodyRenderer.sprite = GetSprite(spriteName);
+        if (spriteName == "AlphaSprite")
+        {
+            SetBody(GetSprite("AlphaSprite"));
+        }
+        else
+        {
+            renderers.bodyRenderer.sprite = GetSprite(spriteName);
+        }
     }
 
     public void SetExpression(int index)
@@ -193,7 +206,14 @@ public class Character
     }
     public void SetExpression(string spriteName)
     {
-        renderers.expressionRenderer.sprite = GetSprite(spriteName);
+        if (spriteName == "AlphaSprite")
+        {
+            SetExpression(GetSprite("AlphaSprite"));
+        }
+        else
+        {
+            renderers.expressionRenderer.sprite = GetSprite(spriteName);
+        }
     }
     //Transition Body
     bool isTransitioningBody { get { return transitioningBody != null; } }
@@ -299,6 +319,14 @@ public class Character
         root.localScale = new Vector3(root.localScale.x * -1, 1, 1);
     }
 
+
+    public bool isVisibleInScene
+    {
+        get { return visibleInScene; }
+
+    }
+    bool visibleInScene = true;
+
     public void FadeOut(float speed = 3, bool smooth = false)
     {
         Sprite alphaSprite = GetSprite("AlphaSprite");
@@ -309,14 +337,21 @@ public class Character
         Debug.Log("Alpha : " + alphaSprite);
         TransitionBody(alphaSprite, speed, smooth);
         TransitionExpression(alphaSprite, speed, smooth);
+
+        visibleInScene = false;
     }
     Sprite LastBodySprite, LastFacialSprite = null;
     public void FadeIn(float speed = 3, bool smooth = false)
     {
-        if(LastBodySprite != null && LastFacialSprite != null)
+        if (LastBodySprite != null && LastFacialSprite != null)
         {
             TransitionBody(LastBodySprite, speed, smooth);
             TransitionExpression(LastFacialSprite, speed, smooth);
+
+            if (enabled)
+            {
+                visibleInScene = true;
+            }
         }
     }
     [System.Serializable]

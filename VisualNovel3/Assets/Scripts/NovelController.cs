@@ -27,11 +27,111 @@ public class NovelController : MonoBehaviour
         }
         instance = this;
     }
+
+    int activeGameFileNumber = 0;
+    GAMEFILE activeGameFile = null;
+    string activeChapterFile = "";
+
     // Start is called before the first frame update
     void Start()
     {
-        LoadChapterFile("Chapter0_01");
+        //LoadChapterFile("Chapter0_01");
+        //
+        LoadGameFile(0);
+        //
     }
+
+
+    /// <summary>
+    /// ////////////////////////////////
+    /// </summary>
+    /// <param name="gameFileNumber"></param>
+    public void LoadGameFile(int gameFileNumber)
+    {
+        activeGameFileNumber = gameFileNumber;
+
+        string filePath = FileManager.savPath + "Resources/gameFiles/" + gameFileNumber.ToString() + ".txt";
+
+        if (!System.IO.File.Exists(filePath))
+        {
+            FileManager.SaveJSON(filePath, new GAMEFILE());
+        }
+
+        activeGameFile = FileManager.LoadJSON<GAMEFILE>(filePath);
+
+        //Load the file
+        if (!canProgress)
+        {
+            canProgress = true;
+        }
+        data = FileManager.LoadFile(FileManager.savPath + "Resources/Story/" + activeGameFile.chapterName);
+        activeChapterFile = activeGameFile.chapterName;
+        cachedLastSpeaker = activeGameFile.cachedLastSpeaker;
+        this.progress = activeGameFile.chapterProgress;
+
+        DialogueSystem.instance.Open(activeGameFile.currentTextSystemSpeakerDisplayText, activeGameFile.currentTextSystemDisplayText);
+
+        //Load all characters back into the scene
+        for (int i = 0; i < activeGameFile.characterInScene.Count; i++)
+        {
+            GAMEFILE.CHARACTERDATA data = activeGameFile.characterInScene[i];
+            Character character = CharacterManager.instance.CreateCharacter(data.characterName, data.enabled);
+            character.SetPosition(data.position);
+            character.SetBody(data.bodyExpression);
+            //character.SetExpression(data.facialExpression);
+        }
+
+        //Load the layer images back to scene
+        if (activeGameFile.background != null)
+        {
+            BCFC.instance.background.SetTexture(activeGameFile.background);
+        }
+
+        //start the music back up
+        if (activeGameFile.music != null)
+        {
+            AudioManager.instance.PlaySong(activeGameFile.music);
+        }
+
+        //this.progress = progress;
+        if (this.progress < data.Count)
+        {
+            HandleLine(data[this.progress]);
+            //this.progress++;
+        }
+    }
+
+    public void SaveGameFile()
+    {
+        string filePath = FileManager.savPath + "Resources/gameFiles/" + activeGameFileNumber.ToString() + ".txt";
+
+        activeGameFile.chapterName = activeChapterFile;
+        activeGameFile.chapterProgress = progress - 1;
+        activeGameFile.cachedLastSpeaker = cachedLastSpeaker;
+        activeGameFile.currentTextSystemSpeakerDisplayText = DialogueSystem.instance.speakerNameText.text;
+        activeGameFile.currentTextSystemDisplayText = DialogueSystem.instance.speechText.text;
+
+        //get all the character and save their stats
+        activeGameFile.characterInScene.Clear();
+        for (int i = 0; i < CharacterManager.instance.characters.Count; i++)
+        {
+            Character character = CharacterManager.instance.characters[i];
+            GAMEFILE.CHARACTERDATA data = new GAMEFILE.CHARACTERDATA(character);
+            activeGameFile.characterInScene.Add(data);
+
+        }
+
+        //save the layers to disk
+        BCFC b = BCFC.instance;
+        activeGameFile.background = b.background.activeImage != null ? b.background.activeImage.texture : null;
+
+        //save the music to disk
+        activeGameFile.music = AudioManager.activeSong != null ? AudioManager.activeSong.clip : null;
+
+        FileManager.SaveJSON(filePath, activeGameFile);
+    }
+
+    ///////////
 
     // Update is called once per frame
     void Update()
@@ -52,9 +152,13 @@ public class NovelController : MonoBehaviour
                 progress++;
              
             }
-            
-  
-                //System.Threading.Thread.Sleep(1000);
+
+            //System.Threading.Thread.Sleep(1000);
+        }
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            SaveGameFile();
         }
 
         if (canProgress && (Input.GetKeyDown(KeyCode.RightArrow) || passTurn) && progress < data.Count /*&& autoPlay.activeSelf == true*/)
