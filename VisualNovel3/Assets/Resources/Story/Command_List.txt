@@ -17,6 +17,9 @@ condition(type,param ...)
 -> condition(Inventory,int)                                 //  ex:  condition(Inventory,1)
 -> condition(Preuve,Barman,preuve)                          //  ex:  condition(Preuve,Barman,preuve_1)
 
+contradiction(redirection vers txt)                         // le joueur clique sur le bouton "contradiction", débloque souvent des preuves
+contradiction(redirectiontxt,preuveInventaire)
+
 
 
 

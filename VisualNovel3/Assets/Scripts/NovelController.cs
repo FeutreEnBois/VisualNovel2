@@ -16,7 +16,7 @@ public class NovelController : MonoBehaviour
     public bool isHandlingChapterFile { get { return canProgress && progress < data.Count; } }
     public bool autoPlay = false;
     public bool skip = false;
-
+    private bool contraditionPossible = false;
 
     void Awake()
     {
@@ -148,6 +148,8 @@ public class NovelController : MonoBehaviour
             }
             else
             {
+                contraditionPossible = false;
+                contradictionRedirection = "";
                 HandleLine(line);
                 progress++;
              
@@ -393,14 +395,76 @@ public class NovelController : MonoBehaviour
             case "addPreuve":
                 Command_AddPreuve(data[1]);
                 break;
+            case "contradiction":
+                Command_Contradiction(data[1]);
+                break;
         }
         return true;
     }
 
+    string contradictionRedirection = "";
+    bool contradictionNeedPreuve = false;
+    string contradictionPreuveVoulu = "";
+
+    private void Command_Contradiction(string data)
+    {
+        string[] param = data.Split(',');
+        if (param.Length == 2)
+        {
+            contradictionNeedPreuve = true;
+            contradictionPreuveVoulu = param[1];
+            contradictionRedirection = param[0];
+        }
+        else
+        {
+            contraditionPossible = true;
+            contradictionRedirection = param[0];
+
+        }
+    }
+
+
+    public void Contradition()
+    {
+        if (contraditionPossible)
+        {
+            LoadChapterFile(contradictionRedirection);
+        }
+        else
+        {
+
+        }
+    }
+
+    public void Contradition(string preuve)
+    {
+        if (contradictionNeedPreuve)
+        {
+            if (preuve == contradictionPreuveVoulu)
+            {
+                    LoadChapterFile(contradictionRedirection);
+            }
+
+        }
+        else
+        {
+
+        }
+    }
+
+
     private void Command_AddPreuve(string data)
     {
         string[] param = data.Split(',');
-        Inventory.instance.AddPreuve(param[0], param[1]);
+        if(param.Length == 3)
+        {
+
+            Inventory.instance.AddPreuve(param[0], param[1], int.Parse(param[2]));
+        }
+        else
+        {
+            Inventory.instance.AddPreuve(param[0], param[1],0);
+        }
     }
 
     private bool GetCondition(string data)

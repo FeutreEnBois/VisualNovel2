@@ -13,6 +13,7 @@ public class Inventory : MonoBehaviour
     public Dictionary<string,List<string>> preuves = new Dictionary<string, List<string>>();
     public GameObject slotHolder;
 
+    public List<GameObject> KillerSlot = new List<GameObject>();
     public static Inventory instance;
 
     void Awake()
@@ -103,7 +104,7 @@ public class Inventory : MonoBehaviour
         return false;
     }
 
-    public void AddPreuve(string Informateur, string preuve) // ex : Barman -> clef
+    public void AddPreuve(string Informateur, string preuve, int KillerSlotnbr = -1) // ex : Barman -> clef
     {
 
         if (!preuves.ContainsKey(Informateur))
@@ -113,13 +114,17 @@ public class Inventory : MonoBehaviour
         }
         if (preuves[Informateur].Contains(preuve))
         {
-            //Debug.LogWarning("Preuve alrealdy added : " + preuve);
+            Debug.LogWarning("Preuve alrealdy added : " + preuve);
             return;
         }
         else
         {
             Debug.Log("preuve '" + preuve + "' added to Informateur '" + Informateur + "' with success");
             preuves[Informateur].Add(preuve);
+        }
+        if(KillerSlotnbr != -1)
+        {
+            KillerSlot[KillerSlotnbr].GetComponent<SelectKillerSlotContainer>().addPreuve(preuve);
         }
     }
 
