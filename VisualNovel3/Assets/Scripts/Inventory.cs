@@ -86,6 +86,7 @@ public class Inventory : MonoBehaviour
                 slot[i].GetComponent<Slot>().icon = item.icon;
                 slot[i].GetComponent<Slot>().type = item.type;
                 slot[i].GetComponent<Slot>().ID = item.ID;
+                slot[i].GetComponent<Slot>().Name = item.Name;
                 slot[i].GetComponent<Slot>().description = item.description;
                 slot[i].GetComponent<Slot>().UpdateSlot();
                 slot[i].GetComponent<Slot>().empty = false;

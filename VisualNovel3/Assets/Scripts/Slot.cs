@@ -7,6 +7,7 @@ public class Slot : MonoBehaviour
 {
     
     public int ID;
+    public string Name;
     public string type;
     public string description;
     public bool empty = true;
@@ -15,6 +16,7 @@ public class Slot : MonoBehaviour
     public void UpdateSlot()
     {
         this.GetComponent<Image>().sprite = icon;
+        //this.GetComponent<Button>().onClick.
         
     }
 }

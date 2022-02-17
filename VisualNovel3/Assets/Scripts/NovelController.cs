@@ -409,11 +409,13 @@ public class NovelController : MonoBehaviour
     private void Command_Contradiction(string data)
     {
         string[] param = data.Split(',');
+        Debug.Log(param.Length);
         if (param.Length == 2)
         {
             contradictionNeedPreuve = true;
             contradictionPreuveVoulu = param[1];
             contradictionRedirection = param[0];
+            Debug.Log(contradictionPreuveVoulu);
         }
         else
         {
@@ -426,6 +428,7 @@ public class NovelController : MonoBehaviour
 
     public void Contradition()
     {
+        Debug.Log("hfifh");
         if (contraditionPossible)
         {
             LoadChapterFile(contradictionRedirection);
@@ -436,11 +439,13 @@ public class NovelController : MonoBehaviour
         }
     }
 
-    public void Contradition(string preuve)
+    public void Contradition(Slot preuve)
     {
+        Debug.Log("hfifh");
         if (contradictionNeedPreuve)
         {
-            if (preuve == contradictionPreuveVoulu)
+            Debug.Log(preuve.Name + " " + contradictionPreuveVoulu);
+            if (preuve.Name == contradictionPreuveVoulu)
             {
                     LoadChapterFile(contradictionRedirection);
             }

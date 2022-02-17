@@ -1,5 +1,5 @@
-Berret "zfgizgfzgfgfzfzfzoug" addPreuve(Inventaire,bilan santé)
-Flic "A l'aide !! Berret fait une epilepsie !!" contradition(contrad2,_contrad)
-Medic "Bon dieu on l'perd !!"
+Berret "bbbbbbbbbbbbbbbbbb" addPreuve(Inventaire,santé)
+Flic "A l'aide !! Berret fait un AVC!!" contradiction(contrad1,_contrad)
+Medic "Bon dieu il meurt ! !!"
 stop()
 
