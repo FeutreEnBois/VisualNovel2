@@ -98,9 +98,12 @@ public class Inventory : MonoBehaviour
 
     public bool PreuvesContains(string Informateur, string preuve)
     {
-        if (preuves[Informateur].Contains(preuve))
+        if (preuves.ContainsKey(Informateur))
         {
-            return true;
+            if (preuves[Informateur].Contains(preuve))
+            {
+                return true;
+            }
         }
         return false;
     }
