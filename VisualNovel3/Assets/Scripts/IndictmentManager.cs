@@ -20,6 +20,10 @@ public class IndictmentManager : MonoBehaviour
     }
     public void ChooseASuspect(TextMeshProUGUI suspect)
     {
+        if (Inventory.instance.preuvesCount < 2)
+        {
+            return;
+        }
         accuser = suspect.text;
         Debug.Log(accuser);
         NovelController.instance.LoadChapterFile("Interrogatoire/"+ accuser + "/Accusation/Accusation_" + accuser);

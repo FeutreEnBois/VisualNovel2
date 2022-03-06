@@ -398,6 +398,9 @@ public class NovelController : MonoBehaviour
             case "contradiction":
                 Command_Contradiction(data[1]);
                 break;
+            case "changePlace":
+                Command_ChangePlace(data[1]);
+                break;
         }
         return true;
     }
@@ -641,7 +644,25 @@ public class NovelController : MonoBehaviour
     }
     void Command_GoToPreuveScene(string data)
     {
-        GameplayManager.instance.InitPointAndClickScene();
+        GameplayManager.instance.TogglePointAndClickScene();
+    }
+
+    Place actualPlace = null;
+    void Command_ChangePlace(string data)
+    {
+        Place p = null;
+        switch (data)
+        {
+            case "Bar":
+                p = new Place_Bar(actualPlace);
+                break;
+            case "SceneCrime":
+                p = new Place_SceneCrime(actualPlace);
+                break;
+        }
+        
+        actualPlace = p;
+        p.Load();
     }
 
     void Command_Stop(string data)

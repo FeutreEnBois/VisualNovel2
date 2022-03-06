@@ -6,7 +6,7 @@ public class Inventory : MonoBehaviour
 {
     public GameObject inventory;
     private bool inventoryEnabled;
-
+    public int preuvesCount = 0;
     public int allSlots;
     private int enabledSlots;
     private GameObject[] slot;
@@ -130,6 +130,7 @@ public class Inventory : MonoBehaviour
         {
             KillerSlot[KillerSlotnbr].GetComponent<SelectKillerSlotContainer>().addPreuve(preuve);
         }
+        preuvesCount++;
     }
 
 }

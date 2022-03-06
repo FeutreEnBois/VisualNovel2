@@ -20,7 +20,7 @@ public class SelectKillerSlotContainer : MonoBehaviour
     public void addPreuve(string p)
     {
         Debug.Log(p);
-        preuvesText[nbrPreuve].text = p;
+        //preuvesText[nbrPreuve].text = p;
         nbrPreuve++;
     }
 
