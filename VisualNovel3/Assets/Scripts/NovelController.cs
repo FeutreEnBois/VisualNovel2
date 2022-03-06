@@ -648,7 +648,7 @@ public class NovelController : MonoBehaviour
     }
 
     Place actualPlace = null;
-    void Command_ChangePlace(string data)
+    public void Command_ChangePlace(string data)
     {
         Place p = null;
         switch (data)
@@ -658,6 +658,9 @@ public class NovelController : MonoBehaviour
                 break;
             case "SceneCrime":
                 p = new Place_SceneCrime(actualPlace);
+                break;
+            case "Danseuse":
+                p = new Place_Danseuse(actualPlace);
                 break;
         }
         
