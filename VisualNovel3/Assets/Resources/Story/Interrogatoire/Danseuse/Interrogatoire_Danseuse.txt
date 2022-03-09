@@ -1,5 +1,6 @@
-Berret "Bonjour Madame"
-Danseuse "Bonjour"
+Berret "Bonjour Madame." moveTo(Inspecteur,1,100,0,true)
+ moveTo(Berret,1,100,0,true)
+Danseuse "Bonjour." moveTo(Danseuse,0.5,0.5,0,true)
 choice "Question time"
 {
     "Vous travaillez ici depuis longtemps ?"
