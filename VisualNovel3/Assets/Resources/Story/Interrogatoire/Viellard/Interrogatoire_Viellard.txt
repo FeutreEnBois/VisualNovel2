@@ -1,0 +1,9 @@
+Berret "Dite nous tous Monsieur"
+choice "Choix question pour Viellard"
+{
+    "Qu'avez vous vue ?"
+        load(Interrogatoire/Viellard/Viellard_a1)
+    "PASSER"condition(Preuve,Viellard,1)
+        load(Chapter0_06)
+}
+stop()
