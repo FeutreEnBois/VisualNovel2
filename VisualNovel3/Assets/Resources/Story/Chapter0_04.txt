@@ -1,6 +1,25 @@
-transBackground(towns,blur)
-Berret "Ligne non lu"
-Flic "Bien joué inspecteur, vous nous avez bien aider sur ce coup"
-"J'espère pouvoir retravailler avec vous !"
+Sofie "Avec ce qu’on a de nouveau, pourquoi ne pas aller réinterroger nos suspects ? " 
+Narrator " Un Policier rentre dans la pièce "
+Policier " Berret, Sofie ! Nos homme fouille la sortie arrière, des idées de ce qu’on pourrait y chercher ? "
+Choix
+"On pouvait sortir par l’arriere ? "
+"Quelqu’un aurait pu voir si le tueur a essayé de s’enfuir par là"
+"On a toujours pas retrouver l’arme du crime, soit le tueur la toujours sur lui, soit il l’a caché "
+choice "choix pour fouille arriere"
+{
+    "On pouvait sortir par l’arriere ? "
+        Policier "Très bien, nous verrons ça en priorité"
+    "Quelqu’un aurait pu voir si le tueur a essayé de s’enfuir par là"
+        Policier "Très bien, nous verrons ça en priorité"
+    "On a toujours pas retrouver l’arme du crime, soit le tueur la toujours sur lui, soit il l’a caché "
+        Policier "Très bien, nous verrons ça en priorité"
+}
+Sofie "Bonne idée !"
+"Maintenant allons réinterroger les suspects"
+choice ""
+{
+    "Allons-y"
+        load(ChoixInterrogatoire_04)
+}
 stop()
 

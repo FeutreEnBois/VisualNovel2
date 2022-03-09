@@ -1,5 +1,4 @@
-Berret "Bonjour Monsieur Marlo"
-Marlo "Je vous jure, c'est un terrible malentendu..."
+Berret "Re-Bonsoir Monsieur."
 choice "Choix question pour Jacques Marlo"
 {
     "Qui êtes vous ?"

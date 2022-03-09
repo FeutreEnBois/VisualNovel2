@@ -9,5 +9,7 @@ choice "Question time"
         load(Interrogatoire/Danseuse/Danseuse_a2)
     "Que pouvez vous me dire sur les suspects"
         load(Interrogatoire/Danseuse/Danseuse_a3)
+    "PASSER"
+        load(Chapter0_04)condition(Inventory,1)
 }
 stop()
