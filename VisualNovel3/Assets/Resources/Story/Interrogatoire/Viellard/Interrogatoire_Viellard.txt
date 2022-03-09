@@ -1,9 +1,10 @@
 Berret "Dite nous tous Monsieur"
+Viellard "J'essayerai de vous aider le plus possible"
 choice "Choix question pour Viellard"
 {
     "Qu'avez vous vue ?"
         load(Interrogatoire/Viellard/Viellard_a1)
-    "PASSER"condition(Preuve,Viellard,1)
+    "PASSER"condition(Preuve,Viellard,preuve_1)
         load(Chapter0_06)
 }
 stop()

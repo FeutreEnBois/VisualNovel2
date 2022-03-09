@@ -12,5 +12,5 @@ Marlo "Je ..."
 +" Je voulais les apporter à ma femme. Ce matin elle est partie précipitamment et les a oubliées."
 "Je l'ai remarqué et je suis venu les lui apporter."
 Berret "Mmmmh, Je vois. . ."
-load(Interrogatoire/Marlo/Interrogatoire_Marlo)
+load(Interrogatoire/Marlo/Interrogatoire_Marlo2)
 stop()
