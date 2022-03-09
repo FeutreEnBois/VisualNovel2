@@ -43,6 +43,7 @@ public class CharacterManager : MonoBehaviour
     /// <returns></returns>
     public Character GetCharacter(string characterName, bool createCharacterIdDoesNotExist = true, bool enableCreatedCharacterOnStart = true)
     {
+        
         //search our dictionary to find the character quickly if it is already in our scene. 
         int index = -1;
         if (characterDictionary.TryGetValue(characterName, out index))
@@ -54,6 +55,7 @@ public class CharacterManager : MonoBehaviour
         }
         else
         {
+            
             return CreateCharacter(characterName ,enableCreatedCharacterOnStart);
         }
     }
