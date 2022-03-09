@@ -398,6 +398,9 @@ public class NovelController : MonoBehaviour
             case "contradiction":
                 Command_Contradiction(data[1]);
                 break;
+            case "changePlace":
+                Command_ChangePlace(data[1]);
+                break;
         }
         return true;
     }
@@ -409,11 +412,13 @@ public class NovelController : MonoBehaviour
     private void Command_Contradiction(string data)
     {
         string[] param = data.Split(',');
+        Debug.Log(param.Length);
         if (param.Length == 2)
         {
             contradictionNeedPreuve = true;
             contradictionPreuveVoulu = param[1];
             contradictionRedirection = param[0];
+            Debug.Log(contradictionPreuveVoulu);
         }
         else
         {
@@ -426,6 +431,7 @@ public class NovelController : MonoBehaviour
 
     public void Contradition()
     {
+        Debug.Log("hfifh");
         if (contraditionPossible)
         {
             LoadChapterFile(contradictionRedirection);
@@ -436,11 +442,13 @@ public class NovelController : MonoBehaviour
         }
     }
 
-    public void Contradition(string preuve)
+    public void Contradition(Slot preuve)
     {
+        Debug.Log("hfifh");
         if (contradictionNeedPreuve)
         {
-            if (preuve == contradictionPreuveVoulu)
+            Debug.Log(preuve.Name + " " + contradictionPreuveVoulu);
+            if (preuve.Name == contradictionPreuveVoulu)
             {
                     LoadChapterFile(contradictionRedirection);
             }
@@ -636,7 +644,28 @@ public class NovelController : MonoBehaviour
     }
     void Command_GoToPreuveScene(string data)
     {
-        GameplayManager.instance.InitPointAndClickScene();
+        GameplayManager.instance.TogglePointAndClickScene();
+    }
+
+    Place actualPlace = null;
+    public void Command_ChangePlace(string data)
+    {
+        Place p = null;
+        switch (data)
+        {
+            case "Bar":
+                p = new Place_Bar(actualPlace);
+                break;
+            case "SceneCrime":
+                p = new Place_SceneCrime(actualPlace);
+                break;
+            case "Danseuse":
+                p = new Place_Danseuse(actualPlace);
+                break;
+        }
+        
+        actualPlace = p;
+        p.Load();
     }
 
     void Command_Stop(string data)

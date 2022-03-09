@@ -33,15 +33,14 @@ public class GameplayManager : MonoBehaviour
         
     }
 
-    public void InitPointAndClickScene()
+    public void TogglePointAndClickScene()
     {
         //Change Background To point and click background
 
         // Clickable object setActive()
         foreach(ClickableObject obj in clickable)
         {
-            
-            obj.gameObject.SetActive(true);
+            obj.gameObject.SetActive(!obj.gameObject.activeInHierarchy);
         }
     }
 

@@ -6,7 +6,7 @@ public class Inventory : MonoBehaviour
 {
     public GameObject inventory;
     private bool inventoryEnabled;
-
+    public int preuvesCount = 0;
     public int allSlots;
     private int enabledSlots;
     private GameObject[] slot;
@@ -86,6 +86,7 @@ public class Inventory : MonoBehaviour
                 slot[i].GetComponent<Slot>().icon = item.icon;
                 slot[i].GetComponent<Slot>().type = item.type;
                 slot[i].GetComponent<Slot>().ID = item.ID;
+                slot[i].GetComponent<Slot>().Name = item.Name;
                 slot[i].GetComponent<Slot>().description = item.description;
                 slot[i].GetComponent<Slot>().UpdateSlot();
                 slot[i].GetComponent<Slot>().empty = false;
@@ -97,9 +98,12 @@ public class Inventory : MonoBehaviour
 
     public bool PreuvesContains(string Informateur, string preuve)
     {
-        if (preuves[Informateur].Contains(preuve))
+        if (preuves.ContainsKey(Informateur))
         {
-            return true;
+            if (preuves[Informateur].Contains(preuve))
+            {
+                return true;
+            }
         }
         return false;
     }
@@ -126,6 +130,7 @@ public class Inventory : MonoBehaviour
         {
             KillerSlot[KillerSlotnbr].GetComponent<SelectKillerSlotContainer>().addPreuve(preuve);
         }
+        preuvesCount++;
     }
 
 }

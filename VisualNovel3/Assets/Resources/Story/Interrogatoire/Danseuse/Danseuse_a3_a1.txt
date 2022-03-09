@@ -1,0 +1,11 @@
+Berret "Jacques Marlo, c’est le type que vous voyez là-bas… Il vous dit quelque chose ?"
+Danseuse "Jacque Marlo, oui je le connais c'est le mari de mon amie Lucie."
+Berret "(Aaaaah intéressant.)"
+Berret "Et il venait souvent ?"
+Danseuse "Non pas vraiment, il n'était pas particulièrement fan des spectacles produits ici. Quand il venait c'était surtout pour faire plaisir à sa femme."
+Berret "Son comportement a t-il changé dernièrement ?"
+Danseuse "Dernièrement, il a commencé à venir toutes les semaines pour boire avec des amis"
+Berret "Depuis quand son comportement a changé ?"
+Danseuse "Je je ne sais plus vraiment…"
+load(Interrogatoire/Danseuse/Interrogatoire_Danseuse)
+stop()

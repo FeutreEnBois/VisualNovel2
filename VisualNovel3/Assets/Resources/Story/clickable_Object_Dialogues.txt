@@ -4,7 +4,7 @@ stop()
 click sur la carte d’habitué :
 Berret "Hmm, une carte ?"
 "Voilà quelque chose qui pourrait nous intéresser, les danseuses ne sont pas autorisées a boire durant leurs services, et ce jeune homme n’a pas l’air d’un poivro... "
-"C'est speut-être tomber d’une poche durant l’action? Le coupable serait un habitué du coin ..."
+"C'est peut-être tomber d’une poche durant l’action? Le coupable serait un habitué du coin ..."
 stop()
 (insert d’autre interaction qui ne donne pas de preuve)
 Clique sur une horloge cassée:

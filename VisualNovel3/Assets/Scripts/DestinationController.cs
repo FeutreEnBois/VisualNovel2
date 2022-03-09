@@ -29,9 +29,7 @@ public class DestinationController : MonoBehaviour
     }
     public void ChangeDestination(string name)
     {
-        Texture2D tex = Resources.Load("Images/UI/Backdrops/"+name) as Texture2D;
-        Texture2D trans = Resources.Load("Images/TransitionEffects/" + transition) as Texture2D;
-        TransitionManager.TransitionLayer(BCFC.instance.background, tex, trans);
+        NovelController.instance.Command_ChangePlace(name);
         NovelController.instance.LoadChapterFile("Destination/Destination_" + name);
     }
 

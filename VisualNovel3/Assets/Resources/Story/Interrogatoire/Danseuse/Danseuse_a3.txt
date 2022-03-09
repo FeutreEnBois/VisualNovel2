@@ -1,10 +1,12 @@
 Berret "Pouvez vous me parlez des suspects ?"
-Danseuse "Euh oui, peut-être"
+Danseuse "Euh oui, mais je ne pense pas pouvoir vous aider"
 choice "Choix du suspect"
 {
     "Suspect 1"
         load(Interrogatoire/Danseuse/Danseuse_a3_a1)
     "Suspect 2"
         load(Interrogatoire/Danseuse/Danseuse_a3_a2)
+    "Suspect 3"
+        load(Interrogatoire/Danseuse/Danseuse_a3_a3)
 }
 stop()

@@ -1,0 +1,6 @@
+Berret "Emile Letronc, c'est le type que vous voyez là-bas. Il vous dit quelque chose?"
+Danseuse "Non ! Et il n'a pas l'air commode."
+Berret "Vous ne l'avez jamais vu ici ?"
+Danseuse "Non vraiment monsieur le détective."
+load(Interrogatoire/Danseuse/Interrogatoire_Danseuse)
+stop()
