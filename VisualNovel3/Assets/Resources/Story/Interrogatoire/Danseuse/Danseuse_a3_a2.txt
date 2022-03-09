@@ -1,0 +1,8 @@
+Berret "Ives Dupont, cÕest le type que vous voyez lˆ-basÉ Il vous dit quelque chose ?"
+Danseuse "Oui, bien sr il travaille ici."
+Berret "Et quÕest quÕil fait ici ?"
+Danseuse "Ooooh bah, il est serveur depuis bien des annes, au dpart il s'occupait du mnage de l'tablissement. Mais suite ˆ la guerre notre ancien serveur nÕest pas revenu, il lÕa donc remplac."
+Berret "Et personnellement vous le connaissez ?"
+Danseuse "Je ne pense pas, il parlait beaucoup de lui, mais je sentais quÕil exagrait ses propos. Il tait malhonnte, cÕtait un mauvais garon, mais É  il tait sduisant. Le pauvre devait avoir une vie si terrible quÕil se sentait oblig de mentir . Il pensait peut-tre que nous, les danseuses, ne s'intresserait pas ˆ lui s' il tait lui-mme, et il avait raison hihii."
+load(Interrogatoire/Danseuse/Interrogatoire_Danseuse)
+stop()

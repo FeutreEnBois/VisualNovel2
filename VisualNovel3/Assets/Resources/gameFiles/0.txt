@@ -1,1 +1,1 @@
-{"chapterName":"chapter0_01","chapterProgress":0,"cachedLastSpeaker":"","currentTextSystemSpeakerDisplayText":"","currentTextSystemDisplayText":"","characterInScene":[],"background":{"instanceID":0},"music":{"instanceID":0}}
+{"chapterName":"chapter0_01","chapterProgress":0,"cachedLastSpeaker":"Berret","currentTextSystemSpeakerDisplayText":"Berret","currentTextSystemDisplayText":"Quel horreur...","characterInScene":[],"background":{"instanceID":22658},"music":{"instanceID":24176}}
