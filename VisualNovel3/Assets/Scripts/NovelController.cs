@@ -485,6 +485,11 @@ public class NovelController : MonoBehaviour
             return b;
         }else if(param[0] == "Preuve")
         {
+            if(param.Length == 4)
+            {
+                bool c = Inventory.instance.PreuvesContains(param[1], param[2],false);
+                return c;
+            }
             bool b = Inventory.instance.PreuvesContains(param[1], param[2]);
             return b;
         }

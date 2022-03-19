@@ -4,6 +4,6 @@ Barman "Dans mes souvenirs: oui. Il y a déjà quelques larcins, mais rien de ce
 Berret "La police à arrêter trois suspects, mais peut-être que le vrai coupable s’est déjà échappé. Y a-t-il des sorties que le coupable aurait pu emprunter ?"
 Barman "Il y a une sortie un peu cachée, derrière les toilettes. Mais personne n’aurait pu quitter le bâtiment par là-bas sans avoir les clefs qui bloque la porte extérieur."
 Berret "Je vois ..."
-load(Chapter0_03)
+load(Chapter0_04)
 
 

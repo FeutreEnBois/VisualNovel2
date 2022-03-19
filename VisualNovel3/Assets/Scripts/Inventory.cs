@@ -96,16 +96,17 @@ public class Inventory : MonoBehaviour
 
     }
 
-    public bool PreuvesContains(string Informateur, string preuve)
+    public bool PreuvesContains(string Informateur, string preuve, bool existe = true)
     {
         if (preuves.ContainsKey(Informateur))
         {
             if (preuves[Informateur].Contains(preuve))
             {
-                return true;
+                return existe;
             }
         }
-        return false;
+
+        return !existe;
     }
 
     public void AddPreuve(string Informateur, string preuve, int KillerSlotnbr = -1) // ex : Barman -> clef

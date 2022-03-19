@@ -16,7 +16,9 @@ choice "Choix question pour Emile Letronc"
         load(Interrogatoire/Letronc/Letronc_a2)
     "Quelle est votre relation avec la victime"
         load(Interrogatoire/Letronc/Letronc_a3)
-    "Retourner en arrière"
+    "PASSER"condition(Preuve,Story,accuser_v2)
+        load(choixInterrogatoire_04)
+    "Retourner en arriere"condition(Preuve,Story,accuser_v2,false)
         load(choixInterrogatoire)
 }
 stop()
