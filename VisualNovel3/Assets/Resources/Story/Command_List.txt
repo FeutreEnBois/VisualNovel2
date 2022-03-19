@@ -16,10 +16,11 @@ addPreuve(Informateur,preuve)                               //  ex:  addPreuve(B
 condition(type,param ...)
 -> condition(Inventory,int)                                 //  ex:  condition(Inventory,1)
 -> condition(Preuve,Barman,preuve)                          //  ex:  condition(Preuve,Barman,preuve_1)
+-> condition(PreuveNbrSup,informateur,nbrPreuve)            //  ex:  condition(PreuveNbrSup,Barman,3)
 
 contradiction(redirection vers txt)                         // le joueur clique sur le bouton "contradiction", débloque souvent des preuves
 contradiction(redirectiontxt,preuveInventaire)
-
+preuveNbrSup(informateur,nbrPreuve)
 changePlace(placeName)                                      // Change le lieu actuelle, utile pour ajouter des evenement de sortie de salle comme pour la scene de crime avec le toggleClickablePreuve
 
 

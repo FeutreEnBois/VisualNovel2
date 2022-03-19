@@ -108,6 +108,15 @@ public class Inventory : MonoBehaviour
 
         return !existe;
     }
+    public int PreuvesNbr(string Informateur)
+    {
+        if (preuves.ContainsKey(Informateur))
+        {
+            return preuves[Informateur].Count;
+        }
+
+        return 0;
+    }
 
     public void AddPreuve(string Informateur, string preuve, int KillerSlotnbr = -1) // ex : Barman -> clef
     {

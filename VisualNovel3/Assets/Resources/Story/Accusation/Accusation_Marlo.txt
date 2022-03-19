@@ -1,0 +1,17 @@
+Berret "Marlo, j’ai de grands soupçons sur vous"
+Marlo "Sur moi ? Et bien, ce serait avec plaisir que je vous ferais écarter ces doutes, mais je crois bien vous avoir déjà tout dit …" 
+choice ""
+{
+    "Rappelez moi pourquoi vous étiez là ?"
+        Berret "Rappelez moi pourquoi vous étiez là ?"
+}
+Marlo "Je vous l’ai déjà dit, ma femme travail ici… travaillait …"
+Berret  "Oui oui … c’est vrai votre femme. Une sacré danceuse cette femme, c’est facheux. D’ailleurs, vous pensez qu’elles s'entendaient bien avec ses collègues ?"
+Marlo " Euh … de ce quelle me disait elle s’entendait bien avec tout le monde oui"
+Berret" Ah oui, c’est toujours bien de se plaire sur son lieu de travail, elle semblait vraiment bien se plaire ici …"
+Marlo " Vous souhaitez insinuez quelque choses"
+Berret "Votre femme était-elle fidèle ?"
+Marlo "Comment vous parlez de ma femme ! Bien sur qu’elle m’était fidèle" contradiction(Accusation/contradiction_a)
+Berret "Oui oui, pardon je ne voulais pas vous offenser, elle était très appréciée"
+load(Accusation/Accusation_Marlo_b)
+stop()

@@ -1,6 +1,6 @@
 narrator "17 novembre 1921, " playMusic(NightOnTheDocks-Sax)
-+"11ème Arrondissements, " addPreuve(Story,story1)
-+"117 rue de Montreuil "  addPreuve(Story,story2)
++"11ème Arrondissements, " addPreuve(Story,story1) addPreuve(Story,story2)
++"117 rue de Montreuil "  
 "(Rire, boisson, musique)" 
 choice ""
 {
@@ -10,12 +10,12 @@ choice ""
 	Inspecteur "La chance ça se force !" moveTo(Inspecteur,1,0.5,3,true)
 }
 setBackground(Towns)
-Inspecteur "Attends j’en ai une autre !"
+Inspecteur "Attends j’en ai une autre !" condition(PreuveNbrSup,Story,3)
 "Un soir de pâque, j’suis en couverture dans les quartiers de <b><color=pink>Louis-LAFFAIRE</color></b>"
 "tranquille dans ma voiture je peste contre le patron qui ma foutu dehors un jour de fête"
 "et là tu devineras jamais la suite…" flip(Inspecteur)
 "j’ai 3 gars qui tapent à ma fenêtre, l’air un peu con et qui m’disent "
-"« C’est ici qu’on dépose les œufs ? »"
+"" C’est ici qu’on dépose les œufs ? ""
 "Ces couillons transportaient 3 kilos d’<i>opium</i> sur eux !" flip(Inspecteur)
 "T’imagines pas leurs têtes quand j’leur est montré mon badge <b><color=pink>FEDORRA</color></b>."
 "Fantastique, j’crois bien qu’juste pour ça j’regrette pas d’avoir bossé ce soir-là."

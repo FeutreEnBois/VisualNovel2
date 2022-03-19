@@ -1,0 +1,6 @@
+Berret " Ah, une bonne bière après une journée remplie, tiens, mais c’est étrange, le serveur m’a dit vous avoir vu mais ne vous a pas servi de verre pourtant, vous êtes sure d’avoir bu une bière ?"
+Marlo " Euh, je ne sais plus, vous savez la soirée à été longue, peut être que je confonds avec un autre jour de la semaine. Enfin de toute manière ça n’a pas d’importance, vous fouinez sur des choses sans intérêt plutôt que de chercher le vrai Meurtrier Détective !"
+Berret " Pardon pardon, c’est vrai que je suis un peu bavard de temps en temps …"
+Berret "Ceci dit vous êtes aussi très distrait mon ami, ce pourrait t’il que quelque chose vous tracasse"
+load(Accusation/Accusation_Marlo_d)
+stop()

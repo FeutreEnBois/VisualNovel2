@@ -26,7 +26,14 @@ public class IndictmentManager : MonoBehaviour
         }
         accuser = suspect.text;
         Debug.Log(accuser);
-        NovelController.instance.LoadChapterFile("Interrogatoire/"+ accuser + "/Accusation/Accusation_" + accuser);
+        if(accuser == "Marlo")
+        {
+            NovelController.instance.LoadChapterFile("Accusation/Accusation_" + accuser);
+        }
+        else
+        {
+            NovelController.instance.LoadChapterFile("Interrogatoire/"+ accuser + "/Accusation/Accusation_" + accuser);
+        }
         AccusationPanel.SetActive(false);
     }
 

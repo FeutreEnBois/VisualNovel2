@@ -401,6 +401,7 @@ public class NovelController : MonoBehaviour
             case "changePlace":
                 Command_ChangePlace(data[1]);
                 break;
+                
         }
         return true;
     }
@@ -477,7 +478,6 @@ public class NovelController : MonoBehaviour
 
     private bool GetCondition(string data)
     {
-        
         string[] param = data.Split(',');
         if(param[0] == "Inventory")
         {
@@ -492,6 +492,9 @@ public class NovelController : MonoBehaviour
             }
             bool b = Inventory.instance.PreuvesContains(param[1], param[2]);
             return b;
+        }else if(param[0] == "PreuveNbrSup")
+        {
+            return Inventory.instance.PreuvesNbr(param[1]) >= int.Parse(param[2]);
         }
         return false;
     }
