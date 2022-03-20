@@ -495,6 +495,9 @@ public class NovelController : MonoBehaviour
         }else if(param[0] == "PreuveNbrSup")
         {
             return Inventory.instance.PreuvesNbr(param[1]) >= int.Parse(param[2]);
+        }else if(param[0] == "PreuveNbrInf")
+        {
+            return Inventory.instance.PreuvesNbr(param[1]) <= int.Parse(param[2]);
         }
         return false;
     }
