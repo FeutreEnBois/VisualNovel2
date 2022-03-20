@@ -1,3 +1,4 @@
+Berret "Je pense avoir découvert la vérité :"
 load(VICTOIRE) condition(PreuveNbrSup,Accusation,3)
 load(GAMEOVER)
 stop()

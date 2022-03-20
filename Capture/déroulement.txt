@@ -1,0 +1,23 @@
+DEROULEMENT HISTOIRE
+
+Main Menu (pas dans le jeu)
+
+Chapter0_01 "Intro" (Anthony doit push)
+Scene de crime, recherche de preuve (Anthony doit push)
+
+CHapter0_02 "Berret on a attraper 3 suspect" (Anthony doit push)
+Interrogatoire Marlo/Dupont/Letronc    (Anthony doit push)
+
+Chapter0_03 "il me faut plus de preuve"
+Interrogatoire Barman/Danseuse
+
+Chapter0_04 "Avec ce qu'on a pourquoi ne pas aller réintéroger nos suspect"
+Interrogatoire suspect 2 /!\ (pas de dialogue pour 2 suspect sur 3) /!\
+
+Chapter0_05 "Berret on a du nouveau pour vous"
+Interrogatoire Viellard (pas dans le jeu)
+
+Chapter0_06 "Je crois que l'on approche du bute"
+Confrontation avec Marlo
+
+OUTRO (pas dans le jeu)
