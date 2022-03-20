@@ -1,6 +1,6 @@
 Barman "Oh vous revoilà Mr Berret"
 Berret "Re-bonjour l'ami"
-Barman "Vous avez de nouvelle question ?" flip(Inspecteur)
+Barman "Vous avez de nouvelle question ?" flip(Commissaire)
 choice "questionner le barman ?"
 {
     "Oui"

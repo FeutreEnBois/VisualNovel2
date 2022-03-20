@@ -1,4 +1,4 @@
-Barman "VICTIME FEMME était une de mes danseuses. Elle travaillait ici, elle travaillait presque tous les jours. Elle était même en train de danser, juste avant le crime."
+Barman "Lucie Marlo était une de mes danseuses. Elle travaillait ici, elle travaillait presque tous les jours. Elle était même en train de danser, juste avant le crime."
 Berret "Pourtant on a retrouvé son corps dans les loges."
 Barman "Oui, le spectacle est en plusieurs parties. Les danseuses ne sont pas toujours toutes sur la scène en même temps. Elle a quitté la scène et est allée dans les loges."
 Berret "Vous saurez estimer combien de temps y a-t-il entre le moment où elle a quitté la scène?"
@@ -6,6 +6,8 @@ Barman "Pas plus de 2min"
 Berret "Vous avez vu quelqu’un entrer dans les loges après qu’elle ait quitté la scène?"
 Barman "Non, je me concentrais sur mes clients à servir. Vous revoulez un verre?"
 Berret "Vous savez si quelqu’un lui voudrait du mal?"
-Barman "Je ne sais. je ne pense pas: ce n’était pas le genre de personnes qui cherchait les problèmes. Elle vivait tranquillement chez son mari, non loin d’ici. Elle est plutôt bien appréciée par ici, en tout cas personne ne s'en plaint." 
+Barman "Je ne sais. je ne pense pas: ce n’était pas le genre de personnes qui cherchait les problèmes. Elle vivait tranquillement chez son mari, non loin d’ici. Elle est plutôt bien appréciée par ici, en tout cas personne ne s'en plaint." addPreuve(Barman,femme)
+load(Interrogatoire/Barman/ChoixInterrogatoire_02)
+stop()
 
 

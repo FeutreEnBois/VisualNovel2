@@ -4,10 +4,10 @@ choice "Choisie une question"
 {
     "Vous avez vu les suspects ? Vous les avez déjà vu auparavant ?"
         load(Interrogatoire/Barman/Barman_b1)
-    "Et SUSPECT 3 ?"
+    "Et Emile Letronc ?"condition(Preuve,Barman,barman_b1)
         load(Interrogatoire/Barman/Barman_b2)
-    "PASSER"condition(Preuve,Barman,preuve_1)
-        load(Interrogatoire/Barman/Interrogatoire_Barman_03)
+    "PASSER"condition(Preuve,Barman,barman_b2)
+        load(Interrogatoire/Barman/Interrogatoire_Barman_02)
 }
 stop()
 

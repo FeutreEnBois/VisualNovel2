@@ -14,12 +14,9 @@ Berret "Ceci étant fait, j’aurais besoin de votre aide. Vous avez bien dû vo
 Barman "Bien sûr, je répondrai à toutes vos questions mon ami !" flip(Barman)
 choice "Choisie une question"
 {
-    "Vous avez vu les suspects ? Vous les avez déjà vu auparavant ?"
+    "Vous les avez déjà vu les suspects auparavant ?"
         load(Interrogatoire/Barman/Barman_b1)
-    "Et SUSPECT 3 ?"
-        load(Interrogatoire/Barman/Barman_b2)
 }
-load(Interrogatoire/Barman/Interrogatoire_Barman_02)
 stop()
 
 
