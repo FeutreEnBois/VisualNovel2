@@ -1,5 +1,4 @@
 Berret "Vous travaillez ici depuis longtemps?" 
-Danseuse "Cela fait quelques années. Pourquoi cette question, ne devriez-vous pas chercher des indices plutôt?" flip(Danseuse)
-Berret "C’est moi qui pose les questions ici. Asseyez-vous madame je vous pris."
+Danseuse "Cela fait quelques années maintenant"
 load(Interrogatoire/Danseuse/Interrogatoire_Danseuse)
 stop()

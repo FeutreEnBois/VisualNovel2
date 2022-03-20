@@ -1,17 +1,17 @@
-Sofie "Avec ce qu’on a de nouveau, pourquoi ne pas aller reinterroger nos suspects ? " flip(Sofie)
+Sofie "Avec ce qu’on a de nouveau, pourquoi ne pas aller reinterroger nos suspects ? " flip(Sofie) moveTo(Sofie,0.5,0.5,1000,false)
 Narrator " Un Policier rentre dans la pièce "
 Policier " Berret, Sofie ! Nos homme fouille la sortie arrière, des idées de ce qu’on pourrait y chercher ? "
 choice "choix pour fouille arriere."
 {
-    "On pouvait sortir par l’arriere ? "
+    "pouvait t'on sortir par l’arriere ? "
         Policier "Très bien, nous verrons ça en priorité."
-    "Quelqu’un aurait pu voir si le tueur a essayé de s’enfuir par là."
+    "Cherchez un témoins occulaire qui aurait pue être a l'arrière"
         Policier "Très bien, nous verrons ça en priorité."
-    "On a toujours pas retrouver l’arme du crime, soit le tueur la toujours sur lui, soit il l’a caché. "
+    "On a toujours pas retrouver l’arme du crime !"
         Policier "Très bien, nous verrons ça en priorité."
 }
 Sofie "Bonne idée !" addPreuve(Story,accuser_v2) flip(Sofie)
-"Maintenant allons réinterroger les suspects" moveTo(Sofie,100,0,0,true)
+"Maintenant allons réinterroger les suspects" moveTo(Sofie,100,0,1000,true)
 choice ""
 {
     "Allons-y !"

@@ -1,4 +1,4 @@
-Danseuse "Je connaissais bien Lucie. Toutes les danseuses ne l'appréciaient pas forcément mais toutes la respectaient." flip(Danseuse)
+Danseuse "Je connaissais bien Lucie Marlo. Toutes les danseuses ne l'appréciaient pas forcément mais toutes la respectaient." flip(Danseuse)
 "Elle n'avait pas une vie compliquée: elle vivait avec son mari mais passait le plus clair de son temps ici."
 "Elle discutait beaucoup avec les clients, un peu tout le monde la connaissait."
 "Elle oubliait souvent ses affaires. Elle a par exemple oublié ses clefs ce matin. Elle était trçs ouverte avec les gens."
@@ -6,6 +6,6 @@ Danseuse "Je connaissais bien Lucie. Toutes les danseuses ne l'appréciaient pas
 Berret "Je suis désolé."
 Danseuse "Non, vous ne l'êtes pas, vous êtes juste là pour faire votre travail et pour avoir votre paie." flip(Danseuse)
 Berret "..." flip(Danseuse)
-Danseuse "Excusez moi, ce n'est pas de votre faute." flip(Danseuse)
+Danseuse "Excusez moi, ce n'est pas de votre faute." flip(Danseuse) addPreuve(Danseuse,lucie)
 load(Interrogatoire/Danseuse/Interrogatoire_Danseuse)
 stop()

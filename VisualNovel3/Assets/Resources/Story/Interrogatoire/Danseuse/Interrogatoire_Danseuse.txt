@@ -1,5 +1,5 @@
 Berret "Bonjour Madame."
-Danseuse "Bonjour... Monsieur Détective" flip(Danseuse)
+Danseuse "Bonjour... Monsieur DÃ©tective" flip(Danseuse)
 choice "Question time"
 {
     "Vous travaillez ici depuis longtemps ?"
@@ -8,7 +8,7 @@ choice "Question time"
         load(Interrogatoire/Danseuse/Danseuse_a2)
     "Interroger sur les suspects"
         load(Interrogatoire/Danseuse/Danseuse_a3)
-    "PASSER"
-        load(Chapter0_04)condition(Preuve,Story,barman) moveTo(Danseuse,-100,0,0,false)
+    "PASSER"condition(PreuveNbrSup,Danseuse,4)
+        load(ChoixInterrogatoire_02) addPreuve(Bar,danseuse) moveTo(Danseuse,-100,0,0,false)
 }
 stop()

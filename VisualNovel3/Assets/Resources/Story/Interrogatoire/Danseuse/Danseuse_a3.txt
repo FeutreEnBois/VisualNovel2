@@ -2,11 +2,11 @@ Berret "Pouvez vous me parlez des suspects ?"
 Danseuse "Euh oui, mais je ne pense pas pouvoir vous aider"
 choice "Choix du suspect"
 {
-    "Suspect 1"
+    "Jacques Marlo ?"
         load(Interrogatoire/Danseuse/Danseuse_a3_a1)
-    "Suspect 2"
+    "Ives Dupont"
         load(Interrogatoire/Danseuse/Danseuse_a3_a2)
-    "Suspect 3"
+    "Emile Letronc"
         load(Interrogatoire/Danseuse/Danseuse_a3_a3)
 }
 stop()

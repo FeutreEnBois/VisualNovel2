@@ -3,12 +3,6 @@ narrator "Le Commissaire rentre dans la salle, visiblement à la recherche de qu
 Commissaire "Oh Berret vous êtes là ! Je vous cherchais." flip(Commissaire)
 "Vous pourriez demander des infos au barman et à cette danseuse pendant qu'on finit de fouiller la salle et d'interroger les témoins ?" flip(Commissaire)
 Berret "Ça peut se faire..." moveTo(Commissaire,-100,0,3,false)
-choice "Allez voir la danseuse ou le barman ?"
-{
-    "Allez voir la danseuse ?"
-        load(Interrogatoire/Danseuse/Interrogatoire_Danseuse)
-    "Allez voir le Barman ?"
-        load(Interrogatoire/Barman/Interrogatoire_Barman_01)
-}
+load(ChoixInterrogatoire_02)
 stop()
 

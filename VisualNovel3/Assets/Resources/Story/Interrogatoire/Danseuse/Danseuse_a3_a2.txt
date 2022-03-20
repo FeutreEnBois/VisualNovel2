@@ -3,6 +3,6 @@ Danseuse "Oui, bien sûr il travaille ici."
 Berret "Et qu’est qu’il fait ici ?"
 Danseuse "Ooooh bah, il est serveur depuis bien des années. Au départ il s'occupait du ménage de l'établissement. Mais suite à la guerre notre ancien serveur n’est pas revenu, il l’a donc remplacé."
 Berret "Et personnellement vous le connaissez ?"
-Danseuse "Je ne pense pas, il parlait beaucoup de lui, mais je sentais qu’il exagérait ses propos. Il était malhonnête, c’était un mauvais garçon, mais…  il était séduisant. Le pauvre devait avoir une vie si terrible qu’il se sentait obligé de mentir. Il pensait peut-être que nous, les danseuses, ne s'intéresserait pas à lui s' il était lui-même, et il avait raison hihii." flip(Danseuse)
+Danseuse "Je ne pense pas, il parlait beaucoup de lui, mais je sentais qu’il exagérait ses propos. Il était malhonnête, c’était un mauvais garçon, mais…  il était séduisant. Le pauvre devait avoir une vie si terrible qu’il se sentait obligé de mentir. Il pensait peut-être que nous, les danseuses, ne s'intéresserait pas à lui s' il était lui-même, et il avait raison hihii." flip(Danseuse) addPreuve(Danseuse,ives)
 load(Interrogatoire/Danseuse/Interrogatoire_Danseuse)
 stop()

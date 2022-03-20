@@ -1,9 +1,12 @@
 Berret "mmmmmh"
+Sofie "Qui allons nous voir ?" moveTo(Sofie,1,0.5,100,false)
 choice "Allez voir la danseuse ou le barman ?"
 {
     "Allez voir la danseuse ?"
-        Load(Interrogatoire/Danseuse/Interrogatoire_Danseuse)
+        load(Interrogatoire/Danseuse/Interrogatoire_Danseuse) moveTo(Sofie, 10 , 0.5, 100, false)
     "Allez voir le Barman ?"
-        Load(Interrogatoire/Barman/Interrogatoire_Barman_01)
+        load(Interrogatoire/Barman/Interrogatoire_Barman_01) moveTo(Sofie, 10 , 0.5, 100, false)
+    "PASSER"condition(PreuveNbrSup,Bar,2)
+        load(Chapter0_04)
 }
 stop()
