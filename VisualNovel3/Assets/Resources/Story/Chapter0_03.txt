@@ -1,8 +1,8 @@
 Berret "Il me faut plus de preuve." 
-narrator "Le détective rentre dans la salle, visiblement à la recherche de quelqu'un."
-Commissaire "Oh Berret vous êtes là ! Je vous cherchais." flip(Berret)
-"Vous pourriez demander des infos au barman et à cette danseuse pendant qu'on finit de fouiller la salle et d'interroger les témoins ?" flip(Berret)
-Berret "Ça peut se faire..." moveTo(Berret,-100,0,3,false)
+narrator "Le Commissaire rentre dans la salle, visiblement à la recherche de quelqu'un."
+Commissaire "Oh Berret vous êtes là ! Je vous cherchais." flip(Commissaire)
+"Vous pourriez demander des infos au barman et à cette danseuse pendant qu'on finit de fouiller la salle et d'interroger les témoins ?" flip(Commissaire)
+Berret "Ça peut se faire..." moveTo(Commissaire,-100,0,3,false)
 choice "Allez voir la danseuse ou le barman ?"
 {
     "Allez voir la danseuse ?"

@@ -1,5 +1,5 @@
 Berret "Dite nous tous Monsieur"
-Viellard "J'essayerai de vous aider le plus possible"
+Vieillard "J'essayerai de vous aider le plus possible" moveTo(Vieillard,0.5,0.5,3,true) flip(Vieillard)
 choice "Choix question pour Viellard"
 {
     "Qu'avez vous vue ?"

@@ -1,4 +1,4 @@
-Barman "Rebonjour Détective, comment allez-vous après ce drame ? Vous avez besoin d’un verre de vin pour digérer ce qui vient de se passer ? Ici, l’alcool est toléré, prenez en autant que votre portes-billets vous le permet." moveTo(Inspecteur,0,0,0,true)
+Barman "Rebonjour Détective, comment allez-vous après ce drame ? Vous avez besoin d’un verre de vin pour digérer ce qui vient de se passer ? Ici, l’alcool est toléré, prenez en autant que votre portes-billets vous le permet." moveTo(Barman,0,0,0,true)
 choice "Le joueur choisit s’il veut une boisson ou non, si oui, une liste apparaît à l’écran."
 {
     "Un petit rouge ?"
@@ -10,8 +10,8 @@ choice "Le joueur choisit s’il veut une boisson ou non, si oui, une liste appa
     "Pas le temps !!!"
         Berret "Non, je ne suis pas là pour ça. J’aurais besoin de ton aide. T’as bien dû voir quelque chose qui pourrait m’être utile..."
 }
-Berret "Ceci étant fait, j’aurais besoin de votre aide. Vous avez bien dû voir quelque chose qui pourrait m’être utile..." moveTo(Inspecteur,0.5,0,0,false)
-Barman "Bien sûr, je répondrai à toutes vos questions mon ami !" flip(Inspecteur)
+Berret "Ceci étant fait, j’aurais besoin de votre aide. Vous avez bien dû voir quelque chose qui pourrait m’être utile..." moveTo(Barman,0.5,0,0,false)
+Barman "Bien sûr, je répondrai à toutes vos questions mon ami !" flip(Barman)
 choice "Choisie une question"
 {
     "Vous avez vu les suspects ? Vous les avez déjà vu auparavant ?"

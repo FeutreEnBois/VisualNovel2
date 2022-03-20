@@ -1,4 +1,4 @@
-Barman "Le dernier, je suis moins sûr… Peut-être que SUSPECT 3 n'est jamais venu ici, peut-être pas, je ne sais pas vraiment." flip(Inspecteur)
+Barman "Le dernier, je suis moins sûr… Peut-être que SUSPECT 3 n'est jamais venu ici, peut-être pas, je ne sais pas vraiment." flip(Barman)
 Berret "Bien, je vais voir ce que je peux faire de ces informations." 
 load(Interrogatoire/Barman/ChoixInterrogatoire_01)
 

@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 6685153446967165475}
   - component: {fileID: 6685153446967165472}
   m_Layer: 5
-  m_Name: Character[Viellard]
+  m_Name: Character[Vieillard]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

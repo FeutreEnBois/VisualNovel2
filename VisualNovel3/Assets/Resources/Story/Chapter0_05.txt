@@ -10,13 +10,13 @@ policier "Aussi, la grille arrière était fermée, personne n’a pu sortir par
 narrator "Le policier se tourne vers un de ces collègue."
 policier "Va chercher le nouveau témoins oculaire."
 narrator "Un vieillard un peu sale rentre dans la piece, accompagner de deux autre policiers."
-Vieillard "Bonjour Inspecteur."
+Vieillard "Bonjour Commissaire."
 choice ""
 {
     "Bonjour, Monsieur ?"
-        Vieillard "Gile Martilleni, Monsieur L’inspecteur"
+        Vieillard "Gile Martilleni, Monsieur L’Commissaire"
     "Quel Odeur !"
-        Vieillard "La vie n'a pas été clémente avec moi inspecteur"
+        Vieillard "La vie n'a pas été clémente avec moi Commissaire"
 }
 load(Interrogatoire/Viellard/Interrogatoire_Viellard)
 

@@ -184,7 +184,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.36871338, y: -0.045059204}
+  m_AnchoredPosition: {x: -0.36871338, y: -0.045074463}
   m_SizeDelta: {x: 0.73737, y: 0.090149}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2203680125715577639
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 6685153446967165475}
   - component: {fileID: 6685153446967165472}
   m_Layer: 5
-  m_Name: Character[Berret]
+  m_Name: Character[Commissaire]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

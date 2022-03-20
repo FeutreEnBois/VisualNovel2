@@ -1,10 +1,6 @@
 Sofie "Avec ce qu’on a de nouveau, pourquoi ne pas aller reinterroger nos suspects ? " flip(Sofie)
 Narrator " Un Policier rentre dans la pièce "
 Policier " Berret, Sofie ! Nos homme fouille la sortie arrière, des idées de ce qu’on pourrait y chercher ? "
-Choix
-"On pouvait sortir par l’arriere ? "
-"Quelqu’un aurait pu voir si le tueur a essayé de s’enfuir par là"
-"On a toujours pas retrouver l’arme du crime, soit le tueur la toujours sur lui, soit il l’a caché "
 choice "choix pour fouille arriere."
 {
     "On pouvait sortir par l’arriere ? "

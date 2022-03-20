@@ -1,9 +1,9 @@
 Berret "C’est la première fois qu’un tel événement à lieu dans ce cabaret?"
-Barman "Dans mes souvenirs: oui. Il y a déjà quelques larcins, mais rien de ce niveau-là. Rien qui ne puisse entacher la réputation de l’établissement."moveTo(Inspecteur,0,0,0,false)
-"Mais là… C’est vraiment terrible ce qu’il s'est passé." flip(Inspecteur)
-Berret "La police à arrêter trois suspects, mais peut-être que le vrai coupable s’est déjà échappé. Y a-t-il des sorties que le coupable aurait pu emprunter ?" moveTo(Inspecteur,1,0,0,false)
-Barman "Il y a une sortie un peu cachée, derrière les toilettes. Mais personne n’aurait pu quitter le bâtiment par là-bas sans avoir les clefs qui bloque la porte extérieur." moveTo(Inspecteur,0.5,0,0,false)
-Berret "Je vois ..." moveTo(Inspecteur,-100,0,0,false)
+Barman "Dans mes souvenirs: oui. Il y a déjà quelques larcins, mais rien de ce niveau-là. Rien qui ne puisse entacher la réputation de l’établissement."moveTo(Barman,0,0,0,false)
+"Mais là… C’est vraiment terrible ce qu’il s'est passé." flip(Barman)
+Berret "La police à arrêter trois suspects, mais peut-être que le vrai coupable s’est déjà échappé. Y a-t-il des sorties que le coupable aurait pu emprunter ?" moveTo(Barman,1,0,0,false)
+Barman "Il y a une sortie un peu cachée, derrière les toilettes. Mais personne n’aurait pu quitter le bâtiment par là-bas sans avoir les clefs qui bloque la porte extérieur." moveTo(Barman,0.5,0,0,false)
+Berret "Je vois ..." moveTo(Barman,-100,0,0,false)
 load(Chapter0_04)
 
 
