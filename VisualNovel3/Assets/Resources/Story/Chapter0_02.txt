@@ -1,4 +1,4 @@
-Sofie " Alors ? t’en a appris quelque chose ? "
+Sofie " Alors ? t’en a appris quelque chose ? " moveTo(Sofie,1,0.5,0,true)
 Berret "Bien sûr : "
 Berret "Bien sûr : "
 choice ""

@@ -1,6 +1,6 @@
-narrator "17 novembre 1921, "
-+"11ème Arrondissements, " playMusic(NightOnTheDocks-Sax)
-+"117 rue de Montreuil "  
+narrator "17 novembre 1921, " playMusic(NightOnTheDocks-Sax)
++"13ème Arrondissements,"
++" 34 rue du Maréchal"  
 "(Rire, boisson, musique)" 
 choice ""
 {
@@ -15,7 +15,7 @@ Barman "Attends j’en ai une autre !"
 "tranquille dans ma voiture je peste contre le patron qui ma foutu dehors un jour de fête"
 "et là tu devineras jamais la suite…" flip(Barman)
 "j’ai 3 gars qui tapent à ma fenêtre, l’air un peu con et qui m’disent "
-"" C’est ici qu’on dépose les œufs ? ""
+"'C’est ici qu’on dépose les œufs ?'"
 "Ces couillons transportaient 3 kilos d’<i>opium</i> sur eux !" flip(Barman)
 "T’imagines pas leurs têtes quand j’leur est montré mon badge <b><color=pink>FEDORRA</color></b>."
 "Fantastique, j’crois bien qu’juste pour ça j’regrette pas d’avoir bossé ce soir-là."
@@ -23,15 +23,16 @@ Berret "Il n'y a qu’à toi que ça arrive ce genre d'histoire Bapt."
 "Moi en temps que détective, je reçois que des appels pour des affaires bien morbides."
 "La dernière fois c’était pour …. " transBackground(null,blur) moveTo(Barman,10,0.5,4,true)
 narrator "30 Mai 1921, "
-+"PARIS, "
-+"11ème Arrondissements," 
-+"117 rue de Montreuil,"
++"9h34"
 "<b><color=red>BAM BAM</color></b> "
 "<b><color=red>BAM BAM BAM</color></b>"
 Policier " Berret ? On a besoin de vous , vous êtes là ?! "
 Policier " Berret ? " 
 Policier " On est en sous-effectif aujourd’hui "
-20h24, 
+narrator "PARIS, "
++"11ème Arrondissements," 
++"117 rue de Montreuil. "
++"10h03"
 Policier " Inspecteur Berret vous voilà "
 " Dure journée en vue, on a affaire à un double meurtre "
 " Le Commissaire souhaite vous parler,"
@@ -74,5 +75,6 @@ Sofie "Pas grand-chose pour l'instant"
 "Cherchons dans la pièce de nouveau indice, pas sûr qu’on aille très loin avec seulement ça"
 "Balade ta souris sur l’écran et cliquez sur ce qu’il te semble être un indice"
 Berret "Bien. Je vais voir ce que je peux trouver."
-goToPreuve()  
+Sofie "Je te laisse chercher, je retourne au Bar, rejoins moi quand tu as finie"
+goToPreuve()  moveTo(Sofie,5,0.5,2,false)
 stop()
