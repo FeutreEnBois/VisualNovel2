@@ -1,4 +1,4 @@
-Berret "Il me faut plus de preuve."
+Berret "Il me faut plus de preuve." 
 narrator "Le détective rentre dans la salle, visiblement à la recherche de quelqu'un."
 Commissaire "Oh Berret vous êtes là ! Je vous cherchais." flip(Berret)
 "Vous pourriez demander des infos au barman et à cette danseuse pendant qu'on finit de fouiller la salle et d'interroger les témoins ?" flip(Berret)

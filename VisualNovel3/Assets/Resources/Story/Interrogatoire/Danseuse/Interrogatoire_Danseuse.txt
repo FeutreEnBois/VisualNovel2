@@ -9,6 +9,6 @@ choice "Question time"
     "Que pouvez vous me dire sur les suspects"
         load(Interrogatoire/Danseuse/Danseuse_a3)
     "PASSER"
-        load(Chapter0_04)condition(Inventory,1)
+        load(Chapter0_04)condition(Inventory,1) moveTo(Danseuse,-100,0,0,false)
 }
 stop()
