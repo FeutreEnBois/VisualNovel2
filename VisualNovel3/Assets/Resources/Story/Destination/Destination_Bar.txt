@@ -1,5 +1,5 @@
-addPreuve(Story,visite_scene_crime) continue()
+addPreuve(Story,visite_scene_crime)
 load(Interrogatoire/Barman/Destination_Barman) condition(Preuve,Story,connaitre_barman)
-load(chapter0_03) condition(Preuve,Story,visite_scene_crime)
+load(chapter0_03)
 stop()
 

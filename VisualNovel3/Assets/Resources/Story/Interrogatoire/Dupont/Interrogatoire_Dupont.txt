@@ -9,12 +9,12 @@ choice "Choix question pour Ives Dupont"
     "Qui êtes vous ?"
         load(Interrogatoire/Dupont/Dupont_a1)
     "Quel est votre alibi ?"
-        load(Interrogatoire/Dupont/Dupont_a2)
-    "Relation avec la victime"
+        load(Interrogatoire/Dupont/Dupont_a2) addPreuve(Accuser,dupont)
+    "Relation avec les victime"
         load(Interrogatoire/Dupont/Dupont_a3)
     "PASSER"condition(Preuve,Story,accuser_v2)
         load(choixInterrogatoire_04)
     "Retourner en arriere"condition(Preuve,Story,accuser_v2,false)
-        load(choixInterrogatoire)
+        load(choixInterrogatoire_01)
 }
 stop()

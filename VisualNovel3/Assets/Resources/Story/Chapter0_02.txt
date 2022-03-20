@@ -1,11 +1,11 @@
 Sofie " Alors ? t’en a appris quelque chose ? "
 choice ""
 {
-	"On a affaire a un psychopathe"
+    "On a affaire a un psychopathe"
         Berret "On a affaire a un psychopathe"
-	"Meurtre passionel"
+    "Meurtre passionel"
         Berret "Possiblement meurtre passionel"
-	"règlement de compte"
+    "règlement de compte"
         Berret "Surement un règlement de compte"
 }
 Sofie " Brrr ... ça fait froid dans le dos "
@@ -14,7 +14,7 @@ Commissaire " Berret, Sophie je vous cherchai justement, on a fini de faire le t
 "un certain Mr jacques Marlo ayant essayé de partir une fois le filet de sécurité installé autour du bâtiment"
 "Mr Ives Dupont trouvé dans les WC près des loges après les coups de feu,"
 "et Mr Oliver François qui essayait de forcer le passage aussi."
-"Allez les intérrogé, nous on s’occupe de calmé les gens et de continuer a fouiller pour vous "
+"Allez les intérrogé, nous on s’occupe de calmé les gens et de continuer a fouiller pour vous " addPreuve(Story,accuser)
 choice ""
 {
 	"Interrogé <b>Mr Jacques Marlo</b>"

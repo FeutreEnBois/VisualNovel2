@@ -8,5 +8,7 @@ choice ""
         load(Interrogatoire/Dupont/Interrogatoire_Dupont)
     "Interrogé <b>Mr Laplanche</b>"
         load(Interrogatoire/Letronc/Interrogatoire_Letronc)
+    "PASSER"condition(PreuveNbrSup,Accuser,3)
+        load(Chapter0_03)
 }
 stop()
