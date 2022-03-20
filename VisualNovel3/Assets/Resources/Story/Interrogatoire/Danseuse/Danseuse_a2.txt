@@ -4,7 +4,7 @@ choice "Choix victime homme ou victime femme"
 {
     "victime Homme ?"
         load(Interrogatoire/Danseuse/Danseuse_a2a2)
-    "victime Femme ?"
+    "Lucie ?"
         load(Interrogatoire/Danseuse/Danseuse_a2a1)
 }
 stop()

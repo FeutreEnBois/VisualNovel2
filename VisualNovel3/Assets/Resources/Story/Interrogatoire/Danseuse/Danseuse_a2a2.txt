@@ -2,7 +2,7 @@ Danseuse "Oui je le connaissais."
 +" il venait nous parler de temps en temps"
 "Enfin ..."
 Berret "Enfin quoi ?"
-Danseuse "C'est surtout Lucie qu'il venait voir."
+Danseuse "C'est surtout Lucie qu'il venait voir." flip(Danseuse)
 Danseuse "Quoique ces derniers temps il semblait plus distant avec elle."
 "Il venait moins souvent et l'ambiance était tendue entre eux d'après elle."
 Berret "Je vois. Et c'était quelqu'un qui pouvait avoir des ennemis dans le coin, il s'est déjà disputé dans ce bar ?"
