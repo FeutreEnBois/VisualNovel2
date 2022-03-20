@@ -15,7 +15,7 @@ Barman "Bien sûr, je répondrai à toutes vos questions mon ami !" flip(Barman)
 choice "Choisie une question"
 {
     "Vous les avez déjà vu les suspects auparavant ?"
-        load(Interrogatoire/Barman/Barman_b1) moveTo(Sofie,-10,0.5,100,false)
+        load(Interrogatoire/Barman/Barman_b1) moveTo(Sofie,10,0.5,100,false)
 }
 stop()
 

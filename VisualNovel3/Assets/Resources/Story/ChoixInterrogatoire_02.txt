@@ -1,5 +1,6 @@
 Berret "mmmmmh"
-Sofie "Qui allons nous voir ?" moveTo(Sofie,1,0.5,100,false)
+"Cette histoire devient de plus en plus interressante"
+Sofie "Qui allons nous voir Berret ?" moveTo(Sofie,1,0.5,100,false)
 choice "Allez voir la danseuse ou le barman ?"
 {
     "Allez voir la danseuse ?"

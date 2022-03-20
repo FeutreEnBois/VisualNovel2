@@ -11,7 +11,7 @@ choice "choix pour fouille arriere."
         Policier "Très bien, nous verrons ça en priorité."
 }
 Sofie "Bonne idée !" addPreuve(Story,accuser_v2) flip(Sofie)
-"Maintenant allons réinterroger les suspects" moveTo(Sofie,100,0,1000,true)
+"Maintenant allons réinterroger les suspects" moveTo(Sofie,10,0,1000,true)
 choice ""
 {
     "Allons-y !"
