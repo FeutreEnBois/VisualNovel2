@@ -1,6 +1,5 @@
-Berret "Bonjour Madame." moveTo(Inspecteur,1,100,0,true)
- moveTo(Berret,1,100,0,true)
-Danseuse "Bonjour." moveTo(Danseuse,0.5,0.5,0,true)
+Berret "Bonjour Madame." moveTo(Berret,100,0,0,true)
+Danseuse "Bonjour." moveTo(Danseuse,0.5,0,0,true)
 choice "Question time"
 {
     "Vous travaillez ici depuis longtemps ?"
@@ -10,6 +9,6 @@ choice "Question time"
     "Que pouvez vous me dire sur les suspects"
         load(Interrogatoire/Danseuse/Danseuse_a3)
     "PASSER"
-        load(Chapter0_04)condition(Inventory,1)
+        load(Chapter0_04)condition(Inventory,1) moveTo(Danseuse,-100,0,0,false)
 }
 stop()

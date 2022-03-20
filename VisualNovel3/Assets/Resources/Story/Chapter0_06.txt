@@ -1,9 +1,9 @@
-Sofie " Je crois qu’on approche du bute "
-Berret " Pourquoi les gens ne se dénonce pas, je déteste mon métier "
-Commissaire " Il est bientôt l’heure de faire votre choix berret"
-"J’ai bien l’impression que nous avons toutes les cartes dans notre main "
-Sofie " Pour faire un choix clique sur la nouvelle icone en forme de marteau qui vient d’apparaitre a gauche de ton écran "
-Sofie " n’oublies pas, l’accuser va vouloir t'embrouiller l’esprit, n’hésite pas à le contredire si il commet une faute "
+Sofie " Je crois qu’on approche du but. "
+Berret " Pourquoi les gens ne se dénoncent pas, je déteste mon métier. "
+Commissaire " Il est bientôt l’heure de faire votre choix Berret."
+"J’ai bien l’impression que nous avons toutes les cartes en main. "
+Sofie " Pour faire un choix clique sur la nouvelle icone en forme de marteau qui vient d’apparaitre à gauche de ton écran. "
+Sofie " N’oublies pas, l’accuser va vouloir t'embrouiller l’esprit, n’hésite pas à le contredire si il commet une faute. "
 
 
 stop()

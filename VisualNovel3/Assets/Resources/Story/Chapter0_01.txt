@@ -5,9 +5,9 @@ narrator "17 novembre 1921, " playMusic(NightOnTheDocks-Sax)
 choice ""
 {
 	"Pas mal ton histoire Bapt'"condition(Preuve,jean,p_2,false)
-	Inspecteur "Ha Ha Ha merci bien !" moveTo(Inspecteur,1,0.5,3,true)
+	Inspecteur "Ha Ha Ha merci bien !" moveTo(Inspecteur,0.5,0,3,false)
 	"Wouah t'en a de la chance Bapt'"
-	Inspecteur "La chance ça se force !" moveTo(Inspecteur,1,0.5,3,true)
+	Inspecteur "La chance ça se force !" moveTo(Inspecteur,0.5,0,3,false)
 }
 setBackground(Towns)
 Inspecteur "Attends j’en ai une autre !" condition(PreuveNbrSup,Story,3)
@@ -19,17 +19,17 @@ Inspecteur "Attends j’en ai une autre !" condition(PreuveNbrSup,Story,3)
 "Ces couillons transportaient 3 kilos d’<i>opium</i> sur eux !" flip(Inspecteur)
 "T’imagines pas leurs têtes quand j’leur est montré mon badge <b><color=pink>FEDORRA</color></b>."
 "Fantastique, j’crois bien qu’juste pour ça j’regrette pas d’avoir bossé ce soir-là."
-Berret "Il n'y a qu’à toi que ça arrive ce genre d'histoire Bapt." moveTo(Berret,0,0,3,true)
+Berret "Il n'y a qu’à toi que ça arrive ce genre d'histoire Bapt." 
 "Moi en temps que détective, je reçois que des appels pour des affaires bien morbides."
 "La dernière fois c’était pour …. " transBackground(null,blur)
-narrator "30 Mai 1921 " 
+narrator "30 Mai 1921, " moveTo(Inspecteur,0.5,-200,3,false)
 +"PARIS, "
 +"11ème Arrondissements," 
 +"117 rue de Montreuil,"
 "<b><color=red>BAM BAM</color></b> "
 "<b><color=red>BAM BAM BAM</color></b>"
 narrator "(Des gens crient, mouvement de foule)"
-Berret "Qu'avons nous là ?" flip(Berret)
+Berret "Qu'avons nous là ?"
 Flic "Cinq <color=red>coups de feu</color> ont été tirés dans les loges, le tireur est peut-être toujours caché à l'intérieur."
 Berret "Hmph, moi qui voulait passer une soirée tranquille… Où est M. l’commissaire <color=blue>COMMISSAIRE</color>?"
 Flic "Il interroge les gens dans la salle."
@@ -37,11 +37,11 @@ Flic "Il interroge les gens dans la salle."
 Berret "J’espère que vous n'oublierez pas de me payer…"
 narrator "changement de scène : la loge" transBackground(Tree-Ruins,blur)
 Berret "Détective privé Berret, j’ai été missionné pour vous aider."
-Inspecteur "On a deux victimes, un homme et une femme."
+Policier "On a deux victimes, un homme et une femme."
 "Ça c’est passé il y a moins de dix minutes."
 +" Pour l’instant on a pas plus d’information mais je crois que le... "
 Berret "Bien. Je vais voir ce que je peux trouver." 
-narrator "L'<color=green>Inspecteur</color> sort de la salle" 
+narrator "Le <color=green>Détective</color> sort de la salle" 
 "passage en mode point and click recherche" transBackground(SceneCrime,blur) goToPreuve()
 stop()
 
