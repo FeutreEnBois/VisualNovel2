@@ -4,7 +4,7 @@ choice "Choix question pour Viellard"
 {
     "Qu'avez vous vue ?"
         load(Interrogatoire/Viellard/Viellard_a1)
-    "PASSER"condition(Preuve,Viellard,preuve_1)
+    "PASSER"condition(Preuve,Story,vieillard)
         load(Chapter0_06)
 }
 stop()
