@@ -670,8 +670,8 @@ public class NovelController : MonoBehaviour
             case "SceneCrime":
                 p = new Place_SceneCrime(actualPlace);
                 break;
-            case "Danseuse":
-                p = new Place_Danseuse(actualPlace);
+            case "Accuser":
+                p = new Place_Accuser(actualPlace);
                 break;
         }
         

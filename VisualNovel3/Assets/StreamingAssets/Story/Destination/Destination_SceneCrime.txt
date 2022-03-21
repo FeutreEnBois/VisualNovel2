@@ -1,3 +1,5 @@
+changePlace(SceneCrime) continue()
 Berret "Quel horreur..."
+
 stop()
 
