@@ -1,0 +1,1 @@
+{"chapterName":"chapter0_01","chapterProgress":0,"cachedLastSpeaker":"","currentTextSystemSpeakerDisplayText":"","currentTextSystemDisplayText":"","characterInScene":[],"background":{"instanceID":0},"music":{"instanceID":0}}

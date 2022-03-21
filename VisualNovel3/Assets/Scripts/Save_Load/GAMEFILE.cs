@@ -23,6 +23,7 @@ public class GAMEFILE
     public GAMEFILE() 
     {
         this.chapterName = "chapter0_01";
+        //this.chapterName = "jambon";
         this.chapterProgress = 0;
         this.cachedLastSpeaker = "";
 

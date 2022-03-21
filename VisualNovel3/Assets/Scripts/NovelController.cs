@@ -64,7 +64,7 @@ public class NovelController : MonoBehaviour
         {
             canProgress = true;
         }
-        data = FileManager.LoadFile(FileManager.savPath + "Resources/Story/" + activeGameFile.chapterName);
+        data = FileManager.LoadFile(FileManager.savPath + "Story/" + activeGameFile.chapterName); // Resources/
         activeChapterFile = activeGameFile.chapterName;
         cachedLastSpeaker = activeGameFile.cachedLastSpeaker;
         this.progress = activeGameFile.chapterProgress;
@@ -250,7 +250,7 @@ public class NovelController : MonoBehaviour
         {
             canProgress = true;
         }
-        data = FileManager.LoadFile(FileManager.savPath + "Resources/Story/" + filename);
+        data = FileManager.LoadFile(FileManager.savPath + "Story/" + filename);
         this.progress = progress;
         if (this.progress < data.Count)
         {

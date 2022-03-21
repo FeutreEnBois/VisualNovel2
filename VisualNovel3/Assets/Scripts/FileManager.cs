@@ -14,9 +14,9 @@ public class FileManager : MonoBehaviour
 		get
 		{
 #if UNITY_EDITOR
-			return "Assets/";
+			return Application.streamingAssetsPath + "/"; //return "Assets/";
 #else
-			return Application.persistentDataPath + "/";
+			return Application.streamingAssetsPath + "/";//return Application.persistentDataPath + "/";
 #endif
 		}
 	}
@@ -98,6 +98,7 @@ public class FileManager : MonoBehaviour
 	{
 		//make sure we add the default save path if desired.
 		filePath = filePath.Replace("[]", dataPath);
+
 		//add the default extension if no extension is present.
 		if (!filePath.Contains(".")) filePath += fileExtension;
 
