@@ -1,5 +1,5 @@
 Berret "Mmmmh"
-Barman "Oui ?" flip(Barman)
+<b><color=green>Barman</color></b> "Oui ?" flip(Barman)
 choice "Choisie une question"
 {
     "Vous avez vu les suspects ? Vous les avez déjà vu auparavant ?"

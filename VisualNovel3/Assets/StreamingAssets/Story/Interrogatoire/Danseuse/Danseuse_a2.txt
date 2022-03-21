@@ -1,5 +1,5 @@
 Berret "Que pouvez-vous me dire sur les victimes ?"
-Danseuse "laquelle ?"
+<b><color=pink>Danseuse</color></b> "laquelle ?"
 choice "Choix victime homme ou victime femme"
 {
     "victime Homme ?"

@@ -1,4 +1,4 @@
-Sofie " Alors ? t’en a appris quelque chose ? " moveTo(Sofie,1,0.5,0,true)
+<b><color=cyan>Sofie</color></b> " Alors ? t’en a appris quelque chose ? " moveTo(Sofie,1,0.5,0,true)
 Berret "Bien sûr : "
 Berret "Bien sûr : "
 choice ""
@@ -10,7 +10,7 @@ choice ""
     "règlement de compte"
         Berret "Surement un règlement de compte"
 }
-Sofie " Brrr ... ça fait froid dans le dos "
+<b><color=cyan>Sofie</color></b> " Brrr ... ça fait froid dans le dos "
 narrator "le commissaire rentre dans la pièce " 
 Commissaire " Berret, Sophie je vous cherchai justement, on a fini de faire le trie dans les suspects et on en a retenu trois "
 "un certain Mr jacques Marlo ayant essayé de partir une fois le filet de sécurité installé autour du bâtiment"

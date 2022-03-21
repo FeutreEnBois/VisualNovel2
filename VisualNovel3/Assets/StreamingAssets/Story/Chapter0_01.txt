@@ -5,12 +5,12 @@ narrator "17 novembre 1921, " playMusic(NightOnTheDocks-Sax)
 choice ""
 {
 	"Pas mal ton histoire Bapt'"
-	Barman "Ha Ha Ha merci bien !" moveTo(Barman,0.5,0,3,false)
+	<b><color=green>Barman</color></b> "Ha Ha Ha merci bien !" moveTo(Barman,0.5,0,3,false)
 	"Wouah t'en a de la chance Bapt'"
-	Barman "La chance ça se force !" moveTo(Barman,0.5,0,3,false)
+	<b><color=green>Barman</color></b> "La chance ça se force !" moveTo(Barman,0.5,0,3,false)
 }
 setBackground(Towns)
-Barman "Attends j’en ai une autre !"
+<b><color=green>Barman</color></b> "Attends j’en ai une autre !"
 "Un soir de pâque, j’suis en couverture dans les quartiers de <b><color=pink>Louis-LAFFAIRE</color></b>"
 "tranquille dans ma voiture je peste contre le patron qui ma foutu dehors un jour de fête"
 "et là tu devineras jamais la suite…" flip(Barman)
@@ -26,14 +26,14 @@ narrator "30 Mai 1921, "
 +"9h34"
 "<b><color=red>BAM BAM</color></b> "
 "<b><color=red>BAM BAM BAM</color></b>"
-Policier " Berret ? On a besoin de vous , vous êtes là ?! "
-Policier " Berret ? " 
-Policier " On est en sous-effectif aujourd’hui "
+<b><color=blue>Policier</color></b> " Berret ? On a besoin de vous , vous êtes là ?! "
+<b><color=blue>Policier</color></b> " Berret ? " 
+<b><color=blue>Policier</color></b> " On est en sous-effectif aujourd’hui "
 narrator "PARIS, "
 +"11ème Arrondissements," 
 +"117 rue de Montreuil. "
 +"10h03"
-Policier " Inspecteur Berret vous voilà "
+<b><color=blue>Policier</color></b> " Inspecteur Berret vous voilà "
 " Dure journée en vue, on a affaire à un double meurtre "
 " Le Commissaire souhaite vous parler,"
 Flic "Il interroge les gens dans la salle principale, près du Bar."
@@ -43,9 +43,9 @@ choice "Que faire"
     "Entendu"
         Berret "Entendu"
     "Mon carnet ?"
-        Policier "Vous ne vous vous souvenez pas ?"
+        <b><color=blue>Policier</color></b> "Vous ne vous vous souvenez pas ?"
 }
-Policier "Utiliser le carné a gauche de votre écran,"
+<b><color=blue>Policier</color></b> "Utiliser le carné a gauche de votre écran,"
 "il vous permettra de vous déplacer entre les différents personnages que vous allez rencontrer"
 "pour l’instant, utiliser le pour retrouver le <color=blue>Commissaire</color>"
 "il se trouve près du Bar"
@@ -66,15 +66,15 @@ Commissaire "Les deux corps sont dans les loges, au fond du cabaret"
 Berret "Je m'y rend tout de suite, merci" moveTo(Commissaire,-5,0.5,4,true)
 transBackground(SceneCrime,blur)
 Berret "Détective privé Berret, j’ai été missionné pour vous aider."
-Sofie "Berret ! tu es en retard, me laisser seule face a un tel charnier, pas très gentleman de ta part" moveTo(Sofie,1,0.5,3,true)
-Berret "Bonjour Sofie, "
+<b><color=cyan>Sofie</color></b> "Berret ! tu es en retard, me laisser seule face a un tel charnier, pas très gentleman de ta part" moveTo(Sofie,1,0.5,3,true)
+Berret "Bonjour <b><color=cyan>Sofie</color></b>, "
 +"On a quoi pour l’instant ?"
-Sofie "Pas grand-chose pour l'instant"
+<b><color=cyan>Sofie</color></b> "Pas grand-chose pour l'instant"
 "deux corps, Un homme et une femme, "
 +"6 douilles, 2 balles dans l’un 4 dans l’autre"
 "Cherchons dans la pièce de nouveau indice, pas sûr qu’on aille très loin avec seulement ça"
 "Balade ta souris sur l’écran et cliquez sur ce qu’il te semble être un indice"
 Berret "Bien. Je vais voir ce que je peux trouver."
-Sofie "Je te laisse chercher, je retourne au Bar, rejoins moi quand tu as finie"
+<b><color=cyan>Sofie</color></b> "Je te laisse chercher, je retourne au Bar, rejoins moi quand tu as finie"
 goToPreuve()  moveTo(Sofie,5,0.5,2,false)
 stop()

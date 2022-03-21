@@ -1,5 +1,5 @@
 Berret "Bonjour Madame."
-Danseuse "Bonjour... Monsieur Détective" flip(Danseuse)
+<b><color=pink>Danseuse</color></b> "Bonjour... Monsieur Détective" flip(Danseuse)
 choice "Question time"
 {
     "Vous travaillez ici depuis longtemps ?"

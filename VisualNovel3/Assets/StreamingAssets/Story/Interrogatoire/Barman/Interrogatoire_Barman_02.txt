@@ -1,5 +1,5 @@
 Berret "Les victimes, vous les connaissiez ?"
-Barman "Oui, ils s’appelaient Alphonse Lauré et Lucie Marlo."
+<b><color=green>Barman</color></b> "Oui, ils s’appelaient Alphonse Lauré et Lucie Marlo."
 choice "Le joueur choisit s’il veut des info sur Alphonse Lauré ou Lucie Marlo."
 {
     "Parlez-moi de Alphonse Lauré"

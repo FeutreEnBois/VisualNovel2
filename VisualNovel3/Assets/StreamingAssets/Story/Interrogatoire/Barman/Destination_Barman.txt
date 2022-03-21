@@ -1,12 +1,12 @@
-Barman "Oh vous revoilà Mr Berret"
+<b><color=green>Barman</color></b> "Oh vous revoilà Mr Berret"
 Berret "Re-bonjour l'ami"
-Barman "Vous avez de nouvelle question ?" flip(Commissaire)
-choice "questionner le barman ?"
+<b><color=green>Barman</color></b> "Vous avez de nouvelle question ?" flip(Commissaire)
+choice "questionner le <b><color=green>Barman</color></b> ?"
 {
     "Oui"
         load(Interrogatoire/Barman/ChoixInterrogatoire_01)
     "Non, je ne fais que passer"
-        Barman "Je vois."
+        <b><color=green>Barman</color></b> "Je vois."
 }
 
 

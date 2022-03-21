@@ -1,11 +1,11 @@
 Berret "mmmmmh"
 "Cette histoire devient de plus en plus interressante"
-Sofie "Qui allons nous voir Berret ?" moveTo(Sofie,1,0.5,100,false)
-choice "Allez voir la danseuse ou le barman ?"
+<b><color=cyan>Sofie</color></b> "Qui allons nous voir Berret ?" moveTo(Sofie,1,0.5,100,false)
+choice "Allez voir la <b><color=pink>Danseuse</color></b> ou le <b><color=green>Barman</color></b>  ?"
 {
-    "Allez voir la danseuse ?"
+    "Allez voir la <b><color=pink>Danseuse</color></b> ?"
         load(Interrogatoire/Danseuse/Interrogatoire_Danseuse) moveTo(Sofie, 10 , 0.5, 100, false)
-    "Allez voir le Barman ?"
+    "Allez voir le <b><color=green>Barman</color></b>  ?"
         load(Interrogatoire/Barman/Interrogatoire_Barman_01) moveTo(Sofie, 10 , 0.5, 100, false)
     "PASSER"condition(PreuveNbrSup,Bar,2)
         load(Chapter0_04)

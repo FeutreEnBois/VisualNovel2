@@ -1,8 +1,8 @@
 Commissaire "Je doit bien dire que j'ai beau ne pas vous apprécier Mr Berret ..."
 "Aujourd'hui vous avez fait un excellent travil"
 "Au non plaisir de pouvoir vous revoir sur le terrain"
-Sofie "On a réussi Berret !"
+<b><color=cyan>Sofie</color></b> "On a réussi Berret !"
 "Bravo"
-Barman "Vous buvez un coup pour feter ça ?"
+<b><color=green>Barman</color></b> "Vous buvez un coup pour feter ça ?"
 "Cette affaire a ruiner ma journée, vous avez interrer a boire pour ratraper ça !"
 stop()

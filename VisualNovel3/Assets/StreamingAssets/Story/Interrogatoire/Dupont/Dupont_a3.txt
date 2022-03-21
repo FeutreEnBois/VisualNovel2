@@ -1,7 +1,8 @@
 Berret "L’homme qui est mort, vous le connaissiez n’est-ce pas?"
 Ives "Mr Martinelli ? Non non, je l’avais déjà vu ici mais je ne le connaissais pas plus."
 Berret "Vous mentez ! Vous êtes serveur, vous devez bien connaître votre clientèle ! Dites moi la vérité maintenant."
-Ives "Mais je… Je ne peux pas parler avec tout le monde, c’est  surtout le barman qui parle avec la clientèle, je ne fais qu’apporter les verres."
+Ives "Mais je… Je ne peux pas parler avec tout le monde, c’est  surtout le <b><color=green>Barman</color></b>
+ qui parle avec la clientèle, je ne fais qu’apporter les verres."
 Berret "Et Mme Marlot ? Vous n’y êtes pour rien non plus c’est ça ?"
 Ives "Pourquoi vous m’accusez sans cesse Monsieur ?"
 Berret "Parce que tu fais partie des suspects et si tu veux tout savoir je pense que tu es bien plus que suspect. Alors je vais vous le demander une dernière fois : connaissiez-vous Mme Marlot ?"

@@ -1,4 +1,4 @@
-Barman "Le dernier, je suis moins sûr… Peut-être que Emile Letronc n'est jamais venu ici, peut-être pas, je ne sais pas vraiment." flip(Barman)
+<b><color=green>Barman</color></b> "Le dernier, je suis moins sûr… Peut-être que Emile Letronc n'est jamais venu ici, peut-être pas, je ne sais pas vraiment." flip(Barman)
 Berret "Bien, je vais voir ce que je peux faire de ces informations." addPreuve(Barman,barman_b2) 
 load(Interrogatoire/Barman/ChoixInterrogatoire_01)
 

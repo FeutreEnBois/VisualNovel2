@@ -1,4 +1,4 @@
-Berret "Selon le Barman c’est impossible, quelqu'un était déjà dans les toilettes juste avant les fusillades et s'était enfermé dedans, OU ETIEZ-VOUS VRAIMENT !?"
+Berret "Selon le <b><color=green>Barman</color></b> c’est impossible, quelqu'un était déjà dans les toilettes juste avant les fusillades et s'était enfermé dedans, OU ETIEZ-VOUS VRAIMENT !?"
 Marlo "La panique me fait dire n’importe quoi, je ne sais plus vraiment"
 Berret "Comme c’est pratique ..."
 load(Accusation/Accusation_Marlo_c)

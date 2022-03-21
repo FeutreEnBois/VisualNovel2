@@ -1,4 +1,4 @@
-Sofie "Lequelle allons nous voir ?"
+<b><color=cyan>Sofie</color></b> "Lequelle allons nous voir ?"
 choice ""
 {
     "Interrogé <b>Mr Jacques Merlo</b>"

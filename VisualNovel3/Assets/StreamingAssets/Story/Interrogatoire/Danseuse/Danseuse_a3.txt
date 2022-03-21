@@ -1,5 +1,5 @@
 Berret "Pouvez vous me parlez des suspects ?"
-Danseuse "Euh oui, mais je ne pense pas pouvoir vous aider"
+<b><color=pink>Danseuse</color></b> "Euh oui, mais je ne pense pas pouvoir vous aider"
 choice "Choix du suspect"
 {
     "Jacques Marlo ?"
