@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 2797f22d1c44d324e9a9dfe072a64795
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - OldNewspaperTypes
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3a8a77001d585e847a6aac6a7bfb3b47, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
