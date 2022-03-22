@@ -76,5 +76,5 @@ Berret "Bonjour <b><color=cyan>Sofie</color></b>, "
 "Balade ta souris sur l’écran et cliquez sur ce qu’il te semble être un indice"
 Berret "Bien. Je vais voir ce que je peux trouver."
 <b><color=cyan>Sofie</color></b> "Je te laisse chercher, je retourne au Bar, rejoins moi quand tu as finie"
-goToPreuve()  moveTo(Sofie,5,0.5,2,false)
+changePlace(SceneCrime)  moveTo(Sofie,5,0.5,2,false)
 stop()

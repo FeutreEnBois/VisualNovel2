@@ -12,6 +12,7 @@ public class Place_SceneCrime : Place
         Texture2D transition = Resources.Load("Images/TransitionEffects/Blur") as Texture2D;
         TransitionManager.TransitionLayer(BCFC.instance.background, texture, transition);
         GameplayManager.instance.TogglePointAndClickScene();
+        Debug.Log("J'ai compris");
     }
 
     public override void OnQuit()
