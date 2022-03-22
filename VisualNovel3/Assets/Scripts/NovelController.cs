@@ -163,7 +163,7 @@ public class NovelController : MonoBehaviour
             SaveGameFile();
         }
 
-        if (canProgress && (Input.GetKeyDown(KeyCode.RightArrow) || passTurn) && progress < data.Count /*&& autoPlay.activeSelf == true*/)
+        if (canProgress && (Input.GetKeyDown(KeyCode.RightArrow ) || Input.GetKeyDown(KeyCode.Mouse0) || passTurn) && progress < data.Count /*&& autoPlay.activeSelf == true*/)
         {
             passTurn = false;
             string line = data[progress];

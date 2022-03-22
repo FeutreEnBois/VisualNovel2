@@ -5,7 +5,7 @@ Marlo "...."
 "Je ... Oui ... mais c’était fermé alors je suis repartie "
 Berret "N'avez-vous pas croisé le tueur alors ? "
 Marlo "Pourquoi me dites vous ça ? Maintenant que vous me le direz, j’ai peut-être croisé quelqu’un qui voulait aussi sortir par l'arrière ! " contradiction(Accusation/contradiction_d1)
-Berret "Vous avez croisé quelqu'un ?" contradiction(contradiction_d1)
+Berret "Vous avez croisé quelqu'un ?" contradiction(Accusation/contradiction_d1)
 Berret " Intéressant, Je ne me souviens pas avoir explorer cette piste " contradiction(contradiction_d1)
 " Je vais voir ça avec mon équipe "
 load(Accusation/Accusation_Marlo_e)
