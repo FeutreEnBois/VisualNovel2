@@ -112,9 +112,9 @@ TextureImporter:
       name: Connard_init
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1200
-        width: 1400
+        x: 308
+        y: 1098
+        width: 734
         height: 1500
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

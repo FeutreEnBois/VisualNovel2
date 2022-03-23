@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &44958068
 RectTransform:
   m_ObjectHideFlags: 0
@@ -156,10 +156,10 @@ RectTransform:
   m_Father: {fileID: 1429221399}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 69.73561, y: -293.7794}
+  m_SizeDelta: {x: 135.47122, y: 136.09926}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &44958069
 MonoBehaviour:
@@ -348,7 +348,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &170817747
 RectTransform:
   m_ObjectHideFlags: 0
@@ -363,10 +363,10 @@ RectTransform:
   m_Father: {fileID: 1429221399}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 69.73561, y: -60.70588}
+  m_SizeDelta: {x: 135.47122, y: 117.41176}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &170817748
 MonoBehaviour:
@@ -1643,7 +1643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &470320622
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1658,10 +1658,10 @@ RectTransform:
   m_Father: {fileID: 1429221399}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 69.73561, y: -410.37866}
+  m_SizeDelta: {x: 135.47122, y: 87.09926}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &470320623
 MonoBehaviour:
@@ -2372,6 +2372,7 @@ GameObject:
   - component: {fileID: 578384238}
   - component: {fileID: 578384240}
   - component: {fileID: 578384239}
+  - component: {fileID: 578384241}
   m_Layer: 0
   m_Name: Core
   m_TagString: Untagged
@@ -2565,6 +2566,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resume: {fileID: 238217013}
+--- !u!114 &578384241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578384228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1e7954c23b42d94e95d111cf0200dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventaire: {fileID: 170817746}
+  journal: {fileID: 895055007}
+  boussole: {fileID: 44958067}
+  accuser: {fileID: 470320621}
 --- !u!224 &620579355 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4736678205987253022, guid: c3736a27b8f30b64288501a931608709, type: 3}
@@ -3158,7 +3175,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &895055008
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3173,10 +3190,10 @@ RectTransform:
   m_Father: {fileID: 1429221399}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 69.73561, y: -172.57077}
+  m_SizeDelta: {x: 135.47122, y: 96.31801}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &895055009
 MonoBehaviour:
@@ -3407,7 +3424,7 @@ MonoBehaviour:
     m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -3437,7 +3454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   continualUpdate: 1
-  fontSizeAtDefaultResolution: 32
+  fontSizeAtDefaultResolution: 24
 --- !u!1001 &939614730
 PrefabInstance:
   m_ObjectHideFlags: 0
