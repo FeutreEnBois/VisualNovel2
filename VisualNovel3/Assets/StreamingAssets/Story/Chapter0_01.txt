@@ -43,7 +43,7 @@ choice "Que faire"
 {
     "Entendu"
         Berret "Entendu"
-    "Mon boussole ?"
+    "Ma boussole ?"
         <b><color=blue>Policier</color></b> "Vous ne vous vous souvenez pas ?"
 }
 <b><color=blue>Policier</color></b> "Utiliser la boussole à gauche de votre écran,"
@@ -62,7 +62,7 @@ choice "Que faire"
         Commissaire "Je vois qu'on vous a deja renseigner sur la situation"
 }
 Commissaire "Les deux corps sont dans les loges, au fond du cabaret"
-"Tourné à droite près des WC et vous y êtes."
+"Tournez à droite près des WC et vous y êtes."
 "Comme vous avez souvent du mal, je vous l’ai indiqué sur votre carnet." flip(Commissaire)
 Berret "Je m'y rends tout de suite, merci." moveTo(Commissaire,-5,0.5,4,true)
 transBackground(SceneCrime,blur)
