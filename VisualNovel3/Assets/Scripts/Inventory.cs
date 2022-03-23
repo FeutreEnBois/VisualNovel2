@@ -41,15 +41,15 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
-            ToggleInventory();
+        //if (Input.GetKeyDown(KeyCode.I))
+         //   ToggleInventory();
         
     }
 
     public void ToggleInventory()
     {
-        inventoryEnabled = !inventoryEnabled;
-        inventory.SetActive(inventoryEnabled);
+        //inventoryEnabled = !inventoryEnabled;
+        //inventory.SetActive(inventoryEnabled);
     }
 
     private void OnTriggerEnter(Collider other){

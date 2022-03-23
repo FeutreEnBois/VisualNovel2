@@ -30,16 +30,16 @@ public class Journal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.J))
+        /*if (Input.GetKeyUp(KeyCode.J))
         {
             ToggleJournal();
-        }
+        }*/
         
 
     }
 
     public void ToggleJournal()
     {
-        journal.SetActive(!journal.activeInHierarchy);
+        //journal.SetActive(!journal.activeInHierarchy);
     }
 }
