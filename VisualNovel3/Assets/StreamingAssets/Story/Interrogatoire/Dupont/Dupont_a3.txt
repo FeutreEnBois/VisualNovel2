@@ -9,8 +9,8 @@ Berret "Parce que tu fais partie des suspects et si tu veux tout savoir je pense
 Ives "Oui bien sûr, elle travaillait ici. Je connais plutôt bien les danseuses, on discute beaucoup."
 Berret "Ah bon? Mme Marlot ne vous avait rien dit de particuliers ces derniers jours? Vous n’avez rien vu d’étrange ?" 
 Ives "Pas vraiment, elle a toujours été contente de travailler ici et elle n’a jamais causé de problème. Quand on parlait, c’était surtout pour dire quelques banalités : elle me parlait de son travail, de son mari, de ce qu’elle ferait à la fin de la journée. A vrai dire, c’était celle qui me parlait le moins et me disait probablement le plus de mensonge."
-Berret "Mmh… Et pourquoi ça?"
-Ives "Bah, peut-être qu’elle avait des choses à cacher…"
+Berret "Mmh… Et pourquoi ça ? Pourquoi vous racontait-elle des menssonges ?"
+Ives "Bah, peut-être qu’elle avait des choses à cacher …"
 Berret, en prend notes dans son calepin.
 load(Interrogatoire/Dupont/Interrogatoire_Dupont)
 stop()
