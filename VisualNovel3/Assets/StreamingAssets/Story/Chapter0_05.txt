@@ -1,7 +1,7 @@
 <b><color=blue>Policier</color></b> " Berret, on a du nouveau pour toi, on a retrouvé l’arme du crime et on a un nouveau témoin oculaire. " 
 "Tout d’abord, l’arme du crime :"
 " un pistolet rubis de 14-18 "
-Sophie " On recherche un homme qui a fait la guerre alors. "
+Sofie " On recherche un homme qui a fait la guerre alors. "
 Berret " Et qui a probablement pété un câble là-bas, revenir et tuer une jeune femme comme ça …"
 <b><color=cyan>Sofie</color></b> " Berret, la guerre, ça rendrait fou n’importe qui. "
 Berret " Je ne le sais que trop bien. "
