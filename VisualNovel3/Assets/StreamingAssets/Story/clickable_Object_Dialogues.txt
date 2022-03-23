@@ -8,7 +8,7 @@ Berret "Hmm, une carte ?"
 stop()
 (insert d’autre interaction qui ne donne pas de preuve)
 Clique sur une horloge cassée:
-Berret "Qu'elle belle analogie, l'horloge c'est prise une balle et ne fonctionne plus. Elle s'est arrêtée en même temps que nos deux amis."
+Berret "Quelle belle analogie, l'horloge c'est prise une balle et ne fonctionne plus. Elle s'est arrêtée en même temps que nos deux amis."
 stop()
 Clique sur sac:
 Berret "Les affaires des victimes n’ont pas été volez. Si elles sont encore là, c’est que le coupable voulait bien s’attaquer au victime."
