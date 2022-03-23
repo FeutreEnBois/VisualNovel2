@@ -14,6 +14,13 @@ public class IndictmentManager : MonoBehaviour
         
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.S))
+            ToggleKillerChoosingPanel();
+
+    }
+
     public void ToggleKillerChoosingPanel()
     {
         AccusationPanel.SetActive(!AccusationPanel.activeInHierarchy);
