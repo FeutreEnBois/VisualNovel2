@@ -458,3 +458,253 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001761 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.351 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1533 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.1 MB.
+System memory in use after: 151.3 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2014.
+Total: 1.646251 ms (FindLiveObjects: 0.146246 ms CreateObjectMapping: 0.039940 ms MarkObjects: 1.447311 ms  DeleteObjects: 0.012052 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3191.544467 seconds.
+  path: Assets/StreamingAssets/Story/Chapter0_03.txt
+  artifactKey: Guid(3dd7374fcd50aa04a809049f6c52dcc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Story/Chapter0_03.txt using Guid(3dd7374fcd50aa04a809049f6c52dcc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93c1c62c13127139e29dac667721fcb1') in 0.013101 seconds 
+  Import took 0.015491 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001559 seconds.
+  path: Assets/StreamingAssets/Story/Chapter0_03.txt
+  artifactKey: Guid(3dd7374fcd50aa04a809049f6c52dcc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Story/Chapter0_03.txt using Guid(3dd7374fcd50aa04a809049f6c52dcc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93c1c62c13127139e29dac667721fcb1') in 0.003593 seconds 
+  Import took 0.006033 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.783849 seconds.
+  path: Assets/StreamingAssets/Story/Chapter0_04.txt
+  artifactKey: Guid(781efb476626e9949bc447551581d02f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Story/Chapter0_04.txt using Guid(781efb476626e9949bc447551581d02f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d1b4ea747d9f9635246236d0a5263c9') in 0.005378 seconds 
+  Import took 0.008304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 970.954587 seconds.
+  path: Assets/StreamingAssets/Story/Chapter0_04.txt
+  artifactKey: Guid(781efb476626e9949bc447551581d02f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Story/Chapter0_04.txt using Guid(781efb476626e9949bc447551581d02f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7e680613cbc5be2b058b598cd7e2201') in 0.004206 seconds 
+  Import took 0.006762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 330.933311 seconds.
+  path: Assets/StreamingAssets/Story/Chapter0_05.txt
+  artifactKey: Guid(e401410f9acf153469780676c5b534aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Story/Chapter0_05.txt using Guid(e401410f9acf153469780676c5b534aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '427ebe6e71cb89e1d7c4f126f393dd12') in 0.004411 seconds 
+  Import took 0.007432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030524 seconds.
+  path: Assets/StreamingAssets/Story/Chapter0_06.txt
+  artifactKey: Guid(4b5e7e37e31a0d5419b74f68664df9c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Story/Chapter0_06.txt using Guid(4b5e7e37e31a0d5419b74f68664df9c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '428999ab06431c27186eeeceab672bcc') in 0.004718 seconds 
+  Import took 0.007482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 124.104648 seconds.
+  path: Assets/StreamingAssets/Story/ChoixInterrogatoire_01.txt
+  artifactKey: Guid(88963700f57330546a39ef35f35724e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Story/ChoixInterrogatoire_01.txt using Guid(88963700f57330546a39ef35f35724e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96ca8a2b1e4c6cb26663597663167403') in 0.004881 seconds 
+  Import took 0.007331 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 64.946160 seconds.
+  path: Assets/StreamingAssets/Story/ChoixInterrogatoire_02.txt
+  artifactKey: Guid(293bbbb9a5dfed94fac82fd9d7903742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Story/ChoixInterrogatoire_02.txt using Guid(293bbbb9a5dfed94fac82fd9d7903742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a3b70601cc9c55c7dbe8b551f54239d') in 0.004311 seconds 
+  Import took 0.006701 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.851627 seconds.
+  path: Assets/StreamingAssets/Story/ChoixInterrogatoire_04.txt
+  artifactKey: Guid(e41d98969e659a84391a844cced20584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Story/ChoixInterrogatoire_04.txt using Guid(e41d98969e659a84391a844cced20584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98be60658900dc0ad204dd60a0e56501') in 0.004279 seconds 
+  Import took 0.006623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 105.721074 seconds.
+  path: Assets/StreamingAssets/Story/clickable_Object_Dialogues.txt
+  artifactKey: Guid(3cc7b386703e73046b26b88e6d7b2fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Story/clickable_Object_Dialogues.txt using Guid(3cc7b386703e73046b26b88e6d7b2fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30f27203885d84d10be925ec055c2e64') in 0.005229 seconds 
+  Import took 0.008601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.092441 seconds.
+  path: Assets/StreamingAssets/Story/Command_List.txt
+  artifactKey: Guid(af83ee47fac1b1545a680bac76cd2c8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Story/Command_List.txt using Guid(af83ee47fac1b1545a680bac76cd2c8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bf87f9e1bc682119870592689699167') in 0.004600 seconds 
+  Import took 0.007022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.874476 seconds.
+  path: Assets/StreamingAssets/Story/Interrogatoire
+  artifactKey: Guid(b0283b0da2da66049bcd86f55cd88db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Story/Interrogatoire using Guid(b0283b0da2da66049bcd86f55cd88db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '826437dfb3fb467bac959ad005f2fd25') in 0.001921 seconds 
+  Import took 0.004589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.842829 seconds.
+  path: Assets/StreamingAssets/Story/Interrogatoire/Barman
+  artifactKey: Guid(6f15d4bbd0506e54e8915a3e8721a2c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Story/Interrogatoire/Barman using Guid(6f15d4bbd0506e54e8915a3e8721a2c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e072c1506fc5288b1ed1ec1917800801') in 0.001776 seconds 
+  Import took 0.004756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.745312 seconds.
+  path: Assets/StreamingAssets/Story/Interrogatoire/Barman/Barman_b1.txt
+  artifactKey: Guid(c68feac3a3d8317439d8f95971397f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Story/Interrogatoire/Barman/Barman_b1.txt using Guid(c68feac3a3d8317439d8f95971397f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83538908ef7014199911f521e0668089') in 0.005440 seconds 
+  Import took 0.008487 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 67.561697 seconds.
+  path: Assets/StreamingAssets/Story/Chapter0_01.txt
+  artifactKey: Guid(eaa5c9b893aaff448a2b26d2be88d446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Story/Chapter0_01.txt using Guid(eaa5c9b893aaff448a2b26d2be88d446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eefb7583407dd8b9f6e86529c1e15ae7') in 0.005742 seconds 
+  Import took 0.008830 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 313.663743 seconds.
+  path: Assets/StreamingAssets/Story/Chapter0_01.txt
+  artifactKey: Guid(eaa5c9b893aaff448a2b26d2be88d446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Story/Chapter0_01.txt using Guid(eaa5c9b893aaff448a2b26d2be88d446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c75892340fd13c15b7751a5f69011666') in 0.003869 seconds 
+  Import took 0.006858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028124 seconds.
+  path: Assets/StreamingAssets/Story/Chapter0_02.txt
+  artifactKey: Guid(bfbf12b72111d4244a7ba139954cc203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Story/Chapter0_02.txt using Guid(bfbf12b72111d4244a7ba139954cc203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53b38d39c647f21e103ec191a3a264f2') in 0.004352 seconds 
+  Import took 0.006811 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004094 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.048 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1533 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.5 MB.
+System memory in use after: 151.6 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2017.
+Total: 1.974579 ms (FindLiveObjects: 0.166738 ms CreateObjectMapping: 0.050740 ms MarkObjects: 1.739502 ms  DeleteObjects: 0.016611 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 315.305229 seconds.
+  path: Assets/StreamingAssets/Story/Chapter0_01.txt
+  artifactKey: Guid(eaa5c9b893aaff448a2b26d2be88d446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Story/Chapter0_01.txt using Guid(eaa5c9b893aaff448a2b26d2be88d446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8efdcf3ff899a0ad9420355d4fb4bcbb') in 0.012464 seconds 
+  Import took 0.014797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.552833 seconds.
+  path: Assets/StreamingAssets/Story/Chapter0_01.txt
+  artifactKey: Guid(eaa5c9b893aaff448a2b26d2be88d446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Story/Chapter0_01.txt using Guid(eaa5c9b893aaff448a2b26d2be88d446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b671c05c22658a5f00b31f579daf3802') in 0.004948 seconds 
+  Import took 0.007958 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002222 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.076 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1533 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.7 MB.
+System memory in use after: 151.8 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2020.
+Total: 1.589731 ms (FindLiveObjects: 0.133302 ms CreateObjectMapping: 0.039085 ms MarkObjects: 1.404304 ms  DeleteObjects: 0.012214 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 156.897162 seconds.
+  path: Assets/StreamingAssets/Story/Chapter0_01.txt
+  artifactKey: Guid(eaa5c9b893aaff448a2b26d2be88d446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Story/Chapter0_01.txt using Guid(eaa5c9b893aaff448a2b26d2be88d446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8938e8dc88ea6ebd3a6ae38866c040f9') in 0.012661 seconds 
+  Import took 0.014935 seconds .
+
