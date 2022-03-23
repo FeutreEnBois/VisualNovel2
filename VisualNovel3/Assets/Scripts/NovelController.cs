@@ -446,18 +446,13 @@ public class NovelController : MonoBehaviour
     }
 
 
-    /*public void Contradition()
+    public void Contradition()
     {
-        Debug.Log("hfifh");
         if (contraditionPossible)
         {
             LoadChapterFile(contradictionRedirection);
         }
-        else
-        {
-
-        }
-    }*/
+    }
 
     public void Contradition(Slot preuve)
     {
