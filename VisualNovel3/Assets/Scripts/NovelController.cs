@@ -158,10 +158,10 @@ public class NovelController : MonoBehaviour
             //System.Threading.Thread.Sleep(1000);
         }
 
-        if (Input.GetKeyDown(KeyCode.S))
+        /*if (Input.GetKeyDown(KeyCode.S))
         {
             SaveGameFile();
-        }
+        }*/
 
         if (canProgress && (Input.GetKeyDown(KeyCode.RightArrow ) || Input.GetKeyDown(KeyCode.Mouse0) || passTurn) && progress < data.Count /*&& autoPlay.activeSelf == true*/)
         {
