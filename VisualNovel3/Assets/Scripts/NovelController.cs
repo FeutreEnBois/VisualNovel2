@@ -187,7 +187,7 @@ public class NovelController : MonoBehaviour
 
     public IEnumerator WaitForAutoTurn()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(5);
         passTurn = true;
 
     }
