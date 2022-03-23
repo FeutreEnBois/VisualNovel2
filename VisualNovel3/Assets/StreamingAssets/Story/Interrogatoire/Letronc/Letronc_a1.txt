@@ -1,9 +1,9 @@
-Berret "vous pouvez vous presenter ?"
+Berret "Vous pouvez vous presenter ?"
 Emile "Chui Emile Letronc."
 Berret "Rien d’autre ?"
 Emile "Non."
-Berret "Très bien, et votre job c’est ?"
-Emile "Je conduis des trains."
+Berret "Très bien, et votre activité professionnel ?"
+Emile "Euh ... mon activité professonnel ? Ah, bah je conduis des trains."
 Berret "Je vois."
 load(Interrogatoire/Letronc/Interrogatoire_Letronc)
 stop()

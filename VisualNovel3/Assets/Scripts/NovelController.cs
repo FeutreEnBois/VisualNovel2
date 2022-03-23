@@ -401,9 +401,25 @@ public class NovelController : MonoBehaviour
             case "changePlace":
                 Command_ChangePlace(data[1]);
                 break;
+            case "toggleDestination":
+                Command_ToggleDestination(data[1]);
+                break;
+            case "toggleOption":
+                Command_ToggleOption(data[1]);
+                break;
                 
         }
         return true;
+    }
+
+    private void Command_ToggleOption(string data)
+    {
+        OptionManager.instance.ToggleElement(data);
+    }
+
+    private void Command_ToggleDestination(string data)
+    {
+        throw new NotImplementedException();
     }
 
     string contradictionRedirection = "";
@@ -430,7 +446,7 @@ public class NovelController : MonoBehaviour
     }
 
 
-    public void Contradition()
+    /*public void Contradition()
     {
         Debug.Log("hfifh");
         if (contraditionPossible)
@@ -441,7 +457,7 @@ public class NovelController : MonoBehaviour
         {
 
         }
-    }
+    }*/
 
     public void Contradition(Slot preuve)
     {
@@ -460,7 +476,6 @@ public class NovelController : MonoBehaviour
 
         }
     }
-
 
     private void Command_AddPreuve(string data)
     {

@@ -1,10 +1,12 @@
 Berret "Jacques Marlo ... "
 +"je sais que c’est toi qui les a tués."
 "Les preuves sont la:"
-+" elle te trompait"
+
+Berret +" elle te trompait"
 "J’ai connue des gens qui ont tué pour moins que ça."
 "De plus tu connaissais bien le bâtiment et grâce à ça tu a faillis t'échapper mais surtout..."
-"pourquoi serais-tu venu lui donner les clés de la loge 10 minutes avant la fin de sa journée"
+
+Berret "pourquoi serais-tu venu lui donner les clés de la loge 10 minutes avant la fin de sa journée"
 "non tu avais les clés sur toi pour rentrer dedans et les tuer !"
 narrator "Jacques Marlo met sa tête dans ces mains."
 Marlo "S'il-vous-plait, je viens juste de perdre ma femme et maintenant vous m'accuser de son meurtre !"

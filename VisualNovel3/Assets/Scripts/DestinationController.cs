@@ -18,6 +18,13 @@ public class DestinationController : MonoBehaviour
         instance = this;
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Z))
+            ToggleDestinationPanel();
+
+    }
+
     public void addAKnownDestination(string destName, string destDescription, Texture2D destBackground, Texture2D destTransition)
     {
         if (knownDestination.ContainsKey(destName)){

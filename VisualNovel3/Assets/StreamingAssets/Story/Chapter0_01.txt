@@ -1,5 +1,5 @@
 narrator " " playMusic(NightOnTheDocks-Sax)
-+"17 novembre 1921, " 
++"17 novembre 1921, " toggleOption(Inventaire) 
 +"13ème Arrondissements,"
 +" 34 rue du Maréchal"  
 "(Rire, boisson, musique)" 

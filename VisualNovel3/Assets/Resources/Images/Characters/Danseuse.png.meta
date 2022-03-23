@@ -115,10 +115,10 @@ TextureImporter:
       name: Danseuse_Init
       rect:
         serializedVersion: 2
-        x: 0
+        x: 350
         y: 1200
-        width: 1400
-        height: 1500
+        width: 632
+        height: 1453
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
