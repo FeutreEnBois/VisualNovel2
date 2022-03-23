@@ -16,8 +16,10 @@ Marlo "Arrêter de m'accuser sans preuve !"
 narrator "Berret fronce les sourcils"
 Berret "Vous savez que le coupable peut finir ces jours en prison ou meme subir la peine de mort ?"
 "Le seul moyen de  c'en en sortir serait d'avouer pendant l'interrogatoire."
-"C’est pour sa que je vous pose toutes ces questions"
-"si par hazar vous avez un rapport avec l’incident vous serez accusé de complicité, donc dîtes moi la verité compris ?"
+
+Berret "C’est pour sa que je vous pose toutes ces questions"
+
+Berret "si par hazar vous avez un rapport avec l’incident vous serez accusé de complicité, donc dîtes moi la verité compris ?"
 +"Je ne dit pas que c’est vous j’émet juste des hypothèses donc répondez à mes questions s'il-vous-plaît."
 Marlo "Oui."
 Berret "La victime, vous la connaissiez ?"

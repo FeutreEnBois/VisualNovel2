@@ -22,7 +22,7 @@ setBackground(Towns)
 "Fantastique, j’crois bien qu’juste pour ça j’regrette pas d’avoir bossé ce soir-là."
 Berret "Il n'y a qu’à toi que ça arrive ce genre d'histoire Bapt." 
 "Moi en temps que détective, je reçois que des appels pour des affaires bien morbides."
-"La dernière fois c’était pour… " transBackground(null,blur) moveTo(Barman,10,0.5,4,true)
+"La dernière fois c’était pour… " transBackground(null,blur) moveTo(Barman,2,0.5,4,true)
 narrator "30 Mai 1921, "
 +"21h34"
 "<b><color=red>BAM BAM</color></b> "
@@ -34,7 +34,7 @@ narrator "PARIS, "
 +"11ème Arrondissements," 
 +"117 rue de Montreuil. "
 +"22h03"
-<b><color=blue>Policier</color></b> " Inspecteur Berret vous voilà. "
+<b><color=blue>Policier</color></b> " Détective Berret vous voilà. "
 " Dure journée en vue, on a affaire à un double meurtre. "
 " Le Commissaire souhaite vous parler."
 <b><color=blue>Policier</color></b> "Il interroge les gens dans la salle principale, près du Bar."
@@ -42,14 +42,14 @@ narrator "PARIS, "
 choice "Que faire"
 {
     "Entendu"
-        Berret "Entendu"
+        Berret "Entendu."
     "Ma boussole ?"
         <b><color=blue>Policier</color></b> "Vous ne vous vous souvenez pas ?"
 }
 <b><color=blue>Policier</color></b> "Utiliser la boussole à gauche de votre écran,"
-"Elle vous permettra de vous déplacer entre les différents personnages que vous allez rencontrer"
-"pour l’instant, utiliser la pour retrouver le <color=blue>Commissaire</color>"
-"il se trouve près du Bar."
+"Elle vous permettra de vous déplacer entre les différents personnages que vous allez rencontrer."
+"Pour l’instant, utiliser la pour retrouver le <color=blue>Commissaire</color>."
++" Il se trouve près du Bar."
 transBackground(Bar,blur)
 Commissaire "Berret vous voilà, on ne vous attendait plus ... " moveTo(Commissaire,1,0.5,3,true)
 "Vous avez une bonne vingtaine de minute de retard."
@@ -57,25 +57,25 @@ Commissaire "Berret vous voilà, on ne vous attendait plus ... " moveTo(Commissa
 choice "Que faire"
 {
     "Résume la situation ? "
-        Commissaire "On a eu une fusillade dans le bar vers les alentours de 21h30, Pour l’instant on réduit la liste des suspects celons les alibis, d’ici à ce que vous exploriez la scène de crime on devrait avoir finie"
+        Commissaire "On a eu une fusillade dans le bar vers les alentours de 21h30, Pour l’instant on réduit la liste des suspects selon les alibis." 
     "On m’a annoncé un double homicide, ou sont les corps ? "
-        Commissaire "Je vois qu'on vous a deja renseigner sur la situation"
+        Commissaire "Je vois qu'on vous a déjà renseigner sur la situation"
 }
-Commissaire "Les deux corps sont dans les loges, au fond du cabaret"
+Commissaire "Les deux corps sont dans les loges, au fond du cabaret." flip(Commissaire)
 "Tournez à droite près des WC et vous y êtes."
 "Comme vous avez souvent du mal, je vous l’ai indiqué sur votre carnet." flip(Commissaire)
-Berret "Je m'y rends tout de suite, merci." moveTo(Commissaire,-5,0.5,4,true)
+Berret "Je m'y rends tout de suite, merci." moveTo(Commissaire,-1,0.5,4,false)
 transBackground(SceneCrime,blur)
 Berret "Détective privé Berret, j’ai été missionné pour vous aider."
-<b><color=cyan>Sofie</color></b> "Berret ! Tu es en retard ! Me laisser seule face à un tel charnier, pas très gentleman de ta part." moveTo(Sofie,1,0.5,3,true)
-Berret "Bonjour <b><color=cyan>Sofie</color></b>, "
+<b><color=cyan>Sofie</color></b> "Berret ! Tu es en retard ! Me laisser seule face à un tel charnier, pas très gentleman de ta part." moveTo(Sofie,1,0,3,true)
+Berret "Bonjour <b><color=cyan>Sofie</color></b>. "
 +"On a quoi pour l’instant ?"
 <b><color=cyan>Sofie</color></b> "Pas grand-chose pour l'instant :"
-"deux corps, un homme et une femme, "
+"deux corps, un homme et une femme, " flip(Sofie)
 +"6 douilles, 2 balles dans l’un 4 dans l’autre."
 "Cherchons dans la pièce de nouveau indice, pas sûr qu’on aille très loin avec seulement ça."
 "Balade ta souris sur l’écran et clique sur ce qu’il te semble être un indice."
-Berret "Bien. Je vais voir ce que je peux trouver."
+Berret "Bien. Je vais voir ce que je peux trouver." flip(Sofie)
 <b><color=cyan>Sofie</color></b> "Je te laisse chercher, je retourne au Bar, rejoins moi quand tu as fini."
-changePlace(SceneCrime)  moveTo(Sofie,5,0.5,2,false)
+changePlace(SceneCrime)  moveTo(Sofie,5,0,2,false)
 stop()
