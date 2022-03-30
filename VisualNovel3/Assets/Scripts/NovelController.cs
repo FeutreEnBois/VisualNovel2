@@ -578,12 +578,12 @@ public class NovelController : MonoBehaviour
             string[] parameters = data.Split(',');
             Texture2D texture = parameters[0] == "null" ? null : Resources.Load("Images/UI/Backdrops/" + parameters[0]) as Texture2D;
             Texture2D transition = parameters[1] == "null" ? null : Resources.Load("Images/TransitionEffects/" + parameters[1]) as Texture2D;
-            TransitionManager.TransitionLayer(BCFC.instance.background, texture, transition);
+            TransitionManager.TransitionLayer(layer, texture, transition);
         }
         else
         {
             Texture2D text = data == "null" ? null : Resources.Load("Images/UI/Backdrops/" + data) as Texture2D;
-            TransitionManager.TransitionLayer(BCFC.instance.background, null, text);
+            TransitionManager.TransitionLayer(layer, null, text);
         }
     }
 

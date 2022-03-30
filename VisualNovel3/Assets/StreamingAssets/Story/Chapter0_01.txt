@@ -22,7 +22,7 @@ setBackground(Towns)
 "Fantastique, j’crois bien qu’juste pour ça j’regrette pas d’avoir bossé ce soir-là."
 Berret "Il n'y a qu’à toi que ça arrive ce genre d'histoire Bapt." 
 "Moi en temps que détective, je reçois que des appels pour des affaires bien morbides."
-"La dernière fois c’était pour… " transBackground(null,blur) moveTo(Barman,2,0.5,4,true)
+"La dernière fois c’était pour… " transBackground(Bar,blur) moveTo(Barman,2,0.5,4,true)
 narrator "30 Mai 1921, "
 +"21h34"
 "<b><color=red>BAM BAM</color></b> "
