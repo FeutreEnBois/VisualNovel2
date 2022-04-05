@@ -11,7 +11,10 @@ public class Place_Bar : Place
         Texture2D texture = Resources.Load("Images/UI/Backdrops/Bar") as Texture2D;
         Texture2D transition = Resources.Load("Images/TransitionEffects/Blur") as Texture2D;
         TransitionManager.TransitionLayer(BCFC.instance.background, texture, transition);
-        Debug.Log("ta mere");
+
+        if (NovelController.instance.GetCondition("Preuve,Story,Bar,false")){
+            NovelController.instance.LoadChapterFile("Chapter0_01b");
+        }
     }
 
     public override void OnQuit()

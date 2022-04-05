@@ -24,7 +24,10 @@ contradiction(redirectiontxt,preuveInventaire)
 preuveNbrSup(informateur,nbrPreuve)
 changePlace(placeName)                                      // Change le lieu actuelle, utile pour ajouter des evenement de sortie de salle comme pour la scene de crime avec le toggleClickablePreuve
 
-
+addAKnownDestination(string destination)
+-> Bar
+-> SceneCrime
+-> Accuser
 
 
 

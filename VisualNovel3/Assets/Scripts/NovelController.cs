@@ -407,7 +407,11 @@ public class NovelController : MonoBehaviour
             case "toggleOption":
                 Command_ToggleOption(data[1]);
                 break;
-                
+            case "addAKnownDestination":
+                Command_addAKnownDestination(data[1]);
+                break;
+
+
         }
         return true;
     }
@@ -486,7 +490,7 @@ public class NovelController : MonoBehaviour
         }
     }
 
-    private bool GetCondition(string data)
+    public bool GetCondition(string data)
     {
         string[] param = data.Split(',');
         if(param[0] == "Inventory")
@@ -667,6 +671,11 @@ public class NovelController : MonoBehaviour
     {
         GameplayManager.instance.TogglePointAndClickScene();
     }
+    
+    void Command_addAKnownDestination(string data)
+    {
+        DestinationController.instance.addAKnownDestination(data);
+    }
 
     Place actualPlace = null;
     public void Command_ChangePlace(string data)
@@ -675,13 +684,13 @@ public class NovelController : MonoBehaviour
         switch (data)
         {
             case "Bar":
-                p = new Place_Bar(actualPlace);
+                p = DestinationController.placeBar;
                 break;
             case "SceneCrime":
-                p = new Place_SceneCrime(actualPlace);
+                p = DestinationController.placeCrime;
                 break;
             case "Accuser":
-                p = new Place_Accuser(actualPlace);
+                p = DestinationController.placeAccuser;
                 break;
         }
         
