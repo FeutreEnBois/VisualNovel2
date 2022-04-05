@@ -10,7 +10,7 @@ Berret "Vous voyez une personne qui ressemble à celui que vous avez vu ?"
 narrator "Vieillard zieute la salle et pointe du doigt Marlo"
 Vieillard "Lui la bas !! Il ressemble comme deux goute d’eau a la personne dont je vous parlais"
 <b><color=cyan>Sofie</color></b> "Je crois qu’on approche du bute" moveTo(Sofie,0,0,100,false)
-Berret "Vous êtes sûr de vous ?" moveTo(Sofie,0,-5,10,false)
+Berret "Vous êtes sûr de vous ?"
 Vieillard "oui sûr de sûr" flip(Vieillard)
 Berret "L’avez vous vue jeter quelque choses, avait-il quelque chose dans les mains qui pourrait ressembler à un pistolet ?"
 Vieillard "Je n’ai pas vue Mr le Detective, tous c’est passé si vite"

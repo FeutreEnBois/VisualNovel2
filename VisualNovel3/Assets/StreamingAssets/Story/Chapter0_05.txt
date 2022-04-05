@@ -2,7 +2,7 @@
 "Tout d’abord, l’arme du crime :"
 " un pistolet rubis de 14-18 "
 Sofie " On recherche un homme qui a fait la guerre alors. "
-Berret " Et qui a probablement pété un câble là-bas, revenir et tuer une jeune femme comme ça …"
+Berret " Et qui a probablement pété un câble là-bas, revenir et tuer une jeune femme comme ça ..."
 <b><color=cyan>Sofie</color></b> " Berret, la guerre, ça rendrait fou n’importe qui. "
 Berret " Je ne le sais que trop bien. "
 <b><color=blue>Policier</color></b> "Aussi, la grille arrière était fermée, personne n’a pu sortir par ici. "
@@ -15,10 +15,7 @@ choice ""
 {
     "Bonjour, Monsieur ?"
         Vieillard "Gile Martilleni, Monsieur L’Commissaire"
-    "Quel Odeur !"
-        Vieillard "La vie n'a pas été clémente avec moi Commissaire"
 }
 load(Interrogatoire/Viellard/Interrogatoire_Viellard)
-
 stop()
 
