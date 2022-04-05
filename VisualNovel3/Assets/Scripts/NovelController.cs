@@ -376,8 +376,8 @@ public class NovelController : MonoBehaviour
             case "playMusic":
                 Command_PlayMusic(data[1]);
                 break;
-            case "goToPreuve":
-                Command_GoToPreuveScene(data[1]);
+            case "togglePreuve":
+                Command_TogglePreuve(data[1]);
                 break;
             case "stop":
                 Command_Stop(data[1]);
@@ -667,7 +667,7 @@ public class NovelController : MonoBehaviour
         Character c = CharacterManager.instance.GetCharacter(data);
         c.FlipRight();
     }
-    void Command_GoToPreuveScene(string data)
+    void Command_TogglePreuve(string data)
     {
         GameplayManager.instance.TogglePointAndClickScene();
     }

@@ -7,7 +7,7 @@ exit(CharacterName)											//	ex:	exit(Erik)				marche pas encore
 enter(CharacterName)										//	ex:	enter(baguerra)			marche pas encore
 playMusic(musicName)										//	
 playSound(soundName)										//
-goToPreuve()												//	ex: goToPreuve()
+TogglePreuve()												//	ex: TogglePreuve()
 setBackground(backgroundName,speed?smooth?)					//	ex: setBackground(townsVille)	|| setBAckground(forest,5,true)
 transBackground(backgroundName,TransitionName)				//	ex: transBackground(towns,blur) || transBackground(null,spiral)
 stop()														//  ex:  stop()	stop la lecture du txt en cours, close le speechPanel

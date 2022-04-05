@@ -10,5 +10,5 @@ Berret "Bonjour <b><color=cyan>Sofie</color></b>. "
 "Balade ta souris sur l’écran et clique sur ce qu’il te semble être un indice."
 Berret "Bien. Je vais voir ce que je peux trouver." flip(Sofie)
 <b><color=cyan>Sofie</color></b> "Je te laisse chercher, je retourne au Bar, <b>rejoins moi</b> quand tu as fini."
-changePlace(SceneCrime)  moveTo(Sofie,5,0,2,false)
+togglePreuve()  moveTo(Sofie,5,0,2,false)
 stop()

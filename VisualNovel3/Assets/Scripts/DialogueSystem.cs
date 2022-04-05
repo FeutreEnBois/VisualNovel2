@@ -143,6 +143,7 @@ public class DialogueSystem : MonoBehaviour
     {
         StopSpeaking();
         speechPanel.SetActive(false);
+        Debug.Log("set active = false");
     }
 
 

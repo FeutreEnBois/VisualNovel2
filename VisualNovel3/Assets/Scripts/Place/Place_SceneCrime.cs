@@ -13,10 +13,14 @@ public class Place_SceneCrime : Place
         TransitionManager.TransitionLayer(BCFC.instance.background, texture, transition);
         if (NovelController.instance.GetCondition("Preuve,Story,SceneCrime,false"))
         {
-
+            NovelController.instance.LoadChapterFile("Chapter0_01c");
         }
-        //GameplayManager.instance.TogglePointAndClickScene();
-        
+        else
+        {
+            GameplayManager.instance.TogglePointAndClickScene();
+            NovelController.instance.LoadChapterFile("Destination/Destination_SceneCrime");
+        }
+
     }
 
     public override void OnQuit()
