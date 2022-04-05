@@ -6,9 +6,9 @@ narrator " " playMusic(NightOnTheDocks-Sax)
 choice ""
 {
 	"Pas mal ton histoire Bapt.'"
-	<b><color=green>Barman</color></b> "Ha Ha Ha merci bien !" moveTo(Barman,0.5,0,3,false)
+        <b><color=green>Barman</color></b> "Ha Ha Ha merci bien !" moveTo(Barman,0.5,0,3,false)
 	"Wouah t'en as de la chance Bapt.'"
-	<b><color=green>Barman</color></b> "La chance ça se force !" moveTo(Barman,0.5,0,3,false)
+        <b><color=green>Barman</color></b> "La chance ça se force !" moveTo(Barman,0.5,0,3,false)
 }
 setBackground(Towns)
 <b><color=green>Barman</color></b> "Attends j’en ai une autre !"
