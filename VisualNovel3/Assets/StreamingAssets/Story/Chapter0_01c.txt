@@ -1,4 +1,4 @@
-transBackground(SceneCrime,blur) moveTo(Commissaire,-1,0.5,4,false)
+transBackground(SceneCrime,blur) moveTo(Commissaire,-1,0.5,4,false) 
 Berret "Détective privé Berret, j’ai été missionné pour vous aider."
 <b><color=cyan>Sofie</color></b> "Berret ! Tu es en retard ! Me laisser seule face à un tel charnier, pas très gentleman de ta part." moveTo(Sofie,1,0,3,true)
 Berret "Bonjour <b><color=cyan>Sofie</color></b>. "
@@ -10,5 +10,5 @@ Berret "Bonjour <b><color=cyan>Sofie</color></b>. "
 "Balade ta souris sur l’écran et clique sur ce qu’il te semble être un indice."
 Berret "Bien. Je vais voir ce que je peux trouver." flip(Sofie)
 <b><color=cyan>Sofie</color></b> "Je te laisse chercher, je retourne au Bar, <b>rejoins moi</b> quand tu as fini."
-togglePreuve()  moveTo(Sofie,5,0,2,false)
+togglePreuve()  moveTo(Sofie,5,0,2,false) addPreuve(Story,bar)
 stop()

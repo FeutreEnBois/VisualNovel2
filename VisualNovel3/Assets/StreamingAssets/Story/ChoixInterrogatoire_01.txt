@@ -9,6 +9,6 @@ choice ""
     "Interrogé <b>Mr Laplanche</b>"
         load(Interrogatoire/Letronc/Interrogatoire_Letronc)
     "PASSER"condition(PreuveNbrSup,Accuser,3)
-        load(Chapter0_03)
+        addPreuve(Story,premier_Interrogatoire) load(Chapter0_03)
 }
 stop()

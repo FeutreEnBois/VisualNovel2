@@ -8,9 +8,9 @@ public class DestinationController : MonoBehaviour
 
     [SerializeField] private Dictionary<string, DESTINATION> knownDestination = new Dictionary<string, DESTINATION>();
 
-    public static Place placeBar = new Place_Bar(null);
-    public static Place placeCrime = new Place_SceneCrime(null);
-    public static Place placeAccuser = new Place_Accuser(null);
+    public static Place placeBar = new Place_Bar();
+    public static Place placeCrime = new Place_SceneCrime();
+    public static Place placeAccuser = new Place_Accuser();
 
     public GameObject destinationSubPanelBar;
     public GameObject destinationSubPanelCrime;

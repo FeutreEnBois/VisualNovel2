@@ -677,7 +677,7 @@ public class NovelController : MonoBehaviour
         DestinationController.instance.addAKnownDestination(data);
     }
 
-    Place actualPlace = null;
+    Place lastPlace = null;
     public void Command_ChangePlace(string data)
     {
         Place p = null;
@@ -694,8 +694,8 @@ public class NovelController : MonoBehaviour
                 break;
         }
         
-        actualPlace = p;
-        p.Load();
+        p.Load(lastPlace);
+        lastPlace = p;
     }
 
     void Command_Stop(string data)

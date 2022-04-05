@@ -1,4 +1,4 @@
-load(Chapter0_02) condition(PreuveNbrInf,Story,1)
+load(Chapter0_02) condition(PreuveNbrInf,Story,3)
 Berret "Il me faut plus de preuve." 
 narrator "Le Commissaire rentre dans la salle, visiblement à la recherche de quelqu'un."
 Commissaire "Oh Berret vous êtes là ! Je vous cherchais." flip(Commissaire)

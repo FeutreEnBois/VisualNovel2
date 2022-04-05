@@ -1,4 +1,4 @@
-<b><color=cyan>Sofie</color></b> " Alors ? T’as appris quelque chose ? " moveTo(Sofie,1,0,0,true) changePlace(Bar)
+<b><color=cyan>Sofie</color></b> "Alors ? T’as appris quelque chose ? " moveTo(Sofie,1,0,0,true)
 Berret "Bien sûr : "
 Berret "Bien sûr : "
 choice ""
