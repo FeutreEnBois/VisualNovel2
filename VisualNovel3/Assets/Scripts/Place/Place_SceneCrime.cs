@@ -10,7 +10,7 @@ public class Place_SceneCrime : Place
     {
         Texture2D texture = Resources.Load("Images/UI/Backdrops/SceneCrime") as Texture2D;
         Texture2D transition = Resources.Load("Images/TransitionEffects/Blur") as Texture2D;
-        TransitionManager.TransitionLayer(BCFC.instance.background, texture, transition);
+        TransitionManager.TransitionLayer(BCFC.instance.background, texture, transition,1,true);
         if (NovelController.instance.GetCondition("Preuve,Story,visite_scene_crime,false"))
         {
             NovelController.instance.LoadChapterFile("Chapter0_01c");

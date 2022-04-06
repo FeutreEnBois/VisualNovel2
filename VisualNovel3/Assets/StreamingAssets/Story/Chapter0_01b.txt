@@ -1,5 +1,5 @@
 transBackground(Bar,blur)
-Commissaire "Berret vous voilà, on ne vous attendait plus ... " moveTo(Commissaire,1,0.5,3,true)
+Commissaire "Berret vous voilà, on ne vous attendait plus ... " moveTo(Commissaire,1,0,3,true)
 "Vous avez une bonne vingtaine de minute de retard."
 "On allait commencer sans vous."
 choice "Que faire"
