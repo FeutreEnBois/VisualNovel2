@@ -167,7 +167,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 3b4e4dd8c8f438c4a8cdc080ad65c252, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 3
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -6000,7 +6000,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camTransform: {fileID: 1704518015}
-  shakeDuration: 0
   shakeAmount: 10
   decreaseFactor: 1
 --- !u!114 &1704518017

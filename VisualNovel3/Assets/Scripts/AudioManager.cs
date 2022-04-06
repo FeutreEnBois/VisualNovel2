@@ -44,9 +44,11 @@ public class AudioManager : MonoBehaviour
 		clickSound.Play(1);
 	}
 
+
+
 	public void playText()
 	{
-		audioSource.Play();
+		audioSource.Play(1);
 	}
 
 	public void stopText()

@@ -79,6 +79,9 @@ public class DialogueSystem : MonoBehaviour
     {
         speechPanel.SetActive(true);
 
+       // Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+//        AudioManager.instance.playText();
+
         string additiveSpeech = additive ? speechText.text : "";
         targetSpeech = additiveSpeech + speech;
 
@@ -110,17 +113,20 @@ public class DialogueSystem : MonoBehaviour
         //} else {
         while (isWaitingForUserInput)
         {
-           //if (autoPlay == true)
-                
-           //{
-           //     yield return new WaitForSecondsRealtime(2);
-           //    Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-           //     StopSpeaking();
-           // }
-           // else
-           // {
-                yield return new WaitForEndOfFrame();
+            //if (autoPlay == true)
+
+            //{
+            //     yield return new WaitForSecondsRealtime(2);
+            //    Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+            //     StopSpeaking();
+            // }
+            // else
+            // {
+            //AudioManager.instance.playText();
+            yield return new WaitForEndOfFrame();
                 StopSpeaking();
+            Debug.Log("BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB");
+               AudioManager.instance.stopText();
             //}
         }
         //}
@@ -144,6 +150,8 @@ public class DialogueSystem : MonoBehaviour
         StopSpeaking();
         speechPanel.SetActive(false);
         Debug.Log("set active = false");
+        AudioManager.instance.stopText();
+
     }
 
 
