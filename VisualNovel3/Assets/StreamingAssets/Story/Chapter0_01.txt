@@ -25,7 +25,7 @@ Berret "Il n'y a qu’à toi que ça arrive ce genre d'histoire Bapt."
 "La dernière fois c’était pour… " transBackground(Bar,blur) moveTo(Barman,2,0.5,4,true)
 narrator "30 Mai 1921, "
 +"21h34"
-"<b><color=red>BAM BAM</color></b> "
+"<b><color=red>BAM BAM</color></b> " 
 "<b><color=red>BAM BAM BAM</color></b>"
 <b><color=blue>Policier</color></b> " Berret ? On a besoin de vous , vous êtes là ?! "
 <b><color=blue>Policier</color></b> " Berret ? " 
