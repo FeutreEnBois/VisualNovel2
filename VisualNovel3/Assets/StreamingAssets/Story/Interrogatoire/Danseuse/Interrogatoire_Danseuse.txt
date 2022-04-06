@@ -1,5 +1,5 @@
 Berret "Bonjour Madame."
-<b><color=pink>Danseuse</color></b> "Bonjour... Monsieur Détective" flip(Danseuse)
+<b><color=purple>Danseuse</color></b> "Bonjour... Monsieur Détective" flip(Danseuse) moveTo(Sofie,-2,0,0,true)
 choice "Question time"
 {
     "Vous travaillez ici depuis longtemps ?"
