@@ -167,9 +167,11 @@ public class NovelController : MonoBehaviour
         {
             passTurn = false;
             string line = data[progress];
+            //AudioManager.instance.playText();
             if (line.StartsWith("choice"))
             {
-                StartCoroutine(HandlingChoiceLine(line));
+                StartCoroutine(HandlingChoiceLine(line)); 
+
             }
             else
             {
@@ -256,13 +258,15 @@ public class NovelController : MonoBehaviour
         {
             HandleLine(data[this.progress]);
             this.progress++;
+
         }
     }
 
     void HandleLine(string line)
     {
         string[] dialogueAndActions = line.Split('"');
-        if(dialogueAndActions.Length == 3)
+
+        if (dialogueAndActions.Length == 3)
         {
             string[] actions = dialogueAndActions[2].Split(' ');
                 if (!dialogueAndActions[2].Contains("condition") || HandleAction(actions[1]))
@@ -287,6 +291,7 @@ public class NovelController : MonoBehaviour
     {
         string speaker = cachedLastSpeaker;
         bool additive = dialogueDetails.Contains("+");
+        //AudioManager.instance.stopText();
 
         // remove the additive sign from the speaker name area
         if (additive)
