@@ -29,7 +29,8 @@ addAKnownDestination(string destination)
 -> SceneCrime
 -> Accuser
 
-
+shakeCam(float duration)
+shakeCam() -> default duration = 0.5f
 
 How to use TextArchitecte :
 -	<b>text</b> -> bold

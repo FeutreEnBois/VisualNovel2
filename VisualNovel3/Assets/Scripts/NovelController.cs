@@ -410,10 +410,18 @@ public class NovelController : MonoBehaviour
             case "addAKnownDestination":
                 Command_addAKnownDestination(data[1]);
                 break;
+            case "shakeCam":
+                Command_ShakeCamera(data[1]);
+                break;
 
 
         }
         return true;
+    }
+
+    private void Command_ShakeCamera(string data)
+    {
+        CameraShake.toggle(float.Parse(data));
     }
 
     private void Command_ToggleOption(string data)

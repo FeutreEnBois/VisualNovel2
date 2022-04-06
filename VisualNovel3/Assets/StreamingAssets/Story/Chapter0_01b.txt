@@ -10,7 +10,7 @@ choice "Que faire"
         Commissaire "Je vois qu'on vous a déjà renseigner sur la situation"
 }
 Commissaire "Les deux corps sont dans les loges, au fond du cabaret." flip(Commissaire)
-"Tournez à droite près des WC et vous y êtes."
+"Tournez à droite près des toilettes et vous y êtes."
 "Comme vous avez souvent du mal, je vous l’ai indiqué sur votre carnet." flip(Commissaire)
 Berret "Je m'y rends tout de suite, merci." addAKnownDestination(SceneCrime)
 stop()
