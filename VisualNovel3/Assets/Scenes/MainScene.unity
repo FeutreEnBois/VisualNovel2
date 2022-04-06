@@ -3137,7 +3137,7 @@ PrefabInstance:
     - target: {fileID: 688853286813659828, guid: 0785e97f79bf4cd4b9d2db5f53230127, type: 3}
       propertyPath: DestinationTexture
       value: 
-      objectReference: {fileID: 2800000, guid: 117cbea539d24b14d824fff12c1c17c3, type: 3}
+      objectReference: {fileID: 2800000, guid: 960f4e68d1a09454fae52826ada8c880, type: 3}
     - target: {fileID: 688853287618028984, guid: 0785e97f79bf4cd4b9d2db5f53230127, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4972,7 +4972,7 @@ PrefabInstance:
     - target: {fileID: 688853286813659828, guid: 0785e97f79bf4cd4b9d2db5f53230127, type: 3}
       propertyPath: DestinationTexture
       value: 
-      objectReference: {fileID: 2800000, guid: 4a9a7b0aa587b0e498a49033bbd2efd3, type: 3}
+      objectReference: {fileID: 2800000, guid: 8a024c1ea8bd3914383d7dd7b313a87e, type: 3}
     - target: {fileID: 688853287618028984, guid: 0785e97f79bf4cd4b9d2db5f53230127, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -6673,7 +6673,7 @@ PrefabInstance:
     - target: {fileID: 688853286813659828, guid: 0785e97f79bf4cd4b9d2db5f53230127, type: 3}
       propertyPath: DestinationTexture
       value: 
-      objectReference: {fileID: 2800000, guid: def1bd32699cca5428f40387ebd55514, type: 3}
+      objectReference: {fileID: 2800000, guid: 960f4e68d1a09454fae52826ada8c880, type: 3}
     - target: {fileID: 688853287618028984, guid: 0785e97f79bf4cd4b9d2db5f53230127, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
