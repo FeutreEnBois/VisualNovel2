@@ -59,7 +59,8 @@ public class TransitionManager : MonoBehaviour
     //handle transitioning directly yo images for layers
     public static void TransitionLayer(BCFC.LAYER layer, Texture2D targetImage, Texture2D transitionEffect, float speed = 1, bool smooth = false)
     {
-        if(layer.specialTransitionCoroutine != null)
+        Debug.Log("ta mamoune");
+        if (layer.specialTransitionCoroutine != null)
         {
             instance.StopCoroutine(layer.specialTransitionCoroutine);
         }
@@ -76,7 +77,6 @@ public class TransitionManager : MonoBehaviour
 
     private static IEnumerator TransitioningLayer(BCFC.LAYER layer, Texture2D targetTex, Texture2D transitionEffect, float speed, bool smooth)
     {
-        Debug.Log("manger");
         GameObject ob = Instantiate(layer.newImageObjectReference, layer.newImageObjectReference.transform.parent);
         ob.SetActive(true);
 
