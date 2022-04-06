@@ -53,6 +53,7 @@ public class DestinationController : MonoBehaviour
 
     public void ChangeDestination(string name)
     {
+        destinationPanel.SetActive(false);
         NovelController.instance.Command_ChangePlace(name);
     }
 
