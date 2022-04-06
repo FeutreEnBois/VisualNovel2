@@ -1,4 +1,4 @@
-transBackground(SceneCrime,blur) moveTo(Commissaire,-1,0.5,4,false) 
+transBackground(SceneCrime,blur) moveTo(Commissaire,-1,0,4,false) 
 Berret "Détective privé Berret, j’ai été missionné pour vous aider."
 <b><color=cyan>Sofie</color></b> "Berret ! Tu es en retard ! Me laisser seule face à un tel charnier, pas très gentleman de ta part." moveTo(Sofie,1,0,3,true)
 Berret "Bonjour <b><color=cyan>Sofie</color></b>. "

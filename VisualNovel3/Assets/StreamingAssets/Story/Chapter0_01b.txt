@@ -1,15 +1,15 @@
 transBackground(Bar,blur)
-Commissaire "Berret vous voilà, on ne vous attendait plus ... " moveTo(Commissaire,1,0.5,3,true)
+<b><color=blue>Commissaire</color></b> "Berret vous voilà, on ne vous attendait plus ... " moveTo(Commissaire,1,0,3,true)
 "Vous avez une bonne vingtaine de minute de retard."
 "On allait commencer sans vous."
 choice "Que faire"
 {
     "Résume la situation ? "
-        Commissaire "On a eu une fusillade dans le bar vers les alentours de 21h30, Pour l’instant on réduit la liste des suspects selon les alibis." 
+        <b><color=blue>Commissaire</color></b> "On a eu une fusillade dans le bar vers les alentours de 21h30, Pour l’instant on réduit la liste des suspects selon les alibis." 
     "On m’a annoncé un double homicide, ou sont les corps ? "
-        Commissaire "Je vois qu'on vous a déjà renseigner sur la situation"
+        <b><color=blue>Commissaire</color></b> "Je vois qu'on vous a déjà renseigner sur la situation"
 }
-Commissaire "Les deux corps sont dans les loges, au fond du cabaret." flip(Commissaire)
+<b><color=blue>Commissaire</color></b> "Les deux corps sont dans les loges, au fond du cabaret." flip(Commissaire)
 "Tournez à droite près des toilettes et vous y êtes."
 "Comme vous avez souvent du mal, je vous l’ai indiqué sur votre carnet." flip(Commissaire)
 Berret "Je m'y rends tout de suite, merci." addAKnownDestination(SceneCrime)

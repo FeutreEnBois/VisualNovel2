@@ -139,6 +139,7 @@ public class NovelController : MonoBehaviour
         if (canProgress &&  progress < data.Count && skip == true)
         {
             string line = data[progress];
+            //AudioManager.instance.playText();
             if (line.StartsWith("choice"))
             {
                 //StartCoroutine(HandlingChoiceLine(line));
@@ -163,13 +164,25 @@ public class NovelController : MonoBehaviour
             SaveGameFile();
         }*/
 
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            AudioManager.instance.playText();
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            AudioManager.instance.stopText();
+        }
+
         if (canProgress && (Input.GetKeyDown(KeyCode.RightArrow ) || Input.GetKeyDown(KeyCode.Mouse0) || passTurn) && progress < data.Count /*&& autoPlay.activeSelf == true*/)
         {
+            Debug.Log("ccccccccccccccccccccccccccccccccccccccccccccccccc");
             passTurn = false;
             string line = data[progress];
-            //AudioManager.instance.playText();
+            AudioManager.instance.playText();
             if (line.StartsWith("choice"))
             {
+                AudioManager.instance.stopText();
                 StartCoroutine(HandlingChoiceLine(line)); 
 
             }
@@ -265,23 +278,28 @@ public class NovelController : MonoBehaviour
     void HandleLine(string line)
     {
         string[] dialogueAndActions = line.Split('"');
-
+        //AudioManager.instance.playText();
+        
         if (dialogueAndActions.Length == 3)
         {
             string[] actions = dialogueAndActions[2].Split(' ');
-                if (!dialogueAndActions[2].Contains("condition") || HandleAction(actions[1]))
+           
+            if (!dialogueAndActions[2].Contains("condition") || HandleAction(actions[1]))
                 {
                     HandleDialogue(dialogueAndActions[0], dialogueAndActions[1]);
                     HandleEventsFromLine(dialogueAndActions[2]);
-                }
+             
+            }
         }
         else
         {
             string[] actions = dialogueAndActions[0].Split(' ');
-                if (!dialogueAndActions[0].Contains("condition") || HandleAction(actions[1]))
+           
+            if (!dialogueAndActions[0].Contains("condition") || HandleAction(actions[1]))
                 {
                     HandleEventsFromLine(dialogueAndActions[0]);
-                }
+              
+            }
         }
     }
 
@@ -556,6 +574,7 @@ public class NovelController : MonoBehaviour
 
         HandleLine(data[this.progress+1]);
         this.progress++;
+       
     }
     void Command_SetLayerImage(string data, BCFC.LAYER layer)
     {
