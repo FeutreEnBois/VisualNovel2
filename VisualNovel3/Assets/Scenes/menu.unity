@@ -886,5 +886,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoaderManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4385425731125240289, guid: c541f65508510bf4fb657ff5f95cf8ed, type: 3}
+      propertyPath: m_text
+      value: Utilise le click gauche de ta souris
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c541f65508510bf4fb657ff5f95cf8ed, type: 3}
