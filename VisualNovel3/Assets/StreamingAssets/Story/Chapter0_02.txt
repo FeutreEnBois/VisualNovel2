@@ -1,4 +1,4 @@
-<b><color=cyan>Sofie</color></b> " Alors ? T’as appris quelque chose ? " moveTo(Sofie,1,0,0,true) changePlace(Bar)
+<b><color=cyan>Sofie</color></b> "Alors ? T’as appris quelque chose ? " moveTo(Sofie,1,0,0,true)
 Berret "Bien sûr : "
 Berret "Bien sûr : "
 choice ""
@@ -14,7 +14,7 @@ choice ""
 narrator "Le commissaire rentre dans la pièce. " moveTo(Commissaire,0,0.5,0,false)
 Commissaire " Berret, Sophie je vous cherchai justement, on a fini de faire le trie dans les suspects et on en a retenu trois. " flip(Commissaire)
 "Un certain M. Jacques Marlo ayant essayé de partir une fois le filet de sécurité installé autour du bâtiment."
-"M. Ives Dupont trouvé dans les WC près des loges après les coups de feu," 
+"M. Ives Dupont trouvé dans les toilettes près des loges après les coups de feu," 
 "et M. Oliver François qui essayait de forcer le passage aussi." moveTo(Commissaire,-2,0.5,0,true) moveTo(Sofie,2,0,0,true)
 "Allez les interrogés, nous on s’occupe de calmé les gens et de continuer à fouiller pour vous. " addPreuve(Story,accuser)
 choice ""

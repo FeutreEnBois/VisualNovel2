@@ -7,6 +7,15 @@ public class DestinationController : MonoBehaviour
     public GameObject destinationPanel;
 
     [SerializeField] private Dictionary<string, DESTINATION> knownDestination = new Dictionary<string, DESTINATION>();
+
+    public static Place placeBar = new Place_Bar();
+    public static Place placeCrime = new Place_SceneCrime();
+    public static Place placeAccuser = new Place_Accuser();
+
+    public GameObject destinationSubPanelBar;
+    public GameObject destinationSubPanelCrime;
+    public GameObject destinationSubPanelAccuser;
+
     public static DestinationController instance;
     private void Awake()
     {
@@ -25,19 +34,26 @@ public class DestinationController : MonoBehaviour
 
     }
 
-    public void addAKnownDestination(string destName, string destDescription, Texture2D destBackground, Texture2D destTransition)
+    public void addAKnownDestination(string destName)
     {
-        if (knownDestination.ContainsKey(destName)){
-            Debug.LogWarning(destName + "is already known");
-            return;
+        switch (destName)
+        {
+            case "Bar":
+                destinationSubPanelBar.SetActive(true);
+                return;
+            case "SceneCrime":
+                destinationSubPanelCrime.SetActive(true);
+                return;
+            case "Accuser":
+                destinationSubPanelAccuser.SetActive(true);
+                return;
         }
-        knownDestination[destName] = new DESTINATION(destName,destDescription,destBackground,destTransition);
 
     }
+
     public void ChangeDestination(string name)
     {
         NovelController.instance.Command_ChangePlace(name);
-        NovelController.instance.LoadChapterFile("Destination/Destination_" + name);
     }
 
     public void ToggleDestinationPanel()

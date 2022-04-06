@@ -1,5 +1,5 @@
 <b><color=cyan>Sofie</color></b> "Avec ce qu’on a de nouveau, pourquoi ne pas aller reinterroger nos suspects ? " flip(Sofie) moveTo(Sofie,0.5,0.5,1000,false)
-Narrator " Un <b><color=blue>Policier</color></b> rentre dans la pièce "
+Narrator "Un <b><color=blue>Policier</color></b> rentre dans la pièce "
 <b><color=blue>Policier</color></b> " Berret, <b><color=cyan>Sofie</color></b> ! Nos homme fouille la sortie arrière, des idées de ce qu’on pourrait y chercher ? "
 choice "choix pour fouille arriere."
 {

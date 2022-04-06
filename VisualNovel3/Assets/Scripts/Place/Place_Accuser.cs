@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Place_Accuser : Place
 {
-    public Place_Accuser(Place lastPlace) : base(lastPlace)
+    public Place_Accuser() : base()
     {
     }
 

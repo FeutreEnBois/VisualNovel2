@@ -4,6 +4,4 @@ Commissaire " Il est bientôt l’heure de faire votre choix Berret."
 "J’ai bien l’impression que nous avons toutes les cartes en main. "
 <b><color=cyan>Sofie</color></b> " Pour faire un choix clique sur la nouvelle icone en forme de marteau qui vient d’apparaitre à gauche de ton écran. "
 <b><color=cyan>Sofie</color></b> " N’oublies pas, l’accuser va vouloir t'embrouiller l’esprit, n’hésite pas à le contredire si il commet une faute. "
-
-
 stop()

@@ -1,4 +1,4 @@
 Berret "Vous travaillez ici depuis longtemps?" 
-<b><color=pink>Danseuse</color></b> "Cela fait quelques années maintenant"
+<b><color=purple>Danseuse</color></b> "Cela fait quelques années maintenant"
 load(Interrogatoire/Danseuse/Interrogatoire_Danseuse)
 stop()

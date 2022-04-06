@@ -376,8 +376,8 @@ public class NovelController : MonoBehaviour
             case "playMusic":
                 Command_PlayMusic(data[1]);
                 break;
-            case "goToPreuve":
-                Command_GoToPreuveScene(data[1]);
+            case "togglePreuve":
+                Command_TogglePreuve(data[1]);
                 break;
             case "stop":
                 Command_Stop(data[1]);
@@ -407,9 +407,21 @@ public class NovelController : MonoBehaviour
             case "toggleOption":
                 Command_ToggleOption(data[1]);
                 break;
-                
+            case "addAKnownDestination":
+                Command_addAKnownDestination(data[1]);
+                break;
+            case "shakeCam":
+                Command_ShakeCamera(data[1]);
+                break;
+
+
         }
         return true;
+    }
+
+    private void Command_ShakeCamera(string data)
+    {
+        CameraShake.toggle(float.Parse(data));
     }
 
     private void Command_ToggleOption(string data)
@@ -486,7 +498,7 @@ public class NovelController : MonoBehaviour
         }
     }
 
-    private bool GetCondition(string data)
+    public bool GetCondition(string data)
     {
         string[] param = data.Split(',');
         if(param[0] == "Inventory")
@@ -578,12 +590,12 @@ public class NovelController : MonoBehaviour
             string[] parameters = data.Split(',');
             Texture2D texture = parameters[0] == "null" ? null : Resources.Load("Images/UI/Backdrops/" + parameters[0]) as Texture2D;
             Texture2D transition = parameters[1] == "null" ? null : Resources.Load("Images/TransitionEffects/" + parameters[1]) as Texture2D;
-            TransitionManager.TransitionLayer(BCFC.instance.background, texture, transition);
+            TransitionManager.TransitionLayer(layer, texture, transition);
         }
         else
         {
             Texture2D text = data == "null" ? null : Resources.Load("Images/UI/Backdrops/" + data) as Texture2D;
-            TransitionManager.TransitionLayer(BCFC.instance.background, null, text);
+            TransitionManager.TransitionLayer(layer, null, text);
         }
     }
 
@@ -663,30 +675,35 @@ public class NovelController : MonoBehaviour
         Character c = CharacterManager.instance.GetCharacter(data);
         c.FlipRight();
     }
-    void Command_GoToPreuveScene(string data)
+    void Command_TogglePreuve(string data)
     {
         GameplayManager.instance.TogglePointAndClickScene();
     }
+    
+    void Command_addAKnownDestination(string data)
+    {
+        DestinationController.instance.addAKnownDestination(data);
+    }
 
-    Place actualPlace = null;
+    Place lastPlace = null;
     public void Command_ChangePlace(string data)
     {
         Place p = null;
         switch (data)
         {
             case "Bar":
-                p = new Place_Bar(actualPlace);
+                p = DestinationController.placeBar;
                 break;
             case "SceneCrime":
-                p = new Place_SceneCrime(actualPlace);
+                p = DestinationController.placeCrime;
                 break;
             case "Accuser":
-                p = new Place_Accuser(actualPlace);
+                p = DestinationController.placeAccuser;
                 break;
         }
         
-        actualPlace = p;
-        p.Load();
+        p.Load(lastPlace);
+        lastPlace = p;
     }
 
     void Command_Stop(string data)

@@ -35,8 +35,6 @@ public class GameplayManager : MonoBehaviour
 
     public void TogglePointAndClickScene()
     {
-        //Change Background To point and click background
-
         // Clickable object setActive()
         foreach(ClickableObject obj in clickable)
         {

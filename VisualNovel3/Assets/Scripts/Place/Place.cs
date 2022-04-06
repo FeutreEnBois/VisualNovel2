@@ -1,16 +1,14 @@
 public class Place
 {
-    protected Place lastPlace = null;
 
-    public Place(Place lastPlace)
+    public Place()
     {
-        this.lastPlace = lastPlace;
     }
 
     public virtual void OnStart() { }
     public virtual void OnQuit() { }
 
-    public void Load()
+    public void Load(Place lastPlace)
     {
         if(lastPlace != null)
         {
