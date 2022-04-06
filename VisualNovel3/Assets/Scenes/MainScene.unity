@@ -4609,6 +4609,14 @@ PrefabInstance:
       propertyPath: Name
       value: Corps
       objectReference: {fileID: 0}
+    - target: {fileID: 4736678205987253013, guid: c3736a27b8f30b64288501a931608709, type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4736678205987253013, guid: c3736a27b8f30b64288501a931608709, type: 3}
+      propertyPath: pickedUp
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4736678205987253016, guid: c3736a27b8f30b64288501a931608709, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
@@ -5500,7 +5508,11 @@ PrefabInstance:
     - target: {fileID: 4736678205987253013, guid: c3736a27b8f30b64288501a931608709, type: 3}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: 6b62ee81f3173d148ad0080a55c29c8c, type: 3}
+      objectReference: {fileID: 0}
+    - target: {fileID: 4736678205987253013, guid: c3736a27b8f30b64288501a931608709, type: 3}
+      propertyPath: pickedUp
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4736678205987253016, guid: c3736a27b8f30b64288501a931608709, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
@@ -6265,7 +6277,7 @@ PrefabInstance:
     - target: {fileID: 4736678205987253013, guid: c3736a27b8f30b64288501a931608709, type: 3}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: fd7a1413b73017f418bb8050c7b9eea6, type: 3}
+      objectReference: {fileID: -5598016674448484105, guid: f32e073556df61940b025965395eb180, type: 3}
     - target: {fileID: 4736678205987253013, guid: c3736a27b8f30b64288501a931608709, type: 3}
       propertyPath: description
       value: une carte d'habituer
