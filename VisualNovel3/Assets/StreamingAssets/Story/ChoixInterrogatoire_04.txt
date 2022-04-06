@@ -7,7 +7,7 @@ choice ""
         load(Interrogatoire/Dupont/Interrogatoire_Dupont)
     "Interrogé <b>Mr Laplanche</b>"
         load(Interrogatoire/Letronc/Interrogatoire_Letronc)
-    "PASSER"
+    "Retourner au Bar"
         load(Chapter0_05)
 }
 stop()
