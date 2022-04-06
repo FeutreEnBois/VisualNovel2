@@ -65,7 +65,7 @@ public class Inventory : MonoBehaviour
     {
         for (int i = 0; i < allSlots; i++)
         {
-            if(slot[i].GetComponent<Slot>().ID == itemID)
+            if(slot[i].GetComponentInChildren<Slot>().ID == itemID)
             {
                 return true;
             }
@@ -79,17 +79,17 @@ public class Inventory : MonoBehaviour
         Debug.Log("Add item");
         for (int i = 0; i < allSlots; i++)
         {
-            if (slot[i].GetComponent<Slot>().empty & !item.GetComponent<Item>().pickedUp)
+            if (slot[i].GetComponentInChildren<Slot>().empty & !item.GetComponent<Item>().pickedUp)
             {
                 item.GetComponent<Item>().pickedUp = true;
 
-                slot[i].GetComponent<Slot>().icon = item.icon;
-                slot[i].GetComponent<Slot>().type = item.type;
-                slot[i].GetComponent<Slot>().ID = item.ID;
-                slot[i].GetComponent<Slot>().Name = item.Name;
-                slot[i].GetComponent<Slot>().description = item.description;
-                slot[i].GetComponent<Slot>().UpdateSlot();
-                slot[i].GetComponent<Slot>().empty = false;
+                slot[i].GetComponentInChildren<Slot>().icon = item.icon;
+                slot[i].GetComponentInChildren<Slot>().type = item.type;
+                slot[i].GetComponentInChildren<Slot>().ID = item.ID;
+                slot[i].GetComponentInChildren<Slot>().Name = item.Name;
+                slot[i].GetComponentInChildren<Slot>().description = item.description;
+                slot[i].GetComponentInChildren<Slot>().UpdateSlot();
+                slot[i].GetComponentInChildren<Slot>().empty = false;
                 break;
             }
         }

@@ -15,7 +15,9 @@ public class Slot : MonoBehaviour
 
     public void UpdateSlot()
     {
-        this.GetComponent<Image>().sprite = icon;
+        Image image = this.GetComponent<Image>();
+        image.sprite = icon;
+        image.color = new Color(255, 255, 255, 255);
         //this.GetComponent<Button>().onClick.
         
     }
