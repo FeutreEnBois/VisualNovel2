@@ -176,7 +176,6 @@ public class NovelController : MonoBehaviour
 
         if (canProgress && (Input.GetKeyDown(KeyCode.RightArrow ) || Input.GetKeyDown(KeyCode.Mouse0) || passTurn) && progress < data.Count /*&& autoPlay.activeSelf == true*/)
         {
-            Debug.Log("ccccccccccccccccccccccccccccccccccccccccccccccccc");
             passTurn = false;
             string line = data[progress];
             AudioManager.instance.playText();

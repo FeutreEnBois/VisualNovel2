@@ -125,7 +125,6 @@ public class DialogueSystem : MonoBehaviour
             //AudioManager.instance.playText();
             yield return new WaitForEndOfFrame();
                 StopSpeaking();
-            Debug.Log("BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB");
                AudioManager.instance.stopText();
             //}
         }
