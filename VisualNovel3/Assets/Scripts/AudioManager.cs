@@ -11,6 +11,11 @@ public class AudioManager : MonoBehaviour
 
 	public float songTransitionSpeed = 2f;
 	public bool songSmoothTransitions = true;
+	public AudioSource clickSound;
+	public AudioSource audioSource;
+
+
+
 
 	void Awake()
 	{
@@ -24,6 +29,29 @@ public class AudioManager : MonoBehaviour
 		{
 			DestroyImmediate(gameObject);
 		}
+	}
+
+	void Update()
+	{
+		if (Input.GetKey(KeyCode.Mouse0))
+		{
+			playClickSound();
+		}
+	}
+
+	public void playClickSound()
+	{
+		clickSound.Play(1);
+	}
+
+	public void playText()
+	{
+		audioSource.Play();
+	}
+
+	public void stopText()
+	{
+		audioSource.Stop();
 	}
 
 	public void PlaySFX(AudioClip effect, float volume = 1f, float pitch = 1f)
@@ -158,5 +186,9 @@ public class AudioManager : MonoBehaviour
 			AudioManager.allSongs.Remove(this);
 			DestroyImmediate(source.gameObject);
 		}
+
+		
+
+
 	}
 }

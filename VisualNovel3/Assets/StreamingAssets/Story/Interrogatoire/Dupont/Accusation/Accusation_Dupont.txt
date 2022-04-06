@@ -1,5 +1,5 @@
-narrator "Bouuuuuh, c'était pas luii, c'est pas Dupontt !"
-Berret "Qquoi ??"
-narrator "T'es nulllllll :ppp"
+narrator "Malgré toutes les preuves, Berret décide d'accuser Dupont, qu'il est con."
+Berret "Fichtre, c'est facheux, moi qui pensais."
+narrator "Vous n'êtes pas très bon."
 load(Chapter0_04)
 stop()

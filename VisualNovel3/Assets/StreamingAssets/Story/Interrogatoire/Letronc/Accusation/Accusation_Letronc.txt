@@ -1,5 +1,5 @@
-narrator "Bouuuuuh, c'était pas luii, c'est pas Letronc !!"
-Berret "Qquoi ??"
-narrator "T'es nulllllll :ppp"
+narrator "Malgré l'instinc du détective Berret, Letronc n'était qu'un bouc émissaire dans cette affaire."
+Berret "Sapristi !"
+narrator "Letronc sera éxécuté le 17 janvier 1922"
 load(Chapter0_04)
 stop()
