@@ -1,5 +1,5 @@
 click sur les deux mort : 
-Berret "Un double homicides... un homme et une femme, visiblement une rencontre entre amoureux"
+Berret "Un double homicide... un homme et une femme, visiblement une rencontre entre amoureux"
 stop()
 click sur la carte d’habitué :
 Berret "Hmm, une carte ?"
