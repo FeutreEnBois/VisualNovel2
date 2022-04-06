@@ -76,6 +76,7 @@ public class TransitionManager : MonoBehaviour
 
     private static IEnumerator TransitioningLayer(BCFC.LAYER layer, Texture2D targetTex, Texture2D transitionEffect, float speed, bool smooth)
     {
+        Debug.Log("manger");
         GameObject ob = Instantiate(layer.newImageObjectReference, layer.newImageObjectReference.transform.parent);
         ob.SetActive(true);
 
@@ -92,6 +93,7 @@ public class TransitionManager : MonoBehaviour
 
         while(curVal > 0)
         {
+            Debug.Log("Crash ?");
             curVal = smooth ? Mathf.Lerp(curVal, 0, speed * Time.deltaTime) : Mathf.MoveTowards(curVal, 0, speed * Time.deltaTime);
             im.material.SetFloat("_Cutoff", curVal);
             yield return new WaitForEndOfFrame();

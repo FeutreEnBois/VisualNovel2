@@ -28,7 +28,7 @@ public class Inventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        allSlots = 5;
+        allSlots = 4;
         slot = new GameObject[allSlots];
 
         for (int i = 0; i < allSlots; i++)
