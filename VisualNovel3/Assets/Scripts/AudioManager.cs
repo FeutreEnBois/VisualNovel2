@@ -13,6 +13,7 @@ public class AudioManager : MonoBehaviour
 	public bool songSmoothTransitions = true;
 	public AudioSource clickSound;
 	public AudioSource audioSource;
+	public AudioSource contradictionSound;
 
 
 
@@ -41,14 +42,19 @@ public class AudioManager : MonoBehaviour
 
 	public void playClickSound()
 	{
-		clickSound.Play(1);
+		clickSound.Play();
+	}
+
+	public void playContradiciotnSound()
+	{
+		contradictionSound.Play();
 	}
 
 
 
 	public void playText()
 	{
-		audioSource.Play(1);
+		audioSource.Play();
 	}
 
 	public void stopText()
