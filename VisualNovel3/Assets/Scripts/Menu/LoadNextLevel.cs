@@ -15,8 +15,9 @@ public class LoadNextLevel : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void StartGame()
+    public void StartGame(GameObject buttonPlay)
     {
+        buttonPlay.SetActive(false);
         StartCoroutine(StartLoad());
     }
     IEnumerator StartLoad()

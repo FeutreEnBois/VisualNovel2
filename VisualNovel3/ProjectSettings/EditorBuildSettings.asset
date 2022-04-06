@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/menu.unity
     guid: 850a90268b99cf04b909b8b5f2d42f99
   - enabled: 1
-    path: Assets/Scenes/PAX's Test Scene 2.unity
+    path: Assets/Scenes/MainScene.unity
     guid: b09b122cf5a35724598347b58035617c
   - enabled: 0
     path: Assets/Scenes/TestSceneChange/MainScene.unity
