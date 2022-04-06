@@ -29,6 +29,11 @@ addAKnownDestination(string destination)
 -> SceneCrime
 -> Accuser
 
+shakeCam(float duration)
+shakeCam() -> default duration = 0.5f
+
+playSound(soundName)
+soundName doit correspondre au nom d'un fichier dans Ressource/Audio/SFX/...
 
 
 How to use TextArchitecte :
