@@ -1,5 +1,5 @@
-<b><color=green>Barman</color></b> "Lucie Marlo était une de mes danseuses. Elle travaillait ici, elle travaillait presque tous les jours. Elle était même en train de danser, juste avant le crime."
-Berret "Pourtant on a retrouvé son corps dans les loges."
+<b><color=green>Barman</color></b> "Lucie Marlo était une de mes danseuses. Elle travaillait ici, elle travaillait presque tous les jours. Elle était même en train de danser, juste avant le drame."
+Berret "Pourtant on l'a retrouvé poussée dans les loges."
 <b><color=green>Barman</color></b> "Oui, le spectacle est en plusieurs parties. Les danseuses ne sont pas toujours toutes sur la scène en même temps. Elle a quitté la scène et est allée dans les loges."
 Berret "Vous saurez estimer combien de temps y a-t-il entre le moment où elle a quitté la scène?"
 <b><color=green>Barman</color></b> "Pas plus de 2min"

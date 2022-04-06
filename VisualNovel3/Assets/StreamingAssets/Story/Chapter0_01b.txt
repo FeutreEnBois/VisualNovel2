@@ -5,11 +5,11 @@ Commissaire "Berret vous voilà, on ne vous attendait plus ... " moveTo(Commissa
 choice "Que faire"
 {
     "Résume la situation ? "
-        Commissaire "On a eu une fusillade dans le bar vers les alentours de 21h30, Pour l’instant on réduit la liste des suspects selon les alibis." 
-    "On m’a annoncé un double homicide, ou sont les corps ? "
+        Commissaire "On a eu une double bousculade dans le bar vers les alentours de 21h30, et des grands bruits de tambours. Pour l’instant on réduit la liste des suspects selon les alibis." 
+    "On m’a annoncé une bousculade, ou sont les bousculés ? "
         Commissaire "Je vois qu'on vous a déjà renseigner sur la situation"
 }
-Commissaire "Les deux corps sont dans les loges, au fond du cabaret." flip(Commissaire)
+Commissaire "Les deux bousculés sont dans les loges, au fond du cabaret, il se repose, l'homme s'est fait pipi dessus ..." flip(Commissaire)
 "Tournez à droite près des toilettes et vous y êtes."
 "Comme vous avez souvent du mal, je vous l’ai indiqué sur votre carnet." flip(Commissaire)
 Berret "Je m'y rends tout de suite, merci." addAKnownDestination(SceneCrime)

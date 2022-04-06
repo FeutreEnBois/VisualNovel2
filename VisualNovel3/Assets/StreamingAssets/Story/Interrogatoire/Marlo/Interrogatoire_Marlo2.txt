@@ -7,7 +7,7 @@ choice "Choix question pour Jacques Marlo"
         load(Interrogatoire/Marlo/1er/Marlo_a2)
     "Les clefs ?" condition(Inventory,3)
         load(Interrogatoire/Marlo/2eme/Marlo_b1)
-    "Quelle relation avez vous avec la victime ?" condition(Inventory,4)
+    "Quelle relation avez vous avec les tombés ?" condition(Inventory,4)
         load(Interrogatoire/Marlo/2eme/Marlo_b2)
     "PASSER"
         load(choixInterrogatoire_04)

@@ -1,4 +1,4 @@
-Berret "Je vais avoir besoin de plus d'info sur les victimes"
+Berret "Je vais avoir besoin de plus d'info sur les bousculés"
 <b><color=green>Barman</color></b> "je vais voir ce que je peux faire"
 choice "Le joueur choisit s’il veut des info sur Alphonse Lauré ou Lucie Marlo."
 {

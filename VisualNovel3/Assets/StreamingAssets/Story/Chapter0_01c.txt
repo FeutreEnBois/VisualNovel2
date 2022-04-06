@@ -4,8 +4,8 @@ Berret "Détective privé Berret, j’ai été missionné pour vous aider."
 Berret "Bonjour <b><color=cyan>Sofie</color></b>. "
 +"On a quoi pour l’instant ?"
 <b><color=cyan>Sofie</color></b> "Pas grand-chose pour l'instant :"
-"deux corps, un homme et une femme, " flip(Sofie)
-+"6 douilles, 2 balles dans l’un 4 dans l’autre."
+"deux poussés, un homme et une femme, " flip(Sofie)
++"Un grand tambour qui a fait du bruit, je pense que c'était pour masqué la bousculade"
 "Cherchons dans la pièce de nouveau indice, pas sûr qu’on aille très loin avec seulement ça."
 "Balade ta souris sur l’écran et clique sur ce qu’il te semble être un indice."
 Berret "Bien. Je vais voir ce que je peux trouver." flip(Sofie)

@@ -4,7 +4,7 @@ choice "Question time"
 {
     "Vous travaillez ici depuis longtemps ?"
         load(Interrogatoire/Danseuse/Danseuse_a1)
-    "Interroger sur les victimes"
+    "Interroger sur les bousculés"
         load(Interrogatoire/Danseuse/Danseuse_a2)
     "Interroger sur les suspects"
         load(Interrogatoire/Danseuse/Danseuse_a3)

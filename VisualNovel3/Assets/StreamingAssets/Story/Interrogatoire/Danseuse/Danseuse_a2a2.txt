@@ -1,13 +1,13 @@
-<b><color=purple>Danseuse</color></b> "Oui je le connaissais."
-"Il s'appelait Alphonse Lauré ... "
-+" il venait nous parler de temps en temps"
+<b><color=purple>Danseuse</color></b> "Oui je le connais."
+"Il s'appelle Alphonse Lauré ... "
++" il vient nous parler de temps en temps"
 "Enfin ..."
 Berret "Enfin quoi ?"
-<b><color=purple>Danseuse</color></b> "C'est surtout Lucie Marlo qu'il venait voir." flip(Danseuse)
-<b><color=purple>Danseuse</color></b> "Quoique ces derniers temps il semblait plus distant avec elle."
-"Il venait moins souvent et l'ambiance était tendue entre eux d'après elle."
-Berret "Je vois. Et c'était quelqu'un qui pouvait avoir des ennemis dans le coin, il s'est déjà disputé dans ce bar ?"
-<b><color=purple>Danseuse</color></b> "Non, c'était pas un gars méchant, un client régulier mais je ne crois pas qu'il avait des ennemis par ici."
+<b><color=purple>Danseuse</color></b> "C'est surtout Lucie Marlo qu'il vient voir." flip(Danseuse)
+<b><color=purple>Danseuse</color></b> "Quoique ces derniers temps il semble plus distant avec elle."
+"Il vient moins souvent et l'ambiance est tendue entre eux d'après elle."
+Berret "Je vois. Et c'est quelqu'un qui peut avoir des ennemis dans le coin, il s'est déjà disputé dans ce bar ?"
+<b><color=purple>Danseuse</color></b> "Non, c'est pas un gars méchant, un client régulier mais je ne crois pas qu'il ait des ennemis par ici."
 "Il ne s'est jamais disputé avec qui que ce soit en tout cas ..." addPreuve(Danseuse,alphonse)
 load(Interrogatoire/Danseuse/Interrogatoire_Danseuse)
 stop()

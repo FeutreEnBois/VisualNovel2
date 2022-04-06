@@ -1,10 +1,10 @@
-Berret "Que pouvez-vous me dire sur les victimes ?"
+Berret "Que pouvez-vous me dire sur les bousculés ?"
 <b><color=purple>Danseuse</color></b> "laquelle ?"
-choice "Choix victime homme ou victime femme"
+choice "Choix bousculé homme ou bousculé femme"
 {
-    "victime Homme ?"
+    "bousculé Homme ?"
         load(Interrogatoire/Danseuse/Danseuse_a2a2)
-    "victime Femme ?"
+    "bousculé Femme ?"
         load(Interrogatoire/Danseuse/Danseuse_a2a1)
 }
 stop()

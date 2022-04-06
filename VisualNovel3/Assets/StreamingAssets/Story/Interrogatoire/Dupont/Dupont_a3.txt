@@ -1,5 +1,5 @@
-Berret "L’homme qui est mort, vous le connaissiez n’est-ce pas?"
-Ives "Mr Martinelli ? Non non, je l’avais déjà vu ici mais je ne le connaissais pas plus."
+Berret "L’homme qui est poussé, vous le connaissez n’est-ce pas?"
+Ives "Mr Martinelli ? Non non, je l’avais déjà vu ici mais je ne le connais pas plus."
 Berret "Vous mentez ! Vous êtes serveur, vous devez bien connaître votre clientèle ! Dites moi la vérité maintenant."
 Ives "Mais je… Je ne peux pas parler avec tout le monde, c’est  surtout le <b><color=green>Barman</color></b>
  qui parle avec la clientèle, je ne fais qu’apporter les verres."

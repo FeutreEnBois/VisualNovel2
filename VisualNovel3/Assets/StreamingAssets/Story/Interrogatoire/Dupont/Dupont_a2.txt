@@ -1,8 +1,8 @@
-Berret "Pourquoi tu l’as tué Ives ? Tu avais quelques chose contre elle ?"
+Berret "Pourquoi tu l’as poussé Ives ? Tu avais quelques chose contre elle ?"
 Ives "Qu-quoi? Qu’est-ce vous racontez? je n’a rien ! Je suis innocent ! "
 Berret "Tu sais pas combien de fois j’ai entendu ça."
-Ives "Écouter, j’étais aux toilettes quand les coups de feu ont retenti. Ca ne peut pas être moi." 
-Berret "Ça me suffit pas. T’as très bien pu aller t’y cacher après avoir entendu les tires."
+Ives "Écouter, j’étais aux toilettes quand le tambour a retenti. Ca ne peut pas être moi." 
+Berret "Ça me suffit pas. T’as très bien pu aller t’y cacher après avoir entendu les "BAM"."
 Ives " S’il vous plait, vous devez me croire, je n’y suis pour rien….."
 load(Interrogatoire/Dupont/Interrogatoire_Dupont)
 stop()

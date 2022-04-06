@@ -1,5 +1,5 @@
-Berret "Écoutez monsieur je vois bien que vous êtes éméché, mais je vais avoir besoin de votre entière coopération. Ou étiez vous ou moment des coup de feu ?"
-Emile "Des coups de feu ?"
+Berret "Écoutez monsieur je vois bien que vous êtes éméché, mais je vais avoir besoin de votre entière coopération. Ou étiez vous ou moment des coups de tambour ?"
+Emile "Un tambour ?"
 Berret " *** Ça part mal *** "
 Berret "Vous avez fait une pause au milieu de votre dernier verre ou êtes vous allez ?"
 Emile "Je suis parti"
