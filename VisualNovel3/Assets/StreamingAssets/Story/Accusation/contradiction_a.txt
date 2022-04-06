@@ -1,9 +1,9 @@
 Berret: "Oui oui, pardon je ne voulais pas vous offenser."
 +"Malheureusement ... comment dire ..."
 "votre femme n’est pas morte toute seule, elle était avec un 'ami', si vous voyez ce que je veux dire"
-Marlo "Quoi ?! Comment osez-vous dire de telles choses, je ne peux vous croire !!"
+<b><color=red>Mr.Marlo</color></b> "Quoi ?! Comment osez-vous dire de telles choses, je ne peux vous croire !!"
 Berret "Pourtant, j’ai appris que l’une de vos amie vous en avait parlé, après tout la rumeur circulait depuis quelques temps dans le cabaret"
-Marlo "Qu- ... mais enfin, c’est n’importe quoi ! J’aurais demandé le divorce tout de suite !"
+<b><color=red>Mr.Marlo</color></b> "Qu- ... mais enfin, c’est n’importe quoi ! J’aurais demandé le divorce tout de suite !"
 Berret "Le divorce ? Sauf si fou de rage vous de l’aviez tuer avant "
 load(Accusation/Accusation_Marlo_b)
 stop()

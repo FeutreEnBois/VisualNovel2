@@ -1,7 +1,7 @@
 Berret " Que vous croyez, savez vous ou avons-nous trouvé l’arme du crime ? "
 + "Dehors "
 + ", A l’arriere du Bar "
-Marlo " Le clodo a pu vous mentir "
+<b><color=red>Mr.Marlo</color></b> " Le clodo a pu vous mentir "
 Berret " C’est une grosse accusation que vous portez là . . . "
 " De toute manière je pense que nous avons fini "
 load(VICTOIRE)

@@ -23,7 +23,7 @@ public class IndictmentManager : MonoBehaviour
 
     public void ToggleKillerChoosingPanel()
     {
-        AccusationPanel.SetActive(!AccusationPanel.activeInHierarchy);
+        OptionManager.instance.TogglePanelOption(AccusationPanel);
     }
     public void ChooseASuspect(TextMeshProUGUI suspect)
     {

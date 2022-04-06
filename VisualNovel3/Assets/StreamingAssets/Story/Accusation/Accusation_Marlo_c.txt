@@ -1,15 +1,15 @@
 Berret "Question suivante !"
-Marlo "Vous perdez votre temps Détective"
+<b><color=red>Mr.Marlo</color></b> "Vous perdez votre temps Détective"
 choice ""
 {
     "Pourquoi aviez vous les clefs des loges sur vous ?"
         Berret "Pourquoi aviez vous les clefs des loges sur vous ?"
 }
-Marlo "Ma femme les a oubliées ce matin, je venais lui rendre"
+<b><color=red>Mr.Marlo</color></b> "Ma femme les a oubliées ce matin, je venais lui rendre"
 Berret " Hmm, c’est très généreux de votre part mais vous auriez aussi pu les rendre un peu plus tard. Surtout après une journée de travail, vous devez être fatigué"
-Marlo " Bien sur mais … c’était aussi l’occasion de passer la voir et … de boire un verre au cabaret, j’aime beaucoup cette endroit"
+<b><color=red>Mr.Marlo</color></b> " Bien sur mais … c’était aussi l’occasion de passer la voir et … de boire un verre au cabaret, j’aime beaucoup cette endroit"
 Berret "Je vois je vois … et qu’est ce que vous avez bu ? J’aime particulièrement une bonne absinthe et vous ?"
-Marlo " Oh, juste une bière, je préfère les choses simple, et je ne roule pas sur l’or" contradiction(Accusation/contradiction_c)
+<b><color=red>Mr.Marlo</color></b> " Oh, juste une bière, je préfère les choses simple, et je ne roule pas sur l’or" contradiction(Accusation/contradiction_c)
 Berret "Je vois je vois …" contradiction(Accusation/contradiction_c)
 load(Accusation/Accusation_Marlo_d)
 stop()

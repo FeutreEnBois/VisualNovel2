@@ -1,7 +1,7 @@
 Berret " Oh ? Vous avez croisé quelqu’un ? "
 Berret " Pourtant le clodo a l’arriere du Bar nous a assuré n’avoir vue qu’une seule personne sortir "
 Berret " Et c’était vous Monsieur Marlo "
-Marlo " Et bien cette personne n’est peut être pas vraiment sortie ! De toute façon vous n’avez rien contre moi, j’ai juste essayé de fuir ! "
+<b><color=red>Mr.Marlo</color></b> " Et bien cette personne n’est peut être pas vraiment sortie ! De toute façon vous n’avez rien contre moi, j’ai juste essayé de fuir ! "
 Berret "fuir par l'arriere ?" contradiction(Accusation/contradiction_d2)
 Berret "Je vois"
 load(Accusation/Accusation_Marlo_e)

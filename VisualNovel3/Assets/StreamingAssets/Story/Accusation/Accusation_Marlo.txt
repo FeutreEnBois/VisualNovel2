@@ -1,17 +1,17 @@
 Berret "Marlo, j’ai de grands soupçons sur vous"
-Marlo "Sur moi ? Et bien, ce serait avec plaisir que je vous ferais écarter ces doutes, mais je crois bien vous avoir déjà tout dit …" 
+<b><color=red>Mr.Marlo</color></b> "Sur moi ? Et bien, ce serait avec plaisir que je vous ferais écarter ces doutes, mais je crois bien vous avoir déjà tout dit …" flip(Mr.Marlo)
 choice ""
 {
     "Rappelez moi pourquoi vous étiez là ?"
         Berret "Rappelez moi pourquoi vous étiez là ?"
 }
-Marlo "Je vous l’ai déjà dit, ma femme travail ici… travaillait …"
+<b><color=red>Mr.Marlo</color></b> "Je vous l’ai déjà dit, ma femme travail ici… travaillait …"
 Berret "Oui oui … c’est vrai votre femme. Une sacré danseuse cette femme, c’est fâcheux. D’ailleurs, vous pensez qu’elles s'entendaient bien avec ses collègues ?"
-Marlo " Euh … de ce qu'elle me disait elle s’entendait bien avec tout le monde oui"
+<b><color=red>Mr.Marlo</color></b> " Euh … de ce qu'elle me disait elle s’entendait bien avec tout le monde oui"
 Berret" Ah oui, c’est toujours bien de se plaire sur son lieu de travail, elle semblait vraiment bien se plaire ici …"
-Marlo " Vous souhaitez insinuer quelque chose."
+<b><color=red>Mr.Marlo</color></b> " Vous souhaitez insinuer quelque chose."
 Berret "Votre femme était-elle fidèle ?"
-Marlo "Comment vous parlez de ma femme ! Bien sûr qu’elle m’était fidèle" contradiction(Accusation/contradiction_a)
+<b><color=red>Mr.Marlo</color></b> "Comment vous parlez de ma femme ! Bien sûr qu’elle m’était fidèle" contradiction(Accusation/contradiction_a)
 Berret "Oui oui, pardon je ne voulais pas vous offenser, elle était très appréciée"
 load(Accusation/Accusation_Marlo_b)
 stop()

@@ -40,6 +40,6 @@ public class Journal : MonoBehaviour
 
     public void ToggleJournal()
     {
-        journal.SetActive(!journal.activeInHierarchy);
+        OptionManager.instance.TogglePanelOption(journal);
     }
 }

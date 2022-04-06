@@ -5,9 +5,9 @@ choice ""
     "vous êtes vous absenté durant l’entracte ?"
         Berret "Vous veniez la voir ? vous ne vous êtes jamais absenté durant l’entracte vous m’aviez dit ?"
 }
-Marlo "Je vous le répète je n’ai pas bougé de ma place, je regarde le spectacle."
+<b><color=red>Mr.Marlo</color></b> "Je vous le répète je n’ai pas bougé de ma place, je regarde le spectacle."
 Berret "Pourtant le <b><color=green>Barman</color></b> m’avait informé qu’il vous a perdu de vu ..."
-Marlo "Ou... oui ... peut-être… j’ai du ... ...(quelque seconde) j’ai surement du passer au WC ..." contradiction(Accusation/contradiction_b)
+<b><color=red>Mr.Marlo</color></b> "Ou... oui ... peut-être… j’ai du ... ...(quelque seconde) j’ai surement du passer au WC ..." contradiction(Accusation/contradiction_b)
 Berret "Oh, Au WC vous dites ?" contradiction(Accusation/contradiction_b)
 Berret "J’ai du mal comprendre le <b><color=green>Barman</color></b> alors."
 load(Accusation/Accusation_Marlo_c)

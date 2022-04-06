@@ -58,7 +58,7 @@ public class DestinationController : MonoBehaviour
 
     public void ToggleDestinationPanel()
     {
-        destinationPanel.SetActive(!destinationPanel.activeInHierarchy);
+        OptionManager.instance.TogglePanelOption(destinationPanel);
     }
 
     class DESTINATION
