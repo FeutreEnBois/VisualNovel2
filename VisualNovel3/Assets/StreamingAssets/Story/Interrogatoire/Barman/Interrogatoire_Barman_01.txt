@@ -1,4 +1,4 @@
-<b><color=green>Barman</color></b> "Rebonjour Détective, comment allez-vous après ce drame ? Vous avez besoin d’un verre de vin pour digérer ce qui vient de se passer ? Ici, l’alcool est toléré, prenez en autant que votre portes-billets vous le permet." moveTo(Barman,0,0,0,true)
+<b><color=green>Barman</color></b> "Rebonjour Détective, comment allez-vous après ce drame ? Vous avez besoin d’un verre de vin pour digérer ce qui vient de se passer ? Ici, l’alcool est toléré, prenez en autant que votre portes-billets vous le permet." moveTo(Barman,0,0,0,true) moveTo(Sofie,2,0,0,true)
 choice "Le joueur choisit s’il veut une boisson ou non, si oui, une liste apparaît à l’écran."
 {
     "Un petit rouge ?"

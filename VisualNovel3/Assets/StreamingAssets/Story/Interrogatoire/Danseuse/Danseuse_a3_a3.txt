@@ -1,6 +1,6 @@
 Berret "Emile Letronc, c'est le type que vous voyez là-bas. Il vous dit quelque chose?"
-<b><color=pink>Danseuse</color></b> "Non ! Et il n'a pas l'air commode."
+<b><color=purple>Danseuse</color></b> "Non ! Et il n'a pas l'air commode."
 Berret "Vous ne l'avez jamais vu ici ?"
-<b><color=pink>Danseuse</color></b> "Non vraiment monsieur le détective." flip(Danseuse)
+<b><color=purple>Danseuse</color></b> "Non vraiment monsieur le détective." flip(Danseuse)
 load(Interrogatoire/Danseuse/Interrogatoire_Danseuse)
 stop()
