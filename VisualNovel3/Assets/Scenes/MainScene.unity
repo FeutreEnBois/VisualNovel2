@@ -431,6 +431,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1066383636856422649, guid: d73960d2d77cca24f827acb83b2e6b52, type: 3}
+      propertyPath: m_Pitch
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1066383637411722234, guid: d73960d2d77cca24f827acb83b2e6b52, type: 3}
       propertyPath: m_Name
       value: AllSound
