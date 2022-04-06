@@ -1,5 +1,5 @@
-Berret "Que faisiez vous ici ?" 
-Vieillard "Je ...vis ici ... Monsieur le détective…"
+Berret "Que faisiez vous ici ?"
+Vieillard "Je ...vis ici ... Monsieur le Détective…"
 Berret "Je vois. Vous êtes seul dans le coin ?"
 Vieillard "Oui... tout seul... ..." flip(Vieillard)
 Berret "Vous n’avez vu personne passer par l’arrière du bâtiment ?"
@@ -8,14 +8,15 @@ Berret "Très bien, suivez-moi !"
 narrator "Berret amène le Vieillard près des suspects" moveTo(Vieillard,0.5,0,3,true)
 Berret "Vous voyez une personne qui ressemble à celui que vous avez vu ?"
 narrator "Vieillard zieute la salle et pointe du doigt Marlo"
-Vieillard "Lui la bas !! Il ressemble comme deux goute d’eau a la personne dont je vous parlais"
-<b><color=cyan>Sofie</color></b> "Je crois qu’on approche du but" moveTo(Sofie,0,0,100,false)
+Vieillard "Lui là-bas ! Il ressemble comme deux gouttes d’eau a la personne dont je vous parlais"
+Sofie
+"Je crois qu’on approche du but" moveTo(Sofie,0,0,100,false)
 Berret "Vous êtes sûr de vous ?"
 Vieillard "oui sûr de sûr" flip(Vieillard)
-Berret "L’avez vous vue jeter quelque choses, avait-il quelque chose dans les mains qui pourrait ressembler à un pistolet ?"
-Vieillard "Je n’ai pas vue Mr le Detective, tous c’est passé si vite"
+Berret "L’avez vous vue jeter quelque chose, avait-il quelque chose dans les mains qui pourrait ressembler à un pistolet ?"
+Vieillard "Je n’ai pas vue Mr le Détective, tous c’est passé si vite"
 Vieillard "Mais je suis sûr que cette personne a bien essayé de s’enfuir par l'arrière ..."
-Vieillard "Et c’est la seul a avoir essayé"
+Vieillard "Et c’est la seule à avoir essayée"
 Berret "Merci Monsieur, je pense que ce sera tout" addPreuve(Story,vieillard) moveTo(Vieillard,2,0.5,3,true)
 load(Interrogatoire/Viellard/Interrogatoire_Viellard)
 stop() 
