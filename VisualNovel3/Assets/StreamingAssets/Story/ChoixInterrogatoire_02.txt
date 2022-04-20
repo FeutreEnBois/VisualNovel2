@@ -7,7 +7,7 @@ choice "Allez voir la <b><color=pink>Danseuse</color></b> ou le <b><color=green>
         load(Interrogatoire/Danseuse/Interrogatoire_Danseuse) moveTo(Sofie, 0 , 0.5, 2, false)
     "Allez voir le <b><color=green>Barman</color></b>  ?"
         load(Interrogatoire/Barman/Interrogatoire_Barman_01) moveTo(Sofie, 0 , 0.5, 2, false)
-    "Aller voir <b><color=cyan>Sofie</color></b> "condition(PreuveNbrSup,Bar,2)
+    "Aller voir Sofie ? "condition(PreuveNbrSup,Bar,2)
         load(Chapter0_04)
 }
 stop()

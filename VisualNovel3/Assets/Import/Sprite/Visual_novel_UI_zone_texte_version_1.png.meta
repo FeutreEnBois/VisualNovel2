@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: e8522f23ba1989f43aa580fb6c3ee0c1
+guid: 1d4e69706e9d14a4fb1465a690b98df5
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -4180654274818918617
-    second: marlo_grand_format_2
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -44,7 +41,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -104,70 +101,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: marlo_grand_format_0
-      rect:
-        serializedVersion: 2
-        x: 235
-        y: 25
-        width: 933
-        height: 2890
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a39df61617a829410800000000000000
-      internalID: 1482399446928972090
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: marlo_grand_format_1
-      rect:
-        serializedVersion: 2
-        x: 1157
-        y: 1933
-        width: 16
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0e95df591595ce400800000000000000
-      internalID: 354756677599058400
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: marlo_grand_format_2
-      rect:
-        serializedVersion: 2
-        x: 229
-        y: 1523
-        width: 941
-        height: 1393
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72733bc46155bf5c0800000000000000
-      internalID: -4180654274818918617
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
