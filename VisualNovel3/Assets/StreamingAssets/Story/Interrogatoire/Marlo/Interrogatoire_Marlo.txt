@@ -1,10 +1,5 @@
-<<<<<<< Updated upstream
-Berret "Bonjour Monsieur Marlo" flip(Mr.Marlo)
-Marlo "Je vous jure, c'est un terrible malentendu..." moveTo(Mr.Marlo,1,0,1,false)
-=======
 Berret "Bonjour Monsieur Marlo" moveTo(Marlo,0,0,2,true)
 Marlo "Je vous jure, c'est un terrible malentendu..."
->>>>>>> Stashed changes
 choice "Choix question pour Jacques Marlo"
 {
     "Qui êtes vous ?"
