@@ -5,12 +5,12 @@ using UnityEngine;
 public class OptionManager : MonoBehaviour
 {
     public GameObject inventaire;
-    public GameObject journal;
+    //public GameObject journal;
     public GameObject boussole;
     public GameObject accuser;
 
     public GameObject PanelInventaire;
-    public GameObject PanelJournal;
+    //public GameObject PanelJournal;
     public GameObject PanelDestination;
     public GameObject PanelAccuser;
 
@@ -24,9 +24,9 @@ public class OptionManager : MonoBehaviour
     private void Start()
     {
         PanelOptions[0] = PanelInventaire;
-        PanelOptions[1] = PanelJournal;
-        PanelOptions[2] = PanelDestination;
-        PanelOptions[3] = PanelAccuser;
+        //PanelOptions[1] = PanelJournal;
+        PanelOptions[1] = PanelDestination;
+        PanelOptions[2] = PanelAccuser;
     }
     public void ToggleElement(string option)
     {
@@ -35,9 +35,9 @@ public class OptionManager : MonoBehaviour
             case "Inventaire":
                 inventaire.SetActive(true);
                 break;
-            case "Journal":
-                journal.SetActive(true);
-                break;
+           // case "Journal":
+             //   journal.SetActive(true);
+               // break;
             case "Boussole":
                 boussole.SetActive(true);
                 break;
