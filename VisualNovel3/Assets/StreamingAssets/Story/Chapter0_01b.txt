@@ -5,7 +5,7 @@ choice "Que faire"
 {
     "Résume la situation ? "
         <b><color=blue>Commissaire</color></b> "On a eu une fusillade dans le bar vers les alentours de 21h30, Pour l’instant on réduit la liste des suspects selon les alibis." 
-    "On m’a annoncé un double homicide, ou sont les corps ? "
+    "Un double homicide, ou sont les corps ? "
         <b><color=blue>Commissaire</color></b> "Je vois qu'on vous a déjà renseigner sur la situation"
 }
 <b><color=blue>Commissaire</color></b> "Les deux corps sont dans les loges, au fond du cabaret." flip(Commissaire)
