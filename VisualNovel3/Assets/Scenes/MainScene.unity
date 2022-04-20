@@ -3413,9 +3413,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2316933110560780531}
     m_Modifications:
+    - target: {fileID: 143937021105535469, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
+      propertyPath: m_Text
+      value: Ives
+      objectReference: {fileID: 0}
     - target: {fileID: 3144776912158530142, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
       propertyPath: m_text
       value: Ives
+      objectReference: {fileID: 0}
+    - target: {fileID: 5484592361296648333, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
+      propertyPath: m_Text
+      value: "preuves contre lui :\n- Acc\xE8s au loge\n- Connait les lieux\n- Suspect"
       objectReference: {fileID: 0}
     - target: {fileID: 6607806540311487424, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
       propertyPath: m_Pivot.x
@@ -3844,6 +3852,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2316933110560780531}
     m_Modifications:
+    - target: {fileID: 143937021105535469, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
+      propertyPath: m_Text
+      value: Emile
+      objectReference: {fileID: 0}
     - target: {fileID: 2167878742677808475, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.47100002
@@ -3891,6 +3903,17 @@ PrefabInstance:
     - target: {fileID: 3383094459174371771, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5484592361296648333, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
+      propertyPath: m_Text
+      value: 'preuves contre lui :
+
+        - Aggressif et certainement violent
+
+        -
+        Alcooliser
+
+        - '
       objectReference: {fileID: 0}
     - target: {fileID: 6607806540311487424, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
       propertyPath: m_Pivot.x
@@ -4984,6 +5007,11 @@ PrefabInstance:
     - target: {fileID: 3383094459174371771, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5484592361296648333, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
+      propertyPath: m_Text
+      value: "preuves contre lui :\n- Poss\xE8de les clefs des loges\n- Marie d'une
+        des victimes\n- Vue \xE0 l'arri\xE8re du Bar"
       objectReference: {fileID: 0}
     - target: {fileID: 6607806540311487424, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
       propertyPath: m_Pivot.x
@@ -6731,7 +6759,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &6315802312134994848
 MonoBehaviour:
   m_ObjectHideFlags: 0
