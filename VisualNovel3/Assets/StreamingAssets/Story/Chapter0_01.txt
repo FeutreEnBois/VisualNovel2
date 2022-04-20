@@ -5,13 +5,13 @@ narrator " " playMusic(NightOnTheDocks-Sax)
 "(Rire, boisson, musique)" Baptiste
 choice ""
 {
-	"Pas mal ton histoire Bapt.'"
+	"Pas mal ton histoire Bapt.'" 
         <b><color=white>Baptiste</color></b> "Ha Ha Ha merci bien !" moveTo(Barman,0.5,0,3,false)
-	"Wouah t'en as de la chance Bapt.'"
+	"Wouah t'en as de la chance Bapt.'" 
         <b><color=white>Baptiste</color></b> "La chance ça se force !" moveTo(Barman,0.5,0,3,false)
 }
 setBackground(Towns)
-<b><color=white>Baptiste</color></b> "Attends j’en ai une autre !"
+<b><color=white>Baptiste</color></b> "Attends j’en ai une autre !" 
 "Un soir de pâque, j’suis en couverture dans les quartiers de <b><color=pink>Louis-LAFFAIRE</color></b>."
 "Tranquille dans ma voiture je peste contre le patron qui ma foutu dehors un jour de fête."
 "Et là tu devineras jamais la suite…" flip(Barman)
@@ -25,8 +25,8 @@ Berret "Il n'y a qu’à toi que ça arrive ce genre d'histoire Bapt."
 "La dernière fois c’était pour… " transBackground(Bar,blur) moveTo(Barman,2,0.5,4,true)
 narrator "30 Mai 1921, "
 +"21h34"
-"<b><color=red>BAM BAM</color></b> " 
-"<b><color=red>BAM BAM BAM</color></b>"
+"<b><color=red>BAM BAM</color></b> " playSound(pistolet_sound)
+"<b><color=red>BAM BAM BAM</color></b>" playSound(pistolet_sound)
 <b><color=blue>Policier</color></b> " Berret ? On a besoin de vous , vous êtes là ?! "
 <b><color=blue>Policier</color></b> " Berret ? " 
 <b><color=blue>Policier</color></b> "On est en sous-effectif aujourd’hui. "
