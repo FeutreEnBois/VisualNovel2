@@ -1,5 +1,5 @@
 Berret "Bonjour Monsieur Marlo"
-Marlo "Je vous jure, c'est un terrible malentendu..."
+Marlo "Je vous jure, c'est un terrible malentendu..." flip(Marlo)
 choice "Choix question pour Jacques Marlo"
 {
     "Qui êtes vous ?"

@@ -1250,100 +1250,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 688853286813659824, guid: 0785e97f79bf4cd4b9d2db5f53230127, type: 3}
   m_PrefabInstance: {fileID: 648446283}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &270960969
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 270960970}
-  - component: {fileID: 270960972}
-  - component: {fileID: 270960971}
-  - component: {fileID: 270960973}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &270960970
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270960969}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1810880279}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.63408, y: 0}
-  m_SizeDelta: {x: 161.27, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &270960971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270960969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 2797f22d1c44d324e9a9dfe072a64795, type: 3}
-    m_FontSize: 23
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 62
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Contradiction
---- !u!222 &270960972
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270960969}
-  m_CullTransparentMesh: 1
---- !u!114 &270960973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270960969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5be1b697a18a114795bb3fda1316fa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  continualUpdate: 1
-  fontSizeAtDefaultResolution: 10
 --- !u!1001 &279344055
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6310,15 +6216,14 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 270960970}
+  m_Children: []
   m_Father: {fileID: 1704518015}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.8614608, y: 0.033169083}
-  m_AnchorMax: {x: 0.9806741, y: 0.119}
-  m_AnchoredPosition: {x: 0.7369385, y: 1.6140137}
-  m_SizeDelta: {x: 3.5500908, y: 4.128769}
+  m_AnchorMin: {x: 0.851, y: 0.03323737}
+  m_AnchorMax: {x: 1, y: 0.14278165}
+  m_AnchoredPosition: {x: -1.3569946, y: 0.7379761}
+  m_SizeDelta: {x: 2.7145996, y: 1.4759979}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1810880280
 MonoBehaviour:
@@ -6340,9 +6245,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 40815b49ee0420440a93fe2bdcf8e366, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
