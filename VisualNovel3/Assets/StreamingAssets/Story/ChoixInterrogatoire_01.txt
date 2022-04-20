@@ -2,11 +2,11 @@ Berret "mmmmmh"
 "Je vois..."
 choice ""
 {
-    "Interrogé <b>Mr Jacques Merlo</b>"
+    "Interrogé <b>Mr Jacques Marlo</b>"
         load(Interrogatoire/Marlo/Interrogatoire_Marlo)
     "Interrogé <b>Mr Ives Dupont</b>"
         load(Interrogatoire/Dupont/Interrogatoire_Dupont)
-    "Interrogé <b>Mr Laplanche</b>"
+    "Interrogé <b>Mr Letronc</b>"
         load(Interrogatoire/Letronc/Interrogatoire_Letronc)
     "Mettre fin à l'interrogatoire"condition(PreuveNbrSup,Accuser,3)
         addPreuve(Story,premier_Interrogatoire) load(Chapter0_03)

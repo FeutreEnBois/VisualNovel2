@@ -8,11 +8,11 @@ choice "Choix question pour Jacques Marlo"
         load(Interrogatoire/Marlo/1er/Marlo_a2)
     "Les clefs ?"
         load(Interrogatoire/Marlo/2eme/Marlo_b1)
-    "Quelle relation avez vous avec la victime ?"condition(Inventory,4)
+    "Votre relation avec la victime ?" condition(Inventory,4)
         load(Interrogatoire/Marlo/2eme/Marlo_b2)
     "PASSER"condition(Preuve,Story,accuser_v2)
         load(choixInterrogatoire_04)
     "Retourner en arriere"condition(Preuve,Story,accuser_v2,false)
-        load(choixInterrogatoire_01)
+        moveTo(Marlo,-1,0,2,false) load(choixInterrogatoire_01)
 }
 stop()

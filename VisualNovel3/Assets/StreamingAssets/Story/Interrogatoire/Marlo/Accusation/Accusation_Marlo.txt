@@ -18,5 +18,6 @@ Marlo "Ce n'est pas moi ! Je ne veux pas aller en prison"
 Berret "C’est pas la prison qui t’attend je pense, plutot la peine de mort"
 Marlo "Nooooooooooooooooonnnnn !"
 Berret "Si ..."
+moveTo(Marlo,-1,0,2,false)
 load(Chapter0_04)
 stop()

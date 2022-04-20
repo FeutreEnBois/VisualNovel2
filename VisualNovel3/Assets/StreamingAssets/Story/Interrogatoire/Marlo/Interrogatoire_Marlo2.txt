@@ -1,4 +1,3 @@
-Berret "Re-Bonsoir Monsieur."
 choice "Choix question pour Jacques Marlo"
 {
     "Qui êtes vous ?"

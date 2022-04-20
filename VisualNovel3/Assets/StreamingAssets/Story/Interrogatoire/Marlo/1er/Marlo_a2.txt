@@ -1,13 +1,13 @@
 Berret "Quel est votre alibi ?"
-Marlo ". . ."
+Marlo ". . ." flip(Marlo)
 Berret "Ecoutez l'ami je suis la pour vous aidez"
-"mais pour ça j'ai besoin de savoir pourquoi et où est-ce que vous étiez au moment de la fusillade !"
-Marlo "J-J'était là pour voir ma femme"
+"mais pour ça j'ai besoin de savoir pourquoi et où est-ce que vous étiez au moment de la fusillade !" flip(Marlo)
+Marlo "J-J'était là pour voir ma femme" moveTo(Marlo,0.2,0,2,false)
 Berret "Votre femme, elle travaille ici ?"
 Marlo "Oui, elle est <b><color=pink>Danseuse</color></b>."
 Berret "Mmmmh, bien."
 "Vous avez eu le temps de la voir avant l'incident ?"
-Marlo "Non, je venais d'arriver"
+moveTo(Marlo,0,0,2,true) 
 Berret "La question maintenant c'est pourquoi avez vous essayé de fuir ?"
 Marlo "J'ai eu la frousse. . ."
 +" C'est pas tous les jours qu'on est mêlée à une fusillade"

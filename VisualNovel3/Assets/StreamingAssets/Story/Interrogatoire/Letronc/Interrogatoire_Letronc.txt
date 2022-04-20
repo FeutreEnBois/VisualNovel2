@@ -2,11 +2,11 @@
 Berret "Tendu ? c’est a dire"
 <b><color=blue>Policier</color></b> "Aller voir vous même"
 narrator "Berret s’approche du client hurlant maintenu par 2 policier"
-Emile "Lâcher moi bande d’incapables incompetents *HIC*" flip(Emile)
+Emile "Lâcher moi bande d’incapables incompetents *HIC*" moveTo(Emile,0.5,0,2,false)
 Berret "Whoa, on se calme l’ami, pourquoi tu hurles comme ça ?"
 Emile "Tes aveugle ? j’ai rien à faire avec tout ça et maintenant on me retient comme un criminel ?"
 Berret "Bah comme je le vois tu pourrais être un criminel. Tu es clairement suspect"
-Emile "Suspect ? Mooooi ? je suis pas *HIC* suspect ! Vous dites n'importe ! C'est vous le tueur !"
+Emile "Suspect ? Mooooi ? je suis pas *HIC* suspect ! Vous dites n'importe ! C'est vous le tueur !" flip(Emile)
 Berret " *** Qu'est ce que je pourrais répondre à ça ... *** "
 choice "Choix question pour Emile Letronc"
 {
@@ -19,6 +19,6 @@ choice "Choix question pour Emile Letronc"
     "PASSER"condition(Preuve,Story,accuser_v2)
         load(choixInterrogatoire_04)
     "Retourner en arriere"condition(Preuve,Story,accuser_v2,false)
-        load(choixInterrogatoire_01)
+        moveTo(Emile,-1,0,2,false) load(choixInterrogatoire_01)
 }
 stop()

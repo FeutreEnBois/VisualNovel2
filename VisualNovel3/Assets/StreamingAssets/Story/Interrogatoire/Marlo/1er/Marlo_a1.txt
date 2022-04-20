@@ -6,6 +6,8 @@ Marlo "Et oui Monsieur, je suis acteur dans le cinéma."
 +"Je suis un ami d'Henri Diamant-Berger vous savez."
 Berret "Si vous le dîtes ..."
 +"Ceci étant dit, vous venez souvent ?"
+flip(Marlo)
 Marlo "Pas plus que ça non ..."
+flip(Marlo)
 load(Interrogatoire/Marlo/ChoiceInterrogatoire_Marlo1)
 stop()
