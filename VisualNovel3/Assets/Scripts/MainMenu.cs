@@ -20,7 +20,7 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
-        resolutions = Screen.resolutions;
+        /*resolutions = Screen.resolutions;
         resolutionDropdown.ClearOptions();
         List<string> options = new List<string>();
         int currentResolutionIndex = 0;
@@ -35,7 +35,7 @@ public class MainMenu : MonoBehaviour
         }
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
-        resolutionDropdown.RefreshShownValue();
+        resolutionDropdown.RefreshShownValue();*/
     }
 
     public void QuitGame()
