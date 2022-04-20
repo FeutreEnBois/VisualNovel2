@@ -136,10 +136,10 @@ public class Inventory : MonoBehaviour
             Debug.Log("preuve '" + preuve + "' added to Informateur '" + Informateur + "' with success");
             preuves[Informateur].Add(preuve);
         }
-        if(KillerSlotnbr != -1)
-        {
-            KillerSlot[KillerSlotnbr].GetComponent<SelectKillerSlotContainer>().addPreuve(preuve);
-        }
+        //if(KillerSlotnbr != -1)
+        //{
+        //    KillerSlot[KillerSlotnbr].GetComponent<SelectKillerSlotContainer>().addPreuve(preuve);
+        //}
         preuvesCount++;
     }
 
