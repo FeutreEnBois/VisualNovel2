@@ -7,7 +7,7 @@ choice "choix pour fouille arriere."
         <b><color=blue>Policier</color></b> "Très bien, nous verrons ça en priorité."
     "Cherchez un témoins qui été à l'arrière"
         <b><color=blue>Policier</color></b> "Très bien, nous verrons ça en priorité."
-    "On a toujours pas retrouver l’arme du crime !"
+    "Chercher l’arme du crime !"
         <b><color=blue>Policier</color></b> "Très bien, nous verrons ça en priorité."
 }
 <b><color=cyan>Sofie</color></b> "Bonne idée !" addPreuve(Story,accuser_v2) flip(Sofie)
