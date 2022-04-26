@@ -14,7 +14,7 @@ Berret "Ceci étant fait, j’aurais besoin de votre aide. Vous avez bien dû vo
 <b><color=green>Barman</color></b> "Bien sûr, je répondrai à toutes vos questions mon ami !" flip(Barman)
 choice "Choisie une question"
 {
-    "Vous les avez déjà vu les suspects auparavant ?"
+    "Vous les avez déjà vu les suspects ?"
         load(Interrogatoire/Barman/Barman_b1) moveTo(Sofie,10,0.5,100,false)
 }
 stop()

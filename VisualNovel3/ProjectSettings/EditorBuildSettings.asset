@@ -24,6 +24,6 @@ EditorBuildSettings:
     path: Assets/Scenes/ChangeDecor.unity
     guid: 848874ac0fd75cf44817e925911fab0b
   - enabled: 0
-    path: Assets/Scenes/EREN.unity
-    guid: c66ebb7c89b0f7a4ca7384344ed9bbeb
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

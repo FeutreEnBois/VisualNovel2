@@ -13,15 +13,18 @@ public class LoadNextLevel : MonoBehaviour
     public void Start()
     {
         DontDestroyOnLoad(gameObject);
+
     }
 
     public void StartGame(GameObject buttonPlay)
     {
         buttonPlay.SetActive(false);
         StartCoroutine(StartLoad());
+
     }
     IEnumerator StartLoad()
     {
+       
         loadingScreen.SetActive(true);
         yield return StartCoroutine(FadeLoadingScreen(1, 1));
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneToLoad);
@@ -36,15 +39,18 @@ public class LoadNextLevel : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.RightArrow))
             {
                 done = true; // breaks the loop
+                DialogueSystem.instance.Close();
             }
             yield return null; // wait until next frame, then continue execution from here (loop continues)
         }
 
         yield return StartCoroutine(FadeLoadingScreen(0, 1));
         loadingScreen.SetActive(false);
+        
     }
     IEnumerator FadeLoadingScreen(float targetValue, float duration)
     {
+ 
         float startValue = canvasGroup.alpha;
         float time = 0;
         while (time < duration)
@@ -54,5 +60,6 @@ public class LoadNextLevel : MonoBehaviour
             yield return null;
         }
         canvasGroup.alpha = targetValue;
+ 
     }
 }

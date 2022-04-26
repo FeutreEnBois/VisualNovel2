@@ -5,7 +5,7 @@ choice "choix pour fouille arriere."
 {
     "Pouvait-on sortir par l’arrière ? "
         <b><color=blue>Policier</color></b> "Très bien, nous verrons ça en priorité."
-    "Cherchez un témoins oculaire qui aurait pue être a l'arrière"
+    "Cherchez un témoins qui été à l'arrière"
         <b><color=blue>Policier</color></b> "Très bien, nous verrons ça en priorité."
     "On a toujours pas retrouver l’arme du crime !"
         <b><color=blue>Policier</color></b> "Très bien, nous verrons ça en priorité."

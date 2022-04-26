@@ -11,6 +11,7 @@ public class DialogueSystem : MonoBehaviour
 
     void Awake()
     {
+
         if (instance != null)
         {
             Debug.LogError("!!! trying to create multiple instance of DialogueSystem !!!");
@@ -40,7 +41,7 @@ public class DialogueSystem : MonoBehaviour
 
     public void Open(string speakerName = "", string speech = "")
     {
-        if (speakerName == "" && speech == "")
+        if (speakerName == "" && speech == "" || speakerName == null && speech == null)
         {
             Close();
             return;

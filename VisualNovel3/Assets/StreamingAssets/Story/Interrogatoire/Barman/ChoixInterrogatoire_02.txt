@@ -4,7 +4,7 @@ choice "Le joueur choisit s’il veut des info sur Alphonse Lauré ou Lucie Marl
 {
     "Parlez-moi de Alphonse Lauré"
         load(Interrogatoire/Barman/Victime_Homme)
-    "Cette femme, vous pouvez m’en dire quelque chose ?"
+    "Parlez-moi de cette femme"
         load(Interrogatoire/Barman/Victime_Femme)
     "PASSER"condition(Preuve,Barman,femme)
         load(Interrogatoire/Barman/Interrogatoire_Barman_03)

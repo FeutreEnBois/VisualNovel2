@@ -2,7 +2,7 @@ Berret "Mmmmh"
 <b><color=green>Barman</color></b> "Oui ?" flip(Barman)
 choice "Choisie une question"
 {
-    "Vous avez vu les suspects ? Vous les avez déjà vu auparavant ?"
+    "Vous les avez déjà vu les suspects ?"
         load(Interrogatoire/Barman/Barman_b1)
     "Et Emile Letronc ?"condition(Preuve,Barman,barman_b1)
         load(Interrogatoire/Barman/Barman_b2)

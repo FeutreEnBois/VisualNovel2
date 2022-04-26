@@ -26,15 +26,18 @@ public class NovelController : MonoBehaviour
             return;
         }
         instance = this;
+
     }
 
     int activeGameFileNumber = 0;
     GAMEFILE activeGameFile = null;
     string activeChapterFile = "";
 
+
     // Start is called before the first frame update
     void Start()
     {
+        //DialogueSystem.instance.Close();
         //LoadChapterFile("Chapter0_01");
         //
         LoadGameFile(0);
@@ -69,6 +72,7 @@ public class NovelController : MonoBehaviour
         cachedLastSpeaker = activeGameFile.cachedLastSpeaker;
         this.progress = activeGameFile.chapterProgress;
 
+
         DialogueSystem.instance.Open(activeGameFile.currentTextSystemSpeakerDisplayText, activeGameFile.currentTextSystemDisplayText);
 
         //Load all characters back into the scene
@@ -99,6 +103,7 @@ public class NovelController : MonoBehaviour
             HandleLine(data[this.progress]);
             //this.progress++;
         }
+ 
     }
 
     public void SaveGameFile()
@@ -136,6 +141,7 @@ public class NovelController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (canProgress &&  progress < data.Count && skip == true)
         {
             string line = data[progress];
@@ -146,6 +152,7 @@ public class NovelController : MonoBehaviour
                 StartCoroutine(HandlingChoiceLine(line));
                 ToggleTriggerSkip();
 
+
             }
             else
             {
@@ -153,7 +160,8 @@ public class NovelController : MonoBehaviour
                 contradictionRedirection = "";
                 HandleLine(line);
                 progress++;
-             
+                
+
             }
 
             //System.Threading.Thread.Sleep(1000);
