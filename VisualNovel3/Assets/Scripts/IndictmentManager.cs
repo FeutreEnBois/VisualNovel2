@@ -25,7 +25,8 @@ public class IndictmentManager : MonoBehaviour
     {
         OptionManager.instance.TogglePanelOption(AccusationPanel);
     }
-    public void ChooseASuspect(TextMeshProUGUI suspect)
+
+    public void ChooseASuspect(Text suspect)
     {
         if (Inventory.instance.preuvesCount < 2)
         {
