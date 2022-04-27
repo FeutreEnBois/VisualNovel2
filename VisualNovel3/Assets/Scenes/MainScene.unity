@@ -435,6 +435,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &57530435 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 143937021105535469, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
+  m_PrefabInstance: {fileID: 767929368}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &92522841
 GameObject:
   m_ObjectHideFlags: 0
@@ -3497,6 +3508,22 @@ PrefabInstance:
       propertyPath: m_text
       value: Ives
       objectReference: {fileID: 0}
+    - target: {fileID: 3383094459174371771, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 578384236}
+    - target: {fileID: 3383094459174371771, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChooseASuspect
+      objectReference: {fileID: 0}
+    - target: {fileID: 3383094459174371771, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 57530435}
+    - target: {fileID: 3383094459174371771, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.UI.Text, UnityEngine.UI
+      objectReference: {fileID: 0}
     - target: {fileID: 5484592361296648333, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
       propertyPath: m_Text
       value: "preuves contre lui :\n- Acc\xE8s au loge\n- Connait les lieux\n- Suspect"
@@ -3979,6 +4006,10 @@ PrefabInstance:
     - target: {fileID: 3383094459174371771, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
+      objectReference: {fileID: 1655041934}
+    - target: {fileID: 3383094459174371771, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.UI.Text, UnityEngine.UI
       objectReference: {fileID: 0}
     - target: {fileID: 5484592361296648333, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
       propertyPath: m_Text
@@ -5135,6 +5166,10 @@ PrefabInstance:
     - target: {fileID: 3383094459174371771, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
+      objectReference: {fileID: 1364469959}
+    - target: {fileID: 3383094459174371771, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.UI.Text, UnityEngine.UI
       objectReference: {fileID: 0}
     - target: {fileID: 5484592361296648333, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
       propertyPath: m_Text
@@ -5245,6 +5280,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8015228278127657086, guid: a8c118317ea8dd141a7c8cf6987b0869, type: 3}
   m_PrefabInstance: {fileID: 1039953086}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1364469959 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 143937021105535469, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
+  m_PrefabInstance: {fileID: 1277760366}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1400116204
 GameObject:
   m_ObjectHideFlags: 0
@@ -5949,6 +5995,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 688853286813659824, guid: 0785e97f79bf4cd4b9d2db5f53230127, type: 3}
   m_PrefabInstance: {fileID: 1273402479}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1655041934 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 143937021105535469, guid: efc37745bfea9b342b7f2a986d869e25, type: 3}
+  m_PrefabInstance: {fileID: 986919718}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1656610360
 GameObject:
   m_ObjectHideFlags: 0
